@@ -1,7 +1,7 @@
 ---
-title: Configure education themes for Windows 11
+title: Configure Education Themes For Windows 11
 description: Learn about education themes for Windows 11 and how to configure them via Intune and provisioning package.
-ms.date: 04/10/2024
+ms.date: 12/02/2024
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -9,6 +9,8 @@ appliesto:
 ---
 
 # Configure education themes for Windows 11
+
+[!INCLUDE [winse-eos](../includes/winse-eos.md)]
 
 Starting in **Windows 11, version 22H2**, you can deploy education themes to your devices. The education themes are designed for students using devices in a school.
 

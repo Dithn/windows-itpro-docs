@@ -1,13 +1,13 @@
 ---
 title: Virus and threat protection in Windows Security
 description: Use the Virus & threat protection section to see and configure Microsoft Defender Antivirus, Controlled folder access, and 3rd-party antivirus products.
-ms.date: 06/27/2024
+ms.date: 04/15/2025
 ms.topic: how-to
 ---
 
 # Virus and threat protection
 
-The **Virus & threat protection** section contains information and settings for antivirus protection from Microsoft Defender Antivirus and third-party antivirus products. These settings include Controlled folder access settings to prevent unknown apps from changing files in protected folders, plus Microsoft OneDrive configuration to help you recover from a ransomware attack. This area also notifies users and provides recovery instructions if there's a ransomware attack.
+The **Virus & threat protection** section contains information and settings for antivirus protection from Microsoft Defender Antivirus and non-Microsoft antivirus products. These settings include Controlled folder access settings to prevent unknown apps from changing files in protected folders, plus Microsoft OneDrive configuration to help you recover from a ransomware attack. This area also notifies users and provides recovery instructions if there's a ransomware attack.
 
 IT administrators and IT pros can get more configuration information from these articles:
 
@@ -22,12 +22,10 @@ You can hide the **Virus & threat protection** section or the **Ransomware prote
 
 ## Hide the Virus & threat protection section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side.
-
-This section can be hidden only by using Group Policy.
+You can choose to hide the entire section by using Group Policy. When hidden, this section doesn't appear on the home page of **Windows Security**, and its icon isn't shown on the navigation bar on the side.
 
 > [!IMPORTANT]
-> You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+> You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows don't include these Group Policy settings.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
@@ -36,18 +34,16 @@ This section can be hidden only by using Group Policy.
 1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
-> If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
+> If you hide all sections, then **Windows Security** shows a restricted interface, as in the following screenshot:
 >
 > ![Screenshot of the Windows Security with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 
 ## Hide the Ransomware protection area
 
-You can choose to hide the **Ransomware protection** area by using Group Policy. The area won't appear on the **Virus & threat protection** section of **Windows Security**.
-
-This area can be hidden only by using Group Policy.
+You can choose to hide the **Ransomware protection** area by using Group Policy. When hidden, this area doesn't appear on the **Virus & threat protection** section of **Windows Security**.
 
 > [!IMPORTANT]
-> You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+> You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows don't include these Group Policy settings.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.

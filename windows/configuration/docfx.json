@@ -43,7 +43,7 @@
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.subservice": "itpro-configure",
       "ms.service": "windows-client",
-      "manager": "aaroncz",
+      "manager": "bpardi",
       "feedback_system": "Standard",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
@@ -52,7 +52,6 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
         "dstrome2",
         "rjagiewich",
@@ -65,7 +64,9 @@
         "garycentric",
         "dstrome",
         "beccarobins",
-        "alekyaj"
+        "alekyaj",
+        "padmagit77",
+        "aditisrivastava07"
       ],
       "searchScope": [
         "Windows 10"
@@ -79,12 +80,20 @@
         "assigned-access//**/*.yml": "paolomatarazzo",
         "cellular//**/*.md": "paolomatarazzo",
         "cellular//**/*.yml": "paolomatarazzo",
+        "custom-logon//**/*.md": "terrywarwick",
+        "custom-logon//**/*.yml": "terrywarwick",
+        "keyboard-filter//**/*.md": "terrywarwick",
+        "keyboard-filter//**/*.yml": "terrywarwick",
+        "kiosk//**/*.md": "paolomatarazzo",
+        "kiosk//**/*.yml": "paolomatarazzo",
         "lock-screen//**/*.md": "paolomatarazzo",
         "lock-screen//**/*.yml": "paolomatarazzo",
         "provisioning-packages//**/*.md": "vinaypamnani-msft",
         "provisioning-packages//**/*.yml": "vinaypamnani-msft",
         "shared-pc//**/*.md": "paolomatarazzo",
         "shared-pc//**/*.yml": "paolomatarazzo",
+        "shell-launcher//**/*.md": "paolomatarazzo",
+        "shell-launcher//**/*.yml": "paolomatarazzo",
         "start//**/*.md": "paolomatarazzo",
         "start//**/*.yml": "paolomatarazzo",
         "store//**/*.md": "paolomatarazzo",
@@ -93,6 +102,10 @@
         "taskbar//**/*.yml": "paolomatarazzo",
         "tips//**/*.md": "paolomatarazzo",
         "tips//**/*.yml": "paolomatarazzo",
+        "unbranded-boot//**/*.md": "terrywarwick",
+        "unbranded-boot//**/*.yml": "terrywarwick",
+        "unified-write-filter//**/*.md": "terrywarwick",
+        "unified-write-filter//**/*.yml": "terrywarwick",
         "wcd//**/*.md": "vinaypamnani-msft",
         "wcd//**/*.yml": "vinaypamnani-msft"
       },
@@ -103,12 +116,20 @@
         "assigned-access//**/*.yml": "paoloma",
         "cellular//**/*.md": "paoloma",
         "cellular//**/*.yml": "paoloma",
+        "custom-logon//**/*.md": "twarwick",
+        "custom-logon//**/*.yml": "twarwick",
         "lock-screen//**/*.md": "paoloma",
+        "keyboard-filter//**/*.md": "twarwick",
+        "keyboard-filter//**/*.yml": "twarwick",
+        "kiosk//**/*.md": "paoloma",
+        "kiosk//**/*.yml": "paoloma",
         "lock-screen//**/*.yml": "paoloma",
         "provisioning-packages//**/*.md": "vinpa",
         "provisioning-packages//**/*.yml": "vinpa",
         "shared-pc//**/*.md": "paoloma",
         "shared-pc//**/*.yml": "paoloma",
+        "shell-launcher//**/*.md": "paoloma",
+        "shell-launcher//**/*.yml": "paoloma",
         "start//**/*.md": "paoloma",
         "start//**/*.yml": "paoloma",
         "store//**/*.md": "paoloma",
@@ -117,11 +138,25 @@
         "taskbar//**/*.yml": "paoloma",
         "tips//**/*.md": "paoloma",
         "tips//**/*.yml": "paoloma",
+        "unbranded-boot//**/*.md": "twarwick",
+        "unbranded-boot//**/*.yml": "twarwick",
+        "unified-write-filter//**/*.md": "twarwick",
+        "unified-write-filter//**/*.yml": "twarwick",
         "wcd//**/*.md": "vinpa",
         "wcd//**/*.yml": "vinpa"
       },
+      "manager":{
+        "custom-logon//**/*.md": "vlokeshwar",
+        "custom-logon//**/*.yml": "vlokeshwar",
+        "keyboard-filter//**/*.md": "vlokeshwar",
+        "keyboard-filter//**/*.yml": "vlokeshwar",
+        "unbranded-boot//**/*.md": "vlokeshwar",
+        "unbranded-boot//**/*.yml": "vlokeshwar",
+        "unified-write-filter//**/*.md": "vlokeshwar",
+        "unified-write-filter//**/*.yml": "vlokeshwar"
+      },
       "ms.reviewer": {
-        "kiosk//**/*.md": "sybruckm",
+        "kiosk//**/*.md": "twarwick",
         "start//**/*.md": "ericpapa"
       },
       "ms.collection": {

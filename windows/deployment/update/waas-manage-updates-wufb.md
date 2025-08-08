@@ -1,7 +1,7 @@
 ---
-title: Windows Update for Business
-manager: aaroncz
-description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
+title: Windows Update client policies
+manager: bpardi
+description: Learn how Windows Update client policies let you manage when devices receive updates from Windows Update.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: overview
@@ -17,45 +17,49 @@ appliesto:
 ms.date: 05/16/2024
 ---
 
-# What is Windows Update for Business?
+# What are Windows Update client policies?
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2).
 
-Windows Update for Business is a free service that is available for the following editions of Windows 10 and Windows 11:
+Windows Update client policies are a free service that is available for the following editions of Windows 10 and Windows 11:
 
 - Pro, including Pro for Workstations
 - Education
 - Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
 
-Windows Update for Business enables IT administrators to keep their organization's Windows client devices always up to date with the latest security updates  and Windows features by directly connecting these systems to the Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions, such as Microsoft Intune, to configure the Windows Update for Business settings that control how and when devices are updated.
+Windows Update client policies enable IT administrators to keep their organization's Windows client devices always up to date with the latest security updates  and Windows features by directly connecting these systems to the Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions, such as Microsoft Intune, to configure the Windows Update client policies that control how and when devices are updated.
 
-Specifically, Windows Update for Business lets you control update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization. It also provides a positive update experience for people in your organization.
+> [!TIP]
+> This feature was formerly known as _Windows Update for Business_.
 
-## What can I do with Windows Update for Business?
+Specifically, Windows Update client policies let you control update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization. It also provides a positive update experience for people in your organization.
 
-Windows Update for Business enables commercial customers to manage which Windows Updates are received along with the experience a device has when it receives them.
+## What can I do with Windows Update client policies?
 
-You can control Windows Update for Business policies by using either MDM tools or Group Policy management, such as local group policy or the Group Policy Management Console (GPMC), and various other non-Microsoft management tools. MDMs use Configuration Service Provider (CSP) policies instead of Group Policy. Intune additionally uses Cloud Policies. Not all policies are available in all formats (CSP, Group Policy, or Cloud Policy).
+Windows Update client policies enable commercial customers to manage which Windows Updates are received along with the experience a device has when it receives them.
+
+You can control Windows Update client policies by using either MDM tools or Group Policy management, such as local group policy or the Group Policy Management Console (GPMC), and various other non-Microsoft management tools. MDMs use Configuration Service Provider (CSP) policies instead of Group Policy. Intune additionally uses Cloud Policies. Not all policies are available in all formats (CSP, Group Policy, or Cloud Policy).
 
 ### Manage deployment of Windows Updates
 
-By using Windows Update for Business, you can:
+By using Windows Update client policies, you can:
 - Control the types of Windows Updates are offered to devices in your organization
 - Control when updates are applied to the devices
 - Deploy updates to devices in your organization in waves
 
 ### Manage which updates are offered
 
-Windows Update for Business enables an IT administrator to receive and manage various types of Windows Updates.
+Windows Update client policies enable an IT administrator to receive and manage various types of Windows Updates.
 
-## Types of updates managed by Windows Update for Business
+## Types of updates managed by Windows Update client policies
+<a name="types-of-updates-managed-by-windows-update-for-business"></a>
 
-Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
+Windows Update client policies provide management policies for several types of updates to Windows 10 devices:
 
 - **Feature updates:** Previously referred to as upgrades, feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available. Feature updates aren't available for LTSC devices.
 - **Quality updates:** Quality updates are traditional operating system updates. Typically quality updates are released on the second Tuesday of each month, though they can be released at any time. These include security, critical, and driver updates.
-- **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer.
-- **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
+- **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update client policies to turn them off if you prefer.
+- **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update client policies. Product updates are off by default. You can turn them on by using Windows Update client policies.
 
 ## Offering
 
@@ -108,7 +112,7 @@ For the best experience with Windows Update, follow these guidelines:
 
 ### Manage the end-user experience when receiving Windows Updates
 
-Windows Update for Business provides controls to help meet your organization's security standards and provide a great end-user experience. We do this by enabling you to set automatic updates at times that work well for people in your organization and set deadlines for quality and feature updates. Because Windows Update includes built-in intelligence, it's better to use fewer controls to manage the user experience.
+Windows Update client policies provide controls to help meet your organization's security standards and provide a great end-user experience. We do this by enabling you to set automatic updates at times that work well for people in your organization and set deadlines for quality and feature updates. Because Windows Update includes built-in intelligence, it's better to use fewer controls to manage the user experience.
 
 #### Recommended experience settings
 
@@ -133,13 +137,14 @@ The large number of different policies offered can be overwhelming. Update Basel
 
 The Update Baseline toolkit makes it easy by providing a single command for IT Admins to apply the Update Baseline to devices. You can get the Update Baseline toolkit from the [Download Center](https://www.microsoft.com/download/details.aspx?id=101056).
 
-## Other Windows Update for Business services
+## Other Windows Update client policies services
+<a name="windows-update-for-business-services"></a>
 
-The following services are part of the Windows Update for Business product family:
+The following services are part of the Windows Update product family:
 
 - [Windows Update for Business reports](wufb-reports-overview.md) is a cloud-based solution that provides information about your Microsoft Entra joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the Azure portal. Windows Update for Business reports helps you:
     - Monitor security, quality, driver, and feature updates for Windows 11 and Windows 10 devices
     - Report on devices with update compliance issues
     - Analyze and display your data in multiple ways
 
-- The [Windows Update for Business deployment service](deployment-service-overview.md) is a cloud service designed to work with your existing Windows Update for Business policies and Windows Update for Business reports. The deployment service provides additional control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices.
+- [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) is a cloud service designed to work with your existing Windows Update client policies. Windows Autopatch provides additional control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices.

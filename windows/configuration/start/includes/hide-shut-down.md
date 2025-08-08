@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -9,5 +9,5 @@ ms.topic: include
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideShutDown](/windows/client-management/mdm/policy-csp-start#hideshutdown) |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideShutDown](/windows/client-management/mdm/policy-csp-start#hideshutdown) |
 | **GPO** | Not available. |

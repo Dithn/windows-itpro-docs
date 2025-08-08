@@ -3,10 +3,10 @@ title: Quick guide to Windows as a service
 description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: high
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
@@ -32,7 +32,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 
 For more information, see [Overview of Windows as a service](waas-overview.md).
 
-For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](PSFxWhitepaper.md).
+For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](forward-reverse-differentials.md).
 
 ## Key concepts
 
@@ -44,7 +44,7 @@ For more information, see [Assign devices to servicing channels for Windows clie
 
 ## Staying up to date
 
-To stay up to date, deploy feature updates at an appropriate time after their release. You can use various management and update tools such as Windows Update, Windows Update for Business, Windows Server Update Services, Microsoft Configuration Manager, and non-Microsoft products to help with this process.
+To stay up to date, deploy feature updates at an appropriate time after their release. You can use various management and update tools such as Windows Update, Windows Update client policies, Windows Server Update Services, Microsoft Configuration Manager, and non-Microsoft products to help with this process.
 
 Extensive advanced testing isn't required. Instead, only business-critical apps need to be tested, with the remaining apps validated through a series of pilot deployment rings. Once these pilot deployments have validated most apps, broad deployment can begin.
 

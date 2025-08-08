@@ -1,19 +1,19 @@
 ---
 title: Microsoft 365 admin center software updates page
 titleSuffix: Windows Update for Business reports
-manager: aaroncz
+manager: bpardi
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows Update for Business reports</a>	
-- ✅ <a href=https://learn.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview >Microsoft 365 admin center</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows Update for Business reports</a>
+- ✅ <a href=https://learn.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview >Microsoft 365 admin center</a>
 ms.date: 05/08/2024
 ---
 
@@ -36,7 +36,7 @@ Windows Update for Business reports is a Windows service hosted in Azure that us
 
 ## Get started
 
-After verifying that you've met the [prerequisites and permissions](wufb-reports-prerequisites.md) for Windows Update for Business reports, enroll using the instructions below if needed: 
+After verifying that you've met the [prerequisites and permissions](wufb-reports-prerequisites.md) for Windows Update for Business reports, enroll using the instructions below if needed:
 
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]

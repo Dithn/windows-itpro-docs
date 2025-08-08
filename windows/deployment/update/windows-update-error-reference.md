@@ -6,17 +6,17 @@ ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 09/18/2018
 ---
 
 # Windows Update error codes by component
 
-This section lists the error codes for Microsoft Windows Update. 
+This section lists the error codes for Microsoft Windows Update.
 
 ## Automatic Update Errors
 
@@ -65,7 +65,7 @@ This section lists the error codes for Microsoft Windows Update.
 | `0x8024E006` | `WU_E_EE_INVALID_ATTRIBUTEDATA` |                An expression evaluator operation couldn't be completed because there was an invalid attribute.                |
 | `0x8024E007` |     `WU_E_EE_CLUSTER_ERROR`     |  An expression evaluator operation couldn't be completed because the cluster state of the computer couldn't be determined.   |
 | `0x8024EFFF` |       `WU_E_EE_UNEXPECTED`      |                     There was an expression evaluator error not covered by another `WU_E_EE_*` error code.                     |
- 
+
 ## Reporter errors
 
 | Error code |                 Message                   |                                                     Description                                                      |
@@ -80,7 +80,7 @@ This section lists the error codes for Microsoft Windows Update.
 | `0x8024FFFF` |         `WU_E_REPORTER_UNEXPECTED`        |                            There was a reporter error not covered by another error code.                             |
 
 ## Redirector errors
-The components that download the `Wuredir.cab` file and then parse the `Wuredir.cab` file generate the following errors. 
+The components that download the `Wuredir.cab` file and then parse the `Wuredir.cab` file generate the following errors.
 
 | Error code |      Message                 | Description                                                                              |
 |----------- |------------------------------|------------------------------------------------------------------------------------------|
@@ -90,7 +90,7 @@ The components that download the `Wuredir.cab` file and then parse the `Wuredir.
 | `0x80245FFF` | `WU_E_REDIRECTOR_UNEXPECTED` | The redirector failed for reasons not covered by another `WU_E_REDIRECTOR_*` error code. |
 
 ## Protocol Talker errors
-The following errors map to `SOAPCLIENT_ERROR`s through the `Atlsoap.h` file. These errors are obtained when the `CClientWebService` object calls the `GetClientError()` method.  
+The following errors map to `SOAPCLIENT_ERROR`s through the `Atlsoap.h` file. These errors are obtained when the `CClientWebService` object calls the `GetClientError()` method.
 
 
 | Error code |             Message              |                                                              Description                                                              |
@@ -240,7 +240,7 @@ The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These 
 | `0x80248FFF` |      `WU_E_DS_UNEXPECTED`      |                                                                       A data store error not covered by another `WU_E_DS_*` code.                                                                      |
 
 ## Driver Util errors
-The PnP enumerated device is removed from the System Spec because one of the hardware IDs or the compatible IDs matches an installed printer driver. This isn't a fatal error, and the device is merely skipped. 
+The PnP enumerated device is removed from the System Spec because one of the hardware IDs or the compatible IDs matches an installed printer driver. This isn't a fatal error, and the device is merely skipped.
 
 | Error code |  Message                      | Description                                                                                    |
 |------------|-------------------------------|------------------------------------------------------------------------------------------------|
@@ -257,6 +257,7 @@ The PnP enumerated device is removed from the System Spec because one of the har
 
 | Error code |  Message                          | Description                                                  |
 |------------|-----------------------------------|--------------------------------------------------------------|
+| `0x80070020` | `InstallFileLocked`| Couldn't access the file because it is already in use. This can occur when the installer tries to replace a file that an antivirus, antimalware or backup program is currently scanning. |
 | `0x80240001` | `WU_E_NO_SERVICE`                 | Windows Update Agent was unable to provide the service.
 | `0x80240002` | `WU_E_MAX_CAPACITY_REACHED`       | The maximum capacity of the service was exceeded.
 | `0x80240003` | `WU_E_UNKNOWN_ID`                 | An ID can't be found.
@@ -275,12 +276,12 @@ The PnP enumerated device is removed from the System Spec because one of the har
 | `0x80240010` | `WU_E_TOO_DEEP_RELATION`          | Update relationships too deep to evaluate were evaluated.
 | `0x80240011` | `WU_E_INVALID_RELATIONSHIP`       | An invalid update relationship was detected.
 | `0x80240012` | `WU_E_REG_VALUE_INVALID`          | An invalid registry value was read.
-| `0x80240013` | `WU_E_DUPLICATE_ITEM`             | Operation tried to add a duplicate item to a list.  
+| `0x80240013` | `WU_E_DUPLICATE_ITEM`             | Operation tried to add a duplicate item to a list.
 | `0x80240016` | `WU_E_INSTALL_NOT_ALLOWED`        | Operation tried to install while another installation was in progress or the system was pending a mandatory restart.
 | `0x80240017` | `WU_E_NOT_APPLICABLE`             | Operation wasn't performed because there are no applicable updates.
 | `0x80240018` | `WU_E_NO_USERTOKEN`               | Operation failed because a required user token is missing.
 | `0x80240019` | `WU_E_EXCLUSIVE_INSTALL_CONFLICT` | An exclusive update can't be installed with other updates at the same time.
-| `0x8024001A` | `WU_E_POLICY_NOT_SET`             | A policy value wasn't set.  
+| `0x8024001A` | `WU_E_POLICY_NOT_SET`             | A policy value wasn't set.
 | `0x8024001B` | `WU_E_SELFUPDATE_IN_PROGRESS`     | The operation couldn't be performed because the Windows Update Agent is self-updating.
 | `0x8024001D` | `WU_E_INVALID_UPDATE`             | An update contains invalid metadata.
 | `0x8024001E` | `WU_E_SERVICE_STOP`               | Operation didn't complete because the service or system was being shut down.
@@ -292,7 +293,7 @@ The PnP enumerated device is removed from the System Spec because one of the har
 | `0x80240024` | `WU_E_NO_UPDATE`                  | There are no updates.
 | `0x80240025` | `WU_E_USER_ACCESS_DISABLED`       | Group Policy settings prevented access to Windows Update.
 | `0x80240026` | `WU_E_INVALID_UPDATE_TYPE`        | The type of update is invalid.
-| `0x80240027` | `WU_E_URL_TOO_LONG`               | The URL exceeded the maximum length.  
+| `0x80240027` | `WU_E_URL_TOO_LONG`               | The URL exceeded the maximum length.
 | `0x80240028` | `WU_E_UNINSTALL_NOT_ALLOWED`      | The update couldn't be uninstalled because the request didn't originate from a WSUS server.
 | `0x80240029` | `WU_E_INVALID_PRODUCT_LICENSE`    | Search may have missed some updates before there's an unlicensed application on the system.
 | `0x8024002A` | `WU_E_MISSING_HANDLER`            | A component required to detect applicable updates was missing.
@@ -332,7 +333,7 @@ The PnP enumerated device is removed from the System Spec because one of the har
 | `0x00240008` | `WU_S_ALREADY_DOWNLOADED`    | The update to be downloaded has already been downloaded.                                                                            |
 
 ## Windows Installer minor errors
-The following errors are used to indicate that part of a search fails because of Windows Installer problems. Another part of the search may successfully return updates. All Windows Installer minor codes must share the same error code range so that the caller can tell that they're related to Windows Installer.  
+The following errors are used to indicate that part of a search fails because of Windows Installer problems. Another part of the search may successfully return updates. All Windows Installer minor codes must share the same error code range so that the caller can tell that they're related to Windows Installer.
 
 | Error code |  Message                     | Description                                                                                 |
 |------------|------------------------------|---------------------------------------------------------------------------------------------|
@@ -341,7 +342,7 @@ The following errors are used to indicate that part of a search fails because of
 | `0x80241003` | `WU_E_MSP_DISABLED`          | Search may have missed some updates because policy has disabled Windows Installer patching. |
 | `0x80241004` | `WU_E_MSI_WRONG_APP_CONTEXT` | An update couldn't be applied because the application is installed per-user.               |
 | `0x80241FFF` | `WU_E_MSP_UNEXPECTED`        | Search may have missed some updates because there was a failure of the Windows Installer.   |
- 
+
 ## Windows Update Agent update and setup errors
 
 | Error code |  Message                               | Description                                                                                                                       |

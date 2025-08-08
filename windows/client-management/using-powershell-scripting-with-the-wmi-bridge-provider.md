@@ -1,8 +1,8 @@
 ---
 title: Using PowerShell scripting with the WMI Bridge Provider
 description: This article covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the WMI Bridge Provider.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: article
+ms.date: 08/04/2025
 ---
 
 # Using PowerShell scripting with the WMI Bridge Provider
@@ -78,7 +78,7 @@ class MDM_Policy_User_Config01_Authentication02
 ```
 
 > [!NOTE]
-> If the currently logged on user is trying to access or modify user settings for themselves, it is much easier to use the per-device settings script from the previous section. All PowerShell cmdlets must be executed under an elevated admin command prompt.
+> If the currently logged on user is trying to access or modify user settings for themselves, it's easier to use the per-device settings script from the previous section. All PowerShell cmdlets must be executed under an elevated admin command prompt.
 
 If accessing or modifying settings for a different user, then the PowerShell script is more complicated because the WMI Bridge expects the user SID to be set in MI Custom Context, which isn't supported in native PowerShell cmdlets.
 

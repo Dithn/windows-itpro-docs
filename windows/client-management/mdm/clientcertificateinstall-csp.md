@@ -1,7 +1,8 @@
 ---
 title: ClientCertificateInstall CSP
 description: Learn more about the ClientCertificateInstall CSP.
-ms.date: 04/10/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -108,7 +109,7 @@ The following list shows the ClientCertificateInstall configuration service prov
 <!-- Device-PFXCertInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-Applicability-End -->
 
 <!-- Device-PFXCertInstall-OmaUri-Begin -->
@@ -147,7 +148,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- Device-PFXCertInstall-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-OmaUri-Begin -->
@@ -192,7 +193,7 @@ Calling Delete on this node, should delete the certificates and the keys that we
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-OmaUri-Begin -->
@@ -233,7 +234,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-OmaUri-Begin -->
@@ -283,7 +284,7 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-OmaUri-Begin -->
@@ -330,7 +331,7 @@ In other words, using Replace or Add will result in the effect of either overwri
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-OmaUri-Begin -->
@@ -369,7 +370,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-OmaUri-Begin -->
@@ -411,7 +412,7 @@ When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the s
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-OmaUri-Begin -->
@@ -466,7 +467,7 @@ If the value is
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-OmaUri-Begin -->
@@ -520,7 +521,7 @@ The PFX isn't exportable when it's installed to TPM.
 <!-- Device-PFXCertInstall-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-Status-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-Status-OmaUri-Begin -->
@@ -559,7 +560,7 @@ Returns the error code of the PFX installation from the GetLastError command cal
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-OmaUri-Begin -->
@@ -598,7 +599,7 @@ Returns the thumbprint of the PFX certificate installed.
 <!-- Device-SCEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-Applicability-End -->
 
 <!-- Device-SCEP-OmaUri-Begin -->
@@ -637,7 +638,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- Device-SCEP-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-OmaUri-Begin -->
@@ -680,7 +681,7 @@ Calling Delete on this node, should delete the corresponding SCEP certificate.
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-OmaUri-Begin -->
@@ -721,7 +722,7 @@ Optional. Specify the current cert's thumbprint if certificate enrollment succee
 <!-- Device-SCEP-{UniqueID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-ErrorCode-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-ErrorCode-OmaUri-Begin -->
@@ -760,7 +761,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 <!-- Device-SCEP-{UniqueID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-OmaUri-Begin -->
@@ -799,7 +800,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-OmaUri-Begin -->
@@ -838,7 +839,7 @@ Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon sepa
 <!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-OmaUri-Begin -->
@@ -877,7 +878,7 @@ Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-OmaUri-Begin -->
@@ -916,7 +917,7 @@ Required. Specify root CA thumbprint. It's a 20-byte value of the SHA1 certifica
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-OmaUri-Begin -->
@@ -955,7 +956,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-OmaUri-Begin -->
@@ -996,7 +997,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-OmaUri-Begin -->
@@ -1035,7 +1036,7 @@ Optional. Specifies the custom text to show on the NGC PIN prompt during certifi
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-OmaUri-Begin -->
@@ -1074,7 +1075,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-OmaUri-Begin -->
@@ -1113,7 +1114,7 @@ Required. Trigger the device to start the cert enrollment. The device won't noti
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-OmaUri-Begin -->
@@ -1154,7 +1155,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-OmaUri-Begin -->
@@ -1207,7 +1208,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-OmaUri-Begin -->
@@ -1260,7 +1261,7 @@ SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-OmaUri-Begin -->
@@ -1299,7 +1300,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-OmaUri-Begin -->
@@ -1342,7 +1343,7 @@ The min value is 0 which means no retry.
 <!-- Device-SCEP-{UniqueID}-Install-RetryDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-RetryDelay-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-RetryDelay-OmaUri-Begin -->
@@ -1386,7 +1387,7 @@ The min value is 1.
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-OmaUri-Begin -->
@@ -1425,7 +1426,7 @@ Required for SCEP certificate enrollment. Specify the cert enrollment server. Th
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-OmaUri-Begin -->
@@ -1464,7 +1465,7 @@ Optional. Specify subject alternative name. Multiple alternative names could be 
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-OmaUri-Begin -->
@@ -1504,7 +1505,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-OmaUri-Begin -->
@@ -1543,7 +1544,7 @@ Optional. OID of certificate template name. Note that this name is typically ign
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-OmaUri-Begin -->
@@ -1595,7 +1596,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-OmaUri-Begin -->
@@ -1638,7 +1639,7 @@ Optional. Specify desired number of units used in validity period. Subjected to 
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-OmaUri-Begin -->
@@ -1677,7 +1678,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- Device-SCEP-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Status-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Status-OmaUri-Begin -->
@@ -1723,7 +1724,7 @@ Valid values are:
 <!-- User-PFXCertInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-Applicability-End -->
 
 <!-- User-PFXCertInstall-OmaUri-Begin -->
@@ -1762,7 +1763,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- User-PFXCertInstall-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-OmaUri-Begin -->
@@ -1807,7 +1808,7 @@ Calling Delete on this node, should delete the certificates and the keys that we
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-OmaUri-Begin -->
@@ -1848,7 +1849,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-OmaUri-Begin -->
@@ -1898,7 +1899,7 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-OmaUri-Begin -->
@@ -1945,7 +1946,7 @@ In other words, using Replace or Add will result in the effect of either overwri
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-OmaUri-Begin -->
@@ -1984,7 +1985,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-OmaUri-Begin -->
@@ -2026,7 +2027,7 @@ When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the s
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-OmaUri-Begin -->
@@ -2081,7 +2082,7 @@ If the value is
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-OmaUri-Begin -->
@@ -2133,7 +2134,7 @@ Optional. Used to specify if the private key installed is exportable (can be exp
 <!-- User-PFXCertInstall-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-Status-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-Status-OmaUri-Begin -->
@@ -2172,7 +2173,7 @@ Returns the error code of the PFX installation from the GetLastError command cal
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-OmaUri-Begin -->
@@ -2211,7 +2212,7 @@ Returns the thumbprint of the PFX certificate installed.
 <!-- User-SCEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-Applicability-End -->
 
 <!-- User-SCEP-OmaUri-Begin -->
@@ -2250,7 +2251,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- User-SCEP-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-OmaUri-Begin -->
@@ -2293,7 +2294,7 @@ Calling Delete on this node, should delete the corresponding SCEP certificate.
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-CertThumbprint-OmaUri-Begin -->
@@ -2334,7 +2335,7 @@ Optional. Specify the current cert's thumbprint if certificate enrollment succee
 <!-- User-SCEP-{UniqueID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-ErrorCode-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-ErrorCode-OmaUri-Begin -->
@@ -2373,7 +2374,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 <!-- User-SCEP-{UniqueID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-OmaUri-Begin -->
@@ -2412,7 +2413,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-OmaUri-Begin -->
@@ -2451,7 +2452,7 @@ Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon sepa
 <!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-OmaUri-Begin -->
@@ -2500,7 +2501,7 @@ Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-OmaUri-Begin -->
@@ -2539,7 +2540,7 @@ Required. Specify root CA thumbprint. It's a 20-byte value of the SHA1 certifica
 <!-- User-SCEP-{UniqueID}-Install-Challenge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-Challenge-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-Challenge-OmaUri-Begin -->
@@ -2578,7 +2579,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-OmaUri-Begin -->
@@ -2619,7 +2620,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-OmaUri-Begin -->
@@ -2658,7 +2659,7 @@ Optional. Specifies the custom text to show on the NGC PIN prompt during certifi
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-OmaUri-Begin -->
@@ -2697,7 +2698,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-Enroll-OmaUri-Begin -->
@@ -2736,7 +2737,7 @@ Required. Trigger the device to start the cert enrollment. The device won't noti
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-OmaUri-Begin -->
@@ -2777,7 +2778,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-OmaUri-Begin -->
@@ -2830,7 +2831,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-OmaUri-Begin -->
@@ -2883,7 +2884,7 @@ SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-OmaUri-Begin -->
@@ -2922,7 +2923,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-OmaUri-Begin -->
@@ -2965,7 +2966,7 @@ The min value is 0 which means no retry.
 <!-- User-SCEP-{UniqueID}-Install-RetryDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-RetryDelay-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-RetryDelay-OmaUri-Begin -->
@@ -3009,7 +3010,7 @@ The min value is 1.
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-OmaUri-Begin -->
@@ -3048,7 +3049,7 @@ Required for SCEP certificate enrollment. Specify the cert enrollment server. Th
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-OmaUri-Begin -->
@@ -3087,7 +3088,7 @@ Optional. Specify subject alternative name. Multiple alternative names could be 
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-OmaUri-Begin -->
@@ -3127,7 +3128,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-OmaUri-Begin -->
@@ -3166,7 +3167,7 @@ Optional. OID of certificate template name. Note that this name is typically ign
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-OmaUri-Begin -->
@@ -3218,7 +3219,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-OmaUri-Begin -->
@@ -3261,7 +3262,7 @@ Optional. Specify desired number of units used in validity period. Subjected to 
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-OmaUri-Begin -->
@@ -3300,7 +3301,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- User-SCEP-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Status-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Status-OmaUri-Begin -->

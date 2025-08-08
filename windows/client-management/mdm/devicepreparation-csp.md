@@ -1,7 +1,8 @@
 ---
 title: DevicePreparation CSP
 description: Learn more about the DevicePreparation CSP.
-ms.date: 04/10/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -39,7 +40,7 @@ The following list shows the DevicePreparation configuration service provider no
 <!-- Device-BootstrapperAgent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-OmaUri-Begin -->
@@ -78,7 +79,7 @@ Parent node for configuring agent that orchestrates provisioning and communicate
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ExecutionContext-OmaUri-Begin -->
@@ -117,7 +118,7 @@ This node holds opaque data that will be passed to the Bootstrapper Agent as a p
 <!-- Device-MDMProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-Applicability-End -->
 
 <!-- Device-MDMProvider-OmaUri-Begin -->
@@ -156,7 +157,7 @@ Parent node for configuring the MDM provider that interacts with the Bootstrappe
 <!-- Device-MDMProvider-MdmAgentInstalled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-MdmAgentInstalled-Applicability-End -->
 
 <!-- Device-MDMProvider-MdmAgentInstalled-OmaUri-Begin -->
@@ -205,7 +206,7 @@ This node indicates whether the MDM agent was installed or not. When set to true
 <!-- Device-MDMProvider-Progress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-Progress-Applicability-End -->
 
 <!-- Device-MDMProvider-Progress-OmaUri-Begin -->
@@ -244,7 +245,7 @@ Node for reporting progress status as opaque data. Contract for data is between 
 <!-- Device-MDMProvider-RebootRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-RebootRequired-Applicability-End -->
 
 <!-- Device-MDMProvider-RebootRequired-OmaUri-Begin -->
@@ -293,7 +294,7 @@ This node indicates whether an MDM policy was provisioned that requires a reboot
 <!-- Device-PageEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageEnabled-Applicability-End -->
 
 <!-- Device-PageEnabled-OmaUri-Begin -->
@@ -342,7 +343,7 @@ This node determines whether to show the Device Preparation page during OOBE.
 <!-- Device-PageErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageErrorCode-Applicability-End -->
 
 <!-- Device-PageErrorCode-OmaUri-Begin -->
@@ -381,7 +382,7 @@ This node provides specific overall HRESULT causing a fatal error on the Device 
 <!-- Device-PageErrorDetails-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageErrorDetails-Applicability-End -->
 
 <!-- Device-PageErrorDetails-OmaUri-Begin -->
@@ -420,7 +421,7 @@ This node provides optional details for any fatal error on the Device Preparatio
 <!-- Device-PageErrorPhase-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageErrorPhase-Applicability-End -->
 
 <!-- Device-PageErrorPhase-OmaUri-Begin -->
@@ -469,7 +470,7 @@ This node provides the specific phase that failed during the Device Preparation 
 <!-- Device-PageSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageSettings-Applicability-End -->
 
 <!-- Device-PageSettings-OmaUri-Begin -->
@@ -508,7 +509,7 @@ This node configures the Device Preparation page settings.
 <!-- Device-PageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageStatus-Applicability-End -->
 
 <!-- Device-PageStatus-OmaUri-Begin -->

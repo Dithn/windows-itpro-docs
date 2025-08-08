@@ -1,8 +1,8 @@
 ---
-title: Customize the Start layout
+title: Customize The Start Layout For Managed Windows Devices
 description: Learn how to customize the Windows Start layout, export its configuration, and deploy the customization to other devices.
 ms.topic: how-to
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 zone_pivot_groups: windows-versions-11-10
 appliesto:
 ---
@@ -304,10 +304,10 @@ Column="2"/>
 
 You can use the `start:SecondaryTile` tag to pin a web link through a Microsoft Edge secondary tile. This method doesn't require more actions compared to the method of using legacy `.url` shortcuts (through the `start:DesktopApplicationTile` tag).
 
-The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile:
+The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile. Ensure to replace `<--Microsoft Edge AUMID-->` with the AUMID of Microsoft Edge (learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md)):
 
 ```XML
-<start:SecondaryTile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+<start:SecondaryTile AppUserModelID="<--Microsoft Edge AUMID-->"
 TileID="MyWeblinkTile"
 Arguments="http://msn.com"
 DisplayName="MySite"
@@ -427,13 +427,14 @@ You can edit the JSON file to make any modifications to the **Pinned** section o
 1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad
 1. The `pinnedList` section includes all the pins that are applied to the Start layout
 
-You can add more apps to the section using the following keys:
+    You can add more apps to the section using the following keys:
 
-| Key | Description |
-|--|--|
-| `packagedAppID` | Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
-| `desktopAppID` | Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
-| `desktopAppLink` | Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+    | Key | Description |
+    |--|--|
+    |`packagedAppID`| Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
+    |`desktopAppID`| Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
+    |`desktopAppLink`| Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+    |`secondaryTile`| Used for Microsoft Edge pinned sites. |
 
 ::: zone-end
 
@@ -445,7 +446,7 @@ Learn how to [Find the Application User Model ID of an installed app](../store/f
 
 ::: zone pivot="windows-10"
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-10)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune-10)
 
 To configure devices with Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use one of the following settings:
 
@@ -456,20 +457,20 @@ To configure devices with Microsoft Intune, [create a Settings catalog policy](/
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp-10)
+
+You can configure devices using the [Start CSP][WIN-1]. Use one of the following settings:
 
 | Setting |
 |--|
-| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **String:** <br>- **Value:** content of the XML file |
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** <br>- **Value:** content of the XML file |
-
-[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg-10)
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
-- **Path:** `Policies/Start/StartLayout`
+- **Path:** Policies > Start > StartLayout
 - **Value:** content of the XML file
 
 > [!NOTE]
@@ -571,7 +572,7 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 > [!IMPORTANT]
 > The JSON file can be applied to devices using the [Start policy CSP][WIN-1] only. It's not possible to apply the JSON file using group policy.
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-11)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune-11)
 
 To configure devices with Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use one of the following settings:
 
@@ -582,14 +583,14 @@ To configure devices with Microsoft Intune, [create a Settings catalog policy](/
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp-11)
+
+You can configure devices using the [Start CSP][WIN-1]. Use one of the following settings:
 
 | Setting |
 |--|
-| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
-
-[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** String <br>- **Value:** content of the JSON file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** String <br>- **Value:** content of the JSON file |
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg-11)
 

@@ -1,7 +1,7 @@
 ---
 title: Encrypted hard drives
 description: Learn how encrypted hard drives use the rapid encryption that is provided by BitLocker to enhance data security and management.
-ms.date: 07/22/2024
+ms.date: 02/25/2025
 ms.topic: concept-article
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: LocalSecurityAuthority Policy CSP
 description: Learn more about the LocalSecurityAuthority Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowCustomSSPsAPs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- AllowCustomSSPsAPs-Applicability-End -->
 
 <!-- AllowCustomSSPsAPs-OmaUri-Begin -->
@@ -80,7 +81,7 @@ This policy controls the configuration under which LSASS loads custom SSPs and A
 <!-- ConfigureLsaProtectedProcess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureLsaProtectedProcess-Applicability-End -->
 
 <!-- ConfigureLsaProtectedProcess-OmaUri-Begin -->
@@ -93,7 +94,7 @@ This policy controls the configuration under which LSASS loads custom SSPs and A
 <!-- Description-Source-ADMX -->
 This policy controls the configuration under which LSASS is run.
 
-- If you don't configure this policy and there is no current setting in the registry, LSA will run as protected process for clean installed, HVCI capable, client SKUs that are domain or cloud domain joined devices. This configuration isn't UEFI locked. This can be overridden if the policy is configured.
+- If you don't configure this policy and there is no current setting in the registry, LSA will run as protected process for all clean installed, HVCI capable, client SKUs. This configuration isn't UEFI locked. This can be overridden if the policy is configured.
 
 - If you configure and set this policy setting to "Disabled", LSA won't run as a protected process.
 
@@ -135,7 +136,7 @@ This policy controls the configuration under which LSASS is run.
 | Friendly Name | Configures LSASS to run as a protected process |
 | Location | Computer Configuration |
 | Path | System > Local Security Authority |
-| Registry Key Name | System\CurrentControlSet\Control\Lsa |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
 | ADMX File Name | LocalSecurityAuthority.admx |
 <!-- ConfigureLsaProtectedProcess-GpMapping-End -->
 

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -13,4 +13,4 @@ ms.topic: include
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Clock from the system notification area**|

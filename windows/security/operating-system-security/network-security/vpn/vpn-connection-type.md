@@ -1,7 +1,7 @@
 ---
 title: VPN connection types
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: concept-article
 ---
 
@@ -46,13 +46,3 @@ In Intune, you can also include custom XML for non-Microsoft plug-in profiles:
 > [!div class="mx-imgBorder"]
 > ![Custom XML.](images/vpn-custom-xml-intune.png)
 
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

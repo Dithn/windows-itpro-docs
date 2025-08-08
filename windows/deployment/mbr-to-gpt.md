@@ -4,8 +4,8 @@ description: Use MBR2GPT.EXE to convert a disk from the Master Boot Record (MBR)
 ms.service: windows-client
 author: frankroj
 ms.author: frankroj
-ms.date: 11/16/2023
-manager: aaroncz
+ms.date: 05/07/2025
+manager: bpardi
 ms.localizationpriority: high
 ms.topic: how-to
 ms.collection:
@@ -19,9 +19,11 @@ appliesto:
 
 # MBR2GPT.EXE
 
-**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool runs from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows operating system (OS) by using the **`/allowFullOS`** option.
+> [!IMPORTANT]
+>
+> **MBR2GPT.EXE** is located in the **`Windows\System32`** directory on any device running a [currently supported version of Windows](/windows/release-health/supported-versions-windows-client).
 
-**MBR2GPT.EXE** is located in the **`Windows\System32`** directory on a computer running Windows.
+**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool runs from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows operating system (OS) by using the **`/allowFullOS`** option.
 
 The tool is available in both the full OS environment and Windows PE.
 
@@ -29,10 +31,10 @@ See the following video for a detailed description and demonstration of MBR2GPT.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/hfJep4hmg9o]
 
-You can use MBR2GPT to:
+MBR2GPT can be used to:
 
-- Convert any attached MBR-formatted system disk to the GPT partition format. You can't use the tool to convert non-system disks from MBR to GPT.
-- Convert an MBR disk with BitLocker-encrypted volumes as long as protection is suspended. To resume BitLocker after conversion, you'll need to delete the existing protectors and recreate them.
+- Convert any attached MBR-formatted system disk to the GPT partition format. The tool can't be used to convert non-system disks from MBR to GPT.
+- Convert an MBR disk with BitLocker-encrypted volumes as long as protection is suspended. To resume BitLocker after conversion, the existing protectors need to be deleted and then recreated.
 - Convert an operating system disk from MBR to GPT using Microsoft Configuration Manager or Microsoft Deployment Toolkit (MDT).
 
 Offline conversion of system disks with earlier versions of Windows installed, such as Windows 7, 8, or 8.1 aren't officially supported. The recommended method to convert these disks is to upgrade the operating system to a currently supported version of Windows, then perform the MBR to GPT conversion.
@@ -41,7 +43,7 @@ Offline conversion of system disks with earlier versions of Windows installed, s
 >
 > After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode.
 >
-> Make sure that your device supports UEFI before attempting to convert the disk.
+> Make sure the device supports UEFI before attempting to convert the disk.
 
 ## Disk Prerequisites
 
@@ -93,7 +95,7 @@ MBR2GPT: Validation completed successfully
 
 In the following example:
 
-1. The current disk partition layout is displayed prior to conversion using DiskPart - three partitions are present on the MBR disk (disk 0):
+1. Using DiskPart the current disk partition layout is displayed before the conversion. Three partitions are present on the MBR disk (disk 0):
 
     - A system reserved partition.
     - A Windows partition.
@@ -110,7 +112,7 @@ In the following example:
 
 1. The OS volume is selected again. The detail displays that the OS volume is converted to the [GPT partition type](/windows/win32/api/winioctl/ns-winioctl-partition_information_gpt) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type.
 
-As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition boots properly.
+As noted in the output from the MBR2GPT tool, changes to the computer firmware need to be made so that the new EFI system partition boots properly.
 
 <br>
 <details>
@@ -267,7 +269,7 @@ If the existing MBR system partition isn't reused for the EFI system partition, 
 
 > [!IMPORTANT]
 >
-> If the existing MBR system partition is not reused for the EFI system partition, it might be assigned a drive letter. If you do not wish to use this small partition, you must manually hide the drive letter.
+> If the existing MBR system partition isn't reused for the EFI system partition, it might be assigned a drive letter. If this small partition isn't going to be used, its drive letter must be manually hidden.
 
 ### Partition type mapping and partition attributes
 
@@ -290,11 +292,11 @@ For more information about partition types, see:
 
 ### Persisting drive letter assignments
 
-The conversion tool attempts to remap all drive letter assignment information contained in the registry that corresponds to the volumes of the converted disk. If a drive letter assignment can't be restored, an error is displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter.
+The conversion tool attempts to remap all drive letter assignment information contained in the registry that corresponds to the volumes of the converted disk. If a drive letter assignment can't be restored, an error is displayed at the console and in the log, so that correct assignment of the drive letter can be manually performed.
 
 > [!IMPORTANT]
 >
-> This code runs after the layout conversion has taken place, so the operation cannot be undone at this stage.
+> This code runs after the layout conversion takes place, so the operation can't be undone at this stage.
 
 The conversion tool will obtain volume unique ID data before and after the layout conversion, organizing this information into a lookup table. It then iterates through all the entries in **HKLM\SYSTEM\MountedDevices**, and for each entry it does the following:
 
@@ -398,7 +400,7 @@ The partition type can be determined in one of three ways:
 
 #### Windows PowerShell
 
-You can enter the following command at a Windows PowerShell prompt to display the disk number and partition type:
+The following command can be entered at a Windows PowerShell prompt to display the disk number and partition type:
 
 ```powershell
 Get-Disk | ft -Auto
@@ -417,7 +419,7 @@ Number Friendly Name      Serial Number        HealthStatus OperationalStatus To
 
 #### Disk Management tool
 
-You can view the partition type of a disk by using the Disk Management tool:
+The partition type of a disk can be viewed by using the Disk Management tool:
 
 1. Right-click on the Start Menu and select **Disk Management**. Alternatively, right-click on the Start Menu and select **Run**. In the **Run** dialog box that appears, enter `diskmgmt.msc` and then select **OK**.
 
@@ -451,22 +453,22 @@ The partition type can be determined with the DiskPart tool. The DiskPart tool i
 
 1. The partition type is displayed in the **Gpt** column. If the partition is GPT, an asterisk (**\***) is displayed in the column. If the partition is MBR, the column is blank.
 
-The following shows an example output of the DiskPart tool showing the partition type for two disks:
+  The following shows an example output of the DiskPart tool showing the partition type for two disks:
 
-```cmd
-X:\>DiskPart.exe
+  ```cmd
+  X:\>DiskPart.exe
 
-Microsoft DiskPart version 10.0.15048.0
+  Microsoft DiskPart version 10.0.15048.0
 
-Copyright (C) Microsoft Corporation.
-On computer: MININT-K71F13N
+  Copyright (C) Microsoft Corporation.
+  On computer: MININT-K71F13N
 
-DISKPART> list disk
+  DISKPART> list disk
 
-  Disk ###  Status         Size     Free     Dyn  Gpt
-  --------  -------------  -------  -------  ---  ---
-  Disk 0    Online          238 GB      0 B
-  Disk 1    Online          931 GB      0 B        *
-```
+    Disk ###  Status         Size     Free     Dyn  Gpt
+    --------  -------------  -------  -------  ---  ---
+    Disk 0    Online          238 GB      0 B
+    Disk 1    Online          931 GB      0 B        *
+  ```
 
 In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is formatted using GPT.

@@ -1,7 +1,8 @@
 ---
 title: Autoplay Policy CSP
 description: Learn more about the Autoplay Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- DisallowAutoplayForNonVolumeDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisallowAutoplayForNonVolumeDevices-Applicability-End -->
 
 <!-- DisallowAutoplayForNonVolumeDevices-OmaUri-Begin -->
@@ -84,7 +85,7 @@ This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 <!-- SetDefaultAutoRunBehavior-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetDefaultAutoRunBehavior-Applicability-End -->
 
 <!-- SetDefaultAutoRunBehavior-OmaUri-Begin -->
@@ -154,7 +155,7 @@ a) Completely disable autorun commands, or b) Revert back to pre-Windows Vista b
 <!-- TurnOffAutoPlay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOffAutoPlay-Applicability-End -->
 
 <!-- TurnOffAutoPlay-OmaUri-Begin -->

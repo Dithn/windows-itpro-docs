@@ -4,11 +4,11 @@ titleSuffix: Windows Update for Business reports
 description: Windows Update for Business reports support, feedback, and troubleshooting information.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 07/09/2024
@@ -40,11 +40,11 @@ Use the product feedback option to offer suggestions for new features and functi
 
 You can open support requests directly from the Azure portal. If  the **Help + Support** page doesn't display, verify you have access to open support requests. For more information about role-based access controls for support requests, see [Create an Azure support request](/azure/azure-portal/supportability/how-to-create-azure-support-request). To create a new support request for Windows Update for Business reports:
 
-1. Open the **Help + Support** page from the following locations: 
+1. Open the **Help + Support** page from the following locations:
   - In the [Send product feedback](#send-product-feedback) flyout, select the **contact support** link.
   - From the Azure portal, select **New support request** under the **Support + Troubleshooting** heading.
-1. Select **Create a support request**, which opens the new support request page. 
-1. On the **Problem description** tab, provide information about the issue. The following items in ***bold italics*** should be used to help ensure a Windows Update for Business reports engineer receives your support request: 
+1. Select **Create a support request**, which opens the new support request page.
+1. On the **Problem description** tab, provide information about the issue. The following items in ***bold italics*** should be used to help ensure a Windows Update for Business reports engineer receives your support request:
    - **Summary** - Brief description of the issue
    - **Issue type** - ***Technical***
    - **Subscription** - Select the subscription used for Windows Update for Business reports

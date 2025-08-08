@@ -1,8 +1,8 @@
 ---
 title: Windows Security
 description: Windows Security brings together common Windows security features into one place.
-ms.date: 06/27/2024
-ms.topic: conceptual
+ms.date: 04/15/2025
+ms.topic: article
 ---
 
 # Windows Security
@@ -15,7 +15,7 @@ This article describes **Windows Security** settings, and provides information o
 ![Screenshot of the Windows Security showing that the device is protected and five icons for each of the features.](images/security-center-home.png)
 
 > [!NOTE]
-> **Windows Security** is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).
+> **Windows Security** is a client interface on Windows 10, version 1703 and later. It isn't the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).
 
 You can't uninstall **Windows Security**, but you can do one of the following actions:
 
@@ -34,7 +34,7 @@ For more information about each section, options for configuring the sections, a
 - [Family options](wdsc-family-options.md), which include access to parental controls along with tips and information for keeping kids safe online.
 
 > [!NOTE]
-> If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
+> If you hide all sections, then **Windows Security** shows a restricted interface, as in the following screenshot:
 >
 > ![Windows Security with all sections hidden by group policy.](images/wdsc-all-hide.png)
 
@@ -53,27 +53,18 @@ For more information about each section, options for configuring the sections, a
     ![Screenshot of Windows Settings showing the different areas available in the Windows Security.](images/settings-windows-defender-security-center-areas.png)
 
 > [!NOTE]
-> Settings configured with management tools, such as group policy, Microsoft Intune, or Microsoft Configuration Manager, will generally take precedence over the settings in the Windows Security.
+> Settings configured with management tools, such as group policy, Microsoft Intune, or Microsoft Configuration Manager, take precedence over the settings in the Windows Security.
 
 ## How Windows Security works with Windows security features
 
 > [!IMPORTANT]
 > **Microsoft Defender Antivirus** and **Windows Security** use similarly named services for specific purposes.
 >
-> The **Windows Security** uses the Windows Security Service (*SecurityHealthService* or *Windows Security Health Service*), which in turn utilizes the Windows Security Center Service (*wscsvc*). This service makes sure that **Windows Security** provides the most up-to-date information about the protection status on the endpoint. This information includes protection offered by third-party antivirus products, Windows Defender Firewall, third-party firewalls, and other security protection.
+> The **Windows Security** uses the Windows Security Service (*SecurityHealthService* or *Windows Security Health Service*), which in turn utilizes the Windows Security Center Service (*wscsvc*). This service makes sure that **Windows Security** provides the most up-to-date information about the protection status on the endpoint. This information includes protection offered by third-party antivirus products, Windows Firewall, third-party firewalls, and other security protection.
 >
-> These services don't affect the state of Microsoft Defender Antivirus. Disabling or modifying these services won't disable Microsoft Defender Antivirus. It will lead to a lowered protection state on the endpoint, even if you're using a third-party antivirus product.
+> These services don't affect the state of Microsoft Defender Antivirus. Disabling or modifying these services doesn't disable Microsoft Defender Antivirus. It leads to a lowered protection state on the endpoint, even if you're using a third-party antivirus product.
 >
-> Microsoft Defender Antivirus will be [disabled automatically when a third-party antivirus product is installed and kept up to date](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
->
-> Disabling the Windows Security Center Service won't disable Microsoft Defender Antivirus or [Windows Defender Firewall](../../network-security/windows-firewall/index.md).
-
-> [!WARNING]
-> If you disable the Windows Security Center Service, or configure its associated group policy settings to prevent it from starting or running, **Windows Security** may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
->
-> It may also prevent Microsoft Defender Antivirus from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed.
->
-> This will significantly lower the protection of your device and could lead to malware infection.
+> Microsoft Defender Antivirus is [disabled automatically when a third-party antivirus product is installed and kept up to date](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 **Windows Security** operates as a separate app or process from each of the individual features, and displays notifications through the Action Center.
 
@@ -82,6 +73,11 @@ It acts as a collector or single place to see the status and perform some config
 If you disable any of the individual features, it prevents that feature from reporting its status in **Windows Security**. For example, if you disable a feature through group policy or other management tools, such as Microsoft Configuration Manager, **Windows Security** itself still runs and shows status for the other security features.
 
 > [!IMPORTANT]
-> If you individually disable any of the services, it won't disable the other services or **Windows Security** itself.
+> If you individually disable any of the services, it doesn't disable the other services or **Windows Security** itself.
 
 For example, [using a third-party antivirus disables Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility). However, **Windows Security** still runs, shows its icon in the taskbar, and displays information about the other features, such as Windows Defender SmartScreen and Windows Firewall.
+
+> [!WARNING]
+> Disabling the Windows Security Center Service doesn't disable Microsoft Defender Antivirus or [Windows Firewall](../../network-security/windows-firewall/index.md). If you disable the Windows Security Center Service, or configure its associated group policy settings to prevent it from starting or running, **Windows Security** might display stale or inaccurate information about any antivirus or firewall products installed on the device.
+>
+> It may also prevent Microsoft Defender Antivirus from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you might have previously installed. This will significantly lower the protection of your device and could lead to malware infection.

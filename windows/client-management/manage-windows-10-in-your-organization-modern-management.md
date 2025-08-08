@@ -2,8 +2,8 @@
 title: Manage Windows devices in your organization - transitioning to modern management
 description: This article offers strategies for deploying and managing Windows devices, including deploying Windows in a mixed environment.
 ms.localizationpriority: medium
-ms.date: 07/08/2024
-ms.topic: conceptual
+ms.date: 08/04/2025
+ms.topic: article
 ---
 
 # Manage Windows devices in your organization - transitioning to modern management
@@ -71,7 +71,7 @@ As you review the roles in your organization, you can use the following generali
 
 ## Settings and configuration
 
-Your configuration requirements are defined by multiple factors, including the level of management needed, the devices and data managed, and your industry requirements. Meanwhile, users are frequently concerned about IT applying strict policies to their personal devices, but they still want access to corporate email and documents. You can create a consistent set of configurations across PCs, tablets, and phones through the common MDM layer.
+Your configuration requirements are defined by multiple factors, including the level of management needed, the devices, and data managed, and your industry requirements. Meanwhile, users are frequently concerned about IT applying strict policies to their personal devices, but they still want access to corporate email and documents. You can create a consistent set of configurations across PCs, tablets, and phones through the common MDM layer.
 
 - **MDM**: MDM gives you a way to configure settings that achieve your administrative intent without exposing every possible setting. (In contrast, group policy exposes fine-grained settings that you control individually.) One benefit of MDM is that it enables you to apply broader privacy, security, and application management settings through lighter and more efficient tools. MDM also allows you to target Internet-connected devices to manage policies without using group policy that requires on-premises domain-joined devices. This provision makes MDM the best choice for devices that are constantly on the go.
 

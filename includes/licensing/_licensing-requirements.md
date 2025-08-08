@@ -1,11 +1,11 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 11/02/2023
+ms.date: 04/14/2025
 ms.topic: include
 ---
 
-|Feature name|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
+|Feature name|Windows Pro/Pro Education|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---|:---:|:---:|:---:|:---:|:---:|
 |**[Access Control (ACL/SACL)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|Yes|
@@ -13,7 +13,7 @@ ms.topic: include
 |**[Always On VPN (device tunnel)](/Windows-server/remote/remote-access/overview-always-on-vpn)**|❌|Yes|Yes|Yes|Yes|
 |**[App containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|Yes|
 |**[AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview)**|❌|Yes|Yes|Yes|Yes|
-|**[Assigned Access (kiosk mode)](/windows/configuration/kiosk-methods)**|Yes|Yes|Yes|Yes|Yes|
+|**[Assigned Access (kiosk mode)](/windows/configuration/assigned-access)**|Yes|Yes|Yes|Yes|Yes|
 |**[Attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)**|Yes|Yes|Yes|Yes|Yes|
 |**[Azure Code Signing](/windows/security/application-security/application-control/windows-defender-application-control/deployment/use-code-signing-for-better-control-and-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[BitLocker enablement](/windows/security/operating-system-security/data-protection/bitlocker/)**|Yes|Yes|Yes|Yes|Yes|
@@ -41,7 +41,7 @@ ms.topic: include
 |**[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/configure-md-app-guard)**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview)**|Yes|Yes|Yes|Yes|Yes|
-|**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)**|❌|❌|❌|❌|❌|
+|**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](/defender-office-365/app-guard-for-office-install)**|❌|❌|❌|❌|❌|
 |**Microsoft Defender Application Guard (MDAG) public APIs**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|❌|❌|Yes|❌|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/)**|Yes|Yes|Yes|Yes|Yes|
@@ -53,7 +53,7 @@ ms.topic: include
 |**[OneFuzz service](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)**|Yes|Yes|Yes|Yes|Yes|
 |**Opportunistic Wireless Encryption (OWE)**|Yes|Yes|Yes|Yes|Yes|
 |**[Passkeys](/windows/security/identity-protection/passkeys)**|Yes|Yes|Yes|Yes|Yes|
-|**[Personal data encryption (PDE)](/windows/security/operating-system-security/data-protection/personal-data-encryption/)**|❌|Yes|Yes|Yes|Yes|
+|**[Personal Data Encryption](/windows/security/operating-system-security/data-protection/personal-data-encryption/)**|❌|Yes|Yes|Yes|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|Yes|
 |**Privacy Transparency and Controls**|Yes|Yes|Yes|Yes|Yes|
 |**[Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)**|Yes|Yes|Yes|Yes|Yes|
@@ -84,6 +84,7 @@ ms.topic: include
 |**[Windows Firewall](/windows/security/operating-system-security/network-security/windows-firewall)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|Yes|
+|**Windows Hotpatch**|❌|Yes|Yes|❌|❌|
 |**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows passwordless experience](/windows/security/identity-protection/passwordless-experience)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/managing-presence-sensing-settings-in-windows-11-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|Yes|

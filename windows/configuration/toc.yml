@@ -1,22 +1,66 @@
 items:
 - name: Configure Windows client
   href: index.yml
+
 - name: Accessibility information for IT Pros
   href: accessibility/index.md
-- name: Start
-  href: start/toc.yml
-- name: Taskbar
-  href: taskbar/toc.yml
-- name: Windows spotlight
-  href: windows-spotlight/index.md
+
+- name: Personalization
+  items:
+  - name: Start
+    href: start/toc.yml
+  - name: Taskbar
+    href: taskbar/toc.yml
+  - name: Desktop and lock screen backgrounds
+    href: background/index.md
+  - name: Windows spotlight
+    href: windows-spotlight/index.md
+
+- name: Settings
+  href: settings/toc.yml
+
+- name: Storage
+  items:
+  - name: Storage Sense
+    href: storage/storage-sense.md
+
+- name: Backup, restore, and recovery options
+  items:
+  - name: Windows Backup for Organizations
+    href: windows-backup/toc.yml
+  - name: Quick machine recovery
+    href: quick-machine-recovery/index.md
+
 - name: Microsoft Store
   href: store/toc.yml
 - name: Cellular settings
   href: cellular/provisioning-apn.md
-- name: Kiosks and restricted user experiences
-  href: assigned-access/toc.yml
+
+
+- name: Windows kiosk options
+  href: kiosk/toc.yml
+
+
 - name: Multi-user and guest devices
   href: shared-pc/toc.yml
+
+
+- name: Device Lockdown
+  items:
+  - name: Custom Logon
+    items:
+      - name: Configure Custom Logon
+        href: custom-logon/index.md
+      - name: Troubleshoot
+        href: custom-logon/troubleshoot.md
+  - name: Keyboard Filter
+    href: keyboard-filter/toc.yml
+  - name: Unbranded boot
+    href: unbranded-boot/index.md
+  - name: Unified write filter
+    href: unified-write-filter/toc.yml
+
+
 - name: Provisioning packages
   href: provisioning-packages/toc.yml
 - name: Windows Configuration Designer

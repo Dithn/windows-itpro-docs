@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -17,4 +17,4 @@ This policy setting doesn't prevent users from using other methods to issue the 
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br>- **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove access to the context menus for the taskbar**<br> - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove access to the context menus for the taskbar**|

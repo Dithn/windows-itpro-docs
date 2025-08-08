@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2024
+ms.date: 06/12/2025
 title: How Credential Guard works
 description: Learn how Credential Guard uses virtualization to protect secrets, so that only privileged system software can access them.
 ms.topic: concept-article
@@ -19,6 +19,18 @@ Kerberos, NTLM, and Credential Manager isolate secrets by using Virtualization-b
   :::image type="content" source="images/credential-guard-architecture.png" alt-text="Diagram of the Credential Guard architecture." lightbox="images/credential-guard-architecture.png" border="false":::
   :::column-end:::
 :::row-end:::
+
+## VSM and TPM Protections
+
+Secrets protected by Credential Guard are protected in memory and isolated at runtime by the hypervisor using [Virtual Secure Mode](/virtualization/hyper-v-on-windows/tlfs/vsm) (VSM). On recent supported hardware with TPM 2.0, VSM data that is persisted will be protected by a key called the *VSM master key*, which is protected by device firmware protections. To learn more, see [System Guard: How a hardware-based root of trust helps protect Windows](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows). The VSM master key is protected by the TPM, ensuring that the key and secrets protected by Credential Guard can only be accessed in a trusted environment.
+ 
+Credential Guard doesn't typically persist authentication data (NTLM hash and TGTs), as that data is lost between reboots and refreshed when the user signs into the system. This means that it isn't dependent on the VSM master key or the TPM to protect that data at reset.
+ 
+> [!NOTE]
+> The VBS master key might not be protected by the TPM in any of the following environments:
+>
+> - If Secure Boot is disabled
+> - If a TPM isn't available on the firmware
 
 ## Credential Guard protection limits
 

@@ -1,7 +1,8 @@
 ---
 title: Firewall DDF file
 description: View the XML file containing the device description framework (DDF) for the Firewall configuration service provider.
-ms.date: 06/28/2024
+ms.date: 04/04/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4059,8 +4060,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
-If not specified - a new rule is disabled by default.</Description>
+              <Description>Indicates whether the rule is enabled or disabled. If not specified - a new rule is enabled by default.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -4759,8 +4759,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
-If not specified - a new rule is disabled by default.</Description>
+              <Description>Indicates whether the rule is enabled or disabled. If not specified - a new rule is enabled by default.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>

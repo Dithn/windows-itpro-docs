@@ -1,14 +1,11 @@
 ---
-title: Windows Firewall dynamic keywords
+title: Windows Firewall Dynamic Keywords
 description: Learn about Windows Firewall dynamic keywords and how to configure it using Windows PowerShell.
 ms.topic: how-to
-ms.date: 01/16/2024
+ms.date: 04/07/2025
 ---
 
 # Windows Firewall dynamic keywords
-
-> [!IMPORTANT]
->This article describes features or settings that are in preview. The content is subject to change and may have dependencies on other features or services in preview.
 
 Windows Firewall includes a functionality called *dynamic keywords*, which simplifies the configuration and management of Windows Firewall.
 

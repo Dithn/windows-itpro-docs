@@ -3,10 +3,10 @@ title: Delivery Optimization workflow, privacy, security, and endpoints
 description: Details of how Delivery Optimization communicates with the server when content is requested to download including privacy, security, and endpoints.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: cmknox
 ms.author: carmenf
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection:
   - tier3

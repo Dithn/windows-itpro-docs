@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot the TPM
 description: Learn how to view and troubleshoot the Trusted Platform Module (TPM).
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 07/10/2024
 ms.collection:
 - tier1

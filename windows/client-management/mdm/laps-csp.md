@@ -1,15 +1,14 @@
 ---
 title: LAPS CSP
 description: Learn more about the LAPS CSP.
-ms.date: 06/21/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- LAPS-Begin -->
 # LAPS CSP
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- LAPS-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -55,7 +54,7 @@ The following list shows the LAPS configuration service provider nodes:
 <!-- Device-Actions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Actions-Applicability-End -->
 
 <!-- Device-Actions-OmaUri-Begin -->
@@ -94,7 +93,7 @@ Defines the parent interior node for all action-related settings in the LAPS CSP
 <!-- Device-Actions-ResetPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Actions-ResetPassword-Applicability-End -->
 
 <!-- Device-Actions-ResetPassword-OmaUri-Begin -->
@@ -134,7 +133,7 @@ This action invokes an immediate reset of the local administrator account passwo
 <!-- Device-Actions-ResetPasswordStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Actions-ResetPasswordStatus-Applicability-End -->
 
 <!-- Device-Actions-ResetPasswordStatus-OmaUri-Begin -->
@@ -179,7 +178,7 @@ The value returned is an HRESULT code:
 <!-- Device-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-Applicability-End -->
 
 <!-- Device-Policies-OmaUri-Begin -->
@@ -219,7 +218,7 @@ Root node for LAPS policies.
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Applicability-End -->
 
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-OmaUri-Begin -->
@@ -269,7 +268,7 @@ This setting has a maximum allowed value of 12 passwords.
 <!-- Device-Policies-AdministratorAccountName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-AdministratorAccountName-Applicability-End -->
 
 <!-- Device-Policies-AdministratorAccountName-OmaUri-Begin -->
@@ -314,7 +313,7 @@ Note if a custom managed local administrator account name is specified in this s
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Applicability-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionEnabled-OmaUri-Begin -->
@@ -327,7 +326,7 @@ Note if a custom managed local administrator account name is specified in this s
 <!-- Description-Source-DDF -->
 Use this setting to configure whether the password is encrypted before being stored in Active Directory.
 
-This setting is ignored if the password is currently being stored in Azure.
+This setting is ignored if the password is currently being stored in Microsoft Entra ID.
 
 This setting is only honored when the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 
@@ -376,7 +375,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Applicability-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-OmaUri-Begin -->
@@ -389,7 +388,7 @@ If not specified, this setting defaults to True.
 <!-- Description-Source-DDF -->
 Use this setting to configure the name or SID of a user or group that can decrypt the password stored in Active Directory.
 
-This setting is ignored if the password is currently being stored in Azure.
+This setting is ignored if the password is currently being stored in Microsoft Entra ID.
 
 If not specified, the password will be decryptable by the Domain Admins group in the device's domain.
 
@@ -432,7 +431,7 @@ If the specified user or group account is invalid the device will fallback to us
 <!-- Device-Policies-AutomaticAccountManagementEnableAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Policies-AutomaticAccountManagementEnableAccount-Applicability-End -->
 
 <!-- Device-Policies-AutomaticAccountManagementEnableAccount-OmaUri-Begin -->
@@ -488,7 +487,7 @@ If not specified, this setting defaults to False.
 <!-- Device-Policies-AutomaticAccountManagementEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Policies-AutomaticAccountManagementEnabled-Applicability-End -->
 
 <!-- Device-Policies-AutomaticAccountManagementEnabled-OmaUri-Begin -->
@@ -543,7 +542,7 @@ If not specified, this setting defaults to False.
 <!-- Device-Policies-AutomaticAccountManagementNameOrPrefix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Policies-AutomaticAccountManagementNameOrPrefix-Applicability-End -->
 
 <!-- Device-Policies-AutomaticAccountManagementNameOrPrefix-OmaUri-Begin -->
@@ -587,7 +586,7 @@ If not specified, this setting will default to "WLapsAdmin".
 <!-- Device-Policies-AutomaticAccountManagementRandomizeName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Policies-AutomaticAccountManagementRandomizeName-Applicability-End -->
 
 <!-- Device-Policies-AutomaticAccountManagementRandomizeName-OmaUri-Begin -->
@@ -643,7 +642,7 @@ If not specified, this setting defaults to False.
 <!-- Device-Policies-AutomaticAccountManagementTarget-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Policies-AutomaticAccountManagementTarget-Applicability-End -->
 
 <!-- Device-Policies-AutomaticAccountManagementTarget-OmaUri-Begin -->
@@ -701,7 +700,7 @@ If not specified, this setting will default to 1.
 <!-- Device-Policies-BackupDirectory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-BackupDirectory-Applicability-End -->
 
 <!-- Device-Policies-BackupDirectory-OmaUri-Begin -->
@@ -759,7 +758,7 @@ If not specified, this setting will default to 0.
 <!-- Device-Policies-PassphraseLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Policies-PassphraseLength-Applicability-End -->
 
 <!-- Device-Policies-PassphraseLength-OmaUri-Begin -->
@@ -807,7 +806,7 @@ This setting has a maximum allowed value of 10 words.
 <!-- Device-Policies-PasswordAgeDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordAgeDays-Applicability-End -->
 
 <!-- Device-Policies-PasswordAgeDays-OmaUri-Begin -->
@@ -855,7 +854,7 @@ This setting has a maximum allowed value of 365 days.
 <!-- Device-Policies-PasswordComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordComplexity-Applicability-End -->
 
 <!-- Device-Policies-PasswordComplexity-OmaUri-Begin -->
@@ -927,7 +926,7 @@ Passphrase list taken from "Deep Dive: EFF's New Wordlists for Random Passphrase
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Applicability-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-OmaUri-Begin -->
@@ -983,7 +982,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-PasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PasswordLength-Applicability-End -->
 
 <!-- Device-Policies-PasswordLength-OmaUri-Begin -->
@@ -1031,7 +1030,7 @@ This setting has a maximum allowed value of 64 characters.
 <!-- Device-Policies-PostAuthenticationActions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PostAuthenticationActions-Applicability-End -->
 
 <!-- Device-Policies-PostAuthenticationActions-OmaUri-Begin -->
@@ -1089,7 +1088,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 <!-- Device-Policies-PostAuthenticationResetDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ [10.0.25145] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later |
 <!-- Device-Policies-PostAuthenticationResetDelay-Applicability-End -->
 
 <!-- Device-Policies-PostAuthenticationResetDelay-OmaUri-Begin -->

@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2021
-manager: aaroncz
+manager: bpardi
 ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
 ms.service: windows-client
@@ -22,9 +22,9 @@ This article lists new and updated features and content that is of interest to I
 >
 > The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the general availability channel release of Windows 10 might be limited.
 
-Windows 10 Enterprise LTSC 2021 builds on Windows 10 Enterprise LTSC 2019, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
+Windows 10 Enterprise LTSC 2021 builds on Windows 10 Enterprise LTSC 2019, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities.
 
-The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, 21H1, and 21H2. Details about these enhancements are provided below. 
+The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, 21H1, and 21H2. Details about these enhancements are provided below.
 
 ## Lifecycle
 
@@ -41,7 +41,7 @@ For more information about the lifecycle for this release, see [The next Windows
 
 In this release, [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to other resources like registers and IO.
 
-With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. Based on the platform, the underlying hardware and firmware, there are three versions of SMM Firmware Protection (one, two and three), with each subsequent versions offering stronger protections than the preceding ones. 
+With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. Based on the platform, the underlying hardware and firmware, there are three versions of SMM Firmware Protection (one, two and three), with each subsequent versions offering stronger protections than the preceding ones.
 
 There are already devices in the market today that offer SMM Firmware Protection versions one and two. SMM Firmware Protection version three This feature is currently forward-looking and requires new hardware that will be made available soon.
 
@@ -49,7 +49,7 @@ There are already devices in the market today that offer SMM Firmware Protection
 
 ### System security
 
-[Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) improvements now include Protection history, including detailed and easier to understand information about threats and available actions, Controlled Folder Access blocks are now in the Protection history, Windows Defender Offline Scanning tool actions, and any pending recommendations. 
+[Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) improvements now include Protection history, including detailed and easier to understand information about threats and available actions, Controlled Folder Access blocks are now in the Protection history, Windows Defender Offline Scanning tool actions, and any pending recommendations.
 
 ### Encryption and data protection
 
@@ -59,13 +59,13 @@ BitLocker and Mobile Device Management (MDM) with Microsoft Entra ID work togeth
 
 #### Windows Defender Firewall
 
-Windows Defender Firewall now offers the following benefits: 
+Windows Defender Firewall now offers the following benefits:
 
-**Reduce risk**: Windows Defender Firewall reduces the attack surface of a device with rules to restrict or allow traffic by many properties, such as IP addresses, ports, or program paths. Reducing the attack surface of a device increases manageability and decreases the likelihood of a successful attack. 
+**Reduce risk**: Windows Defender Firewall reduces the attack surface of a device with rules to restrict or allow traffic by many properties, such as IP addresses, ports, or program paths. Reducing the attack surface of a device increases manageability and decreases the likelihood of a successful attack.
 
-**Safeguard data**: With integrated Internet Protocol Security (IPsec), Windows Defender Firewall provides a simple way to enforce authenticated, end-to-end network communications. It provides scalable, tiered access to trusted network resources, helping to enforce integrity of the data, and optionally helping to protect the confidentiality of the data. 
+**Safeguard data**: With integrated Internet Protocol Security (IPsec), Windows Defender Firewall provides a simple way to enforce authenticated, end-to-end network communications. It provides scalable, tiered access to trusted network resources, helping to enforce integrity of the data, and optionally helping to protect the confidentiality of the data.
 
-**Extend value**: Windows Defender Firewall is a host-based firewall that is included with the operating system, so there's no other hardware or software required. Windows Defender Firewall is also designed to complement existing non-Microsoft network security solutions through a documented application programming interface (API). 
+**Extend value**: Windows Defender Firewall is a host-based firewall that is included with the operating system, so there's no other hardware or software required. Windows Defender Firewall is also designed to complement existing non-Microsoft network security solutions through a documented application programming interface (API).
 
 The Windows Defender Firewall is also now easier to analyze and debug. IPsec behavior has been integrated with Packet Monitor (pktmon), an in-box cross-component network diagnostic tool for Windows.
 
@@ -107,7 +107,7 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
   - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
   - Application Guard is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend Application Guard's browser isolation technology beyond Microsoft Edge. In the latest release, users can install the Application Guard extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigation to the Application Guard Edge browser. There's also a companion app to enable this feature in the Microsoft Store. Users can quickly launch Application Guard from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
-    To try this extension: 
+    To try this extension:
     1. Configure Application Guard policies on your device.
     2. Go to the Chrome Web Store or Firefox Add-ons and search for Application Guard. Install the extension.
     3. Follow any of the other configuration steps on the extension setup page.
@@ -186,11 +186,11 @@ This release also includes two new features called key-rolling and key-rotation 
 
 ### SetupDiag
 
-[SetupDiag](/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When log files are being searched, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+[SetupDiag](/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When log files are being searched, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.
 
 ### Reserved storage
 
-[**Reserved storage**](https://techcommunity.microsoft.com/t5/Storage-at-Microsoft/Windows-10-and-reserved-storage/ba-p/428327): Reserved storage sets aside disk space to be used by updates, apps, temporary files, and system caches. It improves the day-to-day function of your PC by ensuring critical OS functions always have access to disk space.  Reserved storage will be enabled automatically on new PCs with Windows 10, version 1903 pre-installed, and for clean installs.  It will not be enabled when updating from a previous version of Windows 10. 
+[**Reserved storage**](https://techcommunity.microsoft.com/t5/Storage-at-Microsoft/Windows-10-and-reserved-storage/ba-p/428327): Reserved storage sets aside disk space to be used by updates, apps, temporary files, and system caches. It improves the day-to-day function of your PC by ensuring critical OS functions always have access to disk space.  Reserved storage will be enabled automatically on new PCs with Windows 10, version 1903 pre-installed, and for clean installs.  It will not be enabled when updating from a previous version of Windows 10.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 

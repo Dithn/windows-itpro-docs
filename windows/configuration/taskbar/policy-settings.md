@@ -1,8 +1,8 @@
 ---
-title: Taskbar policy settings
-description: Learn about the policy settings to configure the Windows taskbar.
+title: List of the Policy Settings To Configure the Windows Taskbar
+description: Learn about the CSP and GPO policy settings to configure the Windows taskbar.
 ms.topic: reference
-ms.date: 04/17/2024
+ms.date: 04/03/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
@@ -25,8 +25,7 @@ Select one of the tabs to see the list of available settings:
 |Setting Name|CSP|GPO|
 |-|-|-|
 |[Allow widgets](#allow-widgets)|✅|✅|
-|[Configure Start layout](#configure-start-layout)|✅|✅|
-|[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
+|[Configures search on the taskbar](#configure-search-on-the-taskbar)|✅|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the TaskView button](#hide-the-taskview-button)|✅|✅|
@@ -35,7 +34,10 @@ Select one of the tabs to see the list of available settings:
 |[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
 |[Remove Quick Settings](#remove-quick-settings)|✅|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
+|[Show notification bell icon](#show-notification-bell-icon)|✅|✅|
 |[Simplify Quick Settings Layout](#simplify-quick-settings-layout)|✅|✅|
+|[Start layout](#start-layout)|✅|✅|
+|[Turn off abbreviated date and time format](#turn-off-abbreviated-date-and-time-format)|✅|✅|
 |[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 
 ::: zone-end
@@ -45,8 +47,7 @@ Select one of the tabs to see the list of available settings:
 |Setting Name|CSP|GPO|
 |-|-|-|
 |[Allow widgets](#allow-widgets)|✅|✅|
-|[Configure Start layout](#configure-start-layout)|✅|✅|
-|[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
+|[Configures search on the taskbar](#configure-search-on-the-taskbar)|✅|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the notification area](#hide-the-notification-area)|❌|✅|
@@ -59,14 +60,14 @@ Select one of the tabs to see the list of available settings:
 |[Remove the People Bar from the taskbar](#remove-the-people-bar-from-the-taskbar)|✅|✅|
 |[Remove the volume control icon](#remove-the-volume-control-icon)|❌|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
+|[Start layout](#start-layout)|✅|✅|
 |[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 |[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
 
 ::: zone-end
 
 [!INCLUDE [allow-widgets](includes/allow-widgets.md)]
-[!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
-[!INCLUDE [configures-search-on-the-taskbar](includes/configures-search-on-the-taskbar.md)]
+[!INCLUDE [configure-search-on-the-taskbar](includes/configure-search-on-the-taskbar.md)]
 [!INCLUDE [do-not-display-or-track-items-in-jump-lists-from-remote-locations](includes/do-not-display-or-track-items-in-jump-lists-from-remote-locations.md)]
 
 ::: zone pivot="windows-10"
@@ -98,7 +99,14 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [show-additional-calendar](includes/show-additional-calendar.md)]
 
 ::: zone pivot="windows-11"
+[!INCLUDE [show-notification-bell-icon](includes/show-notification-bell-icon.md)]
 [!INCLUDE [simplify-quick-settings-layout](includes/simplify-quick-settings-layout.md)]
+::: zone-end
+
+[!INCLUDE [start-layout](includes/start-layout.md)]
+
+::: zone pivot="windows-11"
+[!INCLUDE [turn-off-abbreviated-date-time-format](includes/turn-off-abbreviated-date-time-format.md)]
 ::: zone-end
 
 [!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]

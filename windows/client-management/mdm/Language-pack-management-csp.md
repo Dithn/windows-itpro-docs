@@ -1,7 +1,8 @@
 ---
 title: LanguagePackManagement CSP
 description: Learn more about the LanguagePackManagement CSP.
-ms.date: 05/20/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -41,7 +42,7 @@ The following list shows the LanguagePackManagement configuration service provid
 <!-- Device-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-Applicability-End -->
 
 <!-- Device-Install-OmaUri-Begin -->
@@ -80,7 +81,7 @@ Language to be installed or being installed.
 <!-- Device-Install-{Language ID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-{Language ID}-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-OmaUri-Begin -->
@@ -120,7 +121,7 @@ Language tag of the language to be installed or being installed.
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-OmaUri-Begin -->
@@ -169,7 +170,7 @@ Copies the language to the international settings (that is, locale, input layout
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-OmaUri-Begin -->
@@ -218,7 +219,7 @@ Enables installations of all available language features when the value is true.
 <!-- Device-Install-{Language ID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-{Language ID}-ErrorCode-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-ErrorCode-OmaUri-Begin -->
@@ -257,7 +258,7 @@ Error code of queued language installation. 0 if there is no error.
 <!-- Device-Install-{Language ID}-StartInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-{Language ID}-StartInstallation-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-StartInstallation-OmaUri-Begin -->
@@ -296,7 +297,7 @@ Execution node to queue a language for installation on the device.
 <!-- Device-Install-{Language ID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Install-{Language ID}-Status-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-Status-OmaUri-Begin -->
@@ -335,7 +336,7 @@ Status of the language queued for install. 0 - not started; 1 - in progress; 2 -
 <!-- Device-InstalledLanguages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-InstalledLanguages-Applicability-End -->
 
 <!-- Device-InstalledLanguages-OmaUri-Begin -->
@@ -374,7 +375,7 @@ Languages currently installed on the device.
 <!-- Device-InstalledLanguages-{Language ID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-InstalledLanguages-{Language ID}-Applicability-End -->
 
 <!-- Device-InstalledLanguages-{Language ID}-OmaUri-Begin -->
@@ -414,7 +415,7 @@ Language tag of an installed language on the device. Delete to uninstall.
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-Applicability-End -->
 
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-OmaUri-Begin -->
@@ -453,7 +454,7 @@ Numeric representation of the language features installed. Basic Typing - 1 (0x1
 <!-- Device-InstalledLanguages-{Language ID}-Providers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-InstalledLanguages-{Language ID}-Providers-Applicability-End -->
 
 <!-- Device-InstalledLanguages-{Language ID}-Providers-OmaUri-Begin -->
@@ -492,7 +493,7 @@ Numeric representation of how a language is installed. 1 - The system language p
 <!-- Device-LanguageSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-LanguageSettings-Applicability-End -->
 
 <!-- Device-LanguageSettings-OmaUri-Begin -->
@@ -531,7 +532,7 @@ Language settings of the device.
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-Applicability-End -->
 
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-OmaUri-Begin -->

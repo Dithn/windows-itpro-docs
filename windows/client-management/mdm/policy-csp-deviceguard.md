@@ -1,13 +1,16 @@
 ---
 title: DeviceGuard Policy CSP
 description: Learn more about the DeviceGuard Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- DeviceGuard-Begin -->
 # Policy CSP - DeviceGuard
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DeviceGuard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -19,7 +22,7 @@ ms.date: 01/18/2024
 <!-- ConfigureSystemGuardLaunch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureSystemGuardLaunch-Applicability-End -->
 
 <!-- ConfigureSystemGuardLaunch-OmaUri-Begin -->
@@ -84,7 +87,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 <!-- EnableVirtualizationBasedSecurity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableVirtualizationBasedSecurity-Applicability-End -->
 
 <!-- EnableVirtualizationBasedSecurity-OmaUri-Begin -->
@@ -147,7 +150,7 @@ Turns On Virtualization Based Security(VBS)
 <!-- LsaCfgFlags-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LsaCfgFlags-Applicability-End -->
 
 <!-- LsaCfgFlags-OmaUri-Begin -->
@@ -205,13 +208,77 @@ Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if config
 
 <!-- LsaCfgFlags-End -->
 
+<!-- MachineIdentityIsolation-Begin -->
+## MachineIdentityIsolation
+
+<!-- MachineIdentityIsolation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- MachineIdentityIsolation-Applicability-End -->
+
+<!-- MachineIdentityIsolation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceGuard/MachineIdentityIsolation
+```
+<!-- MachineIdentityIsolation-OmaUri-End -->
+
+<!-- MachineIdentityIsolation-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Machine Identity Isolation: 0 - Machine password is only LSASS-bound and stored in $MACHINE.ACC registry key. 1 - Machine password both LSASS-bound and IUM-bound. It's stored in $MACHINE.ACC and $MACHINE.ACC.IUM registry keys. 2 - Machine password is only IUM-bound and stored in $MACHINE.ACC.IUM registry key.
+<!-- MachineIdentityIsolation-Description-End -->
+
+<!-- MachineIdentityIsolation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MachineIdentityIsolation-Editable-End -->
+
+<!-- MachineIdentityIsolation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- MachineIdentityIsolation-DFProperties-End -->
+
+<!-- MachineIdentityIsolation-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disabled) Machine password is only LSASS-bound and stored in $MACHINE.ACC registry key. |
+| 1 | (Enabled in audit mode) Machine password both LSASS-bound and IUM-bound. It's stored in $MACHINE.ACC and $MACHINE.ACC.IUM registry keys. |
+| 2 | (Enabled in enforcement mode) Machine password is only IUM-bound and stored in $MACHINE.ACC.IUM registry key. |
+<!-- MachineIdentityIsolation-AllowedValues-End -->
+
+<!-- MachineIdentityIsolation-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Element Name | Machine Identity Isolation Configuration. |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| ADMX File Name | DeviceGuard.admx |
+<!-- MachineIdentityIsolation-GpMapping-End -->
+
+<!-- MachineIdentityIsolation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MachineIdentityIsolation-Examples-End -->
+
+<!-- MachineIdentityIsolation-End -->
+
 <!-- RequirePlatformSecurityFeatures-Begin -->
 ## RequirePlatformSecurityFeatures
 
 <!-- RequirePlatformSecurityFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RequirePlatformSecurityFeatures-Applicability-End -->
 
 <!-- RequirePlatformSecurityFeatures-OmaUri-Begin -->

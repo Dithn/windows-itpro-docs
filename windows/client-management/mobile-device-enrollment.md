@@ -1,8 +1,8 @@
 ---
 title: Mobile device enrollment
 description: Learn how mobile device enrollment verifies that only authenticated and authorized devices are managed by the enterprise.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: article
+ms.date: 08/04/2025
 ms.collection:
 - highpri
 - tier2
@@ -155,13 +155,13 @@ SOAP format also includes `deviceenrollmentserviceerror` element. Here's an exam
 |-----------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | DeviceCapReached      | MENROLL_E_DEVICECAPREACHED      | The account has too many devices enrolled to Mobile Device Management (MDM). Delete or unenroll old devices to fix this error.                             | 80180013 |
 | DeviceNotSupported    | MENROLL_E_DEVICENOTSUPPORTED    | The Mobile Device Management (MDM) server doesn't support this platform or version, consider upgrading your device.                                        | 80180014 |
-| NotSupported          | MENROLL_E_NOT_SUPPORTED         | Mobile Device Management (MDM) is generally not supported for this device.                                                                                 | 80180015 |
+| NotSupported          | MENROLL_E_NOT_SUPPORTED         | Mobile Device Management (MDM) is not supported for this device.                                                                                 | 80180015 |
 | NotEligibleToRenew    | MENROLL_E_NOTELIGIBLETORENEW    | The device is attempting to renew the Mobile Device Management (MDM) certificate, but the server rejected the request. Check renew schedule on the device. | 80180016 |
 | InMaintenance         | MENROLL_E_INMAINTENANCE         | The Mobile Device Management (MDM) server states your account is in maintenance, try again later.                                                          | 80180017 |
 | UserLicense           | MENROLL_E_USER_LICENSE          | There was an error with your Mobile Device Management (MDM) user license. Contact your system administrator.                                               | 80180018 |
-| InvalidEnrollmentData | MENROLL_E_ENROLLMENTDATAINVALID | The Mobile Device Management (MDM) server rejected the enrollment data. The server may not be configured correctly.                                        | 80180019 |
+| InvalidEnrollmentData | MENROLL_E_ENROLLMENTDATAINVALID | The Mobile Device Management (MDM) server rejected the enrollment data. The server might not be configured correctly.                                        | 80180019 |
 
-TraceID is a freeform text node that is logged. It should identify the server side state for this enrollment attempt. This information may be used by support to look up why the server declined the enrollment.
+TraceID is a freeform text node that is logged. It should identify the server side state for this enrollment attempt. This information might be used by support to look up why the server declined the enrollment.
 
 ## Related articles
 

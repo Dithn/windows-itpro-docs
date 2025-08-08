@@ -1,7 +1,8 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-ms.date: 04/10/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -252,7 +253,7 @@ The following list shows the EnterpriseModernAppManagement configuration service
 <!-- Device-AppInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-Applicability-End -->
 
 <!-- Device-AppInstallation-OmaUri-Begin -->
@@ -292,7 +293,7 @@ This is a required node.
 <!-- Device-AppInstallation-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-OmaUri-Begin -->
@@ -356,7 +357,7 @@ Here's an example for uninstalling an app:
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-OmaUri-Begin -->
@@ -381,7 +382,7 @@ This is a required node. The following list shows the supported deployment optio
 - ForceUpdateToAnyVersion
 - DeferRegistration="1". If the app is in use at the time of installation. This option stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
 - StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
-- LicenseUri="\\server\license.lic". Deploys an offline license from the Microsoft Store for Business. Available in 1607.
+- LicenseUri="\\server\license.lic". Deploys an offline license. Available in 1607.
 - ValidateDependencies="1". This option is used at provisioning/staging time. If it's set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies aren't present. Available in the latest insider flight of 20H1.
 - ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-End -->
@@ -407,7 +408,7 @@ This is a required node. The following list shows the supported deployment optio
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-OmaUri-Begin -->
@@ -448,7 +449,7 @@ Last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-OmaUri-Begin -->
@@ -489,7 +490,7 @@ Description of last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-OmaUri-Begin -->
@@ -530,7 +531,7 @@ An integer that indicates the progress of the app installation. For https locati
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-OmaUri-Begin -->
@@ -571,7 +572,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-OmaUri-Begin -->
@@ -610,7 +611,7 @@ Command to perform an install of an app and a license from the Microsoft Store.
 <!-- Device-AppLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-Applicability-End -->
 
 <!-- Device-AppLicenses-OmaUri-Begin -->
@@ -649,7 +650,7 @@ Used to manage licenses for app scenarios.
 <!-- Device-AppLicenses-StoreLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-OmaUri-Begin -->
@@ -689,7 +690,7 @@ This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-OmaUri-Begin -->
@@ -730,7 +731,7 @@ This is an optional node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-OmaUri-Begin -->
@@ -770,7 +771,7 @@ This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-OmaUri-Begin -->
@@ -810,7 +811,7 @@ This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-OmaUri-Begin -->
@@ -821,7 +822,7 @@ This is a required node.
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -849,7 +850,7 @@ Category of license that's used to classify various license sources. Valid value
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-OmaUri-Begin -->
@@ -888,7 +889,7 @@ Indicates the allowed usage for the license. Valid values: Unknown - usage is un
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-OmaUri-Begin -->
@@ -904,6 +905,8 @@ Identifier for the entity that requested the license, such as the client who acq
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-Begin -->
@@ -927,7 +930,7 @@ Identifier for the entity that requested the license, such as the client who acq
 <!-- Device-AppManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-Applicability-End -->
 
 <!-- Device-AppManagement-OmaUri-Begin -->
@@ -967,7 +970,7 @@ This is a required node.
 <!-- Device-AppManagement-AppInventoryQuery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppInventoryQuery-Applicability-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-OmaUri-Begin -->
@@ -992,6 +995,8 @@ This is a required node. Query parameters:
 
 - Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
   - AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
+    > [!NOTE]
+    > The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
   - nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
   - System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
 
@@ -1051,7 +1056,7 @@ The following example sets the inventory query for the package names and checks 
 <!-- Device-AppManagement-AppInventoryResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppInventoryResults-Applicability-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-OmaUri-Begin -->
@@ -1105,7 +1110,7 @@ Here's an example of AppInventoryResults operation.
 <!-- Device-AppManagement-AppStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-OmaUri-Begin -->
@@ -1144,7 +1149,7 @@ This is a required node. Used for managing apps from the Microsoft Store.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -1206,7 +1211,7 @@ Here's an example for uninstalling an app:
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -1246,7 +1251,7 @@ Full name of the package installed.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -1287,7 +1292,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -1327,7 +1332,7 @@ This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -1368,7 +1373,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -1407,7 +1412,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -1448,7 +1453,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -1487,7 +1492,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -1527,7 +1532,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -1566,7 +1571,7 @@ Name of the app. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -1607,7 +1612,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -1646,7 +1651,7 @@ Publisher name of the app. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -1689,7 +1694,7 @@ This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -1730,7 +1735,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -1775,7 +1780,7 @@ This is a required node. Possible values:
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -1814,7 +1819,7 @@ Version of the app. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -1863,7 +1868,7 @@ This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -1919,7 +1924,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-OmaUri-Begin -->
@@ -2031,7 +2036,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-OmaUri-Begin -->
@@ -2072,7 +2077,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -2112,7 +2117,7 @@ Identifier for the app or set of apps. If there is only one app, it's the Packag
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -2151,7 +2156,7 @@ Specifies the app channel ID.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -2190,7 +2195,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -2229,7 +2234,7 @@ Returns the last user channel ID on the device.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -2268,7 +2273,7 @@ Returns the last user release ID on the device.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -2307,7 +2312,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- Device-AppManagement-LastScanError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-LastScanError-Applicability-End -->
 
 <!-- Device-AppManagement-LastScanError-OmaUri-Begin -->
@@ -2347,7 +2352,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-OmaUri-Begin -->
@@ -2386,7 +2391,7 @@ Used to manage enterprise apps or developer apps that weren't acquired from the 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -2448,7 +2453,7 @@ Here's an example for uninstalling an app:
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -2488,7 +2493,7 @@ Full name of the package installed.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -2529,7 +2534,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -2569,7 +2574,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -2610,7 +2615,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -2649,7 +2654,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -2690,7 +2695,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -2729,7 +2734,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -2769,7 +2774,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -2808,7 +2813,7 @@ Name of the app. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -2849,7 +2854,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -2888,7 +2893,7 @@ Publisher name of the app. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -2931,7 +2936,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -2972,7 +2977,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -3017,7 +3022,7 @@ This is a required node. Possible values:
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -3056,7 +3061,7 @@ Version of the app. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -3105,7 +3110,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -3161,7 +3166,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-OmaUri-Begin -->
@@ -3273,7 +3278,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-nonStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-OmaUri-Begin -->
@@ -3312,7 +3317,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -3352,7 +3357,7 @@ Identifier for the app or set of apps. If there is only one app, it's the Packag
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -3391,7 +3396,7 @@ Specifies the app channel ID.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -3430,7 +3435,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -3469,7 +3474,7 @@ Returns the last user channel ID on the device.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -3508,7 +3513,7 @@ Returns the last user release ID on the device.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -3547,7 +3552,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- Device-AppManagement-ResetPackage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-ResetPackage-Applicability-End -->
 
 <!-- Device-AppManagement-ResetPackage-OmaUri-Begin -->
@@ -3586,7 +3591,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- Device-AppManagement-System-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-Applicability-End -->
 
 <!-- Device-AppManagement-System-OmaUri-Begin -->
@@ -3625,7 +3630,7 @@ Reports apps installed as part of the operating system.
 <!-- Device-AppManagement-System-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-OmaUri-Begin -->
@@ -3667,7 +3672,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -3707,7 +3712,7 @@ Full name of the package installed.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -3748,7 +3753,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -3788,7 +3793,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -3829,7 +3834,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -3868,7 +3873,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -3909,7 +3914,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -3948,7 +3953,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -3988,7 +3993,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -4027,7 +4032,7 @@ Name of the app. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -4068,7 +4073,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -4107,7 +4112,7 @@ Publisher name of the app. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -4150,7 +4155,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -4191,7 +4196,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -4236,7 +4241,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -4275,7 +4280,7 @@ Version of the app. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-OmaUri-Begin -->
@@ -4314,7 +4319,7 @@ AppUpdateSettings nodes to support the auto-update and auto-repair feature for a
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-OmaUri-Begin -->
@@ -4353,7 +4358,7 @@ AutoRepair node to support auto-repair feature for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-OmaUri-Begin -->
@@ -4393,7 +4398,7 @@ PackageSource node that points the update location for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OmaUri-Begin -->
@@ -4432,7 +4437,7 @@ AutoUpdateSettings nodes to support the auto-updates for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-OmaUri-Begin -->
@@ -4481,7 +4486,7 @@ Specifies whether AutomaticBackgroundTask is enabled/disabled for a specific pac
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-OmaUri-Begin -->
@@ -4530,7 +4535,7 @@ Specifies whether the auto-update settings is enabled/disabled for a specific pa
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-OmaUri-Begin -->
@@ -4579,7 +4584,7 @@ Specifies whether the auto-update setting ForceUpdateFromAnyVersion is enabled/d
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-HoursBetweenUpdateChecks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-HoursBetweenUpdateChecks-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-HoursBetweenUpdateChecks-OmaUri-Begin -->
@@ -4620,7 +4625,7 @@ Specifies HoursBetweenUpdateChecks for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-OmaUri-Begin -->
@@ -4669,7 +4674,7 @@ Specifies whether OnLaunchUpdateCheck is enabled/disabled for a specific package
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-OmaUri-Begin -->
@@ -4709,7 +4714,7 @@ PackageSource node that points the update location for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-OmaUri-Begin -->
@@ -4758,7 +4763,7 @@ Specifies whether the auto-update setting ShowPrompt is enabled/disabled for a s
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-OmaUri-Begin -->
@@ -4807,7 +4812,7 @@ Specifies whether the auto-update setting UpdateBlocksActivation is enabled/disa
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -4856,7 +4861,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -4912,7 +4917,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-OmaUri-Begin -->
@@ -5024,7 +5029,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-System-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-OmaUri-Begin -->
@@ -5063,7 +5068,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -5103,7 +5108,7 @@ Identifier for the app or set of apps. If there is only one app, it's the Packag
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -5142,7 +5147,7 @@ Specifies the app channel ID.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -5181,7 +5186,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -5220,7 +5225,7 @@ Returns the last user channel ID on the device.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -5259,7 +5264,7 @@ Returns the last user release ID on the device.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -5298,7 +5303,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- Device-AppManagement-UpdateScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-UpdateScan-Applicability-End -->
 
 <!-- Device-AppManagement-UpdateScan-OmaUri-Begin -->
@@ -5338,7 +5343,7 @@ This is a required node.
 <!-- User-AppInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-Applicability-End -->
 
 <!-- User-AppInstallation-OmaUri-Begin -->
@@ -5377,7 +5382,7 @@ Used to perform app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-OmaUri-Begin -->
@@ -5439,7 +5444,7 @@ Here's an example for uninstalling an app:
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-OmaUri-Begin -->
@@ -5464,7 +5469,7 @@ This is a required node. The following list shows the supported deployment optio
 - ForceUpdateToAnyVersion
 - DeferRegistration="1". If the app is in use at the time of installation. This option stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
 - StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
-- LicenseUri="\\server\license.lic". Deploys an offline license from the Microsoft Store for Business. Available in 1607.
+- LicenseUri="\\server\license.lic". Deploys an offline license. Available in 1607.
 - ValidateDependencies="1". This option is used at provisioning/staging time. If it's set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies aren't present. Available in the latest insider flight of 20H1.
 - ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-End -->
@@ -5490,7 +5495,7 @@ This is a required node. The following list shows the supported deployment optio
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-OmaUri-Begin -->
@@ -5531,7 +5536,7 @@ Last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-OmaUri-Begin -->
@@ -5572,7 +5577,7 @@ Description of last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-OmaUri-Begin -->
@@ -5613,7 +5618,7 @@ An integer that indicates the progress of the app installation. For https locati
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-OmaUri-Begin -->
@@ -5654,7 +5659,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-OmaUri-Begin -->
@@ -5693,7 +5698,7 @@ Command to perform an install of an app and a license from the Microsoft Store.
 <!-- User-AppLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-Applicability-End -->
 
 <!-- User-AppLicenses-OmaUri-Begin -->
@@ -5732,7 +5737,7 @@ Used to manage licenses for app scenarios.
 <!-- User-AppLicenses-StoreLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-OmaUri-Begin -->
@@ -5771,7 +5776,7 @@ Used to manage licenses for store apps.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-OmaUri-Begin -->
@@ -5812,7 +5817,7 @@ This is an optional node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-OmaUri-Begin -->
@@ -5852,7 +5857,7 @@ This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-OmaUri-Begin -->
@@ -5892,7 +5897,7 @@ This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-OmaUri-Begin -->
@@ -5903,7 +5908,7 @@ This is a required node.
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -5931,7 +5936,7 @@ Category of license that's used to classify various license sources. Valid value
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-OmaUri-Begin -->
@@ -5970,7 +5975,7 @@ Indicates the allowed usage for the license. Valid values: Unknown - usage is un
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-OmaUri-Begin -->
@@ -5986,6 +5991,8 @@ Identifier for the entity that requested the license, such as the client who acq
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-Begin -->
@@ -6009,7 +6016,7 @@ Identifier for the entity that requested the license, such as the client who acq
 <!-- User-AppManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-Applicability-End -->
 
 <!-- User-AppManagement-OmaUri-Begin -->
@@ -6048,7 +6055,7 @@ Used for inventory and app management (post-install).
 <!-- User-AppManagement-AppInventoryQuery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppInventoryQuery-Applicability-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-OmaUri-Begin -->
@@ -6130,7 +6137,7 @@ The following example sets the inventory query for the package names and checks 
 <!-- User-AppManagement-AppInventoryResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppInventoryResults-Applicability-End -->
 
 <!-- User-AppManagement-AppInventoryResults-OmaUri-Begin -->
@@ -6184,7 +6191,7 @@ Here's an example of AppInventoryResults operation.
 <!-- User-AppManagement-AppStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-OmaUri-Begin -->
@@ -6223,7 +6230,7 @@ This is a required node. Used for managing apps from the Microsoft Store.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -6285,7 +6292,7 @@ Here's an example for uninstalling an app:
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -6325,7 +6332,7 @@ Full name of the package installed.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -6366,7 +6373,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -6406,7 +6413,7 @@ This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -6447,7 +6454,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -6486,7 +6493,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -6527,7 +6534,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -6566,7 +6573,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -6606,7 +6613,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -6645,7 +6652,7 @@ Name of the app. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -6686,7 +6693,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -6725,7 +6732,7 @@ Publisher name of the app. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -6768,7 +6775,7 @@ This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -6809,7 +6816,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -6854,7 +6861,7 @@ This is a required node. Possible values:
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -6893,7 +6900,7 @@ Version of the app. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-OmaUri-Begin -->
@@ -6934,7 +6941,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-OmaUri-Begin -->
@@ -6945,7 +6952,7 @@ Interior node for all managed app setting values.
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed. App. Settings container.
+The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the `Managed.App.Settings` container.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
@@ -7008,7 +7015,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -7057,7 +7064,7 @@ This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -7113,7 +7120,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- User-AppManagement-AppStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-OmaUri-Begin -->
@@ -7154,7 +7161,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -7194,7 +7201,7 @@ Identifier for the app or set of apps. If there is only one app, it's the Packag
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -7233,7 +7240,7 @@ Specifies the app channel ID.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -7272,7 +7279,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -7311,7 +7318,7 @@ Returns the last user channel ID on the device.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -7350,7 +7357,7 @@ Returns the last user release ID on the device.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -7389,7 +7396,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- User-AppManagement-LastScanError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-LastScanError-Applicability-End -->
 
 <!-- User-AppManagement-LastScanError-OmaUri-Begin -->
@@ -7429,7 +7436,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-OmaUri-Begin -->
@@ -7468,7 +7475,7 @@ Used to manage enterprise apps or developer apps that weren't acquired from the 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -7526,7 +7533,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -7566,7 +7573,7 @@ Full name of the package installed.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -7607,7 +7614,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -7647,7 +7654,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -7688,7 +7695,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -7727,7 +7734,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -7768,7 +7775,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -7807,7 +7814,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -7849,7 +7856,7 @@ Value type is int.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -7888,7 +7895,7 @@ Name of the app. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -7929,7 +7936,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -7968,7 +7975,7 @@ Publisher name of the app. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -8011,7 +8018,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -8052,7 +8059,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -8097,7 +8104,7 @@ Requried.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -8136,7 +8143,7 @@ Version of the app. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-OmaUri-Begin -->
@@ -8176,7 +8183,7 @@ This node is only supported in the user context.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-OmaUri-Begin -->
@@ -8187,7 +8194,7 @@ This node is only supported in the user context.
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed. App. Settings container.
+The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the `Managed.App.Settings` container.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
@@ -8248,7 +8255,7 @@ The following example gets all managed app settings for a specific app.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -8297,7 +8304,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -8353,7 +8360,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- User-AppManagement-nonStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-OmaUri-Begin -->
@@ -8392,7 +8399,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -8432,7 +8439,7 @@ Identifier for the app or set of apps. If there is only one app, it's the Packag
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -8471,7 +8478,7 @@ Specifies the app channel ID.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -8510,7 +8517,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -8549,7 +8556,7 @@ Returns the last user channel ID on the device.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -8588,7 +8595,7 @@ Returns the last user release ID on the device.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -8627,7 +8634,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- User-AppManagement-RemovePackage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-AppManagement-RemovePackage-Applicability-End -->
 
 <!-- User-AppManagement-RemovePackage-OmaUri-Begin -->
@@ -8692,7 +8699,7 @@ The following example removes a package for all users:
 <!-- User-AppManagement-ResetPackage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-AppManagement-ResetPackage-Applicability-End -->
 
 <!-- User-AppManagement-ResetPackage-OmaUri-Begin -->
@@ -8731,7 +8738,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- User-AppManagement-System-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-Applicability-End -->
 
 <!-- User-AppManagement-System-OmaUri-Begin -->
@@ -8770,7 +8777,7 @@ Reports apps installed as part of the operating system.
 <!-- User-AppManagement-System-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-OmaUri-Begin -->
@@ -8830,7 +8837,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -8870,7 +8877,7 @@ Full name of the package installed.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -8911,7 +8918,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -8951,7 +8958,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -8992,7 +8999,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -9031,7 +9038,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -9072,7 +9079,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -9111,7 +9118,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -9151,7 +9158,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -9190,7 +9197,7 @@ Name of the app. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -9231,7 +9238,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -9270,7 +9277,7 @@ Publisher name of the app. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -9313,7 +9320,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -9354,7 +9361,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -9399,7 +9406,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -9438,7 +9445,7 @@ Version of the app. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-OmaUri-Begin -->
@@ -9478,7 +9485,7 @@ This node is only supported in the user context.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-OmaUri-Begin -->
@@ -9489,7 +9496,7 @@ This node is only supported in the user context.
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed. App. Settings container.
+The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the `Managed.App.Settings` container.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
@@ -9552,7 +9559,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -9601,7 +9608,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -9657,7 +9664,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- User-AppManagement-System-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-OmaUri-Begin -->
@@ -9696,7 +9703,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -9736,7 +9743,7 @@ Identifier for the app or set of apps. If there is only one app, it's the Packag
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -9775,7 +9782,7 @@ Specifies the app channel ID.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -9814,7 +9821,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -9853,7 +9860,7 @@ Returns the last user channel ID on the device.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -9892,7 +9899,7 @@ Returns the last user release ID on the device.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -9931,7 +9938,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- User-AppManagement-UpdateScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-UpdateScan-Applicability-End -->
 
 <!-- User-AppManagement-UpdateScan-OmaUri-Begin -->

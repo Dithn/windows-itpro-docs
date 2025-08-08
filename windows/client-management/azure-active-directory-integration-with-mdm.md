@@ -1,11 +1,11 @@
 ---
 title: Microsoft Entra integration with MDM
 description: Microsoft Entra ID is the world's largest enterprise cloud identity management service.
-ms.topic: conceptual
+ms.topic: integration
 ms.collection:
 - highpri
 - tier2
-ms.date: 07/08/2024
+ms.date: 08/04/2025
 ---
 
 # Microsoft Entra integration with MDM
@@ -32,7 +32,7 @@ In each scenario, Microsoft Entra authenticates the user and the device. It prov
 
 In Windows 10, the web view during the out-of-the-box scenario is displayed as full-screen by default, providing MDM vendors with the capability to create a seamless edge-to-edge user experience. However, in Windows 11 the web view is rendered within an iframe. It's important that MDM vendors who integrate with Microsoft Entra ID respect the Windows design guidelines. This step includes using a responsive web design and respecting the Windows accessibility guidelines. For example, include the forward and back buttons that are properly wired to the navigation logic. More details are provided later in this article.
 
-For Microsoft Entra enrollment to work for an Active Directory Federated Services (AD FS) backed Microsoft Entra account, you must enable password authentication for the intranet on the ADFS service. For more information, see [Configure Microsoft Entra multifactor authentication as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+For Microsoft Entra enrollment to work for an Active Directory Federated Services (ADFS) backed Microsoft Entra account, you must enable password authentication for the intranet on the ADFS service. For more information, see [Configure Microsoft Entra multifactor authentication as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 Once a user has a Microsoft Entra account added to Windows and enrolled in MDM, the enrollment can be managed through **Settings** > **Accounts** > **Access work or school**. Device management of either Microsoft Entra join for organization scenarios or BYOD scenarios is similar.
 
@@ -76,7 +76,7 @@ The MDM vendor must first register the application in their home tenant and mark
 > For the MDM provider, if you don't have an existing Microsoft Entra tenant with a Microsoft Entra subscription that you manage, follow these step-by-step guides:
 >
 > - [Quickstart: Create a new tenant in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) to set up a tenant.
-> - [Associate or add an Azure subscription to your Microsoft Entra tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) to add a subscription, and manage it via the Azure Portal.
+> - [Associate or add an Azure subscription to your Microsoft Entra tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) to add a subscription, and manage it via the Azure portal.
 
 The MDM application uses keys to request access tokens from Microsoft Entra ID. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multitenant MDM application to authenticate itself with Microsoft Entra ID, in the customer tenant where the managed device belongs.
 
@@ -110,7 +110,7 @@ IT administrators use the Microsoft Entra app gallery to add an MDM for their or
 ### Add cloud-based MDM to the app gallery
 
 > [!NOTE]
-> You should work with the Microsoft Entra engineering team if your MDM application is cloud-based and needs to be enabled as a multi-tenant MDM application
+> You should work with the Microsoft Entra engineering team if your MDM application is cloud-based and needs to be enabled as a multitenant MDM application
 
 To publish your application, [submit a request to publish your application in Microsoft Entra application gallery](/azure/active-directory/manage-apps/v2-howto-app-gallery-listing)
 
@@ -132,7 +132,7 @@ However, key management is different for on-premises MDM. You must obtain the cl
 
 ## Themes
 
-The pages rendered by the MDM in the integrated enrollment process must use Windows templates ([Download the Windows templates and CSS files (1.1.4)](https://download.microsoft.com/download/0/7/0/0702afe3-dc1e-48f6-943e-886a4876f6ca/MDM-ISV_1.1.4.zip)). These templates are important for enrollment during the Microsoft Entra join experience in OOBE where all of the pages are edge-to-edge HTML pages. Avoid copying the templates because it is difficult to get the button placement right.
+The pages rendered by the MDM in the integrated enrollment process must use Windows templates ([Download the Windows templates and CSS files (1.1.4)](https://download.microsoft.com/download/0/7/0/0702afe3-dc1e-48f6-943e-886a4876f6ca/MDM-ISV_1.1.4.zip)). These templates are important for enrollment during the Microsoft Entra join experience in OOBE where all of the pages are edge-to-edge HTML pages. Avoid copying the templates because it's difficult to get the button placement right.
 
 There are three distinct scenarios:
 
@@ -219,7 +219,7 @@ At this point, the user is on the Terms of Use page shown during the OOBE or fro
 
 - **User clicks on the Accept button** - The MDM must redirect to the URI specified by the redirect\_uri parameter in the incoming request. The following query string parameters are expected:
   - **IsAccepted** - This Boolean value is required, and must be set to true.
-  - **OpaqueBlob** - Required parameter if the user accepts. The MDM may use this blob to make some information available to the enrollment endpoint. The value persisted here is made available unchanged at the enrollment endpoint. The MDM may use this parameter for correlation purposes.
+  - **OpaqueBlob** - Required parameter if the user accepts. The MDM may use this blob to make some information available to the enrollment endpoint. The value persisted here's made available unchanged at the enrollment endpoint. The MDM may use this parameter for correlation purposes.
   - Here's an example redirect - `ms-appx-web://MyApp1/ToUResponse?OpaqueBlob=value&IsAccepted=true`
 - **User clicks on the Decline button** - The MDM must redirect to the URI specified in redirect\_uri in the incoming request. The following query string parameters are expected:
   - **IsAccepted** - This Boolean value is required, and must be set to false. This option also applies if the user skipped the Terms of Use.
@@ -260,10 +260,10 @@ With Azure integrated MDM enrollment, there's no discovery phase and the discove
 
 |Detail|Traditional MDM enrollment|Microsoft Entra join (organization-owned device)|Microsoft Entra ID adds a work account (user-owned device)|
 |--- |--- |--- |--- |
-|MDM auto-discovery using email address to retrieve MDM discovery URL|Enrollment|Not applicable<br>Discovery URL provisioned in Azure||
+|MDM autodiscovery using email address to retrieve MDM discovery URL|Enrollment|Not applicable<br>Discovery URL provisioned in Azure||
 |Uses MDM discovery URL|Enrollment<br>Enrollment renewal<br>ROBO|Enrollment<br>Enrollment renewal<br>ROBO|Enrollment<br>Enrollment renewal<br>ROBO|
 |Is MDM enrollment required?|Yes|Yes|No<br>User can decline.|
-|Authentication type|OnPremise<br>Federated<br>Certificate|Federated|Federated|
+|Authentication type|On-premises<br>Federated<br>Certificate|Federated|Federated|
 |EnrollmentPolicyServiceURL|Optional (all auth)|Optional (all auth)|Optional (all auth)|
 |EnrollmentServiceURL|Required (all auth)|Used (all auth)|Used (all auth)|
 |EnrollmentServiceURL includes OS Version, OS Platform, and other attributes provided by MDM discovery URL|Highly recommended|Highly recommended|Highly recommended|
@@ -282,7 +282,7 @@ There are two different MDM enrollment types that integrate with Microsoft Entra
 
 - **Multiple user management for Microsoft Entra joined devices**
 
-  In this scenario, the MDM enrollment applies to every Microsoft Entra user who signs in to the Microsoft Entra joined device - call this enrollment type a device enrollment or a multi-user enrollment. The management server can determine the user identity, determine what policies are targeted for this user, and send corresponding policies to the device. To allow management server to identify current user that is logged on to the device, the OMA DM client uses the Microsoft Entra user tokens. Each management session contains an extra HTTP header that contains a Microsoft Entra user token. This information is provided in the DM package sent to the management server. However, in some circumstances Microsoft Entra user token isn't sent over to the management server. One such scenario happens immediately after MDM enrollments completes during Microsoft Entra join process. Until Microsoft Entra join process is finished and Microsoft Entra user signs on to the machine, Microsoft Entra user token isn't available to OMA-DM process. Typically, MDM enrollment completes before Microsoft Entra user sign in to machine and the initial management session doesn't contain a Microsoft Entra user token. The management server should check if the token is missing and only send device policies in such case. Another possible reason for a missing Microsoft Entra token in the OMA-DM payload is when a guest is logged on to the device.
+  In this scenario, the MDM enrollment applies to every Microsoft Entra user who signs in to the Microsoft Entra joined device - call this enrollment type a device enrollment or a multi-user enrollment. The management server can determine the user identity, determine what policies are targeted for this user, and send corresponding policies to the device. To allow management server to identify current user that is logged on to the device, the OMA DMClient uses the Microsoft Entra user tokens. Each management session contains an extra HTTP header that contains a Microsoft Entra user token. This information is provided in the DM package sent to the management server. However, in some circumstances Microsoft Entra user token isn't sent over to the management server. One such scenario happens immediately after MDM enrollments completes during Microsoft Entra join process. Until Microsoft Entra join process is finished and Microsoft Entra user signs on to the machine, Microsoft Entra user token isn't available to OMA-DM process. Typically, MDM enrollment completes before Microsoft Entra user sign in to machine and the initial management session doesn't contain a Microsoft Entra user token. The management server should check if the token is missing and only send device policies in such case. Another possible reason for a missing Microsoft Entra token in the OMA-DM payload is when a guest is logged on to the device.
 
 - **Adding a work account and MDM enrollment to a device**:
 
@@ -340,7 +340,7 @@ An alert is sent to the MDM server in DM package \#1.
 - Alert data - provide sign-in status information for the current active logged in user.
   - Signed-in user who has a Microsoft Entra account - predefined text: user.
   - Signed-in user without a Microsoft Entra account- predefined text: others.
-  - No active user - predefined text:none
+  - No active user - predefined text: none
 
 Here's an example.
 

@@ -7,8 +7,8 @@ ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/06/2023
@@ -16,7 +16,7 @@ ms.date: 12/06/2023
 
 # UCDeviceAlert
 <!--37063317, 30141258, 37063041-->
-These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in the Windows Update for Business deployment service will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.
+These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in Windows Autopatch will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.
 
 ## Schema for UCDeviceAlert
  <!--8506381-->

@@ -13,9 +13,9 @@ metadata:
     - essentials-manage
   author: vinaypamnani-msft
   ms.author: vinpa
-  manager: aaroncz
+  manager: bpardi
   ms.date: 07/08/2024
-  localization_priority: medium
+  ms.localizationpriority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

@@ -3,24 +3,24 @@ title: Migrating and acquiring optional Windows content
 description: How to keep language resources and Features on Demand during operating system updates for your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 04/22/2024
 ---
 
 # Migrating and acquiring optional Windows content during updates
- 
+
 This article provides some background on the problem of keeping language resources and Features on Demand during operating system updates and offers guidance to help you move forward in the short term and prepare for the long term.
 
-When you update the operating system, it's critical to keep language resources and Features on Demand (FODs). Many commercial organizations use Configuration Manager or other management tools to distribute and orchestrate Windows client setup using a local Windows image or WIM file (a *media-based* or *task-sequence-based* update). Others do in-place updates using an approved Windows client feature update by using Windows Server Update Services (WSUS), Configuration Manager, or equivalent tools (a *servicing-based* update). 
+When you update the operating system, it's critical to keep language resources and Features on Demand (FODs). Many commercial organizations use Configuration Manager or other management tools to distribute and orchestrate Windows client setup using a local Windows image or WIM file (a *media-based* or *task-sequence-based* update). Others do in-place updates using an approved Windows client feature update by using Windows Server Update Services (WSUS), Configuration Manager, or equivalent tools (a *servicing-based* update).
 
-Neither approach contains the full set of Windows optional features that a user's device might need, so those features aren't migrated to the new operating system. In the past, those features weren't available in Configuration Manager nor WSUS for on-premises acquisition after a feature update. 
+Neither approach contains the full set of Windows optional features that a user's device might need, so those features aren't migrated to the new operating system. In the past, those features weren't available in Configuration Manager nor WSUS for on-premises acquisition after a feature update.
 
 ## What is optional content?
 
@@ -29,7 +29,7 @@ Optional content includes the following items:
 - General Features on Demand also referred to as FODs (for example, Windows Mixed Reality)
 - Language-based and regional FODs (for example, Language.Basic~~~ja-jp~0.0.1.0)
 - Local Experience Packs
-- Language packs 
+- Language packs
 
 Optional content isn't included by default in the Windows image file that is part of the operating system media available in the Volume Licensing Service Center (VLSC). Instead, it's released as an additional ISO file on VLSC. Shipping these features out of the operating system media and shipping them separately reduces the disk footprint of Windows. This approach provides more space for user's data. It also reduces the time needed to service the operating system, whether installing a monthly quality update or upgrading to a newer version. A smaller default Windows image also means less data to transmit over the network.
 
@@ -39,9 +39,9 @@ The challenges surrounding optional content typically fall into two groups:
 
 ### Incomplete operating system updates
 
-The first challenge is related to content migration during a feature update. When Windows Setup performs an in-place update, the new operating system is written to the user's disk alongside the old version in a temporary folder, where a second clean operating system is installed and prepared for the user to *move into*. When operation happens, Windows Setup enumerates optional content installed already in the current version and plans to install the new version of this content in the new operating system. 
- 
-Windows Setup needs access to the optional content. Since optional content isn't in the Windows image by default, Windows Setup must look elsewhere to get the Windows packages, stage them, and then install them in the new operating system. When the content can't be found, the result is an update that is missing features on the device, a frustrated end user, and likely a help desk call. This pain point is sometimes referred to as *failure to migrate optional content during update*. For media-based updates, Windows will automatically try again once the new operating system boots. We call this *latent acquisition*. 
+The first challenge is related to content migration during a feature update. When Windows Setup performs an in-place update, the new operating system is written to the user's disk alongside the old version in a temporary folder, where a second clean operating system is installed and prepared for the user to *move into*. When operation happens, Windows Setup enumerates optional content installed already in the current version and plans to install the new version of this content in the new operating system.
+
+Windows Setup needs access to the optional content. Since optional content isn't in the Windows image by default, Windows Setup must look elsewhere to get the Windows packages, stage them, and then install them in the new operating system. When the content can't be found, the result is an update that is missing features on the device, a frustrated end user, and likely a help desk call. This pain point is sometimes referred to as *failure to migrate optional content during update*. For media-based updates, Windows will automatically try again once the new operating system boots. We call this *latent acquisition*.
 
 ### User-initiated feature acquisition failure
 
@@ -68,11 +68,11 @@ Most commercial organizations understand the pain points outlined above, and dis
 
 ### Option 1: Use Windows Update
 
-Windows Update for Business solves the optional content problem. Optional content is published and available for acquisition by Windows Setup from a nearby Microsoft content delivery network and acquired using the Unified Update Platform. Optional content migration and acquisition scenarios just work when the device is connected to an update service that uses the Unified Update Platform, such as Windows Update or Windows Update for Business. If for some reason a language pack fails to install during the update, the update will automatically roll back.
+Windows Update client policies solve the optional content problem. Optional content is published and available for acquisition by Windows Setup from a nearby Microsoft content delivery network and acquired using the Unified Update Platform. Optional content migration and acquisition scenarios just work when the device is connected to an update service that uses the Unified Update Platform, such as Windows Update or Windows Update client policies. If for some reason a language pack fails to install during the update, the update will automatically roll back.
 
-The [Unified Update Platform](https://blogs.windows.com/windowsexperience/2016/11/03/introducing-unified-update-platform-uup/) is an improvement in the underlying Windows update technology that results in smaller download sizes and a more efficient protocol for checking for updates, acquiring and installing the packages needed, and getting current in one update step. The technology is *unified* because it brings together the update stack for Windows client, Windows Server, and other products, such as HoloLens.
+The [Unified Update Platform](https://blogs.windows.com/windows-insider/2016/11/03/introducing-unified-update-platform-uup/) is an improvement in the underlying Windows update technology that results in smaller download sizes and a more efficient protocol for checking for updates, acquiring and installing the packages needed, and getting current in one update step. The technology is *unified* because it brings together the update stack for Windows client, Windows Server, and other products, such as HoloLens.
 
-Consider moving to Windows Update for Business. Not only will the optional content scenario work seamlessly (as it does for consumer devices today), but you also get the full benefits of smaller download sizes. Further, devices are immune to the challenge of upgrading Windows when the operating system installation language is inadvertently changed to a new language. Otherwise, any future media-based feature updates can fail when the installation media has a different installation language. For more information about this issue, see [Upgrading Windows 10 devices with installation media different than the original OS install language](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/upgrading-windows-10-devices-with-installation-media-different/ba-p/746126) and the [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002).
+Consider moving to Windows Update client policies. Not only will the optional content scenario work seamlessly (as it does for consumer devices today), but you also get the full benefits of smaller download sizes. Further, devices are immune to the challenge of upgrading Windows when the operating system installation language is inadvertently changed to a new language. Otherwise, any future media-based feature updates can fail when the installation media has a different installation language. For more information about this issue, see [Upgrading Windows 10 devices with installation media different than the original OS install language](https://techcommunity.microsoft.com/blog/windows-itpro-blog/upgrading-windows-10-devices-with-installation-media-different-than-the-original/746126).
 
 
 ### Option 2: Use WSUS with UUP Integration
@@ -109,13 +109,13 @@ For many organizations, the deployment workflow involves a Configuration Manager
 You can customize the Windows image in these ways:
 
 - Applying a cumulative update
-- Applying updates to the servicing stack 
+- Applying updates to the servicing stack
 - Applying updates to `Setup.exe` binaries or other files that setup uses for feature updates
 - Applying updates for the *safe operating system* (SafeOS) that's used for the Windows recovery environment
 - Adding or removing languages
 - Adding or removing Features on Demand
 
-The benefit of this option is that the Windows image can include those additional languages, language experience features, and other Features on Demand through one-time updates to the image. Then you can use them in an existing task sequence or custom deployment where `Setup.exe` is involved. The downside of this approach is that it requires some preparation of the image in advance, including scripting with DISM to install the additional packages. It also means the image is the same for all devices that consume it and might contain more features than some users need. For more information on customizing your media, see [Updating Windows 10 media with Dynamic Update packages](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updating-windows-10-media-with-dynamic-update-packages/ba-p/982477) and the [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073). Also like Dynamic Update, you still have a solution for migration of optional content, but not supporting user-initiated optional content acquisition. Also, there's a variation of this option in which media is updated *on the device* just before installation. This option allows for device-specific image customization based on what's currently installed.
+The benefit of this option is that the Windows image can include those additional languages, language experience features, and other Features on Demand through one-time updates to the image. Then you can use them in an existing task sequence or custom deployment where `Setup.exe` is involved. The downside of this approach is that it requires some preparation of the image in advance, including scripting with DISM to install the additional packages. It also means the image is the same for all devices that consume it and might contain more features than some users need. For more information on customizing your media, see [Updating Windows 10 media with Dynamic Update packages](https://techcommunity.microsoft.com/blog/windows-itpro-blog/updating-windows-10-media-with-dynamic-update-packages/982477). Also like Dynamic Update, you still have a solution for migration of optional content, but not supporting user-initiated optional content acquisition. Also, there's a variation of this option in which media is updated *on the device* just before installation. This option allows for device-specific image customization based on what's currently installed.
 
 
 ### Option 5: Install language features during deployment
@@ -124,11 +124,11 @@ A partial solution to address the first pain point of failing to migrate optiona
 
 When Setup runs, it injects these packages into the new operating system during installation. It can be an alternative to enabling Dynamic Update or customizing the operating system image before deployment. You must take care with this approach, because the packages can't be renamed. Further, the content is coming from two separate release media ISOs. The key is to copy both the FOD packages and the FOD metadata .cab from the FOD ISO into the folder, and the architecture-specific Language Pack .cab files from the LPLIP ISO. <!--Also, starting with Windows 10, version 1903, the behavior changed. In Windows 10, version 1809 and earlier, failure to install the packages wasn't a fatal error. Starting with Windows 10, version 1903,--> We treat InstallLangPacks failures as fatal, and roll back the entire upgrade. The idea is to not leave the user in a bad state since media-based upgrades don't migrate FOD and languages (unless Dynamic Update is enabled).
 
-This approach has some interesting benefits. The original Windows image doesn't need to be modified, possibly saving time and scripting. 
+This approach has some interesting benefits. The original Windows image doesn't need to be modified, possibly saving time and scripting.
 
 ### Option 6: Install optional content after deployment
 
-This option is like Option 4 in that you customize the operating system image with more optional content after it's deployed. IT pros can extend the behavior of Windows Setup by running their own custom action scripts during and after a feature update. See [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions) for details. With this approach, you can create a device-specific migration of optional content by capturing the optional content that's installed in the operating system, and then saving this list to install the same optional content in the new operating system. Like Option 5, you would internally host a network share that contains the source of the optional content packages. Then, during the execution of Setup on the device, capture the list of installed optional content from the source operating system and save. Later, after Setup completes, you use the list to install the optional content, which leaves the user's device without loss of functionality. 
+This option is like Option 4 in that you customize the operating system image with more optional content after it's deployed. IT pros can extend the behavior of Windows Setup by running their own custom action scripts during and after a feature update. See [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions) for details. With this approach, you can create a device-specific migration of optional content by capturing the optional content that's installed in the operating system, and then saving this list to install the same optional content in the new operating system. Like Option 5, you would internally host a network share that contains the source of the optional content packages. Then, during the execution of Setup on the device, capture the list of installed optional content from the source operating system and save. Later, after Setup completes, you use the list to install the optional content, which leaves the user's device without loss of functionality.
 
 ### Option 7: Configure an alternative source for optional content
 
@@ -136,7 +136,7 @@ Several of the options address ways to address optional content migration issues
 
 - The file path to the alternate source must be a fully qualified path; multiple locations can be separated by a semicolon.
 - This setting doesn't support installing language packs from an alternate source file path, only Features on Demand. If the policy is configured to acquire content from Windows Update, language packs will be acquired.
-- If this setting isn't configured or disabled, files are downloaded from the default Windows Update location, for example Windows Update for Business or WSUS.
+- If this setting isn't configured or disabled, files are downloaded from the default Windows Update location, for example Windows Update client policies or WSUS.
 
 
 For more information, see [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) and [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](fod-and-lang-packs.md).
@@ -151,11 +151,9 @@ For more information about the Unified Update Platform and the approaches outlin
 - [/DynamicUpdate](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate)
 - [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source)
 - [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions)
-- [Unified Update Platform](https://blogs.windows.com/windowsexperience/2016/11/03/introducing-unified-update-platform-uup/)
+- [Unified Update Platform](https://blogs.windows.com/windows-insider/2016/11/03/introducing-unified-update-platform-uup/)
 - [Updating Windows installation media with Dynamic Update packages](media-dynamic-update.md)
-- [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview) 
-- [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073)  
-- [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002)
+- [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview)
 
 ## Sample scripts
 
@@ -163,7 +161,7 @@ Options 4 and 6 involve the most scripting. Sample scripts for Option 4 already 
 
 ### Creating an optional content repository
 
-To get started, we build a repository of optional content and host on a network share. This content is a subset of content from the FOD and language pack ISOs that ship with each release. We configure this repository or repo with only those FODs our organization needs, using DISM /Export. For example, a superset based on taking inventory of optional features installed on existing devices. In this case, we exclude the Windows Mixed Reality feature. In addition, we copy all language packs to the root of the repository. 
+To get started, we build a repository of optional content and host on a network share. This content is a subset of content from the FOD and language pack ISOs that ship with each release. We configure this repository or repo with only those FODs our organization needs, using DISM /Export. For example, a superset based on taking inventory of optional features installed on existing devices. In this case, we exclude the Windows Mixed Reality feature. In addition, we copy all language packs to the root of the repository.
 
 
 
@@ -172,7 +170,7 @@ To get started, we build a repository of optional content and host on a network 
 $LP_ISO_PATH = "C:\_IMAGE\2004_ISO\CLIENTLANGPACKDVD_OEM_MULTI.iso"
 $FOD_ISO_PATH = "C:\_IMAGE\2004_ISO\FOD-PACKAGES_OEM_PT1_amd64fre_MULTI.iso"
 
-# Declare folders 
+# Declare folders
 $WORKING_PATH = "C:\_IMAGE\BuildRepo"
 $MEDIA_PATH = "C:\_IMAGE\2004_SETUP"
 
@@ -180,20 +178,20 @@ $MAIN_OS_MOUNT = $WORKING_PATH + "\MainOSMount"
 $REPO_PATH = $WORKING_PATH + "\Repo"
 
 # Create folders for mounting image optional content repository
-if (Test-Path $MAIN_OS_MOUNT) { 
-    Remove-Item -Path $MAIN_OS_MOUNT -Force -Recurse -ErrorAction stop| Out-Null  
+if (Test-Path $MAIN_OS_MOUNT) {
+    Remove-Item -Path $MAIN_OS_MOUNT -Force -Recurse -ErrorAction stop| Out-Null
 }
 
-if (Test-Path $REPO_PATH) { 
-    Remove-Item -Path $REPO_PATH -Force -Recurse -ErrorAction stop| Out-Null  
+if (Test-Path $REPO_PATH) {
+    Remove-Item -Path $REPO_PATH -Force -Recurse -ErrorAction stop| Out-Null
 }
 
-New-Item -ItemType Directory -Force -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
-New-Item -ItemType Directory -Force -Path $REPO_PATH -ErrorAction stop| Out-Null  
+New-Item -ItemType Directory -Force -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null
+New-Item -ItemType Directory -Force -Path $REPO_PATH -ErrorAction stop| Out-Null
 
 # Mount the main OS, I'll use this throughout the script
 Write-Host "Mounting main OS"
-Mount-WindowsImage -ImagePath $MEDIA_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
+Mount-WindowsImage -ImagePath $MEDIA_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null
 
 # Mount the LP ISO
 Write-Host "Mounting LP ISO"
@@ -205,9 +203,9 @@ $OS_LP_PATH = $LP_ISO_DRIVE_LETTER + ":\x64\langpacks\" + "*.cab"
 # Mount the FOD ISO
 Write-Host "Mounting FOD ISO"
 $FOD_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
-$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\" 
+$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\"
 
-# Export the FODs from the ISO that we are interested in 
+# Export the FODs from the ISO that we are interested in
 Write-Host "Exporting FODs to Repo"
 DISM /image:$MAIN_OS_MOUNT /export-source /source:$FOD_PATH /target:$REPO_PATH `
     /capabilityname:Accessibility.Braille~~~~0.0.1.0 `
@@ -555,11 +553,11 @@ DISM /image:$MAIN_OS_MOUNT /export-source /source:$FOD_PATH /target:$REPO_PATH `
     /capabilityname:Windows.Client.ShellComponents~~~~0.0.1.0 `
     /capabilityname:Windows.Desktop.EMS-SAC.Tools~~~~0.0.1.0 `
     /capabilityname:WMI-SNMP-Provider.Client~~~~0.0.1.0 `
-    /capabilityname:XPS.Viewer~~~~0.0.1.0     
+    /capabilityname:XPS.Viewer~~~~0.0.1.0
 
     # This one is large, lets skip for now
     #/capabilityname:Analog.Holographic.Desktop~~~~0.0.1.0 `
-    
+
 
 # Copy language caps to the repo
 Copy-Item -Path $OS_LP_PATH -Destination $REPO_PATH -Force -ErrorAction stop | Out-Null
@@ -570,7 +568,7 @@ Dismount-WindowsImage -Path $MAIN_OS_MOUNT -Discard -ErrorAction ignore | Out-Nu
 # Dismount ISO images
 Write-Host "Dismounting ISO images"
 Dismount-DiskImage -ImagePath $LP_ISO_PATH -ErrorAction ignore | Out-Null
-Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction ignore | Out-Null 
+Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction ignore | Out-Null
 
 ```
 
@@ -590,7 +588,7 @@ $OSVERSION_PATH = $OUTPUT_PATH + "sourceVersion.txt"
 $REPO_PATH = "Z:\Repo\"
 $LOCAL_REPO_PATH = $OUTPUT_PATH + "Local_Repo\"
 
-Function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) } 
+Function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) }
 
 Function Log
 {
@@ -602,7 +600,7 @@ Function Log
     $M = "$(Get-TS): PreInstall: $MESSAGE"
     Write-Host $M
     Add-Content -Path $LOG_PATH -Value $M
-    
+
  }
 
 Function IsLangFile
@@ -614,7 +612,7 @@ Function IsLangFile
 
     if (($PATH -match '[-_~]ar[-_~]') -or ($PATH -match '[-_~]bg[-_~]') -or ($PATH -match '[-_~]cs[-_~]') -or `
         ($PATH -match '[-_~]da[-_~]') -or ($PATH -match '[-_~]de[-_~]') -or ($PATH -match '[-_~]el[-_~]') -or `
-        ($PATH -match '[-_~]en[-_~]') -or ($PATH -match '[-_~]es[-_~]') -or ($PATH -match '[-_~]et[-_~]') -or `        
+        ($PATH -match '[-_~]en[-_~]') -or ($PATH -match '[-_~]es[-_~]') -or ($PATH -match '[-_~]et[-_~]') -or `
         ($PATH -match '[-_~]fi[-_~]') -or ($PATH -match '[-_~]fr[-_~]') -or ($PATH -match '[-_~]he[-_~]') -or `
         ($PATH -match '[-_~]hr[-_~]') -or ($PATH -match '[-_~]hu[-_~]') -or ($PATH -match '[-_~]it[-_~]') -or `
         ($PATH -match '[-_~]ja[-_~]') -or ($PATH -match '[-_~]ko[-_~]') -or ($PATH -match '[-_~]lt[-_~]') -or `
@@ -645,7 +643,7 @@ Log "OS Version: $($OSINFO.Version)"
 Add-Content -Path $OSVERSION_PATH -Value $OSINFO.Version
 
 # Get installed languages from international settings
-$INTL = DISM.exe /Online /Get-Intl /English 
+$INTL = DISM.exe /Online /Get-Intl /English
 
 # Save only output lines with installed languages
 $LANGUAGES = $INTL | Select-String -SimpleMatch 'Installed language(s)'
@@ -661,22 +659,22 @@ $SYSLANG = $SYSLANG | ForEach-Object {$_.Line.Replace("Default system UI languag
 
 # Save these languages
 Log "Default system UI language on source OS: $($SYSLANG)"
-ForEach ($ITEM in $LANGUAGES) { 
+ForEach ($ITEM in $LANGUAGES) {
     Log "Installed language on source OS: $($ITEM)"
     Add-Content -Path $LANG_PATH -Value $ITEM
 }
 
 # Get and save installed packages, we'll use this for debugging
 $PACKAGES = Get-WindowsPackage -Online
-ForEach ($ITEM in $PACKAGES) { 
+ForEach ($ITEM in $PACKAGES) {
     if($ITEM.PackageState -eq "Installed") {
-        Log "Package $($ITEM.PackageName) is installed"        
+        Log "Package $($ITEM.PackageName) is installed"
     }
 }
 
 # Get and save capabilities
-$CAPABILITIES = Get-WindowsCapability -Online 
-ForEach ($ITEM in $CAPABILITIES) { 
+$CAPABILITIES = Get-WindowsCapability -Online
+ForEach ($ITEM in $CAPABILITIES) {
     if($ITEM.State -eq "Installed") {
         Log "Capability $($ITEM.Name) is installed"
         Add-Content -Path $CAP_PATH -Value $ITEM.Name
@@ -690,10 +688,10 @@ ForEach ($FILE in $REPO_FILES) {
     If (!(Test-Path $Path)) {
         New-Item -ItemType Directory -Path $PATH -Force | Out-Null
     }
-    If ((IsLangFile $FILE.Name)) { 
+    If ((IsLangFile $FILE.Name)) {
 
         # Only copy those files where we need the primary languages from the source OS
-        ForEach ($ITEM in $LANGUAGES) { 
+        ForEach ($ITEM in $LANGUAGES) {
             if ($FILE.Name -match $Item) {
 
                 If (!(Test-Path (Join-Path $Path $File.Name))) {
@@ -703,7 +701,7 @@ ForEach ($FILE in $REPO_FILES) {
                 else {
                     Log "File $($FILE.Name) already exists in local repository"
                 }
-            } 
+            }
         }
     } Else {
 
@@ -719,12 +717,12 @@ ForEach ($FILE in $REPO_FILES) {
 }
 
 Log ("Exiting")
- 
+
 ```
 
 ### Adding optional content in the target operating system
 
-After setup has completed successfully, we use success.cmd to retrieve the optional content state from the source operating system and install in the new operating system only if that's missing. Then, apply the latest monthly update as a final step. 
+After setup has completed successfully, we use success.cmd to retrieve the optional content state from the source operating system and install in the new operating system only if that's missing. Then, apply the latest monthly update as a final step.
 
 
 ```powershell
@@ -737,7 +735,7 @@ $LOCAL_REPO_PATH = $OUTPUT_PATH + "Local_Repo\"
 $LCU_PATH = $OUTPUT_PATH + "Windows10.0-KB4565503-x64_PSFX.cab"
 $PENDING = $false
 
-Function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) } 
+Function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) }
 
 Function Log
 {
@@ -749,7 +747,7 @@ Function Log
     $M = "$(Get-TS): PostInstall: $MESSAGE"
     Write-Host $M
     Add-Content -Path $LOG_PATH -Value $M
-    
+
  }
 
 Log "Starting"
@@ -767,7 +765,7 @@ if (!(Test-Path $LANG_PATH) -or !(Test-Path $CAP_PATH) -or !(Test-Path $OSVERSIO
 else {
 
     # Retrive OS version from source OS
-    $SOURCE_OSVERSION  = Get-Content -Path $OSVERSION_PATH 
+    $SOURCE_OSVERSION  = Get-Content -Path $OSVERSION_PATH
     if ($OSINFO.Version -eq $SOURCE_OSVERSION) {
         Log "OS Version hasn't changed."
     }
@@ -775,10 +773,10 @@ else {
     else {
 
         # Retrive language list from source OS
-        $SOURCE_LANGUAGES  = Get-Content -Path $LANG_PATH 
+        $SOURCE_LANGUAGES  = Get-Content -Path $LANG_PATH
 
         # Get installed languages from International Settings
-        $INTL = DISM.exe /Online /Get-Intl /English 
+        $INTL = DISM.exe /Online /Get-Intl /English
 
         # Save System Language, save only output line with default system language
         $SYS_LANG = $INTL | Select-String -SimpleMatch 'Default system UI language'
@@ -788,53 +786,53 @@ else {
 
         # Get and save installed packages, we'll use this for debugging
         $PACKAGES = Get-WindowsPackage -Online
-        ForEach ($ITEM in $PACKAGES) { 
+        ForEach ($ITEM in $PACKAGES) {
             if($ITEM.PackageState -eq "Installed") {
                 Log "Package $($ITEM.PackageName) is installed"
             }
         }
 
         # Loop through source OS languages, and install if missing on target OS
-        ForEach ($SOURCE_ITEM in $SOURCE_LANGUAGES) { 
+        ForEach ($SOURCE_ITEM in $SOURCE_LANGUAGES) {
             if ($SOURCE_ITEM -ne $SYS_LANG) {
 
                 # add missing languages except the system language
                 Log "Adding language Microsoft-Windows-Client-Language-Pack_x64_$($SOURCE_ITEM).cab"
                 try {
-                    Add-WindowsPackage -Online -PackagePath "$($LOCAL_REPO_PATH)\Microsoft-Windows-Client-Language-Pack_x64_$($SOURCE_ITEM).cab" -ErrorAction stop | Out-Null  
+                    Add-WindowsPackage -Online -PackagePath "$($LOCAL_REPO_PATH)\Microsoft-Windows-Client-Language-Pack_x64_$($SOURCE_ITEM).cab" -ErrorAction stop | Out-Null
                 }
                 catch {
                     Log $_.Exception.Message
                 }
             }
         }
-    
+
         # Retrieve capabilities from source OS and target OS
         $SOURCE_CAPABILITIES  = Get-Content -Path $CAP_PATH
-        $CAPABILITIES = Get-WindowsCapability -Online 
+        $CAPABILITIES = Get-WindowsCapability -Online
 
         # Loop through source OS capabilities, and install if missing on target OS
-        ForEach ($SOURCE_ITEM in $SOURCE_CAPABILITIES) { 
+        ForEach ($SOURCE_ITEM in $SOURCE_CAPABILITIES) {
             $INSTALLED = $false
-            ForEach ($ITEM in $CAPABILITIES) { 
+            ForEach ($ITEM in $CAPABILITIES) {
                 if ($ITEM.Name -eq $($SOURCE_ITEM)) {
                     if ($ITEM.State -eq "Installed") {
                         $INSTALLED = $true
                         break
                     }
                 }
-            }    
+            }
 
             # Add if not already installed
             if (!($INSTALLED)) {
                 Log "Adding capability $SOURCE_ITEM"
                 try {
-                    Add-WindowsCapability -Online -Name $SOURCE_ITEM -Source $LOCAL_REPO_PATH -ErrorAction stop | Out-Null  
+                    Add-WindowsCapability -Online -Name $SOURCE_ITEM -Source $LOCAL_REPO_PATH -ErrorAction stop | Out-Null
                 }
                 catch {
                     Log $_.Exception.Message
                 }
-            } 
+            }
             else {
                 Log "Capability $SOURCE_ITEM is already installed"
             }
@@ -842,11 +840,11 @@ else {
 
         # Add LCU, this is required after adding FODs and languages
         Log ("Adding LCU")
-        Add-WindowsPackage -Online -PackagePath $LCU_PATH -NoRestart 
+        Add-WindowsPackage -Online -PackagePath $LCU_PATH -NoRestart
 
         # Get packages, we'll use this for debugging and to see if we need to restart to install
         $PACKAGES = Get-WindowsPackage -Online
-        ForEach ($ITEM in $PACKAGES) { 
+        ForEach ($ITEM in $PACKAGES) {
             Log "Package $($ITEM.PackageName) is $($ITEM.PackageState)"
             if ($ITEM.PackageState -eq "InstallPending") {
                 $PENDING = $true

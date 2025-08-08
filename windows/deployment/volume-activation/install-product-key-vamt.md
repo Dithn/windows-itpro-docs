@@ -6,10 +6,10 @@ author: kaushika-msft
 manager: cshepard
 ms.reviewer: nganguly
 ms.localizationpriority: medium
-ms.date: 11/07/2022
+ms.date: 05/14/2025
 ms.topic: how-to
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ---
 
 # Install a product key

@@ -4,13 +4,13 @@ titleSuffix: Windows Update for Business reports
 description: List of prerequisites for enabling and using Windows Update for Business reports in your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 06/04/2024
 ---
 
@@ -27,7 +27,7 @@ Before you begin the process of adding Windows Update for Business reports to yo
   - Devices can be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 - Devices that are [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) only (workplace joined) aren't supported with Windows Update for Business reports.
 - The Log Analytics workspace must be in a [supported region](#log-analytics-regions).
-- Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from the [Windows Update for Business deployment service](deployment-service-overview.md).
+- Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview).
 
 ## Permissions
 
@@ -52,9 +52,9 @@ Windows Update for Business reports supports Windows client devices on the follo
 
 ## Windows operating system updates for client devices
 
-Installing the February 2023 cumulative update, or a later equivalent update, is required for clients to enroll into Windows Update for Business reports. This update helped enable [changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), which Windows Update for Business reports relies on. 
+Installing the February 2023 cumulative update, or a later equivalent update, is required for clients to enroll into Windows Update for Business reports. This update helped enable [changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), which Windows Update for Business reports relies on.
 
-For more information about available updates, see [Windows 11 release information](/windows/release-health/windows11-release-information) and [Windows 10 release information](/windows/release-health/release-information). 
+For more information about available updates, see [Windows 11 release information](/windows/release-health/windows11-release-information) and [Windows 10 release information](/windows/release-health/release-information).
 
 ## Diagnostic data requirements
 

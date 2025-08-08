@@ -1,7 +1,8 @@
 ---
 title: DiagnosticLog CSP
 description: Learn more about the DiagnosticLog CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -63,7 +64,7 @@ The following list shows the DiagnosticLog configuration service provider nodes:
 <!-- Device-DeviceStateData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceStateData-Applicability-End -->
 
 <!-- Device-DeviceStateData-OmaUri-Begin -->
@@ -103,7 +104,7 @@ The DeviceStateData functionality within the DiagnosticLog CSP provides extra de
 <!-- Device-DeviceStateData-MdmConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DeviceStateData-MdmConfiguration-Applicability-End -->
 
 <!-- Device-DeviceStateData-MdmConfiguration-OmaUri-Begin -->
@@ -164,7 +165,7 @@ This node is to trigger snapping of the Device Management state data with "SNAP"
 <!-- Device-DiagnosticArchive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-DiagnosticArchive-Applicability-End -->
 
 <!-- Device-DiagnosticArchive-OmaUri-Begin -->
@@ -209,7 +210,7 @@ DiagnosticArchive is designed for ad-hoc troubleshooting scenarios, such as an I
 <!-- Device-DiagnosticArchive-ArchiveDefinition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-DiagnosticArchive-ArchiveDefinition-Applicability-End -->
 
 <!-- Device-DiagnosticArchive-ArchiveDefinition-OmaUri-Begin -->
@@ -332,7 +333,7 @@ Additionally, the XML may include **One or more data gathering directives, which
 <!-- Device-DiagnosticArchive-ArchiveResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-DiagnosticArchive-ArchiveResults-Applicability-End -->
 
 <!-- Device-DiagnosticArchive-ArchiveResults-OmaUri-Begin -->
@@ -420,7 +421,7 @@ To learn how to read the resulting data, see [How to review ArchiveResults](#how
 <!-- Device-EtwLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Applicability-End -->
 
 <!-- Device-EtwLog-OmaUri-Begin -->
@@ -465,7 +466,7 @@ The ETW log feature is designed for advanced usage, and assumes developers' fami
 <!-- Device-EtwLog-Channels-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-OmaUri-Begin -->
@@ -515,7 +516,7 @@ For more information about using DiagnosticLog to collect logs remotely from a P
 <!-- Device-EtwLog-Channels-{ChannelName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-OmaUri-Begin -->
@@ -597,7 +598,7 @@ Each dynamic node represents a registered 'Channel' node. The node name must be 
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-OmaUri-Begin -->
@@ -654,7 +655,7 @@ This node is to trigger exporting events into a log file from this node's associ
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-OmaUri-Begin -->
@@ -712,7 +713,7 @@ This node is used for setting or getting the xpath query string to filter the ev
 <!-- Device-EtwLog-Channels-{ChannelName}-State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-State-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-State-OmaUri-Begin -->
@@ -803,7 +804,7 @@ This node is used for setting or getting the 'Enabled' state of this node's asso
 <!-- Device-EtwLog-Collectors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-OmaUri-Begin -->
@@ -883,7 +884,7 @@ To gather diagnostics using this CSP:
 <!-- Device-EtwLog-Collectors-{CollectorName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-OmaUri-Begin -->
@@ -965,7 +966,7 @@ Each dynamic node represents a registered 'Collector' node. CSP will maintain an
 <!-- Device-EtwLog-Collectors-{CollectorName}-LogFileSizeLimitMB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-LogFileSizeLimitMB-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-LogFileSizeLimitMB-OmaUri-Begin -->
@@ -1006,7 +1007,7 @@ This node is used for setting or getting the trace log file size limit(in Megaby
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-OmaUri-Begin -->
@@ -1045,7 +1046,7 @@ Root node of all providers registered in this collector node.
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-OmaUri-Begin -->
@@ -1127,7 +1128,7 @@ Each dynamic node represents an ETW provider registered in this collector node. 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-OmaUri-Begin -->
@@ -1213,7 +1214,7 @@ This node is used for setting or getting the keywords of the event provider in t
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-OmaUri-Begin -->
@@ -1286,7 +1287,7 @@ Set provider State:
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-OmaUri-Begin -->
@@ -1362,7 +1363,7 @@ Set provider TraceLevel:
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-OmaUri-Begin -->
@@ -1459,7 +1460,7 @@ After you've added a logging task, you can start/stop a trace by running an Exec
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-OmaUri-Begin -->
@@ -1508,7 +1509,7 @@ This node is used for setting or getting the trace log file mode of this collect
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-OmaUri-Begin -->
@@ -1547,7 +1548,7 @@ This node is used for getting the status of this collector node's associated tra
 <!-- Device-FileDownload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-Applicability-End -->
 
 <!-- Device-FileDownload-OmaUri-Begin -->
@@ -1598,7 +1599,7 @@ The FileDownload feature of the DiagnosticLog CSP enables a management server to
 <!-- Device-FileDownload-DMChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-OmaUri-Begin -->
@@ -1637,7 +1638,7 @@ Root node of all csp nodes that are used for controlling file download for their
 <!-- Device-FileDownload-DMChannel-{FileContext}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-OmaUri-Begin -->
@@ -1677,7 +1678,7 @@ Each dynamic node represents a 'FileContext' node corresponding to a log file ge
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-OmaUri-Begin -->
@@ -1734,7 +1735,7 @@ This node is used for getting the total number of blocks for the associated log 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-OmaUri-Begin -->
@@ -1791,7 +1792,7 @@ This node is used to get the binary data of the block that 'BlockIndexToRead' no
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-OmaUri-Begin -->
@@ -1877,7 +1878,7 @@ This node is used for setting and getting the block index that points to the dat
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockSizeKB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockSizeKB-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockSizeKB-OmaUri-Begin -->
@@ -1961,7 +1962,7 @@ This node is used for setting or getting the block size (in Kilobytes) for the d
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-OmaUri-Begin -->
@@ -2000,7 +2001,7 @@ Root node of all 'BlockNumber' nodes for the associated log file. The number of 
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-OmaUri-Begin -->
@@ -2040,7 +2041,7 @@ Each dynamic node represents a 'BlockNumber' node. The node name is an integer e
 <!-- Device-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Applicability-End -->
 
 <!-- Device-Policy-OmaUri-Begin -->
@@ -2080,7 +2081,7 @@ This can be used to configure Windows event log policies, such as maximum log si
 <!-- Device-Policy-Channels-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-Applicability-End -->
 
 <!-- Device-Policy-Channels-OmaUri-Begin -->
@@ -2119,7 +2120,7 @@ Contains policy for Event Log channel settings.
 <!-- Device-Policy-Channels-{ChannelName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-OmaUri-Begin -->
@@ -2224,7 +2225,7 @@ Each dynamic node represents a registered 'Channel' node. The node name must be 
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-OmaUri-Begin -->
@@ -2365,7 +2366,7 @@ If you disable or don't configure this policy setting, the locally configured va
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-OmaUri-Begin -->
@@ -2505,7 +2506,7 @@ If you disable or don't configure this policy setting, the locally configured va
 <!-- Device-Policy-Channels-{ChannelName}-MaximumFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-MaximumFileSize-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-MaximumFileSize-OmaUri-Begin -->
@@ -2639,7 +2640,7 @@ Maximum size of the channel log file in MB.
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-OmaUri-Begin -->

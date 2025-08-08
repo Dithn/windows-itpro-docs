@@ -1,7 +1,8 @@
 ---
 title: CloudDesktop Policy CSP
 description: Learn more about the CloudDesktop Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- BootToCloudMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
 <!-- BootToCloudMode-Applicability-End -->
 
 <!-- BootToCloudMode-OmaUri-Begin -->
@@ -68,7 +69,7 @@ This policy allows the user to configure the boot to cloud mode. Boot to Cloud m
 <!-- SetMaxConnectionTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
 <!-- SetMaxConnectionTimeout-Applicability-End -->
 
 <!-- SetMaxConnectionTimeout-OmaUri-Begin -->

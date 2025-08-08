@@ -8,7 +8,7 @@ ms.date: 06/25/2024
 author: v-fvalentyna
 ms.author: v-fvalentyna
 ms.reviewer: mstewart,thtrombl,arcarley
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>

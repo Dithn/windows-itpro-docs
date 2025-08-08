@@ -1,7 +1,8 @@
 ---
 title: TenantRestrictions Policy CSP
 description: Learn more about the TenantRestrictions Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- ConfigureTenantRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.320] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1320] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1320] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1320] and later <br> ✅ Windows 10, version 21H2 [10.0.19044] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.320] and later <br> ✅ Windows 10, version 2004 with [KB5006738](https://support.microsoft.com/help/5006738) [10.0.19041.1320] and later <br> ✅ Windows 10, version 20H2 with [KB5006738](https://support.microsoft.com/help/5006738) [10.0.19042.1320] and later <br> ✅ Windows 10, version 21H1 with [KB5006738](https://support.microsoft.com/help/5006738) [10.0.19043.1320] and later <br> ✅ Windows 10, version 21H2 [10.0.19044] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureTenantRestrictions-Applicability-End -->
 
 <!-- ConfigureTenantRestrictions-OmaUri-Begin -->
@@ -41,9 +42,9 @@ When you enable this setting, compliant applications will be prevented from acce
 
 <https://go.microsoft.com/fwlink/?linkid=2148762>
 
-Before enabling firewall protection, ensure that a Windows Defender Application Control (WDAC) policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding WDAC policy will prevent all applications from reaching Microsoft endpoints. This firewall setting isn't supported on all versions of Windows - see the following link for more information.
+Before enabling firewall protection, ensure that an App Control for Business policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding App Control for Business policy will prevent all applications from reaching Microsoft endpoints. This firewall setting isn't supported on all versions of Windows - see the following link for more information.
 
-For details about setting up WDAC with tenant restrictions, see <https://go.microsoft.com/fwlink/?linkid=2155230>
+For details about setting up App Control with tenant restrictions, see <https://go.microsoft.com/fwlink/?linkid=2155230>
 <!-- ConfigureTenantRestrictions-Description-End -->
 
 <!-- ConfigureTenantRestrictions-Editable-Begin -->

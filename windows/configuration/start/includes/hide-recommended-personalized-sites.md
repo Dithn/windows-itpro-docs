@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -11,5 +11,5 @@ Remove Personalized Website Recommendations from the Recommended section in the 
 
 |  | Path |
 |--|--|
-| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites)<br><br>`./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Personalized Website Recommendations from the Recommended section in the Start Menu**|
+| **CSP** | - `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites)<br>- `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites) |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Personalized Website Recommendations from the Recommended section in the Start Menu**|

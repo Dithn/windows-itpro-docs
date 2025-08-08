@@ -1,15 +1,14 @@
 ---
 title: WebThreatDefense Policy CSP
 description: Learn more about the WebThreatDefense Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- WebThreatDefense-Begin -->
 # Policy CSP - WebThreatDefense
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WebThreatDefense-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -23,7 +22,7 @@ ms.date: 01/31/2024
 <!-- AutomaticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- AutomaticDataCollection-Applicability-End -->
 
 <!-- AutomaticDataCollection-OmaUri-Begin -->
@@ -92,7 +91,7 @@ This policy setting determines whether Enhanced Phishing Protection can collect 
 <!-- NotifyMalicious-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyMalicious-Applicability-End -->
 
 <!-- NotifyMalicious-OmaUri-Begin -->
@@ -159,7 +158,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyPasswordReuse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyPasswordReuse-Applicability-End -->
 
 <!-- NotifyPasswordReuse-OmaUri-Begin -->
@@ -226,7 +225,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyUnsafeApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyUnsafeApp-Applicability-End -->
 
 <!-- NotifyUnsafeApp-OmaUri-Begin -->
@@ -293,7 +292,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- ServiceEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ServiceEnabled-Applicability-End -->
 
 <!-- ServiceEnabled-OmaUri-Begin -->
@@ -310,7 +309,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it won't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
 
-- If you don't configure this setting, users can decide whether or not they will enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
+- If you don't configure this setting, users can decide whether or not they'll enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
 <!-- ServiceEnabled-Description-End -->
 
 <!-- ServiceEnabled-Editable-Begin -->

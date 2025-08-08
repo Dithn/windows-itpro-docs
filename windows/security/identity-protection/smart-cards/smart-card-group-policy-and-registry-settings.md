@@ -1,8 +1,8 @@
 ---
-title: Smart Card Group Policy and Registry Settings 
+title: Smart Card Group Policy and Registry Settings
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 10/29/2024
 ---
 
 # Smart Card Group Policy and Registry Settings
@@ -194,7 +194,7 @@ You can use this policy setting to configure which valid sign-in certificates ar
 > [!NOTE]
 > During the certificate renewal period, a user's smart card can have multiple valid sign-in certificates issued from the same certificate template, which can cause confusion about which certificate to select. This behavior can occur when a certificate is renewed and the old certificate has not expired yet.
 >
-> If two certificates are issued from the same template with the same major version and they are for the same user (this is determined by their UPN), they are determined to be the same.  
+> If two certificates are issued from the same template with the same major version and they are for the same user (this is determined by their UPN), they are determined to be the same.
 
 When this policy setting is turned on, filtering occurs so that the user can select from only the most current valid certificates.
 
@@ -357,8 +357,8 @@ The following table lists the keys and the corresponding values to turn off cert
 
 | Registry Key | Details |
 |--|--|
-| `HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\Kdc\UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors` | Type = DWORD<br>Value = 1 |
-| `HKEY_LOCAL_MACHINE\SYSTEM\CCS\Control\LSA\Kerberos\Parameters\UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors` | Type = DWORD<br>Value = 1 |
+| `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kdc\UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors` | Type = DWORD<br>Value = 1 |
+| `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\LSA\Kerberos\Parameters\UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors` | Type = DWORD<br>Value = 1 |
 
 ## Additional smart card Group Policy settings and registry keys
 

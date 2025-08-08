@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 02/05/2024
+ms.date: 3/7/2025
 ms.topic: include
 ---
 
@@ -22,7 +22,7 @@ $assignedAccessConfiguration = @"
           <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
           <App DesktopAppPath="%windir%\explorer.exe" />
           <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
-          <App AppUserModelId="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+          <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
         </AllowedApps>
       </AllAppsList>
       <rs5:FileExplorerNamespaceRestrictions>
@@ -88,7 +88,7 @@ $assignedAccessConfiguration = @"
           <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
           <App DesktopAppPath="%windir%\explorer.exe" />
           <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
-          <App AppUserModelId="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+          <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
         </AllowedApps>
       </AllAppsList>
       <rs5:FileExplorerNamespaceRestrictions>

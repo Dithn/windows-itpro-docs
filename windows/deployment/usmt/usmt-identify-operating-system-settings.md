@@ -2,12 +2,12 @@
 title: Identify Operating System Settings
 description: Identify which system settings need to be migrated. The User State Migration Tool (USMT) can then be used to select settings and keep the default values for all others.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

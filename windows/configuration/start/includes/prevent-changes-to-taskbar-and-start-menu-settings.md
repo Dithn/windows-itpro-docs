@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -15,4 +15,4 @@ With this policy setting you can prevent changes to Taskbar and Start menu setti
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent changes to Taskbar and Start Menu Settings**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent changes to Taskbar and Start Menu Settings**|
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent changes to Taskbar and Start Menu Settings**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent changes to Taskbar and Start Menu Settings**|

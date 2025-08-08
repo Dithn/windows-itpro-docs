@@ -1,13 +1,13 @@
 ---
-title: "Quickstart: configure a kiosk experience with Assigned Access"
-description: Learn how to configure a kiosk experience with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
+title: "Quickstart: Configure a Single-App Kiosk With Assigned Access"
+description: Learn how to configure a single-app kiosk with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
-ms.date: 03/04/2024
+ms.date: 3/7/2025
 ---
 
-# Quickstart: configure a kiosk with Assigned Access
+# Quickstart: configure a single-app kiosk with Assigned Access
 
-This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Assigned Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a single-app kiosk on Windows with Assigned Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can change the app used, the URL specified when opening Microsoft Edge, or change the name of the user that automatically signs in to Windows.
 
@@ -62,8 +62,6 @@ Assign the policy to a group that contains as members the devices that you want 
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
-
-
 #### [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
 Here are the steps to configure a kiosk using the Settings app:
@@ -79,7 +77,7 @@ Here are the steps to configure a kiosk using the Settings app:
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen are available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in
@@ -93,12 +91,28 @@ Here are the steps to configure a kiosk using the Settings app:
 
 After the settings are applied, reboot the device. A local user account is automatically signed in, opening Microsoft Edge.
 
+## Remove Assigned Access
+
+Once you no longer need the kiosk configuration, you can remove it.
+
+Here's a PowerShell example to remove the Assigned Access configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.Configuration = $null
+Set-CimInstance -CimInstance $obj
+```
+
+Reboot the device to apply the changes.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > Learn more about Assigned Access and how to configure it:
 >
-> [Assigned Access overview](overview.md)
+> [Assigned Access overview](index.md)
 
 [WIN-3]: /windows/client-management/mdm/assignedaccess-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -16,5 +16,5 @@ If you enable this setting, the Start Menu will either collapse or remove the al
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove All Programs list from the Start menu**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove All Programs list from the Start menu** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist)<br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist) |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove All Programs list from the Start menu**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove All Programs list from the Start menu** |

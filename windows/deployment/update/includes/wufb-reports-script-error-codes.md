@@ -1,7 +1,7 @@
 ---
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.subservice: itpro-updates
 ms.service: windows-client
 ms.topic: include
@@ -41,7 +41,7 @@ ms.localizationpriority: medium
 | 62    | AllowTelemetry registry key isn't the correct type of REG_DWORD.|
 | 63    | AllowTelemetry isn't set to the appropriate value and it couldn't be set by the script.|
 | 64    | AllowTelemetry isn't the correct type of REG_DWORD.|
-| 66    | Failed to verify UTC connectivity and recent uploads.|  
+| 66    | Failed to verify UTC connectivity and recent uploads.|
 | 67    | Unexpected failure when verifying UTC CSP.|
 | 99    | Device isn't Windows 10 or Windows 11.|
 | 100   | Device must be Microsoft Entra joined or Microsoft Entra hybrid joined to use Windows Update for Business reports.|

@@ -1,7 +1,7 @@
 ---
 title: How to configure cryptographic settings for IKEv2 VPN connections
 description: Learn how to update the IKEv2 cryptographic settings of VPN servers and clients by running VPN cmdlets to secure connections.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 ---
 

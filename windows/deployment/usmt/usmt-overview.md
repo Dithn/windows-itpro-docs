@@ -5,9 +5,9 @@ ms.service: windows-client
 ms.subservice: itpro-deploy
 author: frankroj
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
-ms.date: 01/09/2024
+ms.date: 03/27/2025
 ms.topic: overview
 ms.collection:
   - highpri
@@ -48,6 +48,14 @@ There are some scenarios in which the use of USMT isn't recommended. These scena
 
 - Migrations that require end-user interaction.
 - Migrations that require customization on a machine-by-machine basis.
+
+## Download and install USMT
+
+USMT is part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from the following link:
+
+[Download and install the Windows ADK](/windows-hardware/get-started/adk-install)
+
+Once the Windows ADK installer is downloaded, run the installer, and then in the **Select the features you want to install** page, make sure **User State Migration Tool (USMT)** is selected.
 
 ## Related articles
 

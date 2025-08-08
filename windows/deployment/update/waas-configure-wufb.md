@@ -1,12 +1,12 @@
 ---
-title: Configure Windows Update for Business
-manager: aaroncz
-description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
+title: Configure Windows Update client policies
+manager: bpardi
+description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update client policies for your devices.
 ms.service: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-updates
 ms.collection:
   - tier1
@@ -19,18 +19,19 @@ appliesto:
 ms.date: 02/27/2024
 ---
 
-# Configure Windows Update for Business
+# Configure Windows Update client policies
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2).
+
+You can use Group Policy or your mobile device management (MDM) service to configure Windows Update client policies for your devices. The sections in this article provide the Group Policy and MDM policies for Windows 10, version 1511 and later, including Windows 11. The MDM policies use the OMA-URI setting from the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
 
 > [!NOTE]
 > Windows Server _doesn't_ get feature updates from Windows Update, so only the quality update policies apply. This behavior doesn't apply to [Azure Stack hyperconverged infrastructure (HCI)](/azure-stack/hci/).
 
-You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this article provide the Group Policy and MDM policies for Windows 10, version 1511 and later, including Windows 11. The MDM policies use the OMA-URI setting from the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
+You can use Windows Update client policies regardless of the diagnostic data level that you chose. If the diagnostic data level is set to **0 (Security)**, Windows Update client policies are still honored. For more information, see [Configure the operating system diagnostic data level](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
 
-> [!IMPORTANT]
-> Beginning with Windows 10, version 1903, organizations can use Windows Update for Business policies, regardless of the diagnostic data level chosen. If the diagnostic data level is set to **0 (Security)**, Windows Update for Business policies will still be honored. For instructions, see [Configure the operating system diagnostic data level](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
-
+> [!TIP]
+> This feature was formerly known as _Windows Update for Business_.
 
 ## Start by grouping devices
 
@@ -44,7 +45,7 @@ By grouping devices with similar deferral periods, administrators are able to cl
 
 ## Configure devices for the appropriate service channel
 
-With Windows Update for Business, you can set a device to be on either Windows Insider Preview or the General Availability Channel servicing branch. For more information on this servicing model, see [Servicing channels](waas-overview.md#servicing-channels).
+With Windows Update client policies, you can set a device to be on either Windows Insider Preview or the General Availability Channel servicing branch. For more information on this servicing model, see [Servicing channels](waas-overview.md#servicing-channels).
 
 **Release branch policies**
 
@@ -211,7 +212,7 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 
 ## Enable optional updates
 <!--7991583-->
-In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Enable optional updates** policy.
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update client policies. However, you can enable optional updates for devices by using the **Enable optional updates** policy.
 
 To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**.
 
@@ -263,7 +264,7 @@ The features that are behind temporary enterprise feature control will be enable
 
 ## Summary: MDM and Group Policy settings for Windows 10, version 1703 and later
 
-The following are quick-reference tables of the supported policy values for Windows Update for Business in Windows 10, version 1607 and later.
+The following are quick-reference tables of the supported policy values for Windows Update client policies in Windows 10, version 1607 and later.
 
 **GPO: HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate**
 
@@ -296,7 +297,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 ## Update devices to newer versions
 
-Due to the changes in Windows Update for Business, Windows 10, version 1607 uses different GPO and MDM keys than those available in version 1511. Windows 10, version 1703 also uses a few GPO and MDM keys that are different from those available in version 1607. However, Windows Update for Business devices running older versions will still see their policies honored after they update to a newer version; the old policy keys will continue to exist with their values ported forward during the update. Following the update to a newer version, only the old keys will be populated and not the new version keys, until the newer keys are explicitly defined on the device by the administrator.
+Due to the changes in Windows Update client policies, Windows 10, version 1607 uses different GPO and MDM keys than those available in version 1511. Windows 10, version 1703 also uses a few GPO and MDM keys that are different from those available in version 1607. However, Windows Update client policies devices running older versions will still see their policies honored after they update to a newer version; the old policy keys will continue to exist with their values ported forward during the update. Following the update to a newer version, only the old keys will be populated and not the new version keys, until the newer keys are explicitly defined on the device by the administrator.
 
 ### How older version policies are respected on newer versions
 

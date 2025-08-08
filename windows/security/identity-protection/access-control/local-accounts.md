@@ -1,11 +1,12 @@
 ---
-ms.date: 11/07/2023
+ms.date: 04/07/2025
 title: Local Accounts
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
 ms.topic: concept-article
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2025</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
@@ -37,7 +38,7 @@ The default Administrator account can't be deleted or locked out, but it can be 
 
 Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group.
 
-Members of the Administrators groups can run apps with elevated permissions without using the *Run as Administrator* option. Fast User Switching is more secure than using `runas` or different-user elevation.  
+Members of the Administrators groups can run apps with elevated permissions without using the *Run as Administrator* option. Fast User Switching is more secure than using `runas` or different-user elevation.
 
 #### Account group membership
 
@@ -219,38 +220,38 @@ The following table shows the Group Policy and registry settings that are used t
 ||Registry value data|0|
 
 > [!NOTE]
-> You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
+> You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates.
 
 #### To enforce local account restrictions for remote access
 
 1. Start the **Group Policy Management** Console (GPMC)
-1. In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects** where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO)
+1. In the console tree, expand <*Forest*>\Domains\<*Domain*>, and then **Group Policy Objects** where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO)
 1. In the console tree, right-click **Group Policy Objects > New**
-1. In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and &gt; **OK** where *gpo\_name* is the name of the new GPO. The GPO name indicates that the GPO is used to restrict local administrator rights from being carried over to another computer
-1. In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**
+1. In the **New GPO** dialog box, type <**gpo_name**>, and > **OK** where *gpo_name* is the name of the new GPO. The GPO name indicates that the GPO is used to restrict local administrator rights from being carried over to another computer
+1. In the details pane, right-click <**gpo_name**>, and > **Edit**
 1. Ensure that UAC is enabled and that UAC restrictions apply to the default Administrator account by following these steps:
 
-  - Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\, and &gt; **Security Options**
-  - Double-click **User Account Control: Run all administrators in Admin Approval Mode** &gt; **Enabled** &gt; **OK**
-  - Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**
+   - Navigate to the **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**
+   - Select **User Account Control: Run all administrators in Admin Approval Mode** > **Enabled** > **OK**
+   - Select **User Account Control: Admin Approval Mode for the Built-in Administrator account** > **Enabled** > **OK**
 
 1. Ensure that the local account restrictions are applied to network interfaces by following these steps:
 
-  - Navigate to *Computer Configuration\Preferences and Windows Settings*, and > **Registry**
-  - Right-click **Registry**, and &gt; **New** &gt; **Registry Item**
-  - In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**
-  - Ensure that the **Hive** box is set to **HKEY_LOCAL_MACHINE**
-  - Select (**…**), browse to the following location for **Key Path** &gt; **Select** for: `SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
-  - In the **Value name** area, type `LocalAccountTokenFilterPolicy`
-  - In the **Value type** box, from the drop-down list, select **REG_DWORD** to change the value
-  - In the **Value data** box, ensure that the value is set to **0**
-  - Verify this configuration, and &gt; **OK**
+   - Navigate to *Computer Configuration\Preferences and Windows Settings*, and > **Registry**
+   - Right-click **Registry**, and > **New** > **Registry Item**
+   - In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**
+   - Ensure that the **Hive** box is set to **HKEY_LOCAL_MACHINE**
+   - Select (**…**), browse to the following location for **Key Path** > **Select** for: `SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
+   - In the **Value name** area, type `LocalAccountTokenFilterPolicy`
+   - In the **Value type** box, from the drop-down list, select **REG_DWORD** to change the value
+   - In the **Value data** box, ensure that the value is set to **0**
+   - Verify this configuration, and > **OK**
 
 1. Link the GPO to the first **Workstations** organizational unit (OU) by doing the following:
 
-  - Navigate to the `*Forest*\<Domains>\*Domain*\*OU*` path
-  - Right-click the **Workstations > Link an existing GPO**
-  - Select the GPO that you created, and &gt; **OK**
+   - Navigate to the `*Forest*\<Domains>\*Domain*\*OU*` path
+   - Right-click the **Workstations > Link an existing GPO**
+   - Select the GPO that you created, and > **OK**
 
 1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy
 1. Create links to all other OUs that contain workstations
@@ -277,23 +278,23 @@ The following table shows the Group Policy settings that are used to deny networ
 #### To deny network logon to all local administrator accounts
 
 1. Start the **Group Policy Management** Console (GPMC)
-1. In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects**, where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO)
-1. In the console tree, right-click **Group Policy Objects**, and &gt; **New**
-1. In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and then &gt; **OK** where *gpo\_name* is the name of the new GPO indicates that it's being used to restrict the local administrative accounts from interactively signing in to the computer
-1. In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**
+1. In the console tree, expand <*Forest*>\Domains\<*Domain*>, and then **Group Policy Objects**, where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO)
+1. In the console tree, right-click **Group Policy Objects**, and > **New**
+1. In the **New GPO** dialog box, type <**gpo_name**>, and then > **OK** where *gpo_name* is the name of the new GPO indicates that it's being used to restrict the local administrative accounts from interactively signing in to the computer
+1. In the details pane, right-click <**gpo_name**>, and > **Edit**
 1. Configure the user rights to deny network logons for administrative local accounts as follows:
-1. Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\, and &gt; **User Rights Assignment**
+1. Navigate to the Computer Configuration\Windows Settings\Security Settings\, and > **User Rights Assignment**
 1. Double-click **Deny access to this computer from the network**
-1. Select **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**
+1. Select **Add User or Group**, type **Local account and member of Administrators group**, and > **OK**
 1. Configure the user rights to deny Remote Desktop (Remote Interactive) logons for administrative local accounts as follows:
-1. Navigate to Computer Configuration\\Policies\\Windows Settings and Local Policies, and then select **User Rights Assignment**
+1. Navigate to Computer Configuration\Policies\Windows Settings and Local Policies, and then select **User Rights Assignment**
 1. Double-click **Deny log on through Remote Desktop Services**
-1. Select **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**
+1. Select **Add User or Group**, type **Local account and member of Administrators group**, and > **OK**
 1. Link the GPO to the first **Workstations** OU as follows:
 
-  - Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path
-  - Right-click the **Workstations** OU, and &gt; **Link an existing GPO**
-  - Select the GPO that you created, and &gt; **OK**
+   - Navigate to the <*Forest*>\Domains\<*Domain*>\OU path
+   - Right-click the **Workstations** OU, and > **Link an existing GPO**
+   - Select the GPO that you created, and > **OK**
 
 1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy
 1. Create links to all other OUs that contain workstations

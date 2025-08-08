@@ -1,7 +1,8 @@
 ---
 title: RemoteDesktop Policy CSP
 description: Learn more about the RemoteDesktop Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- AutoSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1370] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1370] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1370] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1370] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1370] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.1370] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1370] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1370] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AutoSubscription-Applicability-End -->
 
 <!-- AutoSubscription-OmaUri-Begin -->
@@ -77,7 +78,7 @@ To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/ove
 <!-- LoadAadCredKeyFromProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LoadAadCredKeyFromProfile-Applicability-End -->
 
 <!-- LoadAadCredKeyFromProfile-OmaUri-Begin -->

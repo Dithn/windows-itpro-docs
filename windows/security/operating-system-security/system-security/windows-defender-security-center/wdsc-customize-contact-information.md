@@ -1,7 +1,7 @@
 ---
 title: Customize Windows Security contact information in Windows Security
 description: Provide information to your users on how to contact your IT department when a security issue occurs
-ms.date: 06/27/2024
+ms.date: 04/15/2025
 ms.topic: how-to
 ---
 
@@ -33,10 +33,6 @@ There are two stages to using the contact card and customized notifications. Fir
 1. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They both use the same source of information (explained in Steps 5 and 6). You can enable both, or select one or the other:
 
     1. To enable the contact card, open the **Configure customized contact information** setting and set it to **Enabled**. Select **OK**.
-
-        > [!NOTE]
-        > This can only be done in Group Policy.
-
     1. To enable the customized notifications, open the **Configure customized notifications** setting and set it to **Enabled**. Select **OK**.
 
 1. After you enable the contact card or the customized notifications (or both), you must configure the **Specify contact company name** to **Enabled**. Enter your company or organization's name in the field in the **Options** section. Select **OK**.
@@ -57,4 +53,4 @@ To enable the customized notifications and add the contact information in Intune
 - [Settings for the Windows Security experience profile in Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings).
 
 > [!IMPORTANT]
-> You must specify the contact company name and at least one contact method - email, phone number, or website URL. If you do not specify the contact name and a contact method the customization will not apply, the contact card will not show, and notifications will not be customized.
+> You must specify the contact company name and at least one contact method - email, phone number, or website URL. If you don't specify the contact name and a contact method, the contact card isn't visible, and notifications aren't customized.

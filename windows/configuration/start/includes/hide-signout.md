@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -18,5 +18,5 @@ With this policy setting you can remove the **Sign out** item from the Start men
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout) |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Logoff on the Start Menu** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout) |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Logoff on the Start Menu** |

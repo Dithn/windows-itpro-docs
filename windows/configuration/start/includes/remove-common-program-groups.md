@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -12,4 +12,4 @@ This policy setting removes items in the *All Users* profile from the Programs m
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove common program groups from Start Menu** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove common program groups from Start Menu** |

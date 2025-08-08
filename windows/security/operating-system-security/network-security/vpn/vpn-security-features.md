@@ -1,7 +1,7 @@
 ---
 title: VPN security features
 description: Learn about security features for VPN, including LockDown VPN and traffic filters.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: concept-article
 ---
 
@@ -55,14 +55,3 @@ A VPN profile configured with LockDown secures the device to only allow network 
 
 > [!CAUTION]
 > Be careful when deploying LockDown VPN, as the resultant connection won't be able to send or receive any network traffic without the VPN connection being established.
-
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN profile options](vpn-profile-options.md)

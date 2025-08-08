@@ -1,7 +1,7 @@
 ---
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.subservice: itpro-updates
 ms.service: windows-client
 ms.topic: include

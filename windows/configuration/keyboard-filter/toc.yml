@@ -1,0 +1,51 @@
+items:
+- name: About keyboard filter
+  href: index.md
+- name: Key Names
+  href: keyboardfilter-key-names.md
+- name: Predefined Key Combinations
+  href: predefined-key-combinations.md
+- name: WMI Provider Reference
+  items:
+  - name: Overview
+    href: keyboardfilter-wmi-provider-reference.md
+  - name: Class WEKF_CustomKey
+    items:
+    - name: Overview
+      href: wekf-customkey.md
+    - name: Add
+      href: wekf-customkeyadd.md
+    - name: Remove
+      href: wekf-customkeyremove.md
+  - name: Class WEKF_PredefinedKey
+    items:
+    - name: Overview
+      href: wekf-predefinedkey.md
+    - name: Disable
+      href: wekf-predefinedkeydisable.md
+    - name: Enable
+      href: wekf-predefinedkeyenable.md
+  - name: Class WEKF_Scancode
+    items:
+    - name: Overview
+      href: wekf-scancode.md
+    - name: Add
+      href: wekf-scancodeadd.md
+    - name: Remove
+      href: wekf-scancoderemove.md
+  - name: Class WEKF-Settings
+    href: wekf-settings.md
+- name: PowerShell script samples
+  items:
+  - name: Overview
+    href: keyboardfilter-powershell-script-samples.md
+  - name: Add blocked key Combinations
+    href: keyboardfilter-add-blocked-key-combinations.md
+  - name: Disable all blocked key Combinations
+    href: disable-all-blocked-key-combinations.md
+  - name: List all configured key combinations
+    href: keyboardfilter-list-all-configured-key-combinations.md
+  - name: Modify global settings
+    href: modify-global-settings.md
+  - name: Remove key combination configurations
+    href: remove-key-combination-configurations.md

@@ -1,7 +1,7 @@
 ---
 title: TPM Group Policy settings
 description: This article describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/10/2024
 ---
 

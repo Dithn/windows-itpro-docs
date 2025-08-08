@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender Application Guard
 description: Learn about Microsoft Defender Application Guard and how it helps combat malicious content and malware out on the Internet.
-ms.date: 07/11/2024
-ms.topic: conceptual
+ms.date: 04/15/2025
+ms.topic: overview
 ---
 
 # Microsoft Defender Application Guard overview

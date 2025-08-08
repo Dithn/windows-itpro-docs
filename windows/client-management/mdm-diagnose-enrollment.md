@@ -1,8 +1,8 @@
 ---
 title: Diagnose MDM enrollment failures
 description: Learn how to diagnose enrollment failures for Windows devices
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: troubleshooting-general
+ms.date: 08/04/2025
 ---
 
 # Diagnose MDM enrollment
@@ -22,7 +22,7 @@ To ensure that the autoenrollment feature is working as expected, you must verif
     ![Auto-enrollment activation verification.](images/auto-enrollment-activation-verification.png)
 
     > [!IMPORTANT]
-    > For bring-your-own devices (BYOD devices), the Mobile Application Management (MAM) user scope takes precedence if both MAM user scope and MDM user scope (automatic MDM enrollment) are enabled for all users (or the same groups of users). The device will use Windows Information Protection (WIP) Policies (if you configured them) rather than being MDM enrolled.
+    > For bring-your-own devices (BYOD devices), the Mobile Application Management (MAM) user scope takes precedence if both MAM user scope and MDM user scope (automatic MDM enrollment) are enabled for all users (or the same groups of users). The device uses Windows Information Protection (WIP) Policies (if you configured them) rather than being MDM enrolled.
     >
     > For corporate-owned devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
 

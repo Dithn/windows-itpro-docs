@@ -1,28 +1,25 @@
 ---
 title: Post-device registration readiness checks
 description: This article details how post-device registration readiness checks are performed in Windows Autopatch
-ms.date: 07/08/2024
+ms.date: 03/31/2025
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: aaroncz
+manager: bpardi
 ms.reviewer: andredm7
 ms.collection:
   - highpri
   - tier1
 ---
 
-# Post-device registration readiness checks (public preview)
-
-> [!IMPORTANT]
-> This feature is in "public preview". It is being actively developed, and may not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios, and provide feedback.
+# Post-device registration readiness checks
 
 One of the most expensive aspects of the software update management process is to make sure devices are always healthy to receive and report software updates for each software update release cycle.
 
-Having a way of measuring, quickly detecting and remediating when something goes wrong with on-going change management processes is important; it helps mitigate high Helpdesk ticket volumes, reduces cost, and improves overall update management results.
+Having a way of measuring, quickly detecting and remediating when something goes wrong with ongoing change management processes is important; it helps mitigate high Helpdesk ticket volumes, reduces cost, and improves overall update management results.
 
 Windows Autopatch provides proactive device readiness information about devices that are and aren't ready to be fully managed by the service. IT admins can easily detect and fix device-related issues that are preventing them from achieving their update management compliance report goals.
 
@@ -37,13 +34,13 @@ Device readiness in Windows Autopatch is divided into two different scenarios:
 
 ### Device readiness checks available for each scenario
 
-| Required device readiness (prerequisite checks) prior to device registration (powered by Intune Graph API)  | Required post-device registration readiness checks (powered by Microsoft Cloud Managed Desktop Extension) |
+| Required device readiness (prerequisite checks) before device registration (powered by Intune Graph API)  | Required post-device registration readiness checks (powered by Microsoft Cloud Managed Desktop Extension and Windows Autopatch Client Broker) |
 | ----- | ----- |
-| <ul><li>Windows OS (build, architecture and edition)</li></li><li>Managed by either Intune or ConfigMgr co-management</li><li>ConfigMgr co-management workloads</li><li>Last communication with Intune</li><li>Personal or non-Windows devices</li></ul> | <ul><li>Windows OS (build, architecture and edition)</li><li>Windows updates & Office Group Policy Object (GPO) versus Intune mobile device management (MDM) policy conflict</li><li>Bind network endpoints (Microsoft Defender, Microsoft Teams, Microsoft Edge, Microsoft Office)</li><li>Internet connectivity</li></ul> |
+| <ul><li>Windows OS (build, architecture, and edition)</li></li><li>Managed by either Intune or ConfigMgr co-management</li><li>ConfigMgr co-management workloads</li><li>Last communication with Intune</li><li>Personal or non-Windows devices</li></ul> | <ul><li>Windows OS (build, architecture, and edition)</li><li>Windows updates & Office Group Policy Object (GPO) versus Intune mobile device management (MDM) policy conflict</li><li>Bind network endpoints (Microsoft Defender, Microsoft Teams, Microsoft Edge, Microsoft Office)</li><li>Internet connectivity</li></ul> |
 
-The status of each post-device registration readiness check is shown in the Windows Autopatch's Devices blade under the **Not ready** tab. You can take appropriate action(s) on devices that aren't ready to be fully managed by the Windows Autopatch service.
+The status of each post-device registration readiness check is shown in the Windows Autopatch's Devices blade under the **Not registered** tab. You can take appropriate actions on devices that aren't ready to be fully managed by the Windows Autopatch service.
 
-## About the three tabs in the Devices blade
+## Devices blade: Registered and Not registered tabs
 
 You deploy software updates to secure your environment, but these deployments only reach healthy and active devices. Unhealthy or not ready devices affect the overall software update compliance.
 
@@ -52,13 +49,12 @@ Figuring out device health can be challenging and disruptive to the end user whe
 - Obtain proactive data sent by the device to the service, or
 - Proactively detect and remediate issues
 
-Windows Autopatch has three tabs within its Devices blade. Each tab is designed to provide a different set of device readiness statuses so IT admins know where to go to monitor, and remediate potential device health issues:
+Windows Autopatch has devices readiness states within its [**Autopatch group membership report**](../deploy/windows-autopatch-register-devices.md#autopatch-groups-membership-report). Each state provides IT admins monitoring information on which devices might have potential device health issues.
 
 | Tab | Description |
 | ----- | ----- |
-| Ready | This tab only lists devices with the **Active** status. Devices with the **Active** status successfully:<ul><li>Passed the prerequisite checks.</li><li>Registered with Windows Autopatch.</li></ul>This tab also lists devices that have passed all postdevice registration readiness checks. |
-| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn't pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven't communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
-| Not registered | Only lists devices with the **Prerequisite failed** status in it. Devices with the **Prerequisite failed** status didn't pass one or more prerequisite checks during the device registration process. |
+| Registered |<ul><li>**Ready**</li><ul><li>Passed the prerequisite checks</li><li>Registered with Windows Autopatch</li><li>No active alerts targeted to the device</li></ul><li>**Not Ready**</li><ul><li>Devices that didn’t pass one or more post-device registration readiness checks</li><li>Devices that didn't communicate with the Microsoft Intune service in the last 28 days</li></ul></ul> |
+| Not registered |<ul><li>**Prerequisite failed**<ul><li>Devices with the **Prerequisite failed** status didn't pass one or more prerequisite checks during the device registration process.</li></ul><li>**Excluded**</li><ul><li>Devices with the Excluded status are removed from the Windows Autopatch service</li></ul></ul>|
 
 ## Details about the post-device registration readiness checks
 
@@ -68,7 +64,17 @@ A healthy or active device in Windows Autopatch is:
 - Actively sending data
 - Passes all post-device registration readiness checks
 
-The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** is a sub-component of the overall Windows Autopatch service.
+The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** and **Windows Autopatch Client Broker** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** and **Windows Autopatch Client Broker** are subcomponents of the overall Windows Autopatch service.
+
+### Install the Windows Autopatch Client Broker
+
+You can install the Windows Autopatch Client Broker on-demand at the tenant level to determine device update readiness and collect logs for issue triaging.
+
+**To install the Windows Autopatch Client Broker**:
+
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Navigate to the **Tenant administration** menu.
+1. In the **Windows Autopatch** section, select **Tenant Management**. Then, select **Manage client broker**.
 
 The following list of post-device registration readiness checks is performed in Windows Autopatch:
 
@@ -92,19 +98,19 @@ See the following diagram for the post-device registration readiness checks work
 | Step | Description |
 | ----- | ----- |
 | **Steps 1-7** | For more information, see the [Device registration overview diagram](windows-autopatch-device-registration-overview.md).|
-| **Step 8: Perform readiness checks** |<ol><li>Once devices are successfully registered with Windows Autopatch, the devices are added to the **Ready** tab.</li><li>The Microsoft Cloud Managed Desktop Extension agent performs readiness checks against devices in the **Ready** tab every 24 hours.</li></ol> |
-| **Step 9: Check readiness status** |<ol><li>The Microsoft Cloud Managed Desktop Extension service evaluates the readiness results gathered by its agent.</li><li>The readiness results are sent from the Microsoft Cloud Managed Desktop Extension service component to the Device Readiness component within the Windows Autopatch's service.</li></ol>|
+| **Step 8: Perform readiness checks** |<ol><li>Once devices are successfully registered with Windows Autopatch, the devices are added to the **Ready** tab.</li><li>The Microsoft Cloud Managed Desktop Extension and Windows Autopatch Client Broker agents perform readiness checks against devices in the **Ready** tab every 24 hours.</li></ol> |
+| **Step 9: Check readiness status** |<ol><li>The Microsoft Cloud Managed Desktop Extension and Windows Autopatch Client Broker service evaluates the readiness results gathered by its agent.</li><li>The readiness results are sent from the Microsoft Cloud Managed Desktop Extension and Windows Autopatch Client Broker service component to the Device Readiness component within the Windows Autopatch's service.</li></ol>|
 | **Step 10: Add devices to the Not ready** | When devices don't pass one or more readiness checks, even if they're registered with Windows Autopatch, they're added to the **Not ready** tab so IT admins can remediate devices based on Windows Autopatch recommendations. |
-| **Step 11: IT admin understands what the issue is and remediates** | The IT admin checks and remediates issues in the Devices blade (**Not ready** tab). It can take up to 24 hours for devices to show back up into the **Ready** tab. |
+| **Step 11: IT admin understands what the issue is and remediates** | The IT admin checks and remediates issues in the Devices blade (**Not ready** tab). It can take up to 24 hours for devices to show in the **Ready** tab. |
 
 ## FAQ
 
 | Question | Answer |
 | ----- | ----- |
-| **How frequent are the post-device registration readiness checks performed?** |<ul><li>The **Microsoft Cloud Managed Desktop Extension** agent collects device readiness statuses when it runs (once a day).</li><li>Once the agent collects results for the post-device registration readiness checks, it generates readiness results in the device in the `%programdata%\Microsoft\CMDExtension\Plugins\DeviceReadinessPlugin\Logs\DRCResults.json.log`.</li><li>The readiness results are sent over to the **Microsoft Cloud Managed Desktop Extension service**.</li><li>The **Microsoft Cloud Managed Desktop Extension** service component sends the readiness results to the Device Readiness component. The results appear in the Windows Autopatch Devices blade (**Not ready** tab).</li></ul>|
-| **What to expect when one or more checks fail?** | Devices are automatically sent to the **Ready** tab once they're successfully registered with Windows Autopatch. When devices don't meet one or more post-device registration readiness checks, the devices are moved to the **Not ready** tab. IT admins can learn about these devices and take appropriate actions to remediate them. Windows Autopatch will provide information about the failure and how to potentially remediate devices.<p>Once devices are remediated, it can take up to **24 hours** to show up in the **Ready** tab.</p>|
+| **How frequent are the post-device registration readiness checks performed?** |<ul><li>The **Microsoft Cloud Managed Desktop Extension** and **Windows Autopatch Client Broker** agents collect device readiness statuses when it runs (once a day).</li><li>Once the agent collects results for the post-device registration readiness checks, it generates readiness results in the device in the `%programdata%\Microsoft\CMDExtension\Plugins\DeviceReadinessPlugin\Logs\DRCResults.json.log`.</li><li>The readiness results are sent over to **Microsoft Cloud Managed Desktop Extension** and **Windows Autopatch Client Broker** service.</li><li>The **Microsoft Cloud Managed Desktop Extension** and **Windows Autopatch Client Broker** service component sends the readiness results to the Device Readiness component. The results appear in the Windows Autopatch Devices blade (**Not ready** tab).</li></ul>|
+| **What to expect when one or more checks fail?** | Devices are automatically sent to the **Ready** tab once they're successfully registered with Windows Autopatch. When devices don't meet one or more post-device registration readiness checks, the devices are moved to the **Not ready** tab. IT admins can learn about these devices and take appropriate actions to remediate them. Windows Autopatch provides information about the failure and how to potentially remediate devices.<p>Once devices are remediated, it can take up to **24 hours** to appear in the **Ready** tab.</p>|
 
 ## Additional resources
 
-- [Device registration overview](windows-autopatch-device-registration-overview.md)
-- [Register your devices](windows-autopatch-register-devices.md)
+- [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md)
+- [Register your devices](../deploy/windows-autopatch-register-devices.md)

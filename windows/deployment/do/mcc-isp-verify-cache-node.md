@@ -7,10 +7,10 @@ ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection: tier3
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/mcc-isp target=_blank>Microsoft Connected Cache for ISPs</a>
 ms.date: 05/23/2024
 ---
@@ -49,7 +49,7 @@ Sign into the [Azure portal](https://www.portal.azure.com) and navigate to the *
 
 It can take a few minutes for the container to deploy after you've saved the configuration.
 
-To validate a properly functioning MCC, run the following command in the terminal of the cache server or any device in the network. Replace `<CacheServerIP>` with the IP address of the cache server.
+To validate a properly functioning Microsoft Connected Cache, run the following command in the terminal of the cache server or any device in the network. Replace `<CacheServerIP>` with the IP address of the cache server.
 
 ```bash
 wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
@@ -90,7 +90,7 @@ Within Azure portal, there are many charts and graphs that are available to moni
 Within Azure portal, you're able to build your custom charts and graphs using the following available metrics:
 
 | Metric name | Description |
-|---|---|  
+|---|---|
 | **Cache Efficiency** |  Cache efficiency is defined as the total cache hit bytes divided by all bytes requested. The higher this value (0 - 100%), the more efficient the cache node is. |
 | **Healthy nodes** |  The number of cache nodes that are reporting as healthy|
 | **Unhealthy nodes**| The number of cache nodes that are reporting as unhealthy|

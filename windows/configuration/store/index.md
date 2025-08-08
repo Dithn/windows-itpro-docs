@@ -1,8 +1,8 @@
 ---
-title: Configure access to the Microsoft Store app
+title: Configure Access To The Microsoft Store App For Windows Devices
 description: Learn how to configure access to the Microsoft Store app.
 ms.topic: how-to
-ms.date: 03/13/2024
+ms.date: 12/02/2024
 ---
 
 # Configure access to the Microsoft Store app
@@ -17,7 +17,7 @@ You can use configuration service provider (CSP) or group policy (GPO) settings 
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -27,7 +27,10 @@ You can use configuration service provider (CSP) or group policy (GPO) settings 
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
+
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp-11)
+
+You can configure devices using the [Policy CSP][CSP-1].
 
 | Setting |
 |--|

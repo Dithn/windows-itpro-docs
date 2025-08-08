@@ -2,12 +2,12 @@
 title: General Conventions
 description: Learn about general XML guidelines and how to use XML helper functions in the XML Elements library to change migration behavior.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: concept-article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -73,21 +73,21 @@ The XML helper functions in the [XML elements library](usmt-xml-elements-library
  The encoded location is composed of the node part, optionally followed by the leaf enclosed in square brackets. This format makes a clear distinction between nodes and leaves.
 
   For example, specify the file
-  
+
   `C:\Windows\Notepad.exe`
-  
+
   as
-  
+
   **c:\\Windows\[Notepad.exe\]**
-  
+
   Similarly, specify the directory
-  
+
   `C:\Windows\System32`
-  
+
   as
-  
+
   **c:\\Windows\\System32**
-  
+
   Note the absence of the **\[\]** characters in second example.
 
   The registry is represented in a similar way. The default value of a registry key is represented as an empty **\[\]** construct. For example, the default value for the `HKLM\SOFTWARE\MyKey` registry key is **HKLM\\SOFTWARE\\MyKey\[\]**.

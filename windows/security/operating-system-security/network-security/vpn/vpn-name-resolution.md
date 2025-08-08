@@ -1,7 +1,7 @@
 ---
 title: VPN name resolution
 description: Learn how name resolution works when using a VPN connection.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: concept-article
 ---
 
@@ -58,14 +58,3 @@ The fields in **Add or edit DNS rule** in the Intune profile correspond to the X
 | **Name** | **VPNv2/*ProfileName*/DomainNameInformationList/*dniRowId*/DomainName**  |
 | **Servers (comma separated)** | **VPNv2/*ProfileName*/DomainNameInformationList/*dniRowId*/DnsServers**  |
 | **Proxy server** |  **VPNv2/*ProfileName*/DomainNameInformationList/*dniRowId*/WebServers**  |
-
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

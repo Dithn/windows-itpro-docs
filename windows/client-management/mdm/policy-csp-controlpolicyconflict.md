@@ -1,7 +1,8 @@
 ---
 title: ControlPolicyConflict Policy CSP
 description: Learn more about the ControlPolicyConflict Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- MDMWinsOverGP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MDMWinsOverGP-Applicability-End -->
 
 <!-- MDMWinsOverGP-OmaUri-Begin -->
@@ -37,7 +38,7 @@ If set to 1 then any MDM policy that's set that has an equivalent GP policy will
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
-> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md). Nor does it apply to the [Update Policy CSP](policy-csp-update.md) for managing Windows updates.
+> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md). As a result, it is recommended that the same settings should not be configured in both GPO and MDM policies unless the settings are under the control of MDMWinsOverGP. Otherwise, there will be a race condition and no guarantee which one wins.
 
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 

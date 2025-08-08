@@ -6,9 +6,13 @@ ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
+manager: dansimp
 ms.date: 06/27/2024
 ms.topic: reference
+ms.collection: 
+- privacy-windows
+- must-keep
+- trust-pod
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
@@ -1616,7 +1620,7 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 ### <a href="" id="bkmk-wifisense"></a>23. Wi-Fi Sense
 
 > [!IMPORTANT]
-> Beginning with Windows 10, version 1803, Wi-Fi Sense is no longer available. The following section only applies to Windows 10, version 1709 and prior. Please see [Connecting to open Wi-Fi hotspots in Windows 10](https://privacy.microsoft.com/windows-10-open-wi-fi-hotspots) for more details.
+> Beginning with Windows 10, version 1803, Wi-Fi Sense is no longer available. The following section only applies to Windows 10, version 1709 and prior. Please see [Connecting to open Wi-Fi hotspots in Windows 10](https://support.microsoft.com/windows/bcec4e8b-00e7-4930-d3ff-5349a3e70037) for more details.
 
 Wi-Fi Sense automatically connects devices to known hotspots and to the wireless networks the person’s contacts have shared with them.
 
@@ -1737,7 +1741,7 @@ In Group Policy, configure:
 
 ### <a href="" id="bkmk-spotlight"></a>25. Personalized Experiences
 
-Personalized experiences provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. Example features include Windows Spotlight and Start Suggestions. You can control them by using the Group Policy.
+Personalized experiences provide features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. Example features include Windows Spotlight and Start Suggestions. You can control them by using the Group Policy.
 
 > [!NOTE]
 > This excludes how individual experiences (e.g., Windows Spotlight) can be controlled by users in Windows Settings.
@@ -1866,20 +1870,37 @@ You can turn off Windows Update by setting the following registry entries:
 
 -OR-
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations** to **Enabled**
+This is applicable to Windows 10.
+
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations** to **Enabled**.
 
   -and-
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off access to all Windows Update features** to **Enabled**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off access to all Windows Update features** to **Enabled**.
 
   -and-
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify intranet Microsoft update service location** to **Enabled** and ensure the settings under **Options** (intranet update service, intranet statistics server, and alternate download server) are set to **" "**.
 
   -and-
 
-- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
+- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Configure notifications** to **0 - Do not show any notifications**.
 
+This is applicable to Windows 11.
+
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations** to **Enabled**.
+
+  -and-
+
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Specify intranet Microsoft update service location** to **Enabled** and ensure the settings under **Options** (intranet update service, intranet statistics server, and alternate download server) are set to **" "**.
+
+  -and-
+
+- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Remove access to use all Windows Update features** to **Enabled** and then set **Configure notifications** to **0 - Do not show any notifications**.
+
+  -and-
+
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication settings** > **Turn off access to all Windows Update features** to **Enabled**.
 
 You can turn off automatic updates by doing the following. This isn't recommended.
 

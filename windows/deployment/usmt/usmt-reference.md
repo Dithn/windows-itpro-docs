@@ -2,12 +2,12 @@
 title: User State Migration Toolkit (USMT) Reference
 description: Use this User State Migration Toolkit (USMT) article to learn details about USMT, like operating system, hardware, and software requirements, and user prerequisites.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: reference
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

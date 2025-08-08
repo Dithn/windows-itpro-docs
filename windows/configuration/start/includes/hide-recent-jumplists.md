@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -20,6 +20,6 @@ If you enable this setting but don't enable the "Remove Recent Items menu from S
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**|
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)<br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**|
 

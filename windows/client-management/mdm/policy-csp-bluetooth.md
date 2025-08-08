@@ -1,7 +1,8 @@
 ---
 title: Bluetooth Policy CSP
 description: Learn more about the Bluetooth Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- AllowAdvertising-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowAdvertising-Applicability-End -->
 
 <!-- AllowAdvertising-OmaUri-Begin -->
@@ -68,7 +69,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this isn'
 <!-- AllowDiscoverableMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDiscoverableMode-Applicability-End -->
 
 <!-- AllowDiscoverableMode-OmaUri-Begin -->
@@ -117,7 +118,7 @@ Specifies whether other Bluetooth-enabled devices can discover the device. If th
 <!-- AllowPrepairing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowPrepairing-Applicability-End -->
 
 <!-- AllowPrepairing-OmaUri-Begin -->
@@ -166,7 +167,7 @@ Specifies whether to allow specific bundled Bluetooth peripherals to automatical
 <!-- AllowPromptedProximalConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowPromptedProximalConnections-Applicability-End -->
 
 <!-- AllowPromptedProximalConnections-OmaUri-Begin -->
@@ -215,7 +216,7 @@ This policy allows the IT admin to block users on these managed devices from usi
 <!-- LocalDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- LocalDeviceName-Applicability-End -->
 
 <!-- LocalDeviceName-OmaUri-Begin -->
@@ -254,7 +255,7 @@ Sets the local Bluetooth device name. If this is set, the value that it's set to
 <!-- ServicesAllowedList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ServicesAllowedList-Applicability-End -->
 
 <!-- ServicesAllowedList-OmaUri-Begin -->
@@ -265,7 +266,7 @@ Sets the local Bluetooth device name. If this is set, the value that it's set to
 
 <!-- ServicesAllowedList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7. CAA-436. C-8. BF0-78. CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide.
+Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide.
 <!-- ServicesAllowedList-Description-End -->
 
 <!-- ServicesAllowedList-Editable-Begin -->
@@ -294,7 +295,7 @@ Set a list of allowable services and profiles. String hex formatted array of Blu
 <!-- SetMinimumEncryptionKeySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- SetMinimumEncryptionKeySize-Applicability-End -->
 
 <!-- SetMinimumEncryptionKeySize-OmaUri-Begin -->
@@ -351,22 +352,23 @@ Here are some examples:
 
 BASE_UUID = 0x00000000-0000-1000-8000-00805F9B34FB
 
-| UUID name               | Protocol specification     | UUID   |
-|-------------------------|----------------------------|--------|
-| HFP(Hands Free Profile) | Hands-Free Profile (HFP) * | 0x111E |
+| UUID name               | Protocol specification   | UUID   |
+|-------------------------|--------------------------|--------|
+| HFP(Hands Free Profile) | Hands-Free Profile (HFP) | 0x111E |
 
-Footnote: * Used as both Service Class Identifier and Profile Identifier.
+Profile UUID = base UUID + 0x111E to the beginning = 0000**111E**-0000-1000-8000-00805F9B34FB
 
-Hands Free Profile UUID = base UUID + 0x111E to the beginning = 0000**111E**-0000-1000-8000-00805F9B34FB
+> [!NOTE]
+> Hands-Free Profile (HFP) is used as both Service Class Identifier and Profile Identifier.
 
 **Allow Audio Headsets (Voice)**:
 
-| Profile                  | Reasoning                             | UUID   |
-|--------------------------|---------------------------------------|--------|
-| HFP (Hands Free Profile) | For voice-enabled headsets            | 0x111E |
-| Generic Audio Service    | Generic audio service                 | 0x1203 |
-| Headset Service Class    | For older voice-enabled headsets      | 0x1108 |
-| PnP Information          | Used to identify devices occasionally | 0x1200 |
+| Profile                  | Reasoning                             | UUID   | Full UUID |
+|--------------------------|---------------------------------------|--------|----------------------------------------------|
+| HFP (Hands Free Profile) | For voice-enabled headsets            | 0x111E | 0000111E-0000-1000-8000-00805F9B34FB         |
+| Generic Audio Service    | Generic audio service                 | 0x1203 | 00001203-0000-1000-8000-00805F9B34FB         |
+| Headset Service Class    | For older voice-enabled headsets      | 0x1108 | 00001108-0000-1000-8000-00805F9B34FB         |
+| PnP Information          | Used to identify devices occasionally | 0x1200 | 00001200-0000-1000-8000-00805F9B34FB         |
 
 If you only want Bluetooth headsets, the UUIDs to include are: `{0000111E-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}`.
 
@@ -389,58 +391,50 @@ This means that if you only want Bluetooth headsets, the UUIDs are:
 
 **Allow Audio Headsets and Speakers (Voice & Music)**:
 
-|Profile  |Reasoning  |UUID  |
-|---------|---------|---------|
-|HFP (Hands Free Profile)     |For voice enabled headsets         |0x111E         |
-|A2DP Source (Advance Audio Distribution)|For streaming to Bluetooth speakers         |0x110B|
-|Generic Audio Service|Generic service used by Bluetooth|0x1203|
-|Headset Service Class|For older voice-enabled headsets|0x1108|
-|AV Remote Control Target Service|For controlling audio remotely|0x110C|
-|AV Remote Control Service|For controlling audio remotely|0x110E|
-|AV Remote Control Controller Service|For controlling audio remotely|0x110F|
-|PnP Information|Used to identify devices occasionally|0x1200|
-
-{0000111E-0000-1000-8000-00805F9B34FB};{0000110B-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{0000110C-0000-1000-8000-00805F9B34FB};{0000110E-0000-1000-8000-00805F9B34FB};{0000110F-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB};
+| Profile                                  | Reasoning                             | UUID   | Full UUID                            |
+|------------------------------------------|---------------------------------------|--------|--------------------------------------|
+| HFP (Hands Free Profile)                 | For voice enabled headsets            | 0x111E | 0000111E-0000-1000-8000-00805F9B34FB |
+| A2DP Source (Advance Audio Distribution) | For streaming to Bluetooth speakers   | 0x110B | 0000110B-0000-1000-8000-00805F9B34FB |
+| Generic Audio Service                    | Generic service used by Bluetooth     | 0x1203 | 00001203-0000-1000-8000-00805F9B34FB |
+| Headset Service Class                    | For older voice-enabled headsets      | 0x1108 | 00001108-0000-1000-8000-00805F9B34FB |
+| AV Remote Control Target Service         | For controlling audio remotely        | 0x110C | 0000110C-0000-1000-8000-00805F9B34FB |
+| AV Remote Control Service                | For controlling audio remotely        | 0x110E | 0000110E-0000-1000-8000-00805F9B34FB |
+| AV Remote Control Controller Service     | For controlling audio remotely        | 0x110F | 0000110F-0000-1000-8000-00805F9B34FB |
+| PnP Information                          | Used to identify devices occasionally | 0x1200 | 00001200-0000-1000-8000-00805F9B34FB |
 
 **Classic Keyboards and Mice**:
 
-|Profile  |Reasoning  |UUID  |
-|---------|---------|---------|
-|HID (Human Interface Device)     |For classic BR/EDR keyboards and mice         |0x1124         |
-|PnP Information|Used to identify devices occasionally|0x1200|
-
-{00001124-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB};
+| Profile                      | Reasoning                             | UUID   | Full UUID                            |
+|------------------------------|---------------------------------------|--------|--------------------------------------|
+| HID (Human Interface Device) | For classic BR/EDR keyboards and mice | 0x1124 | 00001124-0000-1000-8000-00805F9B34FB |
+| PnP Information              | Used to identify devices occasionally | 0x1200 | 00001200-0000-1000-8000-00805F9B34FB |
 
 **LE Keyboards and Mice**:
 
-|Profile  |Reasoning  |UUID  |
-|---------|---------|---------|
-|Generic Access Attribute     |For the LE Protocol         |0x1801         |
-|HID Over GATT *     |For LE keyboards and mice         |0x1812         |
-|GAP (Generic Access Profile)     |Generic service used by Bluetooth         |0x1800         |
-|DID (Device ID)     |Generic service used by Bluetooth         |0x180A         |
-|Scan Parameters     |Generic service used by Bluetooth         |0x1813         |
+| Profile                      | Reasoning                         | UUID   | Full UUID                            |
+|------------------------------|-----------------------------------|--------|--------------------------------------|
+| Generic Access Attribute     | For the LE Protocol               | 0x1801 | 00001801-0000-1000-8000-00805F9B34FB |
+| HID Over GATT *              | For LE keyboards and mice         | 0x1812 | 00001812-0000-1000-8000-00805F9B34FB |
+| GAP (Generic Access Profile) | Generic service used by Bluetooth | 0x1800 | 00001800-0000-1000-8000-00805F9B34FB |
+| DID (Device ID)              | Generic service used by Bluetooth | 0x180A | 0000180A-0000-1000-8000-00805F9B34FB |
+| Scan Parameters              | Generic service used by Bluetooth | 0x1813 | 00001813-0000-1000-8000-00805F9B34FB |
 
-Footnote: * The Surface pen uses the HID over GATT profile
-
-{00001801-0000-1000-8000-00805F9B34FB};{00001812-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
+> [!NOTE]
+> The Surface pen uses the HID over GATT profile
 
 **Allow File Transfer**:
 
-|Profile  |Reasoning  |UUID  |
-|---------|---------|---------|
-|OBEX Object Push (OPP)     |For file transfer         |0x1105         |
-|Object Exchange (OBEX)     |Protocol for file transfer         |0x0008         |
-|PnP Information|Used to identify devices occasionally|0x1200|
-
-{00001105-0000-1000-8000-00805F9B34FB};{00000008-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}
+| Profile                | Reasoning                             | UUID   | Full UUID                            |
+|------------------------|---------------------------------------|--------|--------------------------------------|
+| OBEX Object Push (OPP) | For file transfer                     | 0x1105 | 00001105-0000-1000-8000-00805F9B34FB |
+| Object Exchange (OBEX) | Protocol for file transfer            | 0x0008 | 00000008-0000-1000-8000-00805F9B34FB |
+| PnP Information        | Used to identify devices occasionally | 0x1200 | 00001200-0000-1000-8000-00805F9B34FB |
 
 Disabling file transfer shall have the following effects:
 
 - Fsquirt shall not allow sending of files
 - Fsquirt shall not allow receiving of files
 - Fsquirt shall display error message informing user of policy preventing file transfer
-- 3rd-party apps shall not be permitted to send or receive files using MSFT Bluetooth API
 <!-- Bluetooth-CspMoreInfo-End -->
 
 <!-- Bluetooth-End -->

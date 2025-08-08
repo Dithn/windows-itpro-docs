@@ -1,7 +1,7 @@
 ---
 title: Trusted Platform Module (TPM) fundamentals
 description: Learn about the components of the Trusted Platform Module and how they're used to mitigate dictionary attacks.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/10/2024
 ---
 

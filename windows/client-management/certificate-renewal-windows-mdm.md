@@ -1,8 +1,8 @@
 ---
 title: Certificate Renewal
 description: Learn how to find all the resources that you need to provide continuous access to client certificates.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: how-to
+ms.date: 08/04/2025
 ---
 
 # Certificate Renewal
@@ -135,7 +135,7 @@ The following example shows the details of a certificate renewal response.
 ```
 
 > [!NOTE]
-> The client receives a new certificate, instead of renewing the initial certificate. The administrator controls which certificate template the client should use. The templates may be different at renewal time than the initial enrollment time.
+> The client receives a new certificate, instead of renewing the initial certificate. The administrator controls which certificate template the client should use. The templates might be different at renewal time than the initial enrollment time.
 
 ## Configuration service providers supported during MDM enrollment and certificate renewal
 

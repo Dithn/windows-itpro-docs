@@ -6,10 +6,10 @@ summary: Learn about managing applications in Windows client, including common a
 metadata:
   title: Windows application management
   description: Learn about managing applications in Windows client.
-  author: aczechowski
-  ms.author: aaroncz
-  manager: aaroncz
-  ms.date: 06/28/2024
+  author: vinaypamnani-msft
+  ms.author: vinpa
+  manager: bpardi
+  ms.date: 09/27/2024
   ms.topic: landing-page
   ms.service: windows-client
   ms.subservice: itpro-apps

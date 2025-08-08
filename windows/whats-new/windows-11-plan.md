@@ -4,7 +4,7 @@ description: This article provides guidance to help you plan for Windows 11 in y
 ms.service: windows-client
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: high
 ms.topic: get-started
 ms.collection:
@@ -12,7 +12,7 @@ ms.collection:
   - tier1
   - essentials-get-started
 ms.subservice: itpro-fundamentals
-ms.date: 07/12/2024
+ms.date: 03/27/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -55,13 +55,13 @@ Managed devices are devices that are under organizational control. Managed devic
 
 If you manage devices on behalf of your organization, you can upgrade eligible devices to Windows 11 using your existing deployment and management tools.
 
-Organizations that use Windows Update for Business also have the following benefits:
+Organizations that use Windows Update client policies also have the following benefits:
 
 - Ensuring that devices that don't meet the minimum hardware requirements aren't automatically offered the Windows 11 upgrade.
-- More insight into safeguard holds. While safeguard holds function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update for Business have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11.
+- More insight into safeguard holds. While safeguard holds function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update client policies have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11.
 
 > [!NOTE]
-> Also, Windows 11 has new Microsoft Software License Terms. If you deploy with Windows Update for Business or Windows Server Update Services, you accept these new license terms on behalf of the users in your organization.
+> Also, Windows 11 has new Microsoft Software License Terms. If you deploy with Windows Update client policies or Windows Server Update Services, you accept these new license terms on behalf of the users in your organization.
 
 ### Unmanaged devices
 
@@ -103,6 +103,8 @@ Along with user experience and security improvements, Windows 11 introduces enha
 A consolidated [Windows 11 update history](https://support.microsoft.com/topic/59875222-b990-4bd9-932f-91a5954de434) is available. Similarly, the [Windows release health](/windows/release-health/) hub offers quick access to Windows 11 servicing announcements, known issues, and safeguard holds.
 
 It's important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 continue to receive monthly Windows 10 security updates, and incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page.
+
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
 
 ## Application compatibility
 

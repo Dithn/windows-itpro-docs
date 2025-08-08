@@ -1,8 +1,8 @@
 ---
 title: Win32 and Desktop Bridge app ADMX policy Ingestion
 description: Ingest ADMX files and set ADMX policies for Win32 and Desktop Bridge apps.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: article
+ms.date: 08/04/2025
 ---
 
 # Win32 and Desktop Bridge app ADMX policy Ingestion
@@ -43,10 +43,10 @@ When the ADMX policies are ingested, the registry keys to which each policy is w
 - Software\Microsoft\EdgeUpdate\
 
 > [!WARNING]
-> Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still ingest ADMX files and set ADMX policies regardless of whether the device is domain joined or non-domain joined.
+> Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it doesn't. However, you can still ingest ADMX files and set ADMX policies regardless of whether the device is domain joined or non-domain joined.
 
 > [!NOTE]
-> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script).
+> Settings that can't be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script).
 
 ## Ingesting an app ADMX file
 

@@ -7,16 +7,16 @@ metadata:
   ms.subservice: itpro-deploy
   author: frankroj
   ms.author: frankroj
-  manager: aaroncz
+  manager: bpardi
   ms.mktglfcycl: deploy
   ms.sitesec: library
   audience: itpro
-  ms.date: 01/09/2024
+  ms.date: 01/29/2025
   ms.topic: faq
 title: Frequently Asked Questions
 summary: |
   **Applies to:**
-  
+
   - Windows 11
   - Windows 10
 
@@ -30,13 +30,13 @@ sections:
           How much space is needed on the destination computer?
         answer: |
           The destination computer needs enough available space for the following items:
-          
+
           -   Operating system
-          
+
           -   Applications
-          
+
           -   Uncompressed store
-          
+
       - question: |
           Can the files and settings be stored directly on the destination computer or is a server needed?
         answer: |
@@ -47,13 +47,13 @@ sections:
           - Directly on the destination computer.
 
           To store it directly on the destination computer:
-          
+
           1.  Create and share the directory `C:\store` on the destination computer.
-          
+
           1.  Run the **ScanState** tool on the source computer and save the files and settings to `\\<DestinationComputerName>\store`
-          
+
           1.  Run the **LoadState** tool on the destination computer and specify `C:\store` as the store location.
-          
+
       - question: |
           Can data be migrated between operating systems with different languages?
         answer: |
@@ -80,7 +80,7 @@ sections:
           How can a folder or a certain type of file be excluded from the migration?
         answer: |
           The **\<unconditionalExclude\>** element can be used to globally exclude data from the migration. For example, this element can be used to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`. This element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For an example, see **\<unconditionalExclude\>** in the [Exclude files and settings](usmt-exclude-files-and-settings.md) article. For the syntax of this element, see [XML elements library](usmt-xml-elements-library.md).
-          
+
       - question: |
           What happens to files that were located on a drive that don't exist on the destination computer?
         answer: |
@@ -91,22 +91,22 @@ sections:
           - C:\\ is the system drive on the destination computer.
 
           the file is migrated to `C:\data\File.pst`. This behavior holds true even when **\<locationModify\>** rules attempt to move data to a drive that doesn't exist on the destination computer.
-          
+
   - name: USMT .xml Files
     questions:
       - question: |
           Where are there examples of USMT **.xml** files?
         answer: |
           The following articles include examples of USMT **.xml** files:
-          
+
           -   [Exclude files and settings](usmt-exclude-files-and-settings.md)
-          
+
           -   [Reroute files and settings](usmt-reroute-files-and-settings.md)
-          
+
           -   [Include files and settings](usmt-include-files-and-settings.md)
-          
+
           -   [Custom XML examples](usmt-custom-xml-examples.md)
-          
+
       - question: |
           Can custom **.xml** files that were written for USMT 5.0 be used?
         answer: |
@@ -121,9 +121,9 @@ sections:
           Why must the **.xml** files be included with both the `ScanState.exe` and `LoadState.exe` commands?
         answer: |
           The **.xml** files aren't copied to the store as in previous versions of USMT. Because the **ScanState** and **LoadState** tools need the **.xml** files to control the migration, the same set of **.xml** files must be specified for the `ScanState.exe` and `LoadState.exe` commands. If a particular set of mig\*.xml files were used in the **ScanState** tool, either called through the `/auto` option, or individually through the `/i` option, then the same option should be used to call the exact same mig\*.xml files in the **LoadState** tool. However, the `Config.xml` file doesn't need to be specified, unless files and settings that were migrated to the store need to be excluded. For example, the **Documents** folder might be migrated to the store, but not to the destination computer. To do this type of migration, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. **LoadState** migrates only the desired files and settings.
-          
+
           If an **.xml** file is excluded from the `LoadState.exe` command, then all of the data in the store that was migrated with the missing **.xml** files are migrated. However, the migration rules that were specified for the `ScanState.exe` command don't apply. For example, if a `MigApp.xml` file that has a rerouting rule such as `MigsysHelperFunction.RelativeMove("c:\data", "%CSIDL_PERSONAL%")` is excluded, USMT doesn't reroute the files. Instead, it migrates them to `C:\data`.
-          
+
       - question: |
           Which files can be modified and specified on the command line?
         answer: |
@@ -133,20 +133,20 @@ sections:
           What happens if the **.xml** files aren't specified on the command line?
         answer: |
           -   **ScanState**
-          
+
               If no files are specified with the `ScanState.exe` command, all user accounts and default operating system components are migrated.
-          
+
           -   **LoadState**
-          
+
               If no files are specified with the `LoadState.exe` command, all data that is in the store is migrated. However, any target-specific migration rules that were specified in **.xml** files with the `ScanState.exe` command doesn't apply. For example, if a `MigApp.xml` file that has a rerouting rule such as `MigsysHelperFunction.RelativeMove("c:\data", "%CSIDL_PERSONAL%")` is excluded, USMT doesn't reroute the files. Instead, it migrates them to `C:\data`.
-          
+
   - name: Conflicts and Precedence
     questions:
       - question: |
           What happens when there are conflicting XML rules or conflicting objects on the destination computer?
         answer: |
           For more information, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
-          
+
 
 additionalContent: |
 

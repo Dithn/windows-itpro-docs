@@ -1,7 +1,7 @@
 ---
 title: VPN auto-triggered profile options
 description: With auto-triggered VPN profile options, Windows can automatically establish a VPN connection based on IT admin-defined rules. Learn about the types of auto-trigger rules that you can create for VPN connections.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 ---
 
@@ -77,14 +77,3 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 The following image shows associating apps to a VPN connection in a VPN Profile configuration policy using Microsoft Intune.
 
 :::image type="content" source="images/vpn-app-trigger.png" alt-text="Creation of VPN profile in Intune: application association options." lightbox="images/vpn-app-trigger.png":::
-
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

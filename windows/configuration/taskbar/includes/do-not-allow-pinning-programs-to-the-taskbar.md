@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -14,5 +14,5 @@ This policy setting allows you to control pinning programs to the Taskbar.
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar) |
-| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar) |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not allow pinning programs to the Taskbar**|

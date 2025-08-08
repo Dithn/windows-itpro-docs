@@ -2,13 +2,13 @@
 title: Custom XML Examples
 description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the Videos folder.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-deploy
-ms.date: 01/09/2024
+ms.date: 01/29/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -120,7 +120,7 @@ The following sample is a custom **.xml** file named `CustomFile.xml` that migra
 <component type="Documents" context="User">
         <displayName>My Video</displayName>
         <role role="Data">
-            <detects>           
+            <detects>
                 <detect>
                     <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>
                 </detect>
@@ -251,8 +251,8 @@ The behavior for this custom **.xml** file is described within the `<displayName
     <rules>
          <include>
             <objectSet>
-                 <script>MigXmlHelper.GenerateDrivePatterns ("\Requests\* [*] ", "Fixed")</script>            
-                 <script>MigXmlHelper.GenerateDrivePatterns ("*\Requests\* [*] ", "Fixed")</script>            
+                 <script>MigXmlHelper.GenerateDrivePatterns ("\Requests\* [*] ", "Fixed")</script>
+                 <script>MigXmlHelper.GenerateDrivePatterns ("*\Requests\* [*] ", "Fixed")</script>
             </objectSet>
           </include>
     </rules>
@@ -264,7 +264,7 @@ The behavior for this custom **.xml** file is described within the `<displayName
   <role role="Data">
     <rules>
          <include>
-            <objectSet>                 
+            <objectSet>
                  <pattern type="File"> C:\*\Presentations\* [*]</pattern>
                  <pattern type="File"> C:\Presentations\* [*]</pattern>
            </objectSet>

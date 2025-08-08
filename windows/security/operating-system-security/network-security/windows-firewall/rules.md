@@ -1,7 +1,7 @@
 ---
-title: Windows Firewall rules
+title: Windows Firewall Rules
 description: Learn about Windows Firewall rules and design recommendations.
-ms.date: 11/21/2023
+ms.date: 06/06/2025
 ms.topic: concept-article
 ---
 
@@ -11,15 +11,17 @@ In many cases, a first step for administrators is to customize the firewall prof
 
 This article describes the concepts and recommendations for creating and managing firewall rules.
 
-## Rule precedence for inbound rules
+## Rule precedence for inbound and outbound rules
 
 In many cases, allowing specific types of inbound traffic is required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when configuring inbound exceptions:
 
-1. Explicitly defined allow rules take precedence over the default block setting
-1. Explicit block rules take precedence over any conflicting allow rules
-1. More specific rules take precedence over less specific rules, except if there are explicit block rules as mentioned in 2. For example, if the parameters of rule 1 include an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 takes precedence
+1. Explicitly defined allow rules take precedence over the default block setting.
+1. Explicit block rules take precedence over any conflicting allow rules.
+1. More specific rules take precedence over less specific rules, except if there are explicit block rules as mentioned in 2. For example, if the parameters of rule 1 include an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 takes precedence.
 
-Because of 1 and 2, when designing a set of policies you should make sure that there are no other explicit block rules that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
+Because of 1 and 2, when designing a set of policies, you should make sure that there are no other explicit block rules that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
+
+Outbound rules follow the same precedence behaviors.
 
 > [!NOTE]
 > Windows Firewall doesn't support weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors as described.
@@ -30,10 +32,12 @@ When first installed, network applications and services issue a *listen call* sp
 
 :::row:::
   :::column span="2":::
-    If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
+  If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
 
-    - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
-    - If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
+- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic.
+- If the user isn't a local admin and they are prompted, block rules are created. It doesn't matter what option is selected.
+
+To disable the notification prompt, you can use the [command line](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or the **Windows Firewall with Advanced Security** console
 
   :::column-end:::
   :::column span="2":::
@@ -43,17 +47,24 @@ When first installed, network applications and services issue a *listen call* sp
 
 In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
 
+
+
+
+
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from non-Microsoft software should be determined by trusted app developers, the user, or the admin on behalf of the user.
 
-### WDAC tagging policies
+> [!NOTE]
+> The use of wildcard patterns, such as `C:\*\teams.exe` isn't supported in application rules. You can only create rules using the full path to the application(s).
 
-Windows Firewall supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
+### App Control tagging policies
 
-1. Deploy *WDAC AppId tagging policies*: a Windows Defender Application Control policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching *PolicyAppId*. For more information, see the [WDAC AppId tagging guide](../../../application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
+Windows Firewall supports the use of App Control for Business Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
+
+1. Deploy *App Control AppId tagging policies*: an App Control for Business policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching *PolicyAppId*. For more information, see the [App Control AppId tagging guide](../../../application-security/application-control/app-control-for-business/AppIdTagging/appcontrol-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
 1. Configure firewall rules using *PolicyAppId tags* using one of the two methods:
-    - Using the [PolicyAppId node of the Firewall CSP](/windows/client-management/mdm/firewall-csp#mdmstorefirewallrulesfirewallrulenamepolicyappid) with an MDM solution like Microsoft Intune. If you use Microsoft Intune, you can deploy the rules from Microsoft Intune Admin center, under the path **Endpoint security** > **Firewall** > **Create policy** > **Windows 10, Windows 11, and Windows Server** > **Windows Firewall Rules**. When creating the rules, provide the *AppId tag* in the **Policy App ID** setting
-    - Create local firewall rules with PowerShell: use the [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) cmdlet and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported
+    - Using the [PolicyAppId node of the Firewall CSP](/windows/client-management/mdm/firewall-csp#mdmstorefirewallrulesfirewallrulenamepolicyappid) with an MDM solution like Microsoft Intune. If you use Microsoft Intune, you can deploy the rules from Microsoft Intune Admin center, under the path **Endpoint security** > **Firewall** > **Create policy** > **Windows 10, Windows 11, and Windows Server** > **Windows Firewall Rules**. When creating the rules, provide the *AppId tag* in the **Policy App ID** setting.
+    - Create local firewall rules with PowerShell: use the [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) cmdlet and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported.
 
 ## Local policy merge and application rules
 
@@ -76,7 +87,8 @@ It's important to create and maintain a list of such apps, including the network
 In general, to maintain maximum security, admins should only deploy firewall exceptions for apps and services determined to serve legitimate purposes.
 
 > [!NOTE]
-> The use of wildcard patterns, such as `C:\*\teams.exe` isn't supported in application rules. You can only create rules using the full path to the application(s).
+> Local Group Policy firewall rules and settings are applied even when rule merging is disabled through MDM or Group Policy.
+> Local Group Policies are configured using either **secpol.msc** (Local Security Policy) or **gpedit.msc** (Group Policy Editor), which must be run locally on the client device. Only users with local administrator privileges can access these tools. The settings configured through Local Group Policy are stored in the same location as those managed centrally through Group Policy.
 
 ## Firewall rules recommendations
 
@@ -93,23 +105,28 @@ Here's a list of recommendations when designing your firewall rules:
 
 When designing a set of firewall policies for your network, it's a recommended practice to configure *allow rules* for any networked applications deployed on the host. Having the rules in place before the user first launches the application helps to ensure a seamless experience.
 
-The absence of these staged rules doesn't necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
+The absence of these staged rules doesn't necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. 
+
+If the device is expected to be used by non-administrative users, you should follow best practices and:
+
+- Provide these rules before the application's first launch to avoid unexpected networking issues.
+- Disable inbound notifications on all profiles. This disables the automatic creation of firewall rules.
 
 To determine why some applications are blocked from communicating in the network, check for the following instances:
 
-1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt
-1. A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes
-1. [Local policy merge](#local-policy-merge-and-application-rules) is disabled, preventing the application or network service from creating local rules
-
-Creation of application rules at runtime can also be prohibited by administrators using the Settings app or policy settings.
+1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt. Block rules are created.
+1. A user with sufficient privileges is **not** prompted because notifications are disabled. No Allow rules are created, the traffic is blocked by the default block rule.
+1. A user lacks sufficient privileges and is prompted to allow the application to make the appropriate policy changes. No matter what he clicks, Block rules get created for the application.
+1. A user lacks sufficient privileges and is **not** prompted because notifications are disabled. No Allow rules are created, the traffic is blocked by the default block rule.
+1. [Local policy merge](#local-policy-merge-and-application-rules) is disabled, preventing the application or network service from creating local rules.
 
 ### Outbound rules considerations
 
 What follows are a few general guidelines for configuring outbound rules.
 
-- Changing the outbound rules to *blocked* can be considered for certain highly secure environments. However, the inbound rule configuration should never be changed in a way that allows all traffic by default
-- It's recommended to *allow outbound* by default for most deployments for the sake of simplification with app deployments, unless the organization prefers tight security controls over ease-of-use
-- In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP
+- Changing the outbound rules to *blocked* can be considered for certain highly secure environments. However, the inbound rule configuration should never be changed in a way that allows all traffic by default.
+- It's recommended to *allow outbound* by default for most deployments for the sake of simplification with app deployments, unless the organization prefers tight security controls over ease-of-use.
+- In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP.
 
 ## Next steps
 

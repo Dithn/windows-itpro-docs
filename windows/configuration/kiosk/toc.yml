@@ -1,0 +1,11 @@
+items:
+- name: Overview
+  href: index.md
+- name: Assigned Access
+  href: ../assigned-access/toc.yml
+- name: Shell Launcher
+  href: ../shell-launcher/toc.yml
+- name: Troubleshoot 🔗
+  href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+- name: Configure Microsoft Edge kiosk mode 🔗
+  href: /deployedge/microsoft-edge-configure-kiosk-mode

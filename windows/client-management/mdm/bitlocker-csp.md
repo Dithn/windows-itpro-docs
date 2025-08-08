@@ -1,7 +1,8 @@
 ---
 title: BitLocker CSP
 description: Learn more about the BitLocker CSP.
-ms.date: 01/18/2024
+ms.date: 04/04/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -72,7 +73,7 @@ The following list shows the BitLocker configuration service provider nodes:
 <!-- Device-AllowStandardUserEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AllowStandardUserEncryption-Applicability-End -->
 
 <!-- Device-AllowStandardUserEncryption-OmaUri-Begin -->
@@ -150,7 +151,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-AllowWarningForOtherDiskEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-AllowWarningForOtherDiskEncryption-Applicability-End -->
 
 <!-- Device-AllowWarningForOtherDiskEncryption-OmaUri-Begin -->
@@ -174,7 +175,7 @@ The expected values for this policy are:
 
 1 = This is the default, when the policy isn't set. Warning prompt and encryption notification is allowed.
 
-0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, the value 0 only takes effect on Microsoft Entra joined devices.
+0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, the value 0 only takes effect on Entra ID joined devices.
 
 Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-AllowWarningForOtherDiskEncryption-Description-End -->
@@ -208,7 +209,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 | Value | Description |
 |:--|:--|
-| 0 | Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Microsoft Entra joined devices. Windows will attempt to silently enable BitLocker for value 0. |
+| 0 | Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Entra ID joined devices. Windows will attempt to silently enable BitLocker for value 0. |
 | 1 (Default) | Warning prompt allowed. |
 <!-- Device-AllowWarningForOtherDiskEncryption-AllowedValues-End -->
 
@@ -239,7 +240,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-ConfigureRecoveryPasswordRotation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigureRecoveryPasswordRotation-Applicability-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-OmaUri-Begin -->
@@ -250,9 +251,9 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Microsoft Entra ID and hybrid domain joined devices.
+Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Entra ID and hybrid domain joined devices.
 
-When not configured, Rotation is turned on by default for Microsoft Entra ID only and off on hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
+When not configured, Rotation is turned on by default for Entra ID only and off on hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
 
 For OS drive: Turn on "Do not enable BitLocker until recovery information is stored to AD DS for operating system drives".
 
@@ -260,8 +261,8 @@ For Fixed drives: Turn on "Do not enable BitLocker until recovery information is
 
 Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 
-1 - Numeric Recovery Passwords Rotation upon use ON for Microsoft Entra joined devices. Default value
-2 - Numeric Recovery Passwords Rotation upon use ON for both Microsoft Entra ID and hybrid devices.
+1 - Numeric Recovery Passwords Rotation upon use ON for Entra ID joined devices. Default value
+2 - Numeric Recovery Passwords Rotation upon use ON for both Entra ID and hybrid devices.
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Editable-Begin -->
@@ -284,8 +285,8 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Refresh off (default). |
-| 1 | Refresh on for Microsoft Entra joined devices. |
-| 2 | Refresh on for both Microsoft Entra joined and hybrid-joined devices. |
+| 1 | Refresh on for Entra ID-joined devices. |
+| 2 | Refresh on for both Entra ID-joined and hybrid-joined devices. |
 <!-- Device-ConfigureRecoveryPasswordRotation-AllowedValues-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Examples-Begin -->
@@ -300,7 +301,7 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 <!-- Device-EncryptionMethodByDriveType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-EncryptionMethodByDriveType-Applicability-End -->
 
 <!-- Device-EncryptionMethodByDriveType-OmaUri-Begin -->
@@ -406,7 +407,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-FixedDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-FixedDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-FixedDrivesEncryptionType-OmaUri-Begin -->
@@ -481,7 +482,7 @@ Possible values:
 <!-- Device-FixedDrivesRecoveryOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-FixedDrivesRecoveryOptions-Applicability-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-OmaUri-Begin -->
@@ -551,6 +552,10 @@ The possible values for 'zz' are:
 
 - 1 = Store recovery passwords and key packages
 - 2 = Store recovery passwords only
+
+For Microsoft Entra hybrid joined devices, the BitLocker recovery password is backed up to both Active Directory and Entra ID.
+
+For Microsoft Entra joined devices, the BitLocker recovery password is backed up to Entra ID.
 <!-- Device-FixedDrivesRecoveryOptions-Editable-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-DFProperties-Begin -->
@@ -608,7 +613,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-FixedDrivesRequireEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-FixedDrivesRequireEncryption-Applicability-End -->
 
 <!-- Device-FixedDrivesRequireEncryption-OmaUri-Begin -->
@@ -686,7 +691,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-IdentificationField-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-IdentificationField-Applicability-End -->
 
 <!-- Device-IdentificationField-OmaUri-Begin -->
@@ -766,7 +771,7 @@ Sample value for this node to enable this policy is:
 <!-- Device-RemovableDrivesConfigureBDE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesConfigureBDE-Applicability-End -->
 
 <!-- Device-RemovableDrivesConfigureBDE-OmaUri-Begin -->
@@ -839,7 +844,7 @@ Sample value for this node to enable this policy is:
 <!-- Device-RemovableDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-RemovableDrivesEncryptionType-OmaUri-Begin -->
@@ -910,7 +915,7 @@ Possible values:
 <!-- Device-RemovableDrivesExcludedFromEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesExcludedFromEncryption-Applicability-End -->
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-OmaUri-Begin -->
@@ -950,7 +955,7 @@ When enabled, allows you to exclude removable drives and devices connected over 
 <!-- Device-RemovableDrivesRequireEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RemovableDrivesRequireEncryption-Applicability-End -->
 
 <!-- Device-RemovableDrivesRequireEncryption-OmaUri-Begin -->
@@ -1046,7 +1051,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-RequireDeviceEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RequireDeviceEncryption-Applicability-End -->
 
 <!-- Device-RequireDeviceEncryption-OmaUri-Begin -->
@@ -1139,7 +1144,7 @@ To disable RequireDeviceEncryption:
 <!-- Device-RequireStorageCardEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RequireStorageCardEncryption-Applicability-End -->
 
 <!-- Device-RequireStorageCardEncryption-OmaUri-Begin -->
@@ -1196,7 +1201,7 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 <!-- Device-RotateRecoveryPasswords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-RotateRecoveryPasswords-Applicability-End -->
 
 <!-- Device-RotateRecoveryPasswords-OmaUri-Begin -->
@@ -1207,7 +1212,7 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 
 <!-- Device-RotateRecoveryPasswords-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on a Microsoft Entra ID or hybrid-joined device.
+Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Entra ID or hybrid-joined device.
 
 This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
 
@@ -1268,7 +1273,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -1306,7 +1311,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-DeviceEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Status-DeviceEncryptionStatus-Applicability-End -->
 
 <!-- Device-Status-DeviceEncryptionStatus-OmaUri-Begin -->
@@ -1370,7 +1375,7 @@ This value represents a bitmask with each bit and the corresponding error code d
 <!-- Device-Status-RemovableDrivesEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Status-RemovableDrivesEncryptionStatus-Applicability-End -->
 
 <!-- Device-Status-RemovableDrivesEncryptionStatus-OmaUri-Begin -->
@@ -1409,7 +1414,7 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Applicability-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-OmaUri-Begin -->
@@ -1450,7 +1455,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Applicability-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsStatus-OmaUri-Begin -->
@@ -1493,7 +1498,7 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Applicability-End -->
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-OmaUri-Begin -->
@@ -1558,7 +1563,7 @@ Sample value for this node to disable this policy is: `<disabled/>`
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Applicability-End -->
 
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-OmaUri-Begin -->
@@ -1626,7 +1631,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Applicability-End -->
 
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-OmaUri-Begin -->
@@ -1686,7 +1691,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-SystemDrivesEncryptionType-OmaUri-Begin -->
@@ -1762,7 +1767,7 @@ Possible values:
 <!-- Device-SystemDrivesEnhancedPIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnhancedPIN-Applicability-End -->
 
 <!-- Device-SystemDrivesEnhancedPIN-OmaUri-Begin -->
@@ -1827,7 +1832,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesMinimumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesMinimumPINLength-Applicability-End -->
 
 <!-- Device-SystemDrivesMinimumPINLength-OmaUri-Begin -->
@@ -1914,7 +1919,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRecoveryMessage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRecoveryMessage-Applicability-End -->
 
 <!-- Device-SystemDrivesRecoveryMessage-OmaUri-Begin -->
@@ -2023,7 +2028,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRecoveryOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRecoveryOptions-Applicability-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-OmaUri-Begin -->
@@ -2092,6 +2097,10 @@ The possible values for 'zz' are:
 
 - 1 = Store recovery passwords and key packages.
 - 2 = Store recovery passwords only.
+
+For Microsoft Entra hybrid joined devices, the BitLocker recovery password is backed up to both Active Directory and Entra ID.
+
+For Microsoft Entra joined devices, the BitLocker recovery password is backed up to Entra ID.
 <!-- Device-SystemDrivesRecoveryOptions-Editable-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-DFProperties-Begin -->
@@ -2149,7 +2158,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRequireStartupAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRequireStartupAuthentication-Applicability-End -->
 
 <!-- Device-SystemDrivesRequireStartupAuthentication-OmaUri-Begin -->

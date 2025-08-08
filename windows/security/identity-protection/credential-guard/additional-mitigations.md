@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2024
+ms.date: 02/25/2025
 title: Additional mitigations
 description: Learn how to improve the security of your domain environment with additional mitigations for Credential Guard and sample code.
 ms.topic: reference

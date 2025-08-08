@@ -2,8 +2,8 @@
 title: Testing scenarios with Microsoft Defender Application Guard
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
 ms.localizationpriority: medium
-ms.date: 07/11/2024
-ms.topic: conceptual
+ms.date: 04/15/2025
+ms.topic: article
 ---
 
 # Application Guard testing scenarios

@@ -2,7 +2,7 @@
 title: Windows default media removal policy
 description: Manage default media removal policy in Windows.
 ms.date: 07/01/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Manage default media removal policy

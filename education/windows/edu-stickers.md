@@ -1,13 +1,15 @@
 ---
-title: Configure Stickers for Windows 11 SE
+title: Configure Stickers For Windows 11 SE
 description: Learn about the Stickers feature and how to configure it via Intune and provisioning package.
-ms.date: 04/10/2024
+ms.date: 12/02/2024
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
 # Configure Stickers for Windows 11 SE
+
+[!INCLUDE [winse-eos](../includes/winse-eos.md)]
 
 Starting in **Windows 11 SE, version 22H2**, *Stickers* is a feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background changes.
 

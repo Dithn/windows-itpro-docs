@@ -1,8 +1,8 @@
 ---
 title: WMI providers supported in Windows
 description: Manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service with Windows Management Infrastructure (WMI).
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: article
+ms.date: 08/04/2025
 ---
 
 # WMI providers supported in Windows
@@ -10,7 +10,7 @@ ms.date: 07/08/2024
 Windows Management Infrastructure (WMI) providers (and the classes they support) are used to manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service. The following subsections show the list WMI MDM classes that are supported in Windows.
 
 > [!NOTE]
-> Applications installed using WMI classes are not removed when the MDM account is removed from device.
+> Applications installed using WMI classes aren't removed when the MDM account is removed from device.
 
 The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here's an example query.
 

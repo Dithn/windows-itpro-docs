@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -14,5 +14,5 @@ This policy specifies whether the widgets feature is allowed on the device.
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/NewsAndInterests/`[AllowNewsAndInterests](/windows/client-management/mdm/policy-csp-newsandinterests#allownewsandinterests) |
-| **GPO** | - **Computer Configuration**  > **Administrative Templates** > **Windows Components** > **Widgets** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/NewsAndInterests/`[AllowNewsAndInterests](/windows/client-management/mdm/policy-csp-newsandinterests#allownewsandinterests) |
+| **GPO** | - **Computer Configuration**  > **Administrative Templates** > **Windows Components** > **Widgets** > **Allow widgets** |

@@ -1,13 +1,16 @@
 ---
 title: Start Policy CSP
 description: Learn more about the Start Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/30/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Start-Begin -->
 # Policy CSP - Start
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Start-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -19,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowPinnedFolderDocuments-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderDocuments-Applicability-End -->
 
 <!-- AllowPinnedFolderDocuments-OmaUri-Begin -->
@@ -69,7 +72,7 @@ This policy controls the visibility of the Documents shortcut on the Start menu.
 <!-- AllowPinnedFolderDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderDownloads-Applicability-End -->
 
 <!-- AllowPinnedFolderDownloads-OmaUri-Begin -->
@@ -119,7 +122,7 @@ This policy controls the visibility of the Downloads shortcut on the Start menu.
 <!-- AllowPinnedFolderFileExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderFileExplorer-Applicability-End -->
 
 <!-- AllowPinnedFolderFileExplorer-OmaUri-Begin -->
@@ -169,7 +172,7 @@ This policy controls the visibility of the File Explorer shortcut on the Start m
 <!-- AllowPinnedFolderHomeGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderHomeGroup-Applicability-End -->
 
 <!-- AllowPinnedFolderHomeGroup-OmaUri-Begin -->
@@ -219,7 +222,7 @@ This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 <!-- AllowPinnedFolderMusic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderMusic-Applicability-End -->
 
 <!-- AllowPinnedFolderMusic-OmaUri-Begin -->
@@ -269,7 +272,7 @@ This policy controls the visibility of the Music shortcut on the Start menu. The
 <!-- AllowPinnedFolderNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderNetwork-Applicability-End -->
 
 <!-- AllowPinnedFolderNetwork-OmaUri-Begin -->
@@ -319,7 +322,7 @@ This policy controls the visibility of the Network shortcut on the Start menu. T
 <!-- AllowPinnedFolderPersonalFolder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderPersonalFolder-Applicability-End -->
 
 <!-- AllowPinnedFolderPersonalFolder-OmaUri-Begin -->
@@ -369,7 +372,7 @@ This policy controls the visibility of the PersonalFolder shortcut on the Start 
 <!-- AllowPinnedFolderPictures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderPictures-Applicability-End -->
 
 <!-- AllowPinnedFolderPictures-OmaUri-Begin -->
@@ -419,7 +422,7 @@ This policy controls the visibility of the Pictures shortcut on the Start menu. 
 <!-- AllowPinnedFolderSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderSettings-Applicability-End -->
 
 <!-- AllowPinnedFolderSettings-OmaUri-Begin -->
@@ -469,7 +472,7 @@ This policy controls the visibility of the Settings shortcut on the Start menu. 
 <!-- AllowPinnedFolderVideos-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderVideos-Applicability-End -->
 
 <!-- AllowPinnedFolderVideos-OmaUri-Begin -->
@@ -513,13 +516,70 @@ This policy controls the visibility of the Videos shortcut on the Start menu. Th
 
 <!-- AllowPinnedFolderVideos-End -->
 
+<!-- AlwaysShowNotificationIcon-Begin -->
+## AlwaysShowNotificationIcon
+
+<!-- AlwaysShowNotificationIcon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AlwaysShowNotificationIcon-Applicability-End -->
+
+<!-- AlwaysShowNotificationIcon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/AlwaysShowNotificationIcon
+```
+<!-- AlwaysShowNotificationIcon-OmaUri-End -->
+
+<!-- AlwaysShowNotificationIcon-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AlwaysShowNotificationIcon-Description-End -->
+
+<!-- AlwaysShowNotificationIcon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AlwaysShowNotificationIcon-Editable-End -->
+
+<!-- AlwaysShowNotificationIcon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AlwaysShowNotificationIcon-DFProperties-End -->
+
+<!-- AlwaysShowNotificationIcon-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Auto-hide notification bell icon. |
+| 1 | Show notification bell icon. |
+<!-- AlwaysShowNotificationIcon-AllowedValues-End -->
+
+<!-- AlwaysShowNotificationIcon-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AlwaysShowNotificationIcon |
+| Path | Taskbar > AT > StartMenu |
+<!-- AlwaysShowNotificationIcon-GpMapping-End -->
+
+<!-- AlwaysShowNotificationIcon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysShowNotificationIcon-Examples-End -->
+
+<!-- AlwaysShowNotificationIcon-End -->
+
 <!-- ConfigureStartPins-Begin -->
 ## ConfigureStartPins
 
 <!-- ConfigureStartPins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureStartPins-Applicability-End -->
 
 <!-- ConfigureStartPins-OmaUri-Begin -->
@@ -577,7 +637,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 <!-- DisableContextMenus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisableContextMenus-Applicability-End -->
 
 <!-- DisableContextMenus-OmaUri-Begin -->
@@ -646,7 +706,7 @@ If you enable this policy, then invocations of context menus within the Start Me
 <!-- DisableControlCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableControlCenter-Applicability-End -->
 
 <!-- DisableControlCenter-OmaUri-Begin -->
@@ -714,7 +774,7 @@ A reboot is required for this policy setting to take effect.
 <!-- DisableEditingQuickSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableEditingQuickSettings-Applicability-End -->
 
 <!-- DisableEditingQuickSettings-OmaUri-Begin -->
@@ -780,7 +840,7 @@ A reboot is required for this policy setting to take effect.
 <!-- ForceStartSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ForceStartSize-Applicability-End -->
 
 <!-- ForceStartSize-OmaUri-Begin -->
@@ -852,7 +912,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 <!-- HideAppList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideAppList-Applicability-End -->
 
 <!-- HideAppList-OmaUri-Begin -->
@@ -918,13 +978,75 @@ To validate this policy, do the following steps:
 
 <!-- HideAppList-End -->
 
+<!-- HideCategoryView-Begin -->
+## HideCategoryView
+
+<!-- HideCategoryView-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- HideCategoryView-Applicability-End -->
+
+<!-- HideCategoryView-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/HideCategoryView
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/Start/HideCategoryView
+```
+<!-- HideCategoryView-OmaUri-End -->
+
+<!-- HideCategoryView-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to hide the category view in the Start Menu. If you enable this policy setting, the Start Menu will no longer show the category view as an option and will default to grid view.
+<!-- HideCategoryView-Description-End -->
+
+<!-- HideCategoryView-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideCategoryView-Editable-End -->
+
+<!-- HideCategoryView-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideCategoryView-DFProperties-End -->
+
+<!-- HideCategoryView-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Category view shown. |
+| 1 | Category view hidden. |
+<!-- HideCategoryView-AllowedValues-End -->
+
+<!-- HideCategoryView-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideCategoryView |
+| Path | StartMenu > AT > StartMenu |
+<!-- HideCategoryView-GpMapping-End -->
+
+<!-- HideCategoryView-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideCategoryView-Examples-End -->
+
+<!-- HideCategoryView-End -->
+
 <!-- HideChangeAccountSettings-Begin -->
 ## HideChangeAccountSettings
 
 <!-- HideChangeAccountSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideChangeAccountSettings-Applicability-End -->
 
 <!-- HideChangeAccountSettings-OmaUri-Begin -->
@@ -973,7 +1095,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 <!-- HideFrequentlyUsedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideFrequentlyUsedApps-Applicability-End -->
 
 <!-- HideFrequentlyUsedApps-OmaUri-Begin -->
@@ -1055,7 +1177,7 @@ To validate this policy, do the following steps:
 <!-- HideHibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideHibernate-Applicability-End -->
 
 <!-- HideHibernate-OmaUri-Begin -->
@@ -1107,7 +1229,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 <!-- HideLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideLock-Applicability-End -->
 
 <!-- HideLock-OmaUri-Begin -->
@@ -1157,7 +1279,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 <!-- HidePeopleBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HidePeopleBar-Applicability-End -->
 
 <!-- HidePeopleBar-OmaUri-Begin -->
@@ -1222,7 +1344,7 @@ If you enable this policy the people icon will be removed from the taskbar, the 
 <!-- HidePowerButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HidePowerButton-Applicability-End -->
 
 <!-- HidePowerButton-OmaUri-Begin -->
@@ -1274,7 +1396,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 <!-- HideRecentJumplists-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRecentJumplists-Applicability-End -->
 
 <!-- HideRecentJumplists-OmaUri-Begin -->
@@ -1342,7 +1464,7 @@ To validate this policy, do the following steps:
 <!-- HideRecentlyAddedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRecentlyAddedApps-Applicability-End -->
 
 <!-- HideRecentlyAddedApps-OmaUri-Begin -->
@@ -1423,7 +1545,7 @@ To validate this policy, do the following steps:
 <!-- HideRecommendedPersonalizedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1928] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5027303](https://support.microsoft.com/help/5027303) [10.0.22621.1928] and later |
 <!-- HideRecommendedPersonalizedSites-Applicability-End -->
 
 <!-- HideRecommendedPersonalizedSites-OmaUri-Begin -->
@@ -1490,7 +1612,7 @@ Remove Personalized Website Recommendations from the Recommended section in the 
 <!-- HideRecommendedSection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- HideRecommendedSection-Applicability-End -->
 
 <!-- HideRecommendedSection-OmaUri-Begin -->
@@ -1559,7 +1681,7 @@ If you enable this policy setting, the Start Menu will no longer show the sectio
 <!-- HideRestart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRestart-Applicability-End -->
 
 <!-- HideRestart-OmaUri-Begin -->
@@ -1608,7 +1730,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 <!-- HideShutDown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideShutDown-Applicability-End -->
 
 <!-- HideShutDown-OmaUri-Begin -->
@@ -1657,7 +1779,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 <!-- HideSignOut-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSignOut-Applicability-End -->
 
 <!-- HideSignOut-OmaUri-Begin -->
@@ -1707,7 +1829,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 <!-- HideSleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSleep-Applicability-End -->
 
 <!-- HideSleep-OmaUri-Begin -->
@@ -1756,7 +1878,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 <!-- HideSwitchAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSwitchAccount-Applicability-End -->
 
 <!-- HideSwitchAccount-OmaUri-Begin -->
@@ -1805,7 +1927,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 <!-- HideTaskViewButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- HideTaskViewButton-Applicability-End -->
 
 <!-- HideTaskViewButton-OmaUri-Begin -->
@@ -1874,7 +1996,7 @@ If you enable this policy setting, the TaskView button will be hidden and the Se
 <!-- HideUserTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideUserTile-Applicability-End -->
 
 <!-- HideUserTile-OmaUri-Begin -->
@@ -1926,7 +2048,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 <!-- ImportEdgeAssets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ImportEdgeAssets-Applicability-End -->
 
 <!-- ImportEdgeAssets-OmaUri-Begin -->
@@ -1982,7 +2104,7 @@ To validate this policy, do the following steps:
 <!-- NoPinningToTaskbar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- NoPinningToTaskbar-Applicability-End -->
 
 <!-- NoPinningToTaskbar-OmaUri-Begin -->
@@ -2043,7 +2165,7 @@ To validate this policy, do the following steps:
 <!-- ShowOrHideMostUsedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ShowOrHideMostUsedApps-Applicability-End -->
 
 <!-- ShowOrHideMostUsedApps-OmaUri-Begin -->
@@ -2118,7 +2240,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 <!-- SimplifyQuickSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- SimplifyQuickSettings-Applicability-End -->
 
 <!-- SimplifyQuickSettings-OmaUri-Begin -->
@@ -2184,7 +2306,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 <!-- StartLayout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- StartLayout-Applicability-End -->
 
 <!-- StartLayout-OmaUri-Begin -->
@@ -2246,6 +2368,63 @@ For more information on how to customize the Start layout, see [Customize the St
 <!-- StartLayout-Examples-End -->
 
 <!-- StartLayout-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-Begin -->
+## TurnOffAbbreviatedDateTimeFormat
+
+<!-- TurnOffAbbreviatedDateTimeFormat-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- TurnOffAbbreviatedDateTimeFormat-Applicability-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/TurnOffAbbreviatedDateTimeFormat
+```
+<!-- TurnOffAbbreviatedDateTimeFormat-OmaUri-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- TurnOffAbbreviatedDateTimeFormat-Description-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffAbbreviatedDateTimeFormat-Editable-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- TurnOffAbbreviatedDateTimeFormat-DFProperties-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Show abbreviated time and date format. |
+| 1 | Show classic time and date format. |
+<!-- TurnOffAbbreviatedDateTimeFormat-AllowedValues-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TurnOffAbbreviatedDateTimeFormat |
+| Path | Taskbar > AT > StartMenu |
+<!-- TurnOffAbbreviatedDateTimeFormat-GpMapping-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffAbbreviatedDateTimeFormat-Examples-End -->
+
+<!-- TurnOffAbbreviatedDateTimeFormat-End -->
 
 <!-- Start-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

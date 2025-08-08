@@ -3,12 +3,12 @@ title: What's new 2022
 description: This article lists the 2022 feature releases and any corresponding Message center post numbers.
 ms.date: 12/09/2022
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: whats-new
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: aaroncz
+manager: bpardi
 ms.reviewer: hathind
 ---
 

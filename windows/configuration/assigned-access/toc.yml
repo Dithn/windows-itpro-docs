@@ -1,33 +1,32 @@
 items:
 - name: Overview
   href: index.md
-- name: Assigned Access
-  items:
-  - name: What is Assigned Access?
-    href: overview.md
-  - name: Quickstarts
-    items:
-      - name: Configure a kiosk with Assigned Access
-        href: quickstart-kiosk.md
-      - name: Configure a restricted user experience with Assigned Access
-        href: quickstart-restricted-user-experience.md
-  - name: Create an Assigned Access configuration file
-    href: configuration-file.md
-  - name: Reference
-    items:
-      - name: Assigned Access XSD
-        href: xsd.md
-      - name: Assigned Access XML examples
-        href: examples.md
-      - name: Assigned Access policy settings
-        href: policy-settings.md
-- name: Shell Launcher
-  href: shell-launcher/toc.yml
+- name: Configure a single-app kiosk
+  href: configure-single-app-kiosk.md
+- name: Configure a multi-app kiosk
+  href: configure-multi-app-kiosk.md
+  displayName: Configure a restricted user experience
 - name: Recommendations
   href: recommendations.md
-- name: Assigned Access CSP 🔗
-  href: /windows/client-management/mdm/assignedaccess-csp
-- name: Troubleshoot 🔗
-  href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
-- name: Configure Microsoft Edge kiosk mode 🔗
-  href: /deployedge/microsoft-edge-configure-kiosk-mode
+- name: Create a configuration file
+  href: configuration-file.md
+- name: Quickstarts
+  items:
+    - name: Configure a single-app kiosk
+      href: quickstart-kiosk.md
+      displayName: Configure a single-app kiosk quickstart
+    - name: Configure a multi-app kiosk
+      href: quickstart-restricted-user-experience.md
+      displayName: Configure a restricted user experience quickstart
+- name: Reference
+  items:
+    - name: Assigned Access XSD
+      href: xsd.md
+    - name: Assigned Access XML examples
+      href: examples.md
+    - name: Assigned Access policy settings
+      href: policy-settings.md
+    - name: WMI Class WEDL_AssignedAccess
+      href: wedl-assignedaccess.md
+    - name: Assigned Access CSP 🔗
+      href: /windows/client-management/mdm/assignedaccess-csp

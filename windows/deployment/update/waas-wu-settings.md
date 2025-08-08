@@ -6,15 +6,15 @@ ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.collection:
   - highpri
   - tier2
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 04/29/2024
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 12/27/2024
 ---
 
 # Manage additional Windows Update settings
@@ -42,7 +42,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
 >
->Additional settings that configure when feature and quality updates are received are detailed on **[Configure Windows Update for Business](waas-configure-wufb.md)**.
+>Additional settings that configure when feature and quality updates are received are detailed on **[Configure Windows Update client policies](waas-configure-wufb.md)**.
 
 ## Scanning for updates
 
@@ -54,14 +54,14 @@ You can make custom device groups that work with your internal Microsoft update 
 
 Finally, to make sure the updating experience is fully admin controlled, you can [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) for users.
 
-For additional settings that configure when feature and quality updates are received, see [Configure Windows Update for Business](waas-configure-wufb.md).
+For additional settings that configure when feature and quality updates are received, see [Configure Windows Update client policies](waas-configure-wufb.md).
 
 ### Specify intranet Microsoft update service location
 
 Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client searches this service for updates that apply to the computers on your network.
 
-To use this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update\Specify Intranet Microsoft update service location**. You must set two server name values: 
+To use this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update\Specify Intranet Microsoft update service location**. You must set two server name values:
 - The server from which the Automatic Updates client detects and downloads updates
 - The server to which updated workstations upload statistics
 You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of the intranet update service.
@@ -103,9 +103,9 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 
 ### Do not connect to any Windows Update Internet locations
 
-Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update, the Microsoft Store, or the Microsoft Store for Business.
+Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store.
 
-Use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations** to enable this policy. When enabled, this policy will disable the functionality described above, and may cause connection to public services such as the Microsoft Store, Microsoft Store for Business, Windows Update for Business, and Delivery Optimization to stop working.
+Use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations** to enable this policy. When enabled, this policy will disable the functionality described above, and may cause connection to public services such as the Microsoft Store, Windows Update client policies, and Delivery Optimization to stop working.
 
 >[!NOTE]
 >This policy applies only when the device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
@@ -166,9 +166,9 @@ Under **Computer Configuration\Administrative Templates\Windows Components\Windo
 
 **4 - Auto download and schedule the install** - Specify the schedule using the options in the Group Policy Setting. For more information about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
 
-**5 - Allow local admin to choose setting** - With this option, local administrators are allowed to use the settings app to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates. This option isn't available in any Windows 10 or later versions. 
+**5 - Allow local admin to choose setting** - With this option, local administrators are allowed to use the settings app to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates. This option isn't available in any Windows 10 or later versions.
 
-**7 - Notify for install and notify for restart** (Windows Server 2016 and later only) - With this option, when Windows finds updates that apply to this device, they are downloaded, then users are notified that updates are ready to be installed. Once updates are installed, a notification is displayed to users to restart the device. 
+**7 - Notify for install and notify for restart** (Windows Server 2016 and later only) - With this option, when Windows finds updates that apply to this device, they are downloaded, then users are notified that updates are ready to be installed. Once updates are installed, a notification is displayed to users to restart the device.
 
 If this setting is set to **Disabled**, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
 
@@ -212,6 +212,12 @@ To do this, follow these steps:
      * **5**: Allow local admin to select the configuration mode. This option isn't available for Windows 10 or later versions.
 
      * **7**:  Notify for install and notify for restart. (Windows Server 2016 and later only)
+
+   * ScheduledInstallEveryWeek (REG_DWORD):
+
+     * **0**: Do not enforce a once-per-week scheduled installation
+
+     * **1**: Enforce automatic installations once a week on the specified day and time. (Requires ***ScheduledInstallDay*** and ***ScheduledInstallTime*** to be set.)
 
    * ScheduledInstallDay (REG_DWORD):
 
@@ -260,10 +266,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
 ## Display organization name in Windows Update notifications
 <!--6286260-->
-When Windows 11 clients are associated with a Microsoft Entra tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification displays a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
-  
+When Windows 11 clients are associated with a Microsoft Entra tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update client policies, the user notification displays a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.
+
 The organization name appears automatically for Windows 11 clients that are associated with Microsoft Entra ID in any of the following ways:
-- [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) 
+- [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register)
 - [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 
@@ -273,13 +279,13 @@ To disable displaying the organization name in Windows Update notifications, add
   - **DWORD value name**: UsoDisableAADJAttribution
   - **Value data:** 1
 
-The following PowerShell script is provided as an example to you: 
+The following PowerShell script is provided as an example to you:
 ```powershell
 $registryPath = "HKLM:\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations"
 $Name = "UsoDisableAADJAttribution"
-$value = "1" 
+$value = "1"
 
-if (!(Test-Path $registryPath)) 
+if (!(Test-Path $registryPath))
 {
   New-Item -Path $registryPath -Force | Out-Null
 }
@@ -290,11 +296,11 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 ## Allow Windows updates to install before initial user sign-in
 *(Starting in Windows 11, version 22H2 with 2023-04 Cumulative Update Preview, or a later cumulative update)* <!--7679187-->
 
-On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.  
+On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.
 
 In scenarios where initial sign-in is delayed, setting the following registry values allow devices to begin background update work before a user first signs in:
 
-- **Registry key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
+- **Registry key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator`
 - **DWORD value name**: ScanBeforeInitialLogonAllowed
 - **Value data**: 1
 

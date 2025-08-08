@@ -1,7 +1,8 @@
 ---
 title: HumanPresence Policy CSP
 description: Learn more about the HumanPresence Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/30/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- ForceAllowDimWhenExternalDisplayConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ForceAllowDimWhenExternalDisplayConnected-Applicability-End -->
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-OmaUri-Begin -->
@@ -85,7 +86,7 @@ Determines whether Allow Adaptive Dimming When Battery Saver On checkbox is forc
 <!-- ForceAllowLockWhenExternalDisplayConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ForceAllowLockWhenExternalDisplayConnected-Applicability-End -->
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-OmaUri-Begin -->
@@ -149,7 +150,7 @@ Determines whether Allow Lock on Leave When Battery Saver On checkbox is forced 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Applicability-End -->
 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-OmaUri-Begin -->
@@ -213,7 +214,7 @@ Determines whether Allow Wake on Approach When External Display Connected checkb
 <!-- ForceDisableWakeWhenBatterySaverOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ForceDisableWakeWhenBatterySaverOn-Applicability-End -->
 
 <!-- ForceDisableWakeWhenBatterySaverOn-OmaUri-Begin -->
@@ -277,7 +278,7 @@ Determines whether Disable Wake on Approach When Battery Saver On checkbox is fo
 <!-- ForceInstantDim-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantDim-Applicability-End -->
 
 <!-- ForceInstantDim-OmaUri-Begin -->
@@ -341,7 +342,7 @@ This is a power saving feature that prolongs battery charge.
 <!-- ForceInstantLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantLock-Applicability-End -->
 
 <!-- ForceInstantLock-OmaUri-Begin -->
@@ -405,7 +406,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wo
 <!-- ForceInstantWake-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantWake-Applicability-End -->
 
 <!-- ForceInstantWake-OmaUri-Begin -->
@@ -469,7 +470,7 @@ Determines whether Wake On Arrival is forced on/off by the MDM policy. The user 
 <!-- ForceLockTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceLockTimeout-Applicability-End -->
 
 <!-- ForceLockTimeout-OmaUri-Begin -->
@@ -527,6 +528,124 @@ Determines the timeout for Lock on Leave forced by the MDM policy. The user will
 <!-- ForceLockTimeout-Examples-End -->
 
 <!-- ForceLockTimeout-End -->
+
+<!-- ForceOnlookerDetection-Begin -->
+## ForceOnlookerDetection
+
+<!-- ForceOnlookerDetection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ForceOnlookerDetection-Applicability-End -->
+
+<!-- ForceOnlookerDetection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceOnlookerDetection
+```
+<!-- ForceOnlookerDetection-OmaUri-End -->
+
+<!-- ForceOnlookerDetection-Description-Begin -->
+<!-- Description-Source-DDF -->
+Determines whether detect when other people are looking at my screen is forced on/off by the MDM policy. The user won't be able to change this setting and the UI will be greyed out.
+<!-- ForceOnlookerDetection-Description-End -->
+
+<!-- ForceOnlookerDetection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceOnlookerDetection-Editable-End -->
+
+<!-- ForceOnlookerDetection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceOnlookerDetection-DFProperties-End -->
+
+<!-- ForceOnlookerDetection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | ForcedOff. |
+| 1 | ForcedOn. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceOnlookerDetection-AllowedValues-End -->
+
+<!-- ForceOnlookerDetection-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ForceOnlookerDetection |
+| Path | Sensors > AT > WindowsComponents > HumanPresence |
+<!-- ForceOnlookerDetection-GpMapping-End -->
+
+<!-- ForceOnlookerDetection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceOnlookerDetection-Examples-End -->
+
+<!-- ForceOnlookerDetection-End -->
+
+<!-- ForceOnlookerDetectionAction-Begin -->
+## ForceOnlookerDetectionAction
+
+<!-- ForceOnlookerDetectionAction-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ForceOnlookerDetectionAction-Applicability-End -->
+
+<!-- ForceOnlookerDetectionAction-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceOnlookerDetectionAction
+```
+<!-- ForceOnlookerDetectionAction-OmaUri-End -->
+
+<!-- ForceOnlookerDetectionAction-Description-Begin -->
+<!-- Description-Source-DDF -->
+Determines whether the Onlooker Detection action is forced by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
+<!-- ForceOnlookerDetectionAction-Description-End -->
+
+<!-- ForceOnlookerDetectionAction-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceOnlookerDetectionAction-Editable-End -->
+
+<!-- ForceOnlookerDetectionAction-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceOnlookerDetectionAction-DFProperties-End -->
+
+<!-- ForceOnlookerDetectionAction-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 3 | ForcedDimAndNotify. |
+| 2 | ForcedNotify. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceOnlookerDetectionAction-AllowedValues-End -->
+
+<!-- ForceOnlookerDetectionAction-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ForceOnlookerDetectionAction |
+| Path | Sensors > AT > WindowsComponents > HumanPresence |
+<!-- ForceOnlookerDetectionAction-GpMapping-End -->
+
+<!-- ForceOnlookerDetectionAction-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceOnlookerDetectionAction-Examples-End -->
+
+<!-- ForceOnlookerDetectionAction-End -->
 
 <!-- HumanPresence-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

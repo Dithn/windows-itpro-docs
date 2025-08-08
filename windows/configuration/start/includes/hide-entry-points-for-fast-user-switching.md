@@ -14,7 +14,7 @@ With this policy setting you can prevent multiple users to sign in at the same t
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[HideFastUserSwitching](/windows/client-management/mdm/policy-csp-windowslogon#hidefastuserswitching) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Hide entry points for Fast User Switching** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[HideFastUserSwitching](/windows/client-management/mdm/policy-csp-windowslogon#hidefastuserswitching) |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Hide entry points for Fast User Switching** |
 
 To learn more, see [Fast User Switching](/windows/win32/shell/fast-user-switching).

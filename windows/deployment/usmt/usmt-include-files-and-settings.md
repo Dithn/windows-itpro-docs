@@ -2,12 +2,12 @@
 title: Include Files and Settings
 description: Specify the migration .xml files that are needed, then use the User State Migration Tool (USMT) to migrate the settings and components specified.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: how-to
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -25,12 +25,12 @@ The following **.xml** file migrates a single registry key.
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
      <component type="Application" context="System">
-          <displayName>Component to migrate only registry value string</displayName> 
+          <displayName>Component to migrate only registry value string</displayName>
           <role role="Settings">
           <rules>
                <include>
                     <objectSet>
-                         <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern> 
+                         <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
                     </objectSet>
                </include>
           </rules>
@@ -95,8 +95,8 @@ The following **.xml** file migrates all files and subfolders of the `Engineerin
     <rules>
          <include>
             <objectSet>
-         <script>MigXmlHelper.GenerateDrivePatterns ("\EngineeringDrafts\* [*] ", "Fixed")</script>            
-         <script>MigXmlHelper.GenerateDrivePatterns ("*\EngineeringDrafts\* [*] ", "Fixed")</script>            
+         <script>MigXmlHelper.GenerateDrivePatterns ("\EngineeringDrafts\* [*] ", "Fixed")</script>
+         <script>MigXmlHelper.GenerateDrivePatterns ("*\EngineeringDrafts\* [*] ", "Fixed")</script>
        </objectSet>
           </include>
     </rules>
@@ -114,7 +114,7 @@ The following **.xml** file migrates all files and subfolders of the `Engineerin
   <role role="Data">
     <rules>
          <include>
-            <objectSet>                 
+            <objectSet>
 <pattern type="File"> C:\*\EngineeringDrafts\* [*]</pattern>
 <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
        </objectSet>
@@ -149,7 +149,7 @@ The following **.xml** file migrates `.mp3` files located in the specified drive
     </rules>
   </role>
 </component>
-</migration> 
+</migration>
 ```
 
 ## Migrate a specific file

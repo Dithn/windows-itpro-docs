@@ -6,9 +6,13 @@ ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
+manager: dansimp
 ms.date: 05/15/2019
 ms.topic: reference
+ms.collection: 
+- privacy-windows
+- must-keep
+- trust-pod
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -19,20 +23,20 @@ ms.topic: reference
 - Windows 10 Enterprise 1903 version and newer
 
 
-This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Mobile Device Management/Configuration Service Provider (MDM/CSP) and custom Open Mobile Alliance Uniform Resource Identifier ([OMA URI](/mem/intune/configuration/custom-settings-windows-10)) policies available to IT Professionals using Microsoft Intune to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it's possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
+This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Mobile Device Management/Configuration Service Provider (MDM/CSP) and custom Open Mobile Alliance Uniform Resource Identifier ([OMA URI](/mem/intune/configuration/custom-settings-windows-10)) policies available to IT Professionals using Microsoft Intune to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it's possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
 >[!IMPORTANT]
 >- The Allowed Traffic endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic)
->   - CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+>   - CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic can't be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 >   - There is some traffic which is specifically required for the Microsoft Intune based management of Windows 10 and Windows 11 devices. This traffic includes Windows Notifications Service (WNS), Automatic Root Certificates Update (ARCU), and some Windows Update related traffic. The aforementioned traffic comprises the Allowed Traffic for Microsoft Intune MDM Server to manage Windows 10 and Windows 11 devices.
->- For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. Accordingly, we do not recommend disabling any of these features.
+>- For security reasons, it's important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. Accordingly, we don't recommend disabling any of these features.
 >- To ensure CSPs take priority over Group Policies in case of conflicts, use the [ControlPolicyConflict](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy.
 >- The **Get Help** and **Give us Feedback** links in Windows may no longer work after applying some or all of the MDM/CSP settings.
 
 >[!Warning]
 >If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Remove Everything" option the >Windows Restricted Traffic Limited Functionality settings will need to be re-applied in order re-restrict the device's egress traffic. >To do this the client must be re-enrolled to the Microsoft Intune service. Egress traffic may occur during the period prior to the re->application of the Restricted Traffic Limited Functionality settings.  If the user executes a "Reset this PC" with the "Keep my files" >option the Restricted Traffic Limited Functionality settings are retained on the device, and therefore the client will remain in a >Restricted Traffic configuration during and after the "Keep my files" reset, and no re-enrollment is required.
 
-For more information on Microsoft Intune, see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](/mem/intune/).
+For more information on Microsoft Intune, see [Microsoft Intune core capabilities](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune) and [Microsoft Intune documentation](/mem/intune/).
 
 For detailed information about managing network connections to Microsoft services using Windows Settings, Group Policies and Registry settings see [Manage connections from Windows operating system components to Microsoft services](./manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
@@ -53,16 +57,16 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. MDM Policy: [Search/AllowSearchToUseLocation](/windows/client-management/mdm/policy-csp-search#search-allowsearchtouselocation). Choose whether Cortana and Search can provide location-aware search results. **Set to 0 (zero)**
 
 1. **Date & Time**
-   1. MDM Policy: [Settings/AllowDateTime](/windows/client-management/mdm/policy-csp-settings#settings-allowdatetime). Allows the user to change date and time settings.  **Set to 0 (zero)**
+   1. MDM Policy: [Settings/AllowDateTime](/windows/client-management/mdm/policy-csp-settings#settings-allowdatetime). Allows the user to change date and time settings. **Set to 0 (zero)**
 
 1. **Device metadata retrieval**
-   1. MDM Policy: [DeviceInstallation/PreventDeviceMetadataFromNetwork](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventdevicemetadatafromnetwork). Choose whether to prevent Windows from retrieving device metadata from the Internet.  **Set to Enabled**
+   1. MDM Policy: [DeviceInstallation/PreventDeviceMetadataFromNetwork](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventdevicemetadatafromnetwork). Choose whether to prevent Windows from retrieving device metadata from the Internet. **Set to Enabled**
 
 1. **Find My Device**
-   1. MDM Policy: [Experience/AllowFindMyDevice](/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice). This policy turns on Find My Device.  **Set to 0  (zero)**
+   1. MDM Policy: [Experience/AllowFindMyDevice](/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice). This policy turns on Find My Device. **Set to 0  (zero)**
 
 1. **Font streaming**
-   1. MDM Policy: [System/AllowFontProviders](/windows/client-management/mdm/policy-csp-system#system-allowfontproviders).  Setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. **Set to 0  (zero)**
+   1. MDM Policy: [System/AllowFontProviders](/windows/client-management/mdm/policy-csp-system#system-allowfontproviders). Setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. **Set to 0  (zero)**
 1. **Insider Preview builds**
    1. MDM Policy: [System/AllowBuildPreview](/windows/client-management/mdm/policy-csp-system#system-allowbuildpreview). This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. **Set to 0  (zero)**
 
@@ -77,7 +81,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
       1. **\<enabled/>\<data id=”FirstRunOptions” value=”1”/>**
 
 1. **Live Tiles**
-   1. MDM Policy: [Notifications/DisallowTileNotification](/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features won't be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
+   1. MDM Policy: [Notifications/DisallowTileNotification](/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features won't be able to update their tiles and tile badges in the Start screen. **Integer value 1**
 
 1. **Mail synchronization**
    1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use a Microsoft account for non-email related connection authentication and services. **Set to 0 (zero)**
@@ -91,10 +95,10 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. MDM Policy: [Browser/AllowMicrosoftCompatbilityList](/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist). Specify the Microsoft compatibility list in Microsoft Edge. **Set to 0 (zero)**
    1. MDM Policy: [Browser/AllowPasswordManager](/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager). Choose whether employees can save passwords locally on their devices. **Set to 0 (zero)**
    1. MDM Policy: [Browser/AllowSearchSuggestionsinAddressBar](/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar). Choose whether the Address Bar shows search suggestions. **Set to 0  (zero)**
-   1. MDM Policy: [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether Windows Defender SmartScreen is turned on or off.  **Set to 0  (zero)**
+   1. MDM Policy: [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether Windows Defender SmartScreen is turned on or off. **Set to 0  (zero)**
 
 1. **Network Connection Status Indicator**
-   1. [Connectivity/DisallowNetworkConnectivityActiveTests](/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests).  Note: After you apply this policy, you must restart the device for the policy setting to take effect. **Set to 1 (one)**
+   1. [Connectivity/DisallowNetworkConnectivityActiveTests](/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests). Note: After you apply this policy, you must restart the device for the policy setting to take effect. **Set to 1 (one)**
 
 1. **Offline maps**
    1. MDM Policy: [AllowOfflineMapsDownloadOverMeteredConnection](/windows/client-management/mdm/policy-csp-maps). Allows the download and update of map data over metered connections. <br /> **Set to 0 (zero)**
@@ -126,7 +130,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. Other devices - [Privacy/LetAppsSyncWithDevices](/windows/client-management/mdm/policy-csp-privacy#privacy-letappssyncwithdevices). Specifies whether Windows apps can sync with devices. **Set to 2 (two)**
    1. Other devices - [Privacy/LetAppsAccessTrustedDevices](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesstrusteddevices). Specifies whether Windows apps can access trusted devices. **Set to 2 (two)**
    1. Feedback & diagnostics - [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry). Allow the device to send diagnostic and usage telemetry data, such as Watson. **Set to 0 (zero)**
-   1. Feedback & diagnostics - [Experience/DoNotShowFeedbackNotifications](/windows/client-management/mdm/policy-csp-experience#experience-donotshowfeedbacknotifications). Prevents devices from showing feedback questions from Microsoft.  **Set to 1 (one)**
+   1. Feedback & diagnostics - [Experience/DoNotShowFeedbackNotifications](/windows/client-management/mdm/policy-csp-experience#experience-donotshowfeedbacknotifications). Prevents devices from showing feedback questions from Microsoft. **Set to 1 (one)**
    1. Background apps - [Privacy/LetAppsRunInBackground](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsruninbackground). Specifies whether Windows apps can run in the background. **Set to 2 (two)**
    1. Motion - [Privacy/LetAppsAccessMotion](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmotion). Specifies whether Windows apps can access motion data. **Set to 2 (two)**
    1. Tasks - [Privacy/LetAppsAccessTasks](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesstasks). Turn off the ability to choose which apps have access to tasks. **Set to 2 (two)**
@@ -146,7 +150,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. [Defender/SignatureUpdateFallbackOrder](). Allows you to define the order in which different definition update sources should be contacted. The OMA-URI for this is: **./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder**, Data type: **String**, Value: **FileShares**
 1. **Windows Spotlight** - [Experience/AllowWindowsSpotlight](/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight). Disable Windows Spotlight. **Set to 0 (zero)**
 1. **Microsoft Store**
-   1. [ApplicationManagement/DisableStoreOriginatedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps). Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.  **Set to 1 (one)**
+   1. [ApplicationManagement/DisableStoreOriginatedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps). Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded. **Set to 1 (one)**
    1. [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate). Specifies whether automatic update of apps from Microsoft Store are allowed. **Set to 0 (zero)**
 1. **Apps for websites** - [ApplicationDefaults/EnableAppUriHandlers](/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers). This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)**
 1. **Windows Update Delivery Optimization** - The following Delivery Optimization MDM policies are available in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).

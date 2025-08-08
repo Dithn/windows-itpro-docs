@@ -1,8 +1,8 @@
 ---
 title: Mobile Device Management overview
 description: Windows provides an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy.
-ms.date: 07/08/2024
-ms.topic: conceptual
+ms.date: 08/04/2025
+ms.topic: article
 ms.localizationpriority: medium
 ms.collection:
 - highpri

@@ -15,3 +15,10 @@ The default value is 0.
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/PINComplexity/`[devicetenantidpoliciespincomplexityexpiration](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciespincomplexityexpiration)<br><br>`./User/Vendor/MSFT/PassportForWork/{TenantId}/Policies/PINComplexity/`[usertenantidpoliciespincomplexityexpiration](/windows/client-management/mdm/passportforwork-csp#usertenantidpoliciespincomplexityexpiration) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **PIN Complexity**|
+
+
+> [!IMPORTANT]
+> PIN expiration is not supported on:
+>
+> - Devices with [Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) enabled, since Windows Hello uses Virtualization-based Security (VBS) to isolate credentials.
+> - Starting with Windows 11, version 24H2, on all devices that have VBS enabled.

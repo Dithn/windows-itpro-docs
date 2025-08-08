@@ -2,12 +2,12 @@
 title: Plan The Migration
 description: Learn how to plan the migration carefully so the migration can proceed smoothly and so that the risk of migration failure is reduced.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: concept-article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

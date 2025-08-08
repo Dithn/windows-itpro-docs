@@ -1,7 +1,8 @@
 ---
 title: Accounts Policy CSP
 description: Learn more about the Accounts Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- AllowAddingNonMicrosoftAccountsManually-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAddingNonMicrosoftAccountsManually-Applicability-End -->
 
 <!-- AllowAddingNonMicrosoftAccountsManually-OmaUri-Begin -->
@@ -71,7 +72,7 @@ Specifies whether user is allowed to add non-MSA email accounts. Most restricted
 <!-- AllowMicrosoftAccountConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowMicrosoftAccountConnection-Applicability-End -->
 
 <!-- AllowMicrosoftAccountConnection-OmaUri-Begin -->
@@ -120,7 +121,7 @@ Specifies whether the user is allowed to use an MSA account for non-email relate
 <!-- AllowMicrosoftAccountSignInAssistant-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowMicrosoftAccountSignInAssistant-Applicability-End -->
 
 <!-- AllowMicrosoftAccountSignInAssistant-OmaUri-Begin -->
@@ -142,6 +143,8 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 
 <!-- AllowMicrosoftAccountSignInAssistant-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> If the Microsoft Account Sign-In Assistant service is disabled, the initial digital license activation with a Multiple Activation Key (MAK) or Digital Product Key (DPK) will fail.
 <!-- AllowMicrosoftAccountSignInAssistant-Editable-End -->
 
 <!-- AllowMicrosoftAccountSignInAssistant-DFProperties-Begin -->
@@ -175,7 +178,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- DomainNamesForEmailSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DomainNamesForEmailSync-Applicability-End -->
 
 <!-- DomainNamesForEmailSync-OmaUri-Begin -->
@@ -213,7 +216,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Applicability-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-OmaUri-Begin -->

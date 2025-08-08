@@ -3,12 +3,12 @@ title: Windows client updates, channels, and tools
 description: Brief summary of the kinds of Windows updates, the channels they're served through, and the tools for managing them
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
@@ -31,7 +31,7 @@ version of the software.
 
 ## Types of updates
 
-We include information here about many different update types you hear about, but the two overarching types that you have the most direct control over are *feature updates* and *quality updates*. 
+We include information here about many different update types you hear about, but the two overarching types that you have the most direct control over are *feature updates* and *quality updates*.
 
 - **Feature updates:** Released annually. Feature updates add new features and functionality to Windows 10. Because they're delivered frequently (rather than every 3-5 years), they're easier to manage.
 - **Quality updates:** Quality updates deliver both security and nonsecurity fixes. Quality updates include security updates, critical updates, servicing stack updates, and driver updates. They're typically released on the second Tuesday of each month, though they can be released at any time. The second-Tuesday releases are the ones that focus on security updates. Quality updates are *cumulative*, so installing the latest quality update is sufficient to get all the available fixes for a specific feature update, including any out-of-band security fixes and any *servicing stack updates* that might have been released previously.
@@ -49,7 +49,7 @@ The first step of controlling when and how devices install updates is assigning 
 
 ### General Availability Channel
 
-In the General Availability Channel, feature updates are released annually. As long as a device isn't set to defer feature updates, any device in this channel installs a feature update as soon as it's released. If you use Windows Update for Business, the channel provides three months of additional total deployment time before being required to update to the next release.
+In the General Availability Channel, feature updates are released annually. As long as a device isn't set to defer feature updates, any device in this channel installs a feature update as soon as it's released. If you use Windows Update client policies, the channel provides three months of additional total deployment time before being required to update to the next release.
 
 
 ### Windows Insider Program for Business
@@ -68,7 +68,7 @@ We recommend that you use the Windows Insider Release Preview channel for valida
 
 The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as ones that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSC releases service a special LTSC edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-The General Availability Channel is the default servicing channel for all Windows devices except those with the LTSC edition installed. The following table shows the servicing channels available to each edition. 
+The General Availability Channel is the default servicing channel for all Windows devices except those with the LTSC edition installed. The following table shows the servicing channels available to each edition.
 
 
 | Edition | General Availability Channel | Insider Program | Long-Term Servicing Channel |

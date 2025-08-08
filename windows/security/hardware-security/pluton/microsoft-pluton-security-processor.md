@@ -1,8 +1,8 @@
 ---
 title: Microsoft Pluton security processor
 description: Learn more about Microsoft Pluton security processor
-ms.topic: conceptual
-ms.date: 07/10/2024
+ms.topic: article
+ms.date: 04/15/2025
 ---
 
 # Microsoft Pluton security processor
@@ -23,19 +23,19 @@ Pluton is built on proven technology used in Xbox and Azure Sphere, and provides
 
 Pluton is built with the goal of providing customers with better end-to-end security experiences. It does so by doing three things:
 
-1. **Zero-trust security and reliability**: Customer security scenarios often span devices and cloud services. Windows PCs and services like Microsoft Entra and Intune need to work harmoniously together to provide frictionless security. Pluton is designed, built and maintained in close collaboration with teams across Microsoft to ensure that customers get both high security and reliability.
-1. **Innovation**: Pluton platform and the functionality it provides is informed by customer feedback and Microsoft’s threat intelligence. As an example, Pluton platforms in 2024 AMD and Intel systems will start to use a Rust-based firmware foundation given the importance of memory safety.
-1. **Continuous improvement**: Pluton platform supports loading new firmware delivered through operating system updates. This functionality is supported alongside the typical mechanism of UEFI capsule updates that update the Pluton firmware that is resident on the system’s SPI flash and loaded during early system boot. The additional support for dynamically loading valid new Pluton firmware through operating system updates facilitates continuous improvements both for bug fixes and new features.
-   
+1. **Zero-trust security and reliability**: Customer security scenarios often span devices and cloud services. Windows PCs and services like Microsoft Entra and Intune need to work harmoniously together to provide frictionless security. Pluton is designed, built, and maintained in close collaboration with teams across Microsoft to ensure that customers get both high security and reliability.
+1. **Innovation**: Pluton platform and the functionality it provides is informed by customer feedback and Microsoft's threat intelligence. As an example, Pluton platforms in 2024 AMD and Intel systems will start to use a Rust-based firmware foundation given the importance of memory safety.
+1. **Continuous improvement**: Pluton platform supports loading new firmware delivered through operating system updates. This functionality is supported alongside the typical mechanism of UEFI capsule updates that update the Pluton firmware that is resident on the system's SPI flash and loaded during early system boot. The additional support for dynamically loading valid new Pluton firmware through operating system updates facilitates continuous improvements both for bug fixes and new features.
+
 ### A practical example: zero-trust security with device-based conditional access policies
 
-An increasingly important zero-trust workflow is conditional access – gating access to resources like Sharepoint documents based on verifying whether requests are coming from a valid, healthy source. Microsoft Intune, for example, supports different workflows for conditional access including [device-based conditional access](/mem/intune/protect/create-conditional-access-intune) which allows organizations to set policies that ensure that managed devices are healthy and compliant before granting access to the organization’s apps and services. 
+An increasingly important zero-trust workflow is conditional access – gating access to resources like Sharepoint documents based on verifying whether requests are coming from a valid, healthy source. Microsoft Intune, for example, supports different workflows for conditional access including [device-based conditional access](/mem/intune/protect/create-conditional-access-intune) which allows organizations to set policies that ensure that managed devices are healthy and compliant before granting access to the organization's apps and services.
 
-To ensure that Intune gets an accurate picture about the device’s health as part of enforcing these policies, ideally it has tamper-resistant logs on the state of the relevant security capabilities. This is where hardware security is critical as any malicious software running on the device could attempt to provide false signals to the service. One of the core benefits of a hardware security technology like the TPM, is that it has a tamper-resistant log of the state of the system. Services can cryptographically validate that logs and the associated system state reported by the TPM truly come from the TPM. 
+To ensure that Intune gets an accurate picture about the device's health as part of enforcing these policies, ideally it has tamper-resistant logs on the state of the relevant security capabilities. This is where hardware security is critical as any malicious software running on the device could attempt to provide false signals to the service. One of the core benefits of a hardware security technology like the TPM, is that it has a tamper-resistant log of the state of the system. Services can cryptographically validate that logs and the associated system state reported by the TPM truly come from the TPM.
 
-For the end-to-end scenario to be truly successful at scale, the hardware-based security is not enough. Since access to enterprise assets is being gated based on security settings that are being reported by the TPM logs, it is critical that these logs are available reliably. Zero-trust security essentially requires high reliability. 
+For the end-to-end scenario to be truly successful at scale, the hardware-based security isn't enough. Since access to enterprise assets is being gated based on security settings that are being reported by the TPM logs, it's critical that these logs are available reliably. Zero-trust security essentially requires high reliability.
 
-With Pluton, when it is configured as the TPM for the system, customers using conditional access get the benefits of Pluton’s security architecture and implementation with the reliability that comes from the tight integration and collaboration between Pluton and other Microsoft components and services.
+With Pluton, when it's configured as the TPM for the system, customers using conditional access get the benefits of Pluton's security architecture and implementation with the reliability that comes from the tight integration and collaboration between Pluton and other Microsoft components and services.
 
 
 ## Microsoft Pluton security architecture overview

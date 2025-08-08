@@ -1,8 +1,8 @@
 ---
 title: Bulk enrollment
 description: Bulk enrollment is an efficient way to set up an MDM server to manage a large number of devices without the need to reimage the devices.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: how-to
+ms.date: 08/04/2025
 ---
 
 # Bulk enrollment using Windows Configuration Designer
@@ -23,11 +23,11 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 > [!NOTE]
 >
-> - Bulk-join is not supported in Microsoft Entra join.
-> - Bulk enrollment does not work in Intune standalone environment.
+> - Bulk-join isn't supported in Microsoft Entra join.
+> - Bulk enrollment doesn't work in Intune standalone environment.
 > - Bulk enrollment works in Microsoft Intune where the ppkg is generated from the Configuration Manager console.
-> - To change bulk enrollment settings, login to **Microsoft Entra ID**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
-> - Bulk Token creation is not supported with federated accounts.
+> - To change bulk enrollment settings, sign-in to **Microsoft Entra ID**, then **Devices**, and then select **Device Settings**. Change the number under **Maximum number of devices per user**.
+> - Bulk Token creation isn't supported with federated accounts.
 
 ## What you need
 

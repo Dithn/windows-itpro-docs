@@ -1,17 +1,17 @@
 ---
 title: Windows 11 requirements
 description: Hardware requirements to deploy Windows 11.
-manager: aaroncz
+manager: bpardi
 author: mestew
 ms.author: mstewart
 ms.service: windows-client
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
   - highpri
   - tier1
 ms.subservice: itpro-fundamentals
-ms.date: 03/13/2024
+ms.date: 06/17/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 
@@ -46,8 +46,6 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 
   - Windows 11 Home edition requires an internet connection and a Microsoft Account to complete device setup on first use.
 
-For more information, see the following Windows Insider blog post: [Update on Windows 11 minimum system requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/).
-
 For more information about tools to evaluate readiness, see [Determine eligibility](windows-11-plan.md#determine-eligibility).
 
 ## OS requirements
@@ -60,7 +58,7 @@ To upgrade directly to Windows 11, eligible Windows 10 devices must meet both of
 > [!NOTE]
 >
 > - S mode is only supported on the Home edition of Windows 11.
-> - If you're running a different edition of Windows in S mode, before upgrading to Windows 11, first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode).
+> - If you're running a different edition of Windows in S mode, before upgrading to Windows 11, first [switch out of S mode](/previous-versions/windows/it-pro/windows-10/deployment/s-mode/switch-edition-from-s-mode).
 > - To switch a device out of Windows 10 in S mode also requires internet connectivity. If you switch out of S mode, you can't switch back to S mode later.
 
 ## Feature-specific requirements

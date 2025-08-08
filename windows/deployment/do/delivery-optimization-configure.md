@@ -7,7 +7,7 @@ ms.topic: how-to
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
-manager: aaroncz
+manager: bpardi
 ms.collection:
   - tier3
   - essentials-get-started
@@ -16,7 +16,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 07/23/2024
+ms.date: 08/04/2025
 ---
 
 # Configure Delivery Optimization (DO) for Windows
@@ -34,8 +34,8 @@ Use this checklist to guide you through different aspects when modifying Deliver
     * Organization size
     * System resources
     * Improve P2P efficiencies
-  
-1. Using Connected Cache (MCC)
+
+1. Using Microsoft Connected Cache
 1. Choose where to set Delivery Optimization policies
 
 ## 1. Prerequisites to allow Delivery Optimization communication
@@ -69,7 +69,7 @@ Delivery Optimization requires the use of certain ports to deliver content. Make
 | Port    | Protocol | Function          |
 |---------|-------------------|----------|
 | 7680    | TCP/IP | Listen for P2P using TCP/IP |
-| 3544    | TCP/IP | Use Teredo to discover and connect to peers across NATs |
+| 3544    | UDP | Use Teredo to discover and connect to peers across NATs. For more information, see the [Teredo documentation](/windows/win32/teredo/required-firewall-exceptions-for-teredo). |
 | 443     | HTTPS / TLS 1.2 | Use to communicate Delivery Optimization client and service |
 
 ## 2. Evaluate Delivery Optimization policies
@@ -166,8 +166,8 @@ Looking to improve P2P efficiency? Some of the most powerful settings you can ch
 - Help optimize peer connection over HTTP connections using the [DOMinBackgroundQoS](waas-delivery-optimization-reference.md#minimum-background-qos) policy. A good value for the [DOMinBackgroundQoS](waas-delivery-optimization-reference.md#minimum-background-qos) policy is something lower than the average download speed seen in your network. For example, if your average speed is 1000 KB/s, set this policy to 500 KB/s.
 - Improve chances of downloading from peers and/or cache server by delaying the time DO attempts to make connections before falling back to the HTTP source. The set of delay-related policies include:
   - [DODelayBackgroundDownloadFromHttp](waas-delivery-optimization-reference.md#delay-background-download-from-http-in-secs)
-  - [DODelayForegroundDownloadFromHttp](waas-delivery-optimization-reference.md#delay-foreground-download-from-http-in-secs) 
-  
+  - [DODelayForegroundDownloadFromHttp](waas-delivery-optimization-reference.md#delay-foreground-download-from-http-in-secs)
+
   To improve efficiencies from peers or a dedicated cache server, a good starting point is 60 seconds for background settings and 30 seconds for foreground settings.
 
 > [!NOTE]
@@ -177,23 +177,26 @@ Looking to improve P2P efficiency? Some of the most powerful settings you can ch
 
 Regardless of P2P, consider setting the following policies to avoid network disruption.
 
-- Manage network usage as a percentage or absolute value. These policies include: 
+- Manage network usage as a percentage or absolute value. These policies include:
   - [DOPercentageMaxBackgroundBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth)
   - [DOPercentageMaxForegroundBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth)
   - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs)
   - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
-- Reduce disruptions by throttling differently at different times of day, using the following business hours policies: 
+- Reduce disruptions by throttling differently at different times of day, using the following business hours policies:
   - [DOSetHoursToLimitBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-background-download-bandwidth)
   - [DOSetHoursToLimitForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-foreground-download-bandwidth).
 
 > [!NOTE]
 > The absolute policies are recommended in low bandwidth environments.
 
-## 3. Using Connected Cache (MCC)
+## 3. Using Connected Cache
 
 :::image type="content" source="images/do-setup-connected-cache.png" alt-text="Screenshot of Delivery Optimization options when using Connected Cache." lightbox="images/do-setup-connected-cache.png":::
 
-- [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname) is the list of cache host server names, separated with commas. *Delivery Optimization client connects to the listed Microsoft Connected Cache servers in the order as they're listed.*
+> [!NOTE]
+> When multiple Connected Cache servers are configured, the Delivery Optimization client connects to them in the order they appear in the list. If you’ve enabled delay settings for cache server fallback, the fallback-to-HTTP source delay applies to each new file download. This delay is not tied to any specific cache server.
+
+- [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname) is the list of cache host server names, separated with commas.
 - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source) can be used to dynamically discover cache host servers on the network, using DHCP.
 - [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in [Improve P2P efficiency](#2d-improve-p2p-efficiency) section above).
 - [DODisallowCacheServerDownloadsOnVPN](waas-delivery-optimization-reference.md#disallow-cache-server-downloads-on-vpn) allows control of the cache host server to supply content, when device is on a VPN connection.
@@ -228,11 +231,20 @@ Delivery Optimization is integrated with both Microsoft Endpoint Manager and Con
 | Number of devices in the organization | MinFileSizeToCache | 1 MB for peer group > 100 devices |
 | Idle system resources | MaxCacheAge | 7 days (604800 seconds) |
 | Improve P2P efficiency | MinBackgroundQoS and DelayBackgroundDownloadFromHttp / DelayForegroundDownloadFromHttp  | 500 KB/s and 60/30 seconds |
-| Using Connected Cache? | DelayCacheServerFallbackBackground / DelayCacheServerFallbackForeground | 60/30 seconds |
+| Using Connected Cache | DelayCacheServerFallbackBackground / DelayCacheServerFallbackForeground | 60/30 seconds |
+
+### Enterprise using Intune
+
+For a straightforward overview of configuring Delivery Optimization in Intune, check out this [enterprise-focused guide](https://regale.cloud/Microsoft/play/3944/delivery-optimization?cid=intune-home#/0/0) with helpful recommendations.
 
 ## Monitor Delivery Optimization
 
-Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. [Learn more](waas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
+Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. The following options are available to monitor Delivery Optimization:
+
+- On clients, review the activity monitor, which displays a breakdown of downloads by source, average speed, and upload stats for the current month
+   - **Windows 11**: Settings > Windows Update > Advanced Options > Delivery Optimization > Activity Monitor
+   - **Windows 10**: Settings > Update & Security > Delivery Optimization > Activity Monitor
+- Windows Update for Business reports offers a Delivery Optimization report. For more information, see [Monitor Delivery Optimization](waas-delivery-optimization-monitor.md).
 
 ## Troubleshoot Delivery Optimization
 

@@ -1,7 +1,7 @@
 ---
-author: aczechowski
-ms.author: aaroncz
-manager: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: bpardi
 ms.date: 09/20/2021
 ms.topic: include
 ms.service: windows-client

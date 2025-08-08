@@ -1,16 +1,16 @@
 ---
 title: Windows Update security
-manager: aaroncz
+manager: bpardi
 description: Overview of the security for Windows Update including security for the metadata exchange and content download.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 08/28/2023
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 08/15/2024
 ---
 
 # Windows Update security
@@ -45,7 +45,7 @@ Regardless of which method is used to download the content, the resulting files 
 
 When Windows Update scans for updates, it goes through a series of metadata exchanges between the device and Windows Update servers. This exchange is done using HTTPS (HTTP over TLS). These secured connections are certificate-pinned, ensuring that:
 
-- The TLS connection's server certificate is validated (certificate trust, expiry, revocation, SAN entries, etc.)  
+- The TLS connection's server certificate is validated (certificate trust, expiry, revocation, SAN entries, etc.)
 - The certificate's issuer is validated as genuine Microsoft Windows Update
 
 The connection fails if the issuer is unexpected, or not a valid Windows Update intermediate certificate. Certificate pinning ensures that the device is connecting to legitimate Microsoft servers and prevents man-in-the-middle attacks.

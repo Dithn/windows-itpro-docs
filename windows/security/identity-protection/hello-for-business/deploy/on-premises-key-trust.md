@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business on-premises key trust deployment guide
 description: Learn how to deploy Windows Hello for Business in an on-premises, key trust scenario.
-ms.date: 06/24/2024
+ms.date: 02/25/2025
 ms.topic: tutorial
 ---
 

@@ -6,7 +6,7 @@ ms.subservice: itpro-updates
 ms.topic: reference
 author: cmknox
 ms.author: carmenf
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection: tier3
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 05/23/2024
+ms.date: 08/04/2025
 ---
 
 # Delivery Optimization reference
@@ -46,10 +46,10 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | Default to the operating system drive through the %SYSTEMDRIVE% environment variable. |
 | [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50 MB. |
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
-| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Recommend setting this to 500 KB/s. Default value is 2500 KB/s. |
+| [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Default value is 20 MB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
-| [VPN keywords](#vpn-keywords) | DOVpnKeywords | 22H2 September Moment | Allows you to set one or more keywords used to recognize VPN connections. |
-| [Disallow cache server downloads from VPN](#disallow-cache-server-downloads-on-vpn) | DODisallowCacheServerDownloadsOnVPN | 22H2 September Moment | Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN. |
+| [VPN keywords](#vpn-keywords) | DOVpnKeywords | Windows 11, version 22H2 with the September 2023 or later update installed | Allows you to set one or more keywords used to recognize VPN connections. |
+| [Disallow cache server downloads from VPN](#disallow-cache-server-downloads-on-vpn) | DODisallowCacheServerDownloadsOnVPN | Windows 11, version 22H2 with the September 2023 or later update installed | Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN. |
 | [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | Default is to not allow peering while on battery.  |
 | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
 | [Maximum background download bandwidth (percentage)](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
@@ -96,19 +96,19 @@ More options available that control the impact Delivery Optimization has on your
 
 #### Policies to prioritize the use of peer-to-peer and cache server sources
 
-When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client connects to both MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fall back to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or MCC sources by delaying the immediate fallback to HTTP source, which is the default behavior.
+When Delivery Optimization client is configured to use peers and Microsoft Connected Cache, to achieve the best possible content delivery experience, the client connects to both Connected Cache and peers in parallel. If the desired content can't be obtained from Connected Cache or peers, Delivery Optimization will automatically fall back to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or Connected Cache sources by delaying the immediate fallback to HTTP source, which is the default behavior.
 
 ##### Peer-to-peer delay fallback settings
 
 - [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 - [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
-##### Microsoft Connected Cache (MCC) delay fallback settings
+##### Microsoft Connected Cache delay fallback settings
 
 - [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use a cache server.
-- [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
+- [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
 
-**If both peer-to-peer and MCC are configured, the peer-to-peer delay settings will take precedence over the cache server delay settings.** This setting allows Delivery Optimization to discover peers first then recognize the fallback setting for the MCC cache server.
+**If both peer-to-peer and Connected Cache are configured, the peer-to-peer delay settings will take precedence over the cache server delay settings.** This setting allows Delivery Optimization to discover peers first then recognize the fallback setting for the Connected Cache cache server.
 
 #### System resource usage
 
@@ -245,13 +245,13 @@ The default behaviors differ between Windows 10 and Windows 11. In Windows 10, t
 
 MDM Setting: **DODelayForegroundDownloadFromHttp**
 
-Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't configured.**
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. **By default, this policy isn't configured.**
 
 ### Delay background download from HTTP (in secs)
 
 MDM Setting: **DODelayBackgroundDownloadFromHttp**
 
-Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't configured.**
+Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. **By default, this policy isn't configured.**
 
 ### Delay foreground download cache server fallback (in secs)
 
@@ -269,7 +269,9 @@ Starting in Windows 10, version 1903, configure this policy to delay the fallbac
 
 MDM Setting: **DOMinBackgroundQoS**
 
-This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from HTTP sources. The lower this value is, the more content is sourced using peers on the network rather than HTTP sources. The higher this value, the more content is received from HTTP sources, versus peers on the local network. **The default value is 2500 KB/s.**
+This policy controls background downloads and measures bandwidth between peers. When the measured speed falls below the configured threshold, content is downloaded from both peers and the HTTP source. Once the threshold is reached, HTTP connections are closed, and downloads continue only from peers.
+
+Setting a lower threshold makes it easier to meet the limit, which means more content will come from peers and HTTP connections will not be used. **The default value is 20 MB/s.**
 
 ### Modify cache drive
 
@@ -329,12 +331,14 @@ This policy allows you to specify how your client(s) can discover Delivery Optim
 - 1 = DHCP Option 235.
 - 2 = DHCP Option 235 Force.
 
-With either option, the client queries DHCP Option ID 235 and use the returned value as the Cache Server Hostname. Option 2 overrides the Cache Server Hostname policy, if configured. **By default, this policy has no value.**
+With either option, the client queries DHCP Option ID 235 and uses the returned value as the Cache Server Hostname. If [DOCacheHost](#cache-server-hostname) policy is also configured, then DHCP Option 235 Force (2) is required to override it. **By default, this policy has no value.**
 
 Configure this policy to designate Delivery Optimization in Network Cache servers through a custom DHCP Option. Specify the custom DHCP option on your DHCP server as *text* type. You can add one or more values as either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address with commas.
 
 > [!NOTE]
 > If you format the DHCP Option ID incorrectly, the client will fall back to the Cache Server Hostname policy value if that value has been configured.
+>
+> If the [LocalPolicyMerge](/windows/security/operating-system-security/network-security/windows-firewall/rules#local-policy-merge-and-application-rules) setting is configured, such as part of security baselines, it can impact DHCP client and prevent it from retrieving this DHCP option, especially in Autopilot scenarios.
 
 ### Maximum foreground download bandwidth (in KB/s)
 

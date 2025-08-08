@@ -1,8 +1,8 @@
 ---
 title: Certificate authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using certificate authentication policy.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: how-to
+ms.date: 08/04/2025
 ---
 
 # Certificate authentication device enrollment

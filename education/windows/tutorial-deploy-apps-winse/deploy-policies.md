@@ -1,7 +1,7 @@
 ---
-title: Deploy policies to enable applications
+title: Deploy Policies To Enable Applications In Windows 11 SE
 description: Learn how to deploy AppLocker policies to enable apps execution on Windows SE devices.
-ms.date: 04/10/2024
+ms.date: 12/02/2024
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -10,6 +10,8 @@ appliesto:
 <!--description: Learn how to sign WDAC policies and how to deploy WDAC and AppLocker policies to enable apps execution on Windows SE devices.-->
 
 # Deploy policies to enable applications
+
+[!INCLUDE [winse-eos](../../includes/winse-eos.md)]
 
 Once the policies are created, you must deploy them to the Windows SE devices.\
 AppLocker policies can be deployed via Intune. This article describes how to deploy AppLocker policies to enable apps execution on Windows SE devices.

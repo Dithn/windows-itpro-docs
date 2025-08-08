@@ -2,12 +2,12 @@
 title: User State Migration Tool (USMT) Troubleshooting
 description: Learn about articles that address common User State Migration Tool (USMT) issues and questions to help troubleshooting.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: troubleshooting-general
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

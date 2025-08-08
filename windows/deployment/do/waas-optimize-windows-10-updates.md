@@ -2,15 +2,15 @@
 title: Optimize Windows update delivery
 description: Learn about the two methods of peer-to-peer content distribution that are available, Delivery Optimization and BranchCache.
 ms.service: windows-client
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: itpro-updates
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-manager: aaroncz
+manager: bpardi
 ms.collection: tier3
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 05/23/2024
@@ -26,7 +26,7 @@ Two methods of peer-to-peer content distribution are available.
 
 - [Delivery Optimization](waas-delivery-optimization.md) is a peer-to-peer distribution method in Windows. Windows clients can source content from other devices on their local network that have already downloaded the updates or from peers over the internet. Using the settings available for Delivery Optimization, clients can be configured into groups, allowing organizations to identify devices that are possibly the best candidates to fulfill peer-to-peer requests.
 
-    Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources and the time it takes for clients to retrieve the updates.
+    Windows Update, Windows Update client policies, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources and the time it takes for clients to retrieve the updates.
 
 - [BranchCache](../update/waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows operating systems, and in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
 
@@ -37,7 +37,7 @@ Two methods of peer-to-peer content distribution are available.
 
 <br/><br/>
 
-| Method | Windows Update | Windows Update for Business | WSUS | Configuration Manager |
+| Method | Windows Update | Windows Update client policies | WSUS | Configuration Manager |
 | --- | --- | --- | --- | --- |
 | Delivery Optimization | Yes | Yes | Yes | Yes |
 | BranchCache | No | No |Yes | Yes |
@@ -52,7 +52,7 @@ Two methods of peer-to-peer content distribution are available.
 Windows client quality update downloads can be large because every package contains all previously released fixes to ensure consistency and simplicity. Windows has been able to reduce the size of Windows Update downloads with a feature called Express.
 
 > [!NOTE]
-> Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
+> Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update client policies.
 
 ### How Microsoft supports Express
 
@@ -61,7 +61,7 @@ Windows client quality update downloads can be large because every package conta
 
   Express update delivery is available on [all support versions of WSUS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc708456(v=ws.10)).
 - **Express on devices directly connected to Windows Update**
-- **Enterprise devices managed using [Windows Update for Business](../update/waas-manage-updates-wufb.md)** also get the benefit of Express update delivery support without any change in configuration.
+- **Enterprise devices managed using [Windows Update client policies](../update/waas-manage-updates-wufb.md)** also get the benefit of Express update delivery support without any change in configuration.
 
 ### How Express download works
 
@@ -95,4 +95,4 @@ At this point, the download is complete and the update is ready to be installed.
 | ✅ | [Build deployment rings for Windows client updates](../update/waas-deployment-rings-windows-10-updates.md) |
 | ✅| [Assign devices to servicing channels for Windows client updates](../update/waas-servicing-channels-windows-10-updates.md) |
 | ✅ | Optimize update delivery for Windows 10 updates (this article) |
-|  | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+|  | [Deploy updates using Windows Update client policies](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |

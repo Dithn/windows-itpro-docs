@@ -4,12 +4,12 @@ titleSuffix: Windows Update for Business reports
 description: How to configure devices to use Windows Update for Business reports from Microsoft Intune.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11 and Windows 10</a> devices managed by <a href=https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune target=_blank>Microsoft Intune</a>
 ms.date: 03/08/2023
 ---
@@ -56,7 +56,7 @@ Create a configuration profile that will set the required policies for Windows U
    - **Setting**: Configure Telemetry Opt In Change Notification
         - **Value**: Disabled
           -  By turning this setting on, you're disabling notifications of diagnostic data changes.
-          
+
     - **Setting**: Allow device name to be sent in Windows diagnostic data
         - **Value**: Allowed
           - If this policy is disabled, the device name won't be sent and won't be visible in Windows Update for Business reports.
@@ -75,19 +75,19 @@ Create a configuration profile that will set the required policies for Windows U
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, provide a **Name** and **Description**.
 1. On the **Configuration settings** page, you'll be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md).
 
-   **Required settings**: 
+   **Required settings**:
 
     1. Add a setting configuring the **Windows Diagnostic Data level** for devices:
         - **Name**: Allow Telemetry
         - **Description**: Sets the maximum allowed diagnostic data to be sent to Microsoft, required for Windows Update for Business reports.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowTelemetry`
         - **Data type**: Integer
-        - **Value**: 1 
+        - **Value**: 1
           - *1 is the minimum value meaning required or basic diagnostic data, but it can be safely set to a higher value.*
 
    **Recommended settings, but not required**:
 
-    1. Add settings for **Disabling devices' Diagnostic Data opt-in settings interface**. If these aren't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports: 
+    1. Add settings for **Disabling devices' Diagnostic Data opt-in settings interface**. If these aren't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports:
         - **Name**: Disable Telemetry opt-in interface
         - **Description**: Disables the ability for end users of devices can adjust diagnostic data to levels lower than defined by the Allow Telemetry setting.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/ConfigureTelemetryOptInSettingsUx`
@@ -99,7 +99,7 @@ Create a configuration profile that will set the required policies for Windows U
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowDeviceNameInDiagnosticData`
         - **Data type**: Integer
         - **Value**: 1
-    1. Add a setting to **Configure Telemetry Opt In Change Notification**. Diagnostic data opt-in change notifications won't appear when changes occur. 
+    1. Add a setting to **Configure Telemetry Opt In Change Notification**. Diagnostic data opt-in change notifications won't appear when changes occur.
         - **Name**: Configure Telemetry Opt In Change Notification
         - **Description**: Disables Telemetry Opt In Change Notification
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/ConfigureTelemetryOptInChangeNotification`
@@ -114,7 +114,7 @@ Create a configuration profile that will set the required policies for Windows U
 The [Windows Update for Business reports Configuration Script](wufb-reports-configuration-script.md) is a useful tool for properly enrolling devices in Windows Update for Business reports, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 
 > [!NOTE]
-> Using the script is optional when configuring devices through Intune. The script can be leveraged as a troubleshooting tool to ensure that devices are properly configured for Windows Update for Business reports. 
+> Using the script is optional when configuring devices through Intune. The script can be leveraged as a troubleshooting tool to ensure that devices are properly configured for Windows Update for Business reports.
 
 When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in pilot mode to a subset of devices that you can access. After following this guidance, you can deploy the configuration script in deployment mode as a Win32 app to all Windows Update for Business reports devices.
 

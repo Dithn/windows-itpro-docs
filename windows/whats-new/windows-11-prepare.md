@@ -4,7 +4,7 @@ description: Prepare your infrastructure and tools to deploy Windows 11.
 ms.service: windows-client
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: high
 ms.topic: concept-article
 ms.collection:
@@ -44,7 +44,7 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
 ### Cloud-based solutions
 
-- If you use [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies, you need to use the **Target Version** capability. This option is either through policy or the Windows Update for Business deployment service. You need to use this option instead of only using feature update deferrals to upgrade from Windows 10 to Windows 11. Feature update deferrals are great for moving to newer versions of your current product. For example, Windows 10, version 21H2 to version 22H2. They don't automatically move devices between products, for example Windows 10 to Windows 11.
+- If you use [Windows Update client policies](/windows/deployment/update/waas-manage-updates-wufb) policies, you need to use the **Target Version** capability. This option is either through policy or [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). You need to use this option instead of only using feature update deferrals to upgrade from Windows 10 to Windows 11. Feature update deferrals are great for moving to newer versions of your current product. For example, Windows 10, version 21H2 to version 22H2. They don't automatically move devices between products, for example Windows 10 to Windows 11.
 
   - If you use [Microsoft Intune](/mem/intune/) and have a Microsoft 365 E3 license, use the [feature update deployments](/mem/intune/protect/windows-10-feature-updates) page to select the latest version of Windows 11 and upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11 on the **Update Rings** page in Intune. If you aren't ready to move to Windows 11, keep the feature update version set at the version you're currently on. When you're ready to start upgrading devices, change the feature update deployment setting to specify Windows 11.
 
@@ -52,10 +52,10 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
   - The product field must specify Windows 11 in order for devices to upgrade to Windows 11. If only the target version field is configured, the service offers the device matching versions of the same product.
 
-- Quality update deferrals continue to work the same across both Windows 10 and Windows 11. This behavior is true regardless of which management tool you use to configure Windows Update for Business policies.
+- Quality update deferrals continue to work the same across both Windows 10 and Windows 11. This behavior is true regardless of which management tool you use to configure Windows Update client policies.
 
   > [!NOTE]
-  > Endpoints managed by Windows Update for Business don't automatically upgrade to Windows 11 unless an administrator explicitly configures a **Target Version** using the [TargetReleaseVersion](/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) setting using a Windows CSP, a [feature update profile](/mem/intune/protect/windows-10-feature-updates) in Intune, or the [Select target Feature Update version setting](/windows/deployment/update/waas-wufb-group-policy#i-want-to-stay-on-a-specific-version) group policy.
+  > Endpoints managed by Windows Update client policies don't automatically upgrade to Windows 11 unless an administrator explicitly configures a **Target Version** using the [TargetReleaseVersion](/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) setting using a Windows CSP, a [feature update profile](/mem/intune/protect/windows-10-feature-updates) in Intune, or the [Select target Feature Update version setting](/windows/deployment/update/waas-wufb-group-policy#i-want-to-stay-on-a-specific-version) group policy.
 
 ## Cloud-based management
 
@@ -95,7 +95,7 @@ To validate that your apps, infrastructure, and deployment processes are ready f
 
 If you use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), you can deploy directly from the Windows Insider Prerelease category using one of the following processes:
 
-- Set **Manage Preview Builds** to **Release Preview** in Windows Update for Business.
+- Set **Manage Preview Builds** to **Release Preview** in Windows Update client policies.
 - Use Azure Virtual Desktop and Azure Marketplace images.
 - Download and deploy ISOs from Microsoft's Windows Insider Program ISO download page.
 

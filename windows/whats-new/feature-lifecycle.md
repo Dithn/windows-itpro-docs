@@ -4,7 +4,7 @@ description: Learn about the lifecycle of Windows features, as well as features 
 ms.service: windows-client
 ms.localizationpriority: medium
 author: mestew
-manager: aaroncz
+manager: bpardi
 ms.author: mstewart
 ms.topic: reference
 ms.subservice: itpro-fundamentals

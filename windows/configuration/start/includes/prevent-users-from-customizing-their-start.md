@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -15,4 +15,4 @@ With this policy setting you can prevent users from changing their Start menu la
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent users from customizing their Start**|
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent users from customizing their Start**|

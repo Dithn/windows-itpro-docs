@@ -1,7 +1,8 @@
 ---
 title: Wifi Policy CSP
 description: Learn more about the Wifi Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/31/2024
 <!-- AllowAutoConnectToWiFiSenseHotspots-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoConnectToWiFiSenseHotspots-Applicability-End -->
 
 <!-- AllowAutoConnectToWiFiSenseHotspots-OmaUri-Begin -->
@@ -94,7 +95,7 @@ This policy setting determines whether users can enable the following WLAN setti
 <!-- AllowInternetSharing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowInternetSharing-Applicability-End -->
 
 <!-- AllowInternetSharing-OmaUri-Begin -->
@@ -177,7 +178,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 <!-- AllowManualWiFiConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowManualWiFiConfiguration-Applicability-End -->
 
 <!-- AllowManualWiFiConfiguration-OmaUri-Begin -->
@@ -188,10 +189,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 
 <!-- AllowManualWiFiConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0.
-
-> [!NOTE]
-> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that aren't user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+Allow or block connections to Wi-Fi outside of MDM server-installed networks. If you change this setting to Block, you must deploy enterprise Wi-Fi profiles to the device using the Wi-Fi CSP before you apply this setting. Otherwise, the device will go offline since it won't be able to connect to Wi-Fi. Note that choosing to block Wi-Fi connections will delete any previously installed user-configured Wi-Fi profiles from the device, though not all non-MDM profiles will be deleted.
 <!-- AllowManualWiFiConfiguration-Description-End -->
 
 <!-- AllowManualWiFiConfiguration-Editable-Begin -->
@@ -229,7 +227,7 @@ Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. 
 <!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-End -->
 
 <!-- AllowWFAQosManagementDSCPToUPMapping-OmaUri-Begin -->
@@ -279,7 +277,7 @@ Allow or disallow the device to use the DSCP to UP Mapping feature from the Wi-F
 <!-- AllowWFAQosManagementMSCS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllowWFAQosManagementMSCS-Applicability-End -->
 
 <!-- AllowWFAQosManagementMSCS-OmaUri-Begin -->
@@ -328,7 +326,7 @@ Allow or disallow the device to automatically request to enable Mirrored Stream 
 <!-- AllowWiFi-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowWiFi-Applicability-End -->
 
 <!-- AllowWiFi-OmaUri-Begin -->
@@ -377,7 +375,7 @@ Allow or disallow WiFi connection.
 <!-- AllowWiFiDirect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWiFiDirect-Applicability-End -->
 
 <!-- AllowWiFiDirect-OmaUri-Begin -->
@@ -426,7 +424,7 @@ Allow WiFi Direct connection. .
 <!-- WLANScanMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- WLANScanMode-Applicability-End -->
 
 <!-- WLANScanMode-OmaUri-Begin -->

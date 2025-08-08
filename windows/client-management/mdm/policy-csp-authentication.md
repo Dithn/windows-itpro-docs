@@ -1,7 +1,8 @@
 ---
 title: Authentication Policy CSP
 description: Learn more about the Authentication Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- AllowAadPasswordReset-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAadPasswordReset-Applicability-End -->
 
 <!-- AllowAadPasswordReset-OmaUri-Begin -->
@@ -70,7 +71,7 @@ This policy allows the Microsoft Entra tenant administrator to enable the self-s
 <!-- AllowEAPCertSSO-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowEAPCertSSO-Applicability-End -->
 
 <!-- AllowEAPCertSSO-OmaUri-Begin -->
@@ -119,7 +120,7 @@ Allows an EAP cert-based authentication for a single sign-on (SSO) to access int
 <!-- AllowFastReconnect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFastReconnect-Applicability-End -->
 
 <!-- AllowFastReconnect-OmaUri-Begin -->
@@ -168,7 +169,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- AllowSecondaryAuthenticationDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSecondaryAuthenticationDevice-Applicability-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-OmaUri-Begin -->
@@ -235,7 +236,7 @@ This policy allows users to use a companion device, such as a phone, fitness ban
 <!-- ConfigureWebcamAccessDomainNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureWebcamAccessDomainNames-Applicability-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-OmaUri-Begin -->
@@ -284,7 +285,7 @@ Your organization federates to "Contoso IDP" and your web sign-in portal at `sig
 <!-- ConfigureWebSignInAllowedUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.2145] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 with [KB5001339](https://support.microsoft.com/help/5001339) [10.0.17134.2145] and later |
 <!-- ConfigureWebSignInAllowedUrls-Applicability-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-OmaUri-Begin -->
@@ -338,7 +339,7 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 <!-- EnableFastFirstSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableFastFirstSignIn-Applicability-End -->
 
 <!-- EnableFastFirstSignIn-OmaUri-Begin -->
@@ -393,7 +394,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 <!-- EnablePasswordlessExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631.2506] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 with [KB5031455](https://support.microsoft.com/help/5031455) [10.0.22631.2506] and later |
 <!-- EnablePasswordlessExperience-Applicability-End -->
 
 <!-- EnablePasswordlessExperience-OmaUri-Begin -->
@@ -443,7 +444,7 @@ Specifies whether connected users on Microsoft Entra joined devices receive a Pa
 <!-- EnableWebSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableWebSignIn-Applicability-End -->
 
 <!-- EnableWebSignIn-OmaUri-Begin -->
@@ -498,7 +499,7 @@ Web sign-in is a credential provider that enables a web-based sign-in experience
 <!-- PreferredAadTenantDomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreferredAadTenantDomainName-Applicability-End -->
 
 <!-- PreferredAadTenantDomainName-OmaUri-Begin -->

@@ -2,12 +2,12 @@
 title: XML Elements Library
 description: Learn about the XML elements and helper functions that can be employed to author migration .xml files to use with User State Migration Tool (USMT).
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -95,7 +95,7 @@ The following example is from the `MigApp.xml` file:
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\16.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
    <bytes>00000000</bytes>
-</object> 
+</object>
 ```
 
 ## \<bytes\>
@@ -127,7 +127,7 @@ The following example is from the `MigApp.xml` file:
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\16.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
    <bytes>00000000</bytes>
-</object> 
+</object>
 ```
 
 ## \<commandLine\>
@@ -1070,10 +1070,10 @@ Example:
                </externalProcess>
          </rules>
    </role>
-<!-- Migrate 
+<!-- Migrate
    all doc files from the system
    all power point files
-   all visio design files 
+   all visio design files
    all my c++ program files -->
    <extensions>
       <extension>DOC</extension>
@@ -1126,18 +1126,18 @@ Syntax:
 For example, to migrate all \*.doc files from the source computer, specifying the following code under the **\<component\>** element:
 
 ```xml
-<extensions> 
-        <extension>doc</extension> 
-<extensions> 
+<extensions>
+        <extension>doc</extension>
+<extensions>
 ```
 
 is the same as specifying the following code below the **\<rules\>** element:
 
 ```xml
-<include> 
-        <objectSet> 
-                <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script> 
-        </objectSet> 
+<include>
+        <objectSet>
+                <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
+        </objectSet>
 </include>
 ```
 
@@ -1202,7 +1202,7 @@ The following example is from the `MigUser.xml` file:
          <path type="File">%CSIDL_MYVIDEO%</path>
       </paths>
       <role role="Data">
-         <detects>           
+         <detects>
             <detect>
                <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>
             </detect>
@@ -1702,11 +1702,11 @@ The following example is from the `MigUser.xml` file:
          <path type="File">%CSIDL_MYMUSIC%</path>
       </paths>
    <role role="Data">
-      <detects>           
+      <detects>
       <detect>
          <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYMUSIC%")</condition>
       </detect>
-   </detects>           
+   </detects>
    <rules>
       <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
@@ -1846,11 +1846,11 @@ The following example is from the `MigUser.xml` file. For more examples, see the
       <path type="File">%CSIDL_STARTMENU%</path>
    </paths>
    <role role="Settings">
-      <detects>           
+      <detects>
          <detect>
             <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_STARTMENU%")</condition>
          </detect>
-      </detects>           
+      </detects>
    <rules>
       <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
@@ -1901,11 +1901,11 @@ The following example is from the `MigUser.xml` file:
          <path type="File">%CSIDL_MYMUSIC%</path>
       </paths>
    <role role="Data">
-      <detects>           
+      <detects>
       <detect>
          <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYMUSIC%")</condition>
       </detect>
-   </detects>           
+   </detects>
    <rules>
       <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
@@ -1969,7 +1969,7 @@ Examples:
 To migrate the Sample.doc file from any drive on the source computer, use **\<script\>** as follows. If multiple files exist with the same name, all such files get migrated.
 
 ```xml
-<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script> 
+<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
 ```
 
 For more examples of how to use this element, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md), [Reroute Files and Settings](usmt-reroute-files-and-settings.md), and [Custom XML Examples](usmt-custom-xml-examples.md).
@@ -2171,7 +2171,7 @@ For example:
 
 ```xml
 <variable name="QuickTime5or6DataSys">
-  <text>%CSIDL_COMMON_APPDATA%\QuickTime</text> 
+  <text>%CSIDL_COMMON_APPDATA%\QuickTime</text>
 </variable>
 ```
 
@@ -2204,7 +2204,7 @@ The following **.xml** file excludes all `.mp3` files from migration. For additi
              <unconditionalExclude>
                         <objectSet>
     <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
-                        </objectSet> 
+                        </objectSet>
              </unconditionalExclude>
             </rules>
         </role>

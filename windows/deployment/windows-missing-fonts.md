@@ -5,9 +5,9 @@ ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
-manager: aaroncz
-ms.topic: conceptual
-ms.date: 03/28/2024
+manager: bpardi
+ms.topic: how-to
+ms.date: 02/27/2025
 ms.subservice: itpro-deploy
 zone_pivot_groups: windows-versions-11-10
 appliesto:

@@ -9,5 +9,5 @@ ms.topic: include
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|
 | **GPO** | Not available |

@@ -2,7 +2,7 @@
 title: Manage Device Installation with Group Policy
 description: Find out how to manage Device Installation Restrictions with Group Policy.
 ms.date: 07/01/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Manage Device Installation with Group Policy

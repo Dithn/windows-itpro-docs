@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -19,5 +19,5 @@ If you enable this policy setting, you can configure Start menu to show or hide 
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)<br>- `./User/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu** |

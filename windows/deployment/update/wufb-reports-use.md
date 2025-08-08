@@ -4,13 +4,13 @@ titleSuffix: Windows Update for Business reports
 description: How to use the Windows Update for Business reports data for custom solutions using tools like Azure Monitor Logs.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 11/15/2022
 ---
 
@@ -20,7 +20,7 @@ In this article, you'll learn how to use Windows Update for Business reports to 
 
 ## Display Windows Update for Business reports data
 
-1. Sign into the [Azure portal](https://portal.azure.com). 
+1. Sign into the [Azure portal](https://portal.azure.com).
 1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
 1. Select **Log Analytics workspaces**.
 1. Select the workspace that you use for Windows Update for Business reports.

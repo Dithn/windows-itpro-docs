@@ -6,9 +6,14 @@ ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.date: 06/13/2024
+manager: dansimp
+ms.date: 05/23/2025
 ms.topic: reference
+hideEdit: true 
+ms.collection: 
+- privacy-windows
+- must-keep
+- trust-pod
 ---
 
 # Essential services and connected experiences for Windows
@@ -77,7 +82,7 @@ Although enterprise admins can turn off most essential services, we recommend, w
 
 Windows ships with Microsoft Edge on Windows devices. Microsoft Edge is the default browser and is recommended for the best web browsing experience.
 
-You can find details on all of Microsoft Edge's connected experiences and essential services [here](/microsoft-edge/privacy-whitepaper). To turn off specific Microsoft Edge features, see [Microsoft Edge](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge).
+You can find details on all of Microsoft Edge's connected experiences and essential services in the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper). To turn off specific Microsoft Edge features, see [Microsoft Edge](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge).
 
 ## IE essential services and connected experiences
 
@@ -102,29 +107,19 @@ Internet Explorer shares many of the Windows essential services listed above. Th
 ## Related articles
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Connected experiences in Office](/deployoffice/privacy/connected-experiences)
-- [Essential services for Office](/deployoffice/privacy/essential-services)
+- [Connected experiences in Office](/microsoft-365-apps/privacy/connected-experiences)
+- [Essential services for Office](/microsoft-365-apps/privacy/essential-services)
 
 To view endpoints for Windows Enterprise, see:
 
 - [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
-- [Manage connection endpoints for Windows 10  version 2004](manage-windows-2004-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
 
 To view endpoints for non-Enterprise Windows editions, see:
 
 - [Windows 11 connection endpoints for non-Enterprise editions](windows-11-endpoints-non-enterprise-editions.md)
-- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
-- [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](windows-endpoints-20H2-non-enterprise-editions.md)
-- [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
-- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
-- [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
-- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
+
 
 > [!IMPORTANT]
 > To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), [submit this form](https://go.microsoft.com/fwlink/p/?linkid=2271128).

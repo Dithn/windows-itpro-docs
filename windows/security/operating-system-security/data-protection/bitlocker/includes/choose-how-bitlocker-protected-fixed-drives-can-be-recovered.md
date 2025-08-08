@@ -15,6 +15,10 @@ This policy setting allows you to control how BitLocker-protected fixed data dri
 - **Save BitLocker recovery information to Active Directory Domain Services**: choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select **Backup recovery password and key package**, both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select **Backup recovery password only**, only the recovery password is stored in AD DS
 - **Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives**: prevents users from enabling BitLocker unless the device is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds. When using this option, a recovery password is automatically generated.
 
+For Microsoft Entra hybrid joined devices, the BitLocker recovery password is backed up to both Active Directory and Entra ID.
+
+For Microsoft Entra joined devices, the BitLocker recovery password is backed up to Entra ID.
+  
 > [!IMPORTANT]
 > The use of recovery keys must be disallowed if the **Deny write access to fixed drives not protected by BitLocker** policy setting is enabled.
 

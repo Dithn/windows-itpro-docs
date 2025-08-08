@@ -1,7 +1,8 @@
 ---
 title: VPNv2 DDF file
 description: View the XML file containing the device description framework (DDF) for the VPNv2 configuration service provider.
-ms.date: 06/28/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1156,10 +1157,7 @@ The following XML file contains the device description framework (DDF) for the V
             <Replace />
           </AccessType>
           <Description>
-                        False : Do not Bypass for Local traffic
-                        True : ByPass VPN Interface for Local Traffic
-
-                        Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+                        Not supported.
                     </Description>
           <DFFormat>
             <bool />
@@ -4425,10 +4423,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
             <Replace />
           </AccessType>
           <Description>
-                        False : Do not Bypass for Local traffic
-                        True : ByPass VPN Interface for Local Traffic
-
-                        Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+                        Not supported.
                     </Description>
           <DFFormat>
             <bool />

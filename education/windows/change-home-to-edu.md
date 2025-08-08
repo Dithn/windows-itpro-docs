@@ -6,13 +6,15 @@ ms.topic: how-to
 author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
-manager: aaroncz
+manager: bpardi
 ms.collection:
   - tier3
   - education
 ---
 
 # Upgrade Windows Home to Windows Education on student-owned devices
+
+[!INCLUDE [winse-eos](../includes/winse-eos.md)]
 
 ## Overview
 

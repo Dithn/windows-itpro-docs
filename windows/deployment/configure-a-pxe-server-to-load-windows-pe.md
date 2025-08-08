@@ -4,9 +4,9 @@ description: This article describes how to configure a PXE server to load Window
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/23/2022
 ms.subservice: itpro-deploy
 ---
@@ -118,7 +118,7 @@ All four of the roles specified above can be hosted on the same computer or each
     The last command will return a GUID, for example:
 
     ```console
-    The entry {a4f89c62-2142-11e6-80b6-00155da04110} was successfully created. 
+    The entry {a4f89c62-2142-11e6-80b6-00155da04110} was successfully created.
     ```
 
     Copy this GUID for use in the next set of commands. In each command shown, replace "GUID1" with your GUID.
@@ -126,9 +126,9 @@ All four of the roles specified above can be hosted on the same computer or each
 3. Create a new boot application entry for the Windows PE image:
 
     ```cmd
-    bcdedit.exe /store c:\BCD /set {GUID1} device ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
-    bcdedit.exe /store c:\BCD /set {GUID1} path \windows\system32\winload.exe 
-    bcdedit.exe /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
+    bcdedit.exe /store c:\BCD /set {GUID1} device ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions}
+    bcdedit.exe /store c:\BCD /set {GUID1} path \windows\system32\winload.exe
+    bcdedit.exe /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions}
     bcdedit.exe /store c:\BCD /set {GUID1} systemroot \windows
     bcdedit.exe /store c:\BCD /set {GUID1} detecthal Yes
     bcdedit.exe /store c:\BCD /set {GUID1} winpe Yes
@@ -138,7 +138,7 @@ All four of the roles specified above can be hosted on the same computer or each
 
     ```cmd
     bcdedit.exe /store c:\BCD /create {bootmgr} /d "boot manager"
-    bcdedit.exe /store c:\BCD /set {bootmgr} timeout 30 
+    bcdedit.exe /store c:\BCD /set {bootmgr} timeout 30
     bcdedit.exe /store c:\BCD -displayorder {GUID1} -addlast
     ```
 

@@ -2,12 +2,12 @@
 title: Config.xml File
 description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) file that can be created using the /genconfig option with the ScanState.exe tool.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -496,7 +496,7 @@ The following sample `Config.xml` file contains detailed examples about items th
               </changeGroup>
             </mappings>
           </localGroups>
-          
+
       -->
   </ProfileControl>
 </Configuration>

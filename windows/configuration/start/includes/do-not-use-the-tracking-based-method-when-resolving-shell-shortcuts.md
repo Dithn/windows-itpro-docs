@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -11,5 +11,5 @@ This policy setting prevents the system from using NTFS tracking features to res
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not use the tracking-based method when resolving shell shortcuts** |
+| **CSP** | Not available. |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not use the tracking-based method when resolving shell shortcuts** |

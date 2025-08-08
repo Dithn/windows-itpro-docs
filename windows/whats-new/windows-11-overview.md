@@ -1,11 +1,11 @@
 ---
 title: Windows 11 overview for administrators
 description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, apps, the new desktop, and deploying and servicing PCs.
-manager: aaroncz
+manager: bpardi
 author: mestew
 ms.author: mstewart
 ms.service: windows-client
-ms.date: 01/31/2024
+ms.date: 03/27/2025
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
@@ -27,16 +27,18 @@ Your investments in updates and device management are carried forward. For examp
 
 This article lists what's new, and some of the features & improvements. For more information on what's new for OEMs, see [What's new in manufacturing, customization, and design](/windows-hardware/get-started/what-s-new-in-windows).
 
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
+
 ## Security and scanning
 
 The security and privacy features in Windows 11 are similar to Windows 10. Security for your devices starts with the hardware, and includes OS security, application security, and user & identity security. There are features available in the Windows OS to help in these areas. This section describes some of these features. For a more comprehensive view, including zero trust, see [Windows security](/windows/security/).
 
 - The **Windows Security** app is built into the OS. This app is an easy-to-use interface, and combines commonly used security features. For example, your get access to virus & threat protection, firewall & network protection, account protection, and more.
-  
+
   For more information, see [the Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
 - **Security baselines** includes security settings that already configured, and ready to be deployed to your devices. If you don't know where to start, or it's too time consuming to go through all the settings, then you should look at Security Baselines.
-  
+
   For more information, see [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines).
 
 - **Microsoft Defender Antivirus** is built into Windows, and helps protect devices using next-generation security. When used with Microsoft Defender for Endpoint, your organization gets strong endpoint protection, and advanced endpoint protection & response. If you use Intune to manage devices, then you can create policies based on threat levels in Microsoft Defender for Endpoint.
@@ -48,7 +50,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
   - [Enforce compliance for Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection)
 
 - The application security features help prevent unwanted or malicious code from running, isolate untrusted websites & untrusted Office files, protect against phishing or malware websites, and more.
-  
+
   For more information, see  [Windows application security](/windows/security/apps).
 
 - **Windows Hello for Business** helps protect users and identities. It replaces passwords, and uses a PIN or biometric that stays locally on the device. Device manufacturers are including more secure hardware features, such as IR cameras and TPM chips. These features are used with Windows Hello for Business to help protect user identities on your organization devices.
@@ -92,7 +94,7 @@ For more information on the security features you can configure, manage, and enf
 
   Users can manage some snap features using the **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
-  You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu). 
+  You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu).
 
   Starting in Windows 11, version 22H2, you can also activate snap layouts by dragging a window to the top of the screen. The feature is available for both mouse and touch.<!-- MAX 6294246, OS 32513582 -->
 
@@ -166,7 +168,7 @@ For more information on the security features you can configure, manage, and enf
 
   If users or groups in your organization do a lot with Windows PowerShell or the command prompt, then use policy to add the Windows Terminal app to the [Start menu layout](/windows/configuration/customize-start-menu-layout-windows-11) or the [Taskbar](/windows/configuration/customize-taskbar-windows-11).
 
-  Users can also search for the Terminal app, right-select the app, and pin the app to the Start menu and taskbar.  
+  Users can also search for the Terminal app, right-select the app, and pin the app to the Start menu and taskbar.
 
 - The **Microsoft Store** has a new look, and includes more public and retail apps. For more information on the end-user experience, see:
 

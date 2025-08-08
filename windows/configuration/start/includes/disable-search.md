@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -12,5 +12,5 @@ When you enable this policy setting, the Search UI and all its entry points are 
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Search/`[DisableSearch](/windows/client-management/mdm/policy-csp-search#disablesearch)|
-| **GPO** | **Computer Configuration** > **Windows Components** > **Search** > **Fully disable Search UI** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Search/`[DisableSearch](/windows/client-management/mdm/policy-csp-search#disablesearch)|
+| **GPO** | - **Computer Configuration** > **Windows Components** > **Search** > **Fully disable Search UI** |

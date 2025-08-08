@@ -1,11 +1,11 @@
 ---
 title: MDM enrollment of Windows devices
 description: Learn about mobile device management (MDM) enrollment of Windows devices to simplify access to your organization's resources.
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
 - highpri
 - tier2
-ms.date: 07/08/2024
+ms.date: 08/04/2025
 ---
 
 # MDM enrollment of Windows devices
@@ -210,7 +210,7 @@ The deep link used for connecting your device to work uses the following format.
 ### Connect to MDM using a deep link
 
 > [!NOTE]
-> Deep links only work with Internet Explorer or Microsoft Edge browsers. Examples of URI's that may be used to connect to MDM using a deep link:
+> Deep links only work with Internet Explorer or Microsoft Edge browsers. Examples of URIs that may be used to connect to MDM using a deep link:
 >
 > - **ms-device-enrollment:?mode=mdm**
 > - **ms-device-enrollment:?mode=mdm&username=`someone@example.com`&servername=`https://example.server.com`**
@@ -226,7 +226,7 @@ To connect your devices to MDM using deep links:
       ![using enrollment deeplink in email.](images/deeplinkenrollment1.png)
 
       > [!NOTE]
-      > Ensure that your email filters do not block deep links.
+      > Ensure that your email filters don't block deep links.
 
     - IT admins can also add this link to an internal web page that users refer to enrollment instructions.
 

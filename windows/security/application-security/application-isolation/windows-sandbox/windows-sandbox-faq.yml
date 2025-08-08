@@ -1,0 +1,107 @@
+### YamlMime:FAQ
+metadata:
+  title: Windows Sandbox frequently asked questions (FAQ)
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows Sandbox.
+  author: vinaypamnani-msft
+  ms.author: vinpa
+  ms.topic: faq
+  ms.date: 10/23/2024
+
+title: Common questions about Windows Sandbox
+summary: Windows Sandbox (WSB) provides a lightweight desktop environment to safely run applications in isolation. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows Sandbox.
+
+sections:
+
+  - name: Concepts
+    questions:
+
+      - question: Who can use WSB?
+        answer: |
+          WSB can be used in various scenarios by anyone without any technical skills. Here are some ways in which you can use WSB:
+
+          - **Clean environment for software testing**: Test or debug your applications in WSB's clean environment to identify and resolve bugs or compatibility issues.
+          - **Secure web browsing**: Use WSB for secure web browsing, especially when accessing unfamiliar or potentially dangerous websites without putting your system at risk of malware infection.
+          - **Running Untrusted Applications**: Mitigate security risks by running untrusted applications or files, such as email attachments in WSB.
+          - **Test software features risk-free**: Easily test out software without the need for installing or uninstalling on your host machine.
+          - **Maintaining multiple dev environments**: Streamline your development process by utilizing WSB to maintain multiple sandboxes for different development environments.
+          - **Privacy Protection**: Users concerned about online privacy can use Windows Sandbox for activities like social media browsing or online shopping to prevent tracking cookies and other privacy-invading techniques.
+
+      - question: What's the difference between a Hyper-V virtual machine (VM) and Windows Sandbox?
+        answer: |
+          1. **Lightweight and Temporary**:
+              - Windows Sandbox: It's a lightweight, disposable environment that runs within your existing Windows installation. You can quickly launch it, test applications, and discard it without affecting your main system.
+              - Hyper-V VMs: Hyper-V VMs are more heavyweight. They require dedicated resources (CPU, memory, disk space) and take longer to set up.
+          1. **Security Isolation**:
+              - Windows Sandbox: Provides a secure, isolated environment for testing untrusted software. Any changes made within the sandbox are discarded when you close it.
+              - Hyper-V VMs: While VMs also offer isolation, they persistently store changes unless you revert them manually.
+          1. **Resource Efficiency**:
+              - Windows Sandbox: More resource efficient than a full VM. It adjusts memory usage according to the demand. It also reuses many of the host's read only OS files.
+              - Hyper-V VMs: VMs have fixed resource allocations, which can impact overall system performance.
+          1. **Ease of Use**:
+              - Windows Sandbox: Simple to use—just open it, test your software, and close it. No complex setup or management.
+              - Hyper-V VMs: Require more configuration, including setting up virtual switches, network adapters, and managing VM snapshots.
+
+      - question: What applications aren't supported inside a Windows Sandbox?
+        answer: |
+          Inbox apps (for example, Store, Notepad) and Optional features turned on via 'Turn Windows Features On or Off' aren't supported.
+          While Store apps can be installed, you can't download them directly from the Store since the Store app isn't available in the Sandbox. However, if you have an `.appx` package, you can still install those apps.
+
+  - name: Usage
+    questions:
+
+      - question: Why can I not change certain settings using a config file?
+        answer: |
+          You can't make changes to properties if they're controlled by Group Policy. Contact your IT Administrator for more details.
+
+      - question: How do I open multiple Sandbox instances?
+        answer: |
+          Today, Windows Sandbox only allows users to launch one Sandbox instance at a time.
+
+      - question: Installing the latest version of Windows Sandbox fails. How do I fix this?
+        answer: |
+          Ensure that your device has access to the Internet, Windows Update, and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails on the first attempt, subsequent attempts continue in the background. Meanwhile, the app can still be used. Additionally, the update is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install.
+
+
+      - question: How do I know which version of Windows Sandbox am I running?
+        answer: |
+          Run `Get-AppxPackage -Name WindowsSandbox | Select-Object Version` in a PowerShell prompt. If the version is empty, you're running an older version of Windows Sandbox. If it returns a version number, you're running the newer version.
+          Alternatively, you can run `wsb --version`. If `wsb` is not available, you're running an older version of Windows Sandbox.
+          The new version of Windows Sandbox also appears in Windows Settings under **System** > **System components**.
+
+      - question: How do I save the Sandbox state?
+        answer: |
+          Windows Sandbox is temporary; closing it deletes all software, files, and state.
+
+      - question: How can I open Windows Sandbox with a different OS version?
+        answer: |
+          Windows Sandbox only allows you to use the same build as your host OS. This allows us to keep Windows Sandbox 'lightweight'.
+
+      - question: How do I uninstall Windows Sandbox?
+        answer: |
+          To remove Windows Sandbox, and all its components, navigate to **Settings > System > Optional features**, then select **More Windows features**, scroll down and unselect Windows Sandbox, then select OK.
+
+  - name: Feedback
+    questions:
+
+      - question: Where can I provide feedback?
+        answer: |
+          You can file a bug in Feedback Hub by:
+
+          1. Open the Feedback Hub app.
+          1. Select **Report a problem** or **Suggest a feature**.
+          1. Fill in the **Summarize your feedback** and **Explain in more details** boxes with a detailed description of the issue or suggestion. A useful feedback item includes:
+              - Short and descriptive issue title.
+              - Windows version and build number, which can be gathered from a command prompt using the `cmd.exe --version` command.
+              - Device information (including CPU type, memory, disk etc.)
+              - Detailed repro steps. What steps do we need to take to reproduce the issue? Provide as much detail as you can. Provide error message text where possible or screenshots of errors if text can't be captured.
+              - Behavior you were expecting.
+          1. Select an appropriate category and subcategory by using the dropdown menus. There's a dedicated option in Feedback Hub to file **Windows Sandbox** bugs and feedback. It's located under **Security and Privacy** category.
+          1. Select **Next**.
+          1. If you are able to reproduce the issue, please collect traces as follows: Select the Recreate my problem tile, then select Start capture, reproduce the issue, and then select **Stop capture**.
+          1. Attach any relevant screenshots or files for the problem, then select **Submit**.
+
+          Alternatively, you can also use the [Windows Sandbox GitHub repository](https://github.com/microsoft/Windows-Sandbox) to:
+
+          - **Search existing issues** to see if there are any associated with a problem that you're having. In the search bar, you can remove "is:open" to include resolved issues in your search. Consider commenting or giving a thumbs up to any open issues that you would like to express your interest in moving forward as a priority.
+          - **File a new issue**: If you have found a problem with WSB or WSB documentation and there doesn't appear to be an existing issue, you can select the green **New issue** button and then choose **WSB - Bug Report**. Provide a title for the issue, your Windows build number, whether you're running inbox or undocked Windows Sandbox, any other software versions involved, the repro steps, expected behavior, actual behavior, and diagnostic logs if available and appropriate.
+          - **File a feature request** by selecting the green **New issue** button and then select **Feature request**, then answer the questions describing your request.

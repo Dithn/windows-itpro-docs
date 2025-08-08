@@ -1,9 +1,9 @@
 ---
 title: Enable ADMX policies in MDM
 description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
-ms.topic: conceptual
+ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 07/08/2024
+ms.date: 08/04/2025
 ---
 
 # Enable ADMX policies in MDM
@@ -55,7 +55,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
     In this example, you configure **Enable App-V Client** to **Enabled**.
 
     > [!NOTE]
-    > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+    > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you're using Intune, select String as the data type.
 
     ```xml
     <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -214,7 +214,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
       Here's the example for **AppVirtualization/PublishingAllowServer2**:
 
        > [!NOTE]
-       > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+       > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you're using Intune, select String as the data type.
 
        ```xml
        <?xml version="1.0" encoding="utf-8"?>

@@ -1,7 +1,8 @@
 ---
 title: WindowsLogon Policy CSP
 description: Learn more about the WindowsLogon Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 04/10/2024
 <!-- AllowAutomaticRestartSignOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowAutomaticRestartSignOn-Applicability-End -->
 
 <!-- AllowAutomaticRestartSignOn-OmaUri-Begin -->
@@ -86,7 +87,7 @@ After enabling this policy, you can configure its settings through the ConfigAut
 <!-- ConfigAutomaticRestartSignOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigAutomaticRestartSignOn-Applicability-End -->
 
 <!-- ConfigAutomaticRestartSignOn-OmaUri-Begin -->
@@ -153,7 +154,7 @@ BitLocker is suspended during updates if:
 <!-- DisableLockScreenAppNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableLockScreenAppNotifications-Applicability-End -->
 
 <!-- DisableLockScreenAppNotifications-OmaUri-Begin -->
@@ -212,7 +213,7 @@ This policy setting allows you to prevent app notifications from appearing on th
 <!-- DontDisplayNetworkSelectionUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DontDisplayNetworkSelectionUI-Applicability-End -->
 
 <!-- DontDisplayNetworkSelectionUI-OmaUri-Begin -->
@@ -297,7 +298,7 @@ Here's an example to enable this policy:
 <!-- EnableFirstLogonAnimation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnableFirstLogonAnimation-Applicability-End -->
 
 <!-- EnableFirstLogonAnimation-OmaUri-Begin -->
@@ -349,7 +350,7 @@ This policy setting allows you to control whether users see the first sign-in an
 | Name | Value |
 |:--|:--|
 | Name | EnableFirstLogonAnimation |
-| Friendly Name | Show first sign-in animation  |
+| Friendly Name | Show first sign-in animation |
 | Location | Computer Configuration |
 | Path | System > Logon |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
@@ -369,7 +370,7 @@ This policy setting allows you to control whether users see the first sign-in an
 <!-- EnableMPRNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMPRNotifications-Applicability-End -->
 
 <!-- EnableMPRNotifications-OmaUri-Begin -->
@@ -380,11 +381,11 @@ This policy setting allows you to control whether users see the first sign-in an
 
 <!-- EnableMPRNotifications-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls the configuration under which winlogon sends MPR notifications in the system.
+This policy controls whether the user's password is included in the content of MPR notifications sent by winlogon in the system.
 
-- If you enable this setting or don't configure it, winlogon sends MPR notifications if a credential manager is configured.
+- If you disable this setting or don't configure it, winlogon sends MPR notifications with empty password fields of the user's authentication info.
 
-- If you disable this setting, winlogon doesn't send MPR notifications.
+- If you enable this setting, winlogon sends MPR notifications containing the user's password in the authentication info.
 <!-- EnableMPRNotifications-Description-End -->
 
 <!-- EnableMPRNotifications-Editable-Begin -->
@@ -415,7 +416,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 | Name | Value |
 |:--|:--|
 | Name | EnableMPRNotifications |
-| Friendly Name | Enable MPR notifications for the system |
+| Friendly Name | Configure the transmission of the user's password in the content of MPR notifications sent by winlogon. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Logon Options |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
@@ -435,7 +436,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-End -->
 
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-OmaUri-Begin -->
@@ -494,7 +495,7 @@ This policy setting allows local users to be enumerated on domain-joined compute
 <!-- HideFastUserSwitching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideFastUserSwitching-Applicability-End -->
 
 <!-- HideFastUserSwitching-OmaUri-Begin -->
@@ -563,7 +564,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 <!-- OverrideShellProgram-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
 <!-- OverrideShellProgram-Applicability-End -->
 
 <!-- OverrideShellProgram-OmaUri-Begin -->

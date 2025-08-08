@@ -1,8 +1,8 @@
 ---
 title: Server requirements for using OMA DM to manage Windows devices
 description: Learn about the general server requirements for using OMA DM to manage Windows devices, including the supported versions of OMA DM.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: article
+ms.date: 08/04/2025
 ---
 
 # Server requirements for using OMA DM to manage Windows devices

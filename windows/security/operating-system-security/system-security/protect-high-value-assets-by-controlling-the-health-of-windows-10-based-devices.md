@@ -2,7 +2,7 @@
 title: Control the health of Windows devices
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows devices.
 ms.date: 07/10/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Control the health of Windows devices
@@ -684,7 +684,7 @@ For more information about conditional access, see [Azure Conditional Access Pre
 
 For on-premises applications there are two options to enable conditional access control based on a device's compliance state:
 
-- For on-premises applications that are published through the Microsoft Entra application proxy, you can configure conditional access control policies as you would for cloud applications. For more information, see [Using Microsoft Entra application proxy to publish on-premises apps for remote users](/azure/active-directory/app-proxy/what-is-application-proxy).
+- For on-premises applications that are published through the Microsoft Entra application proxy, you can configure conditional access control policies as you would for cloud applications. For more information, see [Using Microsoft Entra application proxy to publish on-premises apps for remote users](/entra/identity/).
 - Additionally, Microsoft Entra Connect will sync device compliance information from Microsoft Entra ID to on-premises AD. ADFS on Windows Server 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
 
 :::image type="content" alt-text="figure 13." source="images/hva-fig12-conditionalaccess12.png":::

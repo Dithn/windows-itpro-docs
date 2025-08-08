@@ -1,28 +1,31 @@
 ---
 description: Learn more about the required Windows 10 diagnostic data gathered.
-title: Required diagnostic events and fields for Windows 10 (versions 22H2, 21H2, 21H1, 20H2, and 2004)
+title: Required diagnostic events and fields for Windows 10, versions 22H2 and 21H2
 ms.service: windows-client
 ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.date: 04/24/2024
-ms.collection: privacy-windows
+manager: dansimp
+ms.date: 05/23/2025
 ms.topic: reference
+hideEdit: true 
+ms.collection: 
+- privacy-windows
+- must-keep
+- trust-pod
 ---
 
 
-# Required diagnostic events and fields for Windows 10: versions 22H2, 21H2, 21H1, 20H2, and 2004
+# Required diagnostic events and fields for Windows 10, versions 22H2 and 21H2
 
  **Applies to**
 
 - Windows 10, version 22H2
 - Windows 10, version 21H2
-- Windows 10, version 21H1
-- Windows 10, version 20H2
-- Windows 10, version 2004
 
+> [!NOTE]
+> The information in this article also applies to these versions of Windows 10: 21H1, 20H2, and 2004. But those versions have reached their end of servicing date. For more information, see [Microsoft Product Lifecycle](/lifecycle/products).
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
 
@@ -32,13 +35,9 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
+- [Required diagnostic events and fields for Windows 11, version 24H2](required-diagnostic-events-fields-windows-11-24H2.md)
 - [Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2](required-diagnostic-events-fields-windows-11-22H2.md)
-- [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)
-- [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
-- [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
-- [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
-- [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
@@ -878,7 +877,7 @@ The following fields are available:
 - **DriverAvailableInbox**  Is a driver included with the operating system for this PNP device?
 - **DriverAvailableOnline**  Is there a driver for this PNP device on Windows Update?
 - **DriverAvailableUplevel**  Is there a driver on Windows Update or included with the operating system for this PNP device?
-- **DriverBlockOverridden**  Is there's a driver block on the device that has been overridden?
+- **DriverBlockOverridden**  Is there a driver block on the device that has been overridden?
 - **NeedsDismissAction**  Will the user would need to dismiss a warning during Setup for this device?
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
@@ -2481,7 +2480,8 @@ Fires when the compatibility check completes. Gives the results from the check.
 The following fields are available:
 
 - **IsRecommended**  Denotes whether all compatibility checks have passed and, if so, returns true. Otherwise returns false.
-- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-hvci-default-enablement).
+- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-memory-integrity-default-enablement).
+
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.Enabled
 
@@ -4339,6 +4339,7 @@ The following fields are available:
 
 - **InventoryVersion**  The version of the inventory binary generating the events.
 
+
 ### Microsoft.Windows.Inventory.Core.InventoryAcpiPhatHealthRecordAdd
 
 This event sends basic metadata about ACPI PHAT Health Record structure on the machine. The data collected with this event is used to help keep Windows up to date.
@@ -4613,6 +4614,7 @@ The following fields are available:
 
 - **InventoryVersion**  The version of the inventory file generating the events.
 
+
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpAdd
 
 This event sends basic metadata about a PNP device and its associated driver to help keep Windows up to date. This information is used to assess if the PNP device and driver will remain compatible when upgrading Windows.
@@ -4863,7 +4865,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousUUPInfoAdd
 
-This event provides data on Unified Update Platform (UUP) products and what version they are at. The data collected with this event is used to keep Windows performing properly.
+This event provides data on Unified Update Platform (UUP) products and what version they're at. The data collected with this event is used to keep Windows performing properly.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -5153,7 +5155,7 @@ This Ping event sends a detailed inventory of software and hardware information 
 The following fields are available:
 
 - **appAp**  Any additional parameters for the specified application. Default: ''.
-- **appAppId**  The GUID that identifies the product. Compatible clients must transmit this attribute. Please see the wiki for additional information. Default: undefined.
+- **appAppId**  The GUID that identifies the product. Compatible clients must transmit this attribute.  Default: undefined.
 - **appBrandCode**  The brand code under which the product was installed, if any. A brand code is a short (4-character) string used to identify installations that took place as a result of partner deals or website promotions. Default: ''.
 - **appChannel**  An integer indicating the channel of the installation (i.e. Canary or Dev).
 - **appClientId**  A generalized form of the brand code that can accept a wider range of values and is used for similar purposes. Default: ''.
@@ -5161,13 +5163,13 @@ The following fields are available:
 - **appCohortHint**  A machine-readable enum indicating that the client has a desire to switch to a different release cohort. The exact legal values are app-specific and should be shared between the server and app implementations. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
 - **appCohortName**  A stable non-localized human-readable enum indicating which (if any) set of messages the app should display to the user. For example, an app with a cohort Name of 'beta' might display beta-specific branding to the user. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
 - **appConsentState**  Bit flags describing the diagnostic data disclosure and response flow where 1 indicates the affirmative and 0 indicates the negative or unspecified data. Bit 1 indicates consent was given, bit 2 indicates data originated from the download page, bit 18 indicates choice for sending data about how the browser is used, and bit 19 indicates choice for sending data about websites visited.
-- **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value isn't known. Please see the wiki for additional information. Default: '-2'.
+- **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value isn't known.  Default: '-2'.
 - **appExperiments**  A key/value list of experiment identifiers. Experiment labels are used to track membership in different experimental groups, and may be set at install or update time. The experiments string is formatted as a semicolon-delimited concatenation of experiment label strings. An experiment label string is an experiment Name, followed by the '=' character, followed by an experimental label value. For example: 'crdiff=got_bsdiff;optimized=O3'. The client shouldn't transmit the expiration date of any experiments it has, even if the server previously specified a specific expiration date. Default: ''.
 - **appInstallTime**  The product install time in seconds. '0' if unknown. Default: '-1'.
 - **appInstallTimeDiffSec**  The difference between the current time and the install date in seconds. '0' if unknown. Default: '-1'.
 - **appLang**  The language of the product install, in IETF BCP 47 representation. Default: ''.
 - **appLastLaunchTime**  The time when browser was last launched.
-- **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
+- **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation.  Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
 - **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event wasn't completed before OOBE finishes; -1 means the field doesn't apply.
 - **appPingEventDownloadMetricsCdnAzureRefOriginShield**  Provides a unique reference string that identifies a request served by Azure Front Door. It's used to search access logs and is critical for troubleshooting. For example, Ref A: E172B39D19774147B0EFCC8E3E823D9D Ref B: BL2EDGE0215 Ref C: 2021-05-11T22:25:48Z.
@@ -5185,8 +5187,8 @@ The following fields are available:
 - **appPingEventDownloadMetricsUrl**  For events representing a download, the CDN URL provided by the update server for the client to download the update, the URL is controlled by Microsoft servers and always maps back to either *.delivery.mp.microsoft.com or msedgesetup.azureedge.net. Default: ''.
 - **appPingEventDownloadTimeMs**  For events representing a download, the time elapsed between the start of the download and the end of the download, in milliseconds. For events representing an entire update flow, the sum of all such download times over the course of the update flow. Sent in events that have an event type of '1', '2', '3', and '14' only. Default: '0'.
 - **appPingEventErrorCode**  The error code (if any) of the operation, encoded as a signed, base-10 integer. Default: '0'.
-- **appPingEventEventResult**  An enum indicating the result of the event. Please see the wiki for additional information. Default: '0'.
-- **appPingEventEventType**  An enum indicating the type of the event. Compatible clients MUST transmit this attribute. Please see the wiki for additional information.
+- **appPingEventEventResult**  An enum indicating the result of the event.  Default: '0'.
+- **appPingEventEventType**  An enum indicating the type of the event. Compatible clients MUST transmit this attribute. 
 - **appPingEventExtraCode1**  Additional numeric information about the operation's result, encoded as a signed, base-10 integer. Default: '0'.
 - **appPingEventInstallTimeMs**  For events representing an install, the time elapsed between the start of the install and the end of the install, in milliseconds. For events representing an entire update flow, the sum of all such durations. Sent in events that have an event type of '2' and '3' only. Default: '0'.
 - **appPingEventNumBytesDownloaded**  The number of bytes downloaded for the specified application. Default: '0'.
@@ -5200,9 +5202,9 @@ The following fields are available:
 - **appUpdateCheckTargetChannel**  Check for status showing the target release channel.
 - **appUpdateCheckTargetVersionPrefix**  A component-wise prefix of a version number, or a complete version number suffixed with the $ character. The server shouldn't return an update instruction to a version number that doesn't match the prefix or complete version number. The prefix is interpreted a dotted-tuple that specifies the exactly-matching elements; it isn't a lexical prefix (for example, '1.2.3' must match '1.2.3.4' but must not match '1.2.34'). Default: ''.
 - **appUpdateCheckTtToken**  An opaque access token that can be used to identify the requesting client as a member of a trusted-tester group. If non-empty, the request should be sent over SSL or another secure protocol. Default: ''.
-- **appVersion**  The version of the product install. Please see the wiki for additional information. Default: '0.0.0.0'.
+- **appVersion**  The version of the product install.  Default: '0.0.0.0'.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **eventType**  A string indicating the type of the event. Please see the wiki for additional information.
+- **eventType**  A string indicating the type of the event. 
 - **expDeviceId**  A non-unique resettable device ID to identify a device in experimentation.
 - **expEtag**  An identifier representing all service applied configurations and experiments when current update happens. Used for testing only.
 - **expETag**  An identifier representing all service applied configurations and experiments when current update happens. Used for testing only.
@@ -5623,6 +5625,7 @@ The following fields are available:
 - **criticalLogSize** Log size
 - **CUtility::GetTargetNameA(target)**  Product identifier.
 - **productId**  Product identifier
+- **SurfaceTelemetry_EventType**  Required vs. Optional event
 - **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
 
 
@@ -5644,6 +5647,7 @@ This event sends information about the Operating System image name to Microsoft.
 
 The following fields are available:
 
+- **SurfaceTelemetry_EventType**  Required vs. Optional event
 - **szOsImageName**  This is the image name that is running on the device.
 
 
@@ -5695,6 +5699,7 @@ The following fields are available:
 - **SecureBootUpdateCaller**  Scenario in which function was called. Could be Update or Upgrade
 - **UpdateType**  Indicates if it's DB or DBX update
 - **WillResealSucceed**  Indicates if TPM reseal operation is expected to succeed
+
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
 
@@ -5751,9 +5756,7 @@ The following fields are available:
 - **touchKeyboardDesktop**  Touch keyboard desktop
 - **touchKeyboardTablet**  Touch keyboard tablet
 - **triggerType**  Trigger type
-- **usePowershell**  Use PowerShell
-
-
+- **usePowershell**  Use PowerShell.
 
 ## Privacy consent logging events
 
@@ -5942,10 +5945,10 @@ The following fields are available:
 - **HomeMobileOperator**  The mobile operator that the device was originally intended to work with.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
-- **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBFederatedScanDisabled**  Indicates if Windows Update for Business federated scan is disabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Indicates if Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Indicates if Windows Update client policies are enabled on the device.
+- **IsWUfBFederatedScanDisabled**  Indicates if Windows Update client policies federated scan is disabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
@@ -6060,9 +6063,9 @@ The following fields are available:
 - **HostName**  The hostname URL the content is downloading from.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6.
 - **IsDependentSet**  Indicates whether a driver is a part of a larger System Hardware/Firmware Update
-- **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Indicates if Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Indicates if Windows Update client policies are enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **NetworkCost**  A flag indicating the cost of the network (congested, fixed, variable, over data limit, roaming, etc.) used for downloading the update content.
 - **NetworkCostBitMask**  Indicates what kind of network the device is connected to (roaming, metered, over data cap, etc.)
 - **NetworkRestrictionStatus**  More general version of NetworkCostBitMask, specifying whether Windows considered the current network to be "metered."
@@ -6182,9 +6185,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether this update is a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether the update succeeded and then failed after a restart.
-- **IsWUfBDualScanEnabled**  Indicates whether Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Indicates whether Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Indicates whether Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Indicates whether Windows Update client policies are enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether the OS update and a BSP update merged for installation.
 - **MsiAction**  The stage of MSI installation where it failed.
 - **MsiProductCode**  The unique identifier of the MSI installer.
@@ -6236,9 +6239,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update client policies are enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -6301,9 +6304,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update client policies are enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -6563,8 +6566,9 @@ The following fields are available:
 - **CUtility::GetTargetNameA(Target)**  Sub component name.
 - **HealthLog**  Health indicator log.
 - **healthLogSize**  4KB.
+- **PartA_PrivacyProduct**  Product tag
 - **productId**  Identifier for product model.
-
+- **SurfaceTelemetry_EventType**  Required vs. Optional event
 
 ### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
 
@@ -6573,9 +6577,25 @@ This event sends reason for SAM, PCH and SoC reset. The data collected with this
 The following fields are available:
 
 - **ControllerResetCause**  The cause for the controller reset.
+- **EcResetCause**  EC reset cause.
+- **FaultReset1Cause**  Fault 1 reset cause.
+- **FaultReset2Cause**  Fault 2 reset cause.
 - **HostResetCause**  Host reset cause.
+- **OffResetCause**  Off reset cause.
+- **OnResetCause**  On reset cause.
+- **PartA_PrivacyProduct**  Product tag
 - **PchResetCause**  PCH reset cause.
+- **PoffResetCause**  Power Off reset cause.
+- **PonResetCause**  Power On reset cause.
+- **S3ResetCause**  S3 reset cause.
 - **SamResetCause**  SAM reset cause.
+- **SamResetCauseExtBacklightState**  SAM Reset Display Backlight state.
+- **SamResetCauseExtLastPowerButtonTime**  SAM Reset Last Power Button time.
+- **SamResetCauseExtLastSshCommunicationTime**  SAM Reset Last SSH Communication time.
+- **SamResetCauseExtPostureStateReason**  SAM Reset Last Posture State reason.
+- **SamResetCauseExtRestartReason**  SAM Reset Extended Restart reason.
+- **SurfaceTelemetry_EventType**  Required vs. Optional event.
+- **WarmResetCause**  Warm reset cause.
 
 
 ## Update Assistant events
@@ -7125,8 +7145,8 @@ The following fields are available:
 - **UnifiedInstallerDeviceIsProSkuHresult**  The result code from checking whether a device is Pro SKU.
 - **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is managed by Configuration Manager.
 - **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is managed by Configuration Manager.
-- **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is managed by Windows Update for Business.
-- **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is managed by Windows Update for Business.
+- **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is managed by Windows Update client policies.
+- **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is managed by Windows Update client policies.
 - **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.
 - **UnifiedInstallerPlatformType**  The enum indicating the type of platform detected.
 - **UnifiedInstUnifiedInstallerDeviceIsHomeSkuHresultllerDeviceIsHomeSku**  The result code from checking whether a device is Home SKU.
@@ -7253,7 +7273,7 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  The global event counter for counting total events for the provider.
 - **PackageVersion**  The version for the current package.
-- **UpdateHealthToolsServiceBlockedByNoDSSJoinHr**  The result code returned when checking for Windows Update for Business cloud membership.
+- **UpdateHealthToolsServiceBlockedByNoDSSJoinHr**  The result code returned when checking for Windows Update client policies cloud membership.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceIsDSSJoin
@@ -8502,7 +8522,7 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **sacDevice**  This is the device info.
-- **wUfBConnected**  Result of Windows Update for Business connection check.
+- **wUfBConnected**  Result of Windows Update client policies connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureNotApplicable
@@ -8517,7 +8537,7 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **sacDevice**  Represents the device info.
-- **wUfBConnected**  Result of Windows Update for Business connection check.
+- **wUfBConnected**  Result of Windows Update client policies connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureStarted
@@ -8545,7 +8565,7 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **sacDevice**  Release Channel.
-- **wUfBConnected**  Result of Windows Update for Business connection check.
+- **wUfBConnected**  Result of Windows Update client policies connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityNotApplicable
@@ -8560,7 +8580,7 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **sacDevice**  Device in the General Availability Channel.
-- **wUfBConnected**  Result of Windows Update for Business connection check.
+- **wUfBConnected**  Result of Windows Update client policies connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityStarted
@@ -10024,6 +10044,3 @@ The following fields are available:
 - **virtualMachineName**  VM name.
 - **waitForClientConnection**  True if we should wait for client connection.
 - **wp81NetworkStackDisabled**  WP 8.1 networking stack disabled.
-
-
-

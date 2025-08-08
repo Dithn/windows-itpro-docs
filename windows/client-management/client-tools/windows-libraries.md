@@ -1,7 +1,7 @@
 ---
 title: Windows Libraries
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/01/2024
 ---
 

@@ -1,7 +1,7 @@
 ---
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.subservice: itpro-updates
 ms.service: windows-client
 ms.topic: include
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 <!--This file is shared by updates/wufb-reports-enable.md and the update/wufb-reports-admin-center.md articles. Headings may be driven by article context.  -->
 Accessing Windows Update for Business reports typcially requires permissions from multiple sources including:
 
-- [Microsoft Entra ID](/azure/active-directory/roles/custom-overview) or [Intune](/mem/intune/fundamentals/role-based-access-control): Used for managing Windows Update for Business services through Microsoft Graph API, such as enrolling into reports
+- [Microsoft Entra ID](/azure/active-directory/roles/custom-overview) or [Intune](/mem/intune/fundamentals/role-based-access-control): Used for managing Windows Update client policies through Microsoft Graph API, such as enrolling into reports
 - [Azure](/azure/role-based-access-control/overview): Used for controlling access to Azure resources through Azure Resource Management, such as access to the Log Analytics workspace
 - [Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles): Manages access to the Microsoft 365 admin center, which allows only users with certain Microsoft Entra roles access to sign in
 
@@ -39,7 +39,7 @@ Examples of commonly assigned roles for Windows Update for Business reports user
 | Windows Update deployment administrator + Log Analytics reader | Yes | Yes | Yes | Yes| No |
 | Policy and profile manager (Intune role)+ Log Analytics reader | Yes | No | Yes | No | No |
 | Log Analytics reader | No | No | Yes | No | No|
-| [Global reader](/azure/active-directory/roles/permissions-reference#global-reader) + Log Analytics reader | No | No | Yes | Yes | No |  
+| [Global reader](/azure/active-directory/roles/permissions-reference#global-reader) + Log Analytics reader | No | No | Yes | Yes | No |
 
 > [!NOTE]
 > The Microsoft Entra roles discussed in this article for the Microsoft 365 admin center access apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).

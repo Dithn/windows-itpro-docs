@@ -47,7 +47,7 @@
       "ms.topic": "conceptual",
       "ms.author": "vinpa",
       "author": "vinaypamnani-msft",
-      "manager": "aaroncz",
+      "manager": "bpardi",
       "feedback_system": "Standard",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
@@ -56,19 +56,20 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Client Management",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
         "Stacyrch140",
         "garycentric",
         "dstrome",
-        "beccarobins"
+        "beccarobins",
+        "padmagit77",
+        "aditisrivastava07"
       ],
       "searchScope": [
         "Windows 10"

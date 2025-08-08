@@ -6,15 +6,15 @@ ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection:
   - tier3
   - must-keep
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
 ms.date: 05/23/2024
 ---
 
@@ -33,7 +33,7 @@ To view which version your cache nodes are currently on, navigate to the **Cache
 There are two main steps required to uninstall your cache node:
 
 1. Remove your cache node from Azure portal
-1. Run the uninstall script to cleanly remove MCC from your server
+1. Run the uninstall script to cleanly remove Microsoft Connected Cache from your server
 
 You must complete both steps to ensure a clean uninstall of your cache node.
 
@@ -50,7 +50,7 @@ The **uninstallmcc.sh** script removes the following components:
 - IoT Edge
 - Edge Agent
 - Edge Hub
-- MCC
+- Connected Cache
 - Moby CLI
 - Moby engine
 

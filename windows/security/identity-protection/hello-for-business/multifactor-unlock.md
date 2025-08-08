@@ -1,7 +1,7 @@
 ---
 title: Multi-factor unlock
 description: Learn how to configure Windows Hello for Business multi-factor unlock by extending Windows Hello with trusted signals.
-ms.date: 04/23/2024
+ms.date: 11/22/2024
 ms.topic: how-to
 ---
 
@@ -239,6 +239,9 @@ Contains the type of security the client uses when connecting to the wireless ne
 |WPA-Enterprise| The wireless network is protected using Wi-Fi Protected Access-Enterprise.|
 |WPA2-Personal| The wireless network is protected using Wi-Fi Protected Access 2, which typically uses a pre-shared key.|
 |WPA2-Enterprise| The wireless network is protected using Wi-Fi Protected Access 2-Enterprise.|
+|WPA3-Personal| The wireless network is protected using Wi-Fi Protected Access 3, which typically uses a pre-shared key.|
+|WPA3-Enterprise| The wireless network is protected using Wi-Fi Protected Access 3-Enterprise.|
+|WPA3-Enterprise-192| The wireless network is protected using Wi-Fi Protected Access 3-Enterprise 192 bit.|
 
 For example:
 

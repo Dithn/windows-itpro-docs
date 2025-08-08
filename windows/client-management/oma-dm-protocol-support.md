@@ -1,13 +1,13 @@
 ---
 title: OMA DM protocol support
-description: See how the OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload.
-ms.topic: conceptual
-ms.date: 07/08/2024
+description: See how the OMA DMClient communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload.
+ms.topic: article
+ms.date: 08/04/2025
 ---
 
 # OMA DM protocol support
 
-The OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload. This article describes the OMA DM functionality that the DM client supports in general. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/OMA-TS-DM_Protocol-V1_2-20070209-A.pdf).
+The OMA DMClient communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload. This article describes the OMA DM functionality that the DMClient supports in general. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/OMA-TS-DM_Protocol-V1_2-20070209-A.pdf).
 
 ## OMA DM standards
 
@@ -65,11 +65,11 @@ A DM session can be divided into two phases:
 
 The following information shows the sequence of events during a typical DM session.
 
-1. DM client is invoked to call back to the management server<br><br>Enterprise scenario - The device task schedule invokes the DM client.
+1. DMClient is invoked to call back to the management server<br><br>Enterprise scenario - The device task schedule invokes the DMClient.
 
-    The MO server sends a server trigger message to invoke the DM client.
+    The MO server sends a server trigger message to invoke the DMClient.
 
-    The trigger message includes the server ID and tells the client device to initiate a session with the server. The client device authenticates the trigger message and verifies that the server is authorized to communicate with it.<br><br>Enterprise scenario - At the scheduled time, the DM client is invoked periodically to call back to the enterprise management server over HTTPS.
+    The trigger message includes the server ID and tells the client device to initiate a session with the server. The client device authenticates the trigger message and verifies that the server is authorized to communicate with it.<br><br>Enterprise scenario - At the scheduled time, the DMClient is invoked periodically to call back to the enterprise management server over HTTPS.
 
 1. The device sends a message, over an IP connection, to initiate the session.
 
@@ -87,7 +87,7 @@ During OMA DM application level mutual authentication, if the device response co
 
 If a request includes credentials and the response code to the request is 200, the same credential must be sent within the next request. If the `Chal` element is included and the MD5 authentication is required, a new digest is created by using the next nonce via the `Chal` element for next request.
 
-For more information about Basic or MD5 client authentication, MD5 server authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM_Security-V1_2_1-20080617-A), authentication response code handling and step-by-step samples in OMA Device Management Protocol specification (OMA-TS-DM_Protocol-V1_2_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/).
+For more information about Basic or MD5 client authentication, MD5 server authentication, MD5 hash, and MD5 nonce, see the OMA Device Management Security specification (OMA-TS-DM_Security-V1_2_1-20080617-A), authentication response code handling, and step-by-step samples in OMA Device Management Protocol specification (OMA-TS-DM_Protocol-V1_2_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/).
 
 ## User targeted vs. Device targeted configuration
 

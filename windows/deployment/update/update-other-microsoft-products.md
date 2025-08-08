@@ -1,13 +1,12 @@
 ---
 title: Update other Microsoft products
-titleSuffix: Windows Update for Business
-description: List of other Microsoft products that are updated when install updates for other Microsoft products (allowmuupdateservice) is used.
+description: List of other Microsoft products that are updated when install updates for other Microsoft products (AllowMUUpdateService) is used.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -32,6 +31,7 @@ The following is a list of other Microsoft products that might be updated:
 
 - Active Directory Rights Management Service
 - AppFabric
+- Azure Connected Machine agent
 - Azure File Sync
 - Bing Bar
 - Bing IME

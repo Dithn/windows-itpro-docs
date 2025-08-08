@@ -1,26 +1,23 @@
 ---
 title: Conflicting configurations
 description: This article explains how to remediate conflicting configurations affecting the Windows Autopatch service.
-ms.date: 07/08/2024
+ms.date: 03/31/2025
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: aaroncz
+manager: bpardi
 ms.reviewer: adnich
 ms.collection:
   - highpri
   - tier1
 ---
 
-# Conflicting configurations (public preview)
+# Conflicting configurations
 
-> [!IMPORTANT]
-> This feature is in **public preview**. The feature is being actively developed and might not be complete.
-
-During Readiness checks, if there are devices with conflicting registry configurations, notifications are listed in the **Not ready** tab. The notifications include a list of alerts that explain why the device isn't ready for updates. Instructions are provided on how to resolve the issue(s). You can review any device marked as **Not ready** and remediate them to a **Ready** state.
+During Readiness checks, if there are devices with conflicting registry configurations, notifications are listed in the **Not ready** tab. The notifications include a list of alerts that explain why the device isn't ready for updates. Instructions are provided on how to resolve the issues. You can review any device marked as **Not ready** and remediate them to a **Ready** state.
 
 Windows Autopatch monitors conflicting configurations. You're notified of the specific registry values that prevent Windows from updating properly. These registry keys should be removed to resolve the conflict. However, it's possible that other services write back the registry keys. It's recommended that you review common sources for conflicting configurations to ensure your devices continue to receive Windows Updates.
 
@@ -28,7 +25,6 @@ The most common sources of conflicting configurations include:
 
 - Active Directory Group Policy (GPO)
 - Configuration Manager Device client settings
-- Windows Update for Business (WUfB) policies
 - Manual registry updates
 - Local Group Policy settings applied during imaging (LGPO)
 
@@ -37,14 +33,12 @@ The most common sources of conflicting configurations include:
 ```cmd
 Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations Value=Any
 Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DisableWindowsUpdateAccess Value=Any
-Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\WUServer String=Any
-Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer Value=Any
 Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate Value=Any
 ```
 
 ## Resolving conflicts
 
-Windows Autopatch recommends removing the conflicting configurations. The following remediation examples can be used to remove conflicting settings and registry keys when targeted at Autopatch-managed clients.
+Windows Autopatch recommends removing the conflicting configurations. The following remediation examples can be used to remove conflicting settings and registry keys when targeted at Autopatch-managed devices.
 
 > [!IMPORTANT]
 > **It's recommended to only target devices with conflicting configuration alerts**. The following remediation examples can affect devices that aren't managed by Windows Autopatch, be sure to target accordingly.
@@ -90,22 +84,18 @@ Copy and paste the following PowerShell script into PowerShell or a PowerShell e
 ```powershell
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DoNotConnectToWindowsUpdateInternetLocations"
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DisableWindowsUpdateAccess"
-Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "WUServer"
-Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name "UseWUServer"
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name "NoAutoUpdate"
 ```
 
 ### Batch file
 
-Copy and paste the following code into a text editor, and save it with a `.cmd` extension, and execute against affected devices. This command removes registry keys that affect the Windows Autopatch service.
+Copy and paste the following code into a text editor, and save it with a `.cmd` extension, and execute against affected devices. This command removes registry keys that affect the Windows Autopatch service. For more information, see [Using batch files: Scripting: Management services](/previous-versions/windows/it-pro/windows-server-2003/cc758944(v=ws.10)?redirectedfrom=MSDN).
 
 ```cmd
 @echo off
 echo Deleting registry keys...
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "DoNotConnectToWindowsUpdateInternetLocations" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "DisableWindowsUpdateAccess" /f
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "WUServer" /f
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v "UseWUServer" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v "NoAutoUpdate" /f
 echo Registry keys deleted.
 Pause
@@ -120,15 +110,13 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
 "DoNotConnectToWindowsUpdateInternetLocations"=-
 "DisableWindowsUpdateAccess"=-
-"WUServer"=-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"UseWUServer"=-
 "NoAutoUpdate"=-
 ```
 
 ## Common sources of conflicting configurations
 
-The following examples can be used to validate if the configuration is persistent from one of the following services. The list isn't an exhaustive, and Admins should be aware that changes can affect devices not managed by Windows Autopatch and should plan accordingly.
+The following examples can be used to validate if the configuration is persistent from one of the following services. The list isn't an exhaustive, and Admins should plan for changes can affect devices not managed by Windows Autopatch.
 
 ### Group Policy management
 
@@ -138,7 +126,7 @@ Group Policy management is the most popular client configuration tool in most or
 1. Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**
 1. If a Policy **doesn't exist** in Windows Update, then it appears to not be Group Policy.
 1. If a Policy **exists** in Windows Update is present, modify or limit the target of the conflicting policy to resolve the Alert.
-1. If the **Policy name** is labeled **Local Group Policy**, these settings could have been applied during imaging or by Configuration Manager.
+1. If the **Policy name** is labeled **Local Group Policy**, these settings are applied during imaging or by Configuration Manager.
 
 ### Configuration Manager
 
@@ -150,4 +138,4 @@ Configuration Manager is a common enterprise management tool that, among many th
 
 ## Third-party solutions
 
-Third-party solutions can include any other product that may write configurations for the devices in question, such as MDMs (Mobile Device Managers) or Policy Managers.
+Third-party solutions can include any other product that might write configurations for the devices in question, such as MDMs (Mobile Device Managers) or Policy Managers.

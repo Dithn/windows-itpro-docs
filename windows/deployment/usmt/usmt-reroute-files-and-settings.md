@@ -2,12 +2,12 @@
 title: Reroute Files and Settings
 description: Learn how to create a custom .xml file and specify this file name on both the ScanState and LoadState command lines to reroute files and settings.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: conceptual
+ms.date: 01/29/2025
+ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -70,7 +70,7 @@ The following custom **.xml** file reroutes **.mp3** files located in the fixed 
     </rules>
   </role>
 </component>
-</migration> 
+</migration>
 ```
 
 ## Reroute a specific file
@@ -83,8 +83,8 @@ The following custom **.xml** file migrates the `Sample.doc` file from `C:\Engin
 <displayName>Sample.doc into the Documents folder</displayName>
     <role role="Data">
       <rules>
-        <include> 
-          <objectSet>     
+        <include>
+          <objectSet>
                  <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
           </objectSet>
         </include>

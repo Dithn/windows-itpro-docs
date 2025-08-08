@@ -1,8 +1,8 @@
 ---
 title: Enhanced Phishing Protection in Microsoft Defender SmartScreen
 description: Learn how Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
-ms.date: 07/10/2024
-ms.topic: conceptual
+ms.date: 04/15/2025
+ms.topic: article
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ---
@@ -19,7 +19,7 @@ If a user signs into Windows using a password, Enhanced Phishing Protection work
 - If users type their work or school password into a website or app that SmartScreen finds suspicious, Enhanced Phishing Protection can automatically collect information from that website or app to help identify security threats. For example, the content displayed, sounds played, and application memory.
 
 > [!NOTE]
-> When a user signs in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to [Microsoft Defender for Endpoint (MDE)](/microsoft-365/security/defender-endpoint/).
+> When a user signs in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection doesn't alert the user or send events to [Microsoft Defender for Endpoint (MDE)](/microsoft-365/security/defender-endpoint/).
 
 ## Benefits of Enhanced Phishing Protection in Microsoft Defender SmartScreen
 
@@ -37,7 +37,7 @@ Enhanced Phishing Protection provides robust phishing protections for work or sc
 
 ## Configure Enhanced Phishing Protection for your organization
 
-Enhanced Phishing Protection can be configured via Microsoft Intune, Group Policy Objects (GPO) or Configuration Service Providers (CSP) with an MDM service. These settings are available to configure your devices using either Microsoft Intune, GPO, or CSP.
+Enhanced Phishing Protection can be configured via Microsoft Intune, Group Policy Objects (GPO), or Configuration Service Providers (CSP) with an MDM service. These settings are available to configure your devices using either Microsoft Intune, GPO, or CSP.
 
 | Setting | Description |
 |--|--|
@@ -65,17 +65,7 @@ To configure devices using Microsoft Intune, create a [**Settings catalog** poli
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
-
-Enhanced Phishing Protection can be configured using the following group policy settings found under **Administrative Templates > Windows Components > Windows Defender SmartScreen > Enhanced Phishing Protection**:
-
-- Automatic Data Collection
-- Service Enabled
-- Notify Malicious
-- Notify Password Reuse
-- Notify Unsafe App
-
-#### [:::image type="icon" source="../../../images/icons/gear.svg"::: **CSP**](#tab/csp)
+#### [:::image type="icon" source="../../../images/icons/csp.svg"::: **CSP**](#tab/csp)
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][WIN-1].
 
@@ -87,11 +77,21 @@ Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][
 | **NotifyUnsafeApp**         | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp`         | Integer   |
 | **ServiceEnabled**          | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`          | Integer   |
 
+#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+
+Enhanced Phishing Protection can be configured using the following group policy settings found under **Administrative Templates > Windows Components > Windows Defender SmartScreen > Enhanced Phishing Protection**:
+
+- Automatic Data Collection
+- Service Enabled
+- Notify Malicious
+- Notify Password Reuse
+- Notify Unsafe App
+
 ---
 
 ### Recommended settings for your organization
 
-By default, Enhanced Phishing Protection is deployed in audit mode, preventing notifications to the users for any protection scenarios. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender. Users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in applications. Because of this possibility, it's recommended that you configure Enhanced Phishing Protection to warn users during all protection scenarios.
+By default, Enhanced Phishing Protection is deployed in audit mode, preventing notifications to the users for any protection scenarios. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender. Users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in applications. Because of this possibility, we recommend that you configure Enhanced Phishing Protection to warn users during all protection scenarios.
 
 | Setting                   | Default Value                                                                                              | Recommendation                                                                                                                                                                                                        |
 |---------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -113,6 +113,16 @@ To better help you protect your organization, we recommend turning on and using 
 | Notify Password Reuse     | **Enabled**       |
 | Notify Unsafe App         | **Enabled**       |
 
+#### [:::image type="icon" source="../../../images/icons/csp.svg"::: **CSP**](#tab/csp)
+
+| MDM setting             | Recommended value |
+|-------------------------|-------------------|
+| AutomaticDataCollection | **1**             |
+| ServiceEnabled          | **1**             |
+| NotifyMalicious         | **1**             |
+| NotifyPasswordReuse     | **1**             |
+| NotifyUnsafeApp         | **1**             |
+
 #### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 | Group Policy setting      | Recommended value |
@@ -122,16 +132,6 @@ To better help you protect your organization, we recommend turning on and using 
 | Notify Malicious          | **Enabled**       |
 | Notify Password Reuse     | **Enabled**       |
 | Notify Unsafe App         | **Enabled**       |
-
-#### [:::image type="icon" source="../../../images/icons/gear.svg"::: **CSP**](#tab/csp)
-
-| MDM setting             | Recommended value |
-|-------------------------|-------------------|
-| AutomaticDataCollection | **1**             |
-| ServiceEnabled          | **1**             |
-| NotifyMalicious         | **1**             |
-| NotifyPasswordReuse     | **1**             |
-| NotifyUnsafeApp         | **1**             |
 
 ---
 

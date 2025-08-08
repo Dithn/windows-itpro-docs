@@ -1,7 +1,8 @@
 ---
 title: Policy CSP
 description: Learn more about the Policy CSP.
-ms.date: 04/10/2024
+ms.date: 04/21/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -73,7 +74,7 @@ The following list shows the Policy configuration service provider nodes:
 <!-- Device-Config-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-Applicability-End -->
 
 <!-- Device-Config-OmaUri-Begin -->
@@ -112,7 +113,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- Device-Config-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-{AreaName}-Applicability-End -->
 
 <!-- Device-Config-{AreaName}-OmaUri-Begin -->
@@ -152,7 +153,7 @@ The area group that can be configured by a single technology for a single provid
 <!-- Device-Config-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- Device-Config-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -200,7 +201,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- Device-ConfigOperations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-ConfigOperations-Applicability-End -->
 
 <!-- Device-ConfigOperations-OmaUri-Begin -->
@@ -239,7 +240,7 @@ The root node for grouping different configuration operations.
 <!-- Device-ConfigOperations-ADMXInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-OmaUri-Begin -->
@@ -282,7 +283,7 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-OmaUri-Begin -->
@@ -322,7 +323,7 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-OmaUri-Begin -->
@@ -362,7 +363,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -402,7 +403,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-OmaUri-Begin -->
@@ -441,7 +442,7 @@ Properties of Win32 App ADMX Ingestion.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-OmaUri-Begin -->
@@ -481,7 +482,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -521,7 +522,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-OmaUri-Begin -->
@@ -560,7 +561,7 @@ Version of ADMX file. This can be set by the server to keep a record of the vers
 <!-- Device-Result-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-Applicability-End -->
 
 <!-- Device-Result-OmaUri-Begin -->
@@ -599,7 +600,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- Device-Result-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-{AreaName}-Applicability-End -->
 
 <!-- Device-Result-{AreaName}-OmaUri-Begin -->
@@ -639,7 +640,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- Device-Result-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- Device-Result-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -679,7 +680,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Config-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
 <!-- User-Config-Applicability-End -->
 
 <!-- User-Config-OmaUri-Begin -->
@@ -718,7 +719,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- User-Config-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
 <!-- User-Config-{AreaName}-Applicability-End -->
 
 <!-- User-Config-{AreaName}-OmaUri-Begin -->
@@ -766,7 +767,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- User-Config-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
 <!-- User-Config-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- User-Config-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -806,7 +807,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Result-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
 <!-- User-Result-Applicability-End -->
 
 <!-- User-Result-OmaUri-Begin -->
@@ -845,7 +846,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- User-Result-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
 <!-- User-Result-{AreaName}-Applicability-End -->
 
 <!-- User-Result-{AreaName}-OmaUri-Begin -->
@@ -885,7 +886,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- User-Result-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
 <!-- User-Result-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- User-Result-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -1069,6 +1070,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ADMX_WordWheel](policy-csp-admx-wordwheel.md)
 - [ADMX_WorkFoldersClient](policy-csp-admx-workfoldersclient.md)
 - [ADMX_WPN](policy-csp-admx-wpn.md)
+- [AppDeviceInventory](policy-csp-appdeviceinventory.md)
 - [ApplicationDefaults](policy-csp-applicationdefaults.md)
 - [ApplicationManagement](policy-csp-applicationmanagement.md)
 - [AppRuntime](policy-csp-appruntime.md)
@@ -1118,6 +1120,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [InternetExplorer](policy-csp-internetexplorer.md)
 - [Kerberos](policy-csp-kerberos.md)
 - [KioskBrowser](policy-csp-kioskbrowser.md)
+- [LanmanServer](policy-csp-lanmanserver.md)
 - [LanmanWorkstation](policy-csp-lanmanworkstation.md)
 - [Licensing](policy-csp-licensing.md)
 - [LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)
@@ -1151,6 +1154,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [Settings](policy-csp-settings.md)
 - [SettingsSync](policy-csp-settingssync.md)
 - [SmartScreen](policy-csp-smartscreen.md)
+- [SpeakForMe](policy-csp-speakforme.md)
 - [Speech](policy-csp-speech.md)
 - [Start](policy-csp-start.md)
 - [Stickers](policy-csp-stickers.md)

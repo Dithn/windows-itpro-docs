@@ -3,7 +3,7 @@ title: Create an Assigned Access configuration file
 description: Learn how to create an XML file to configure Assigned Access.
 ms.topic: how-to
 zone_pivot_groups: windows-versions-11-10
-ms.date: 03/04/2024
+ms.date: 3/7/2025
 appliesto:
 ---
 
@@ -90,7 +90,7 @@ A configuration file can contain one or more profiles. Each profile is identifie
 
 A profile can be one of two types:
 
-- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the Universal Windows Platform (UWP) application or Microsoft Edge running in full-screen above the Lock screen
+- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile execute a Universal Windows Platform (UWP) application or Microsoft Edge running in full-screen
 - `AllAppList` is used to configure a restricted user experience. Users assigned this profile, access the desktop with the specific apps on the Start menu
 
 > [!IMPORTANT]
@@ -127,7 +127,7 @@ Example of two profiles, a desktop app and a UWP app:
 
 ### AllAppList
 
-Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
+Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
 
 > [!NOTE]
 > If an app has a dependency on another app, both must be included in the allowed apps list.
@@ -149,17 +149,33 @@ Example:
     <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
     <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
     <App DesktopAppPath="%windir%\explorer.exe" />
-    <App AppUserModelId="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
+    <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
     <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="%windir%\setuperr.log" />
   </AllowedApps>
 </AllAppsList>
 ```
 
+#### Microsoft Edge secondary tiles considerations
+
+Microsoft Edge secondary tiles are pinned website shortcuts that appear on the Start menu. These pins provide quick access to specific websites directly from the Start menu, functioning similarly to app shortcuts.
+
+If you pin elements to the Start menu with Microsoft Edge secondary tiles, include the following apps in the allowed apps list:
+
+```xml
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
+    <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
+```
+
+For more information about Start menu customizations and pinning secondary tiles, see [Customize the Start layout](../start/layout.md).
+
 ::: zone pivot="windows-10"
 
 ### File Explorer restrictions
 
-In a restricted user experience (`AllAppList`), folder browsing is locked down by default. You can explicitly allow access to known folders by including the `FileExplorerNamespaceRestrictions` node.
+In a restricted user experience, folder browsing is locked down by default. You can explicitly allow access to known folders by including the `FileExplorerNamespaceRestrictions` node.
 
 You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
@@ -288,19 +304,22 @@ With the exported Start menu configuration, use the `v5:StartPins` element and a
 </v5:StartPins>
 ```
 
-Example with some apps pinned:
+Example with some apps and a Microsoft Edge pinned site:
 
+``` xml
 <v5:StartPins>
   <![CDATA[
     {
       "pinnedList":[
         {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
         {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
-        {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
+        {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"},
+        {"secondaryTile": { "tileId": "MSEdge._pin_mjalfbhoimpkfjlpajnjkpknoe", "arguments": " --pin-url=https://www.contoso.com --profile-directory=Default --launch-tile", "displayName": "Contoso intranet", "packagedAppId": "Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App", "smallIconPath": "ms-appdata:///local/Pins/MSEdge._pin_mjalfbhoimpkfjlpajnjkpknoe/ContosoLogo.png", "smallIcon": "iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAInAAACJwG+ElQIAAABaWlDQ1BEaXNwbGF5IFAzAAB4nHWQvUvDUBTFT6tS0DqIDh0cMolD1NIKdnFoKxRFMFQFq1OafgltfCQpUnETVyn4H1jBWXCwiFRwcXAQRAcR3Zw6KbhoeN6XVNoi3sfl/Ticc7lcwBtQGSv2AijplpFMxKS11Lrke4OHnlOqZrKooiwK/v276/PR9d5PiFlNu3YQ2U9cl84ul3aeAlN//V3Vn8maGv3f1EGNGRbgkYmVbYsJ3iUeMWgp4qrgvMvHgtMunzuelWSc+JZY0gpqhrhJLKc79HwHl4plrbWD2N6f1VeXxRzqUcxhEyYYilBRgQQF4X/8044/ji1yV2BQLo8CLMpESRETssTz0KFhEjJxCEHqkLhz634PrfvJbW3vFZhtcM4v2tpCAzidoZPV29p4BBgaAG7qTDVUR+qh9uZywPsJMJgChu8os2HmwiF3e38M6Hvh/GMM8B0CdpXzryPO7RqFn4Er/QcXKWq8MSlPPgAABFZJREFUeAHdWu1RajEQ3ev4X61AXgX6KhA68FWgrwLpAK0AO0ArUCsQKxArECsAK8jLuTNh9i3J5uMGBc9MhivmY0/2ZEk2l8jCGDOyZWF2FxNbeuDS2Iex/RzS7mPaNM0AhBb2j0P6Gfi1Txsms1wu6fPzs/1E6fV6dHBwQIeHGxm2t0+V8fLyQrPZjKbTafs5n8+99UDo9PSUzs/Pqd/v08nJCVWBqYDFYmGur6+NNdCgy5KCtnd3d6Yj+lhDhjrg5uaGbm9vWzlJwAuQGDzBAa/Be742qG8nhy4uLqgAg2IPvb6+Gjt4dNaHw6Gx8vP28f7+biaTibGSW2uLvvH/XA8VEbIeyZYUDISkQkbi+8vLy7V2kPJGCWGAkMGYaRiFz9B6Qj3NSBCTHoOXN0JIkrFrxIxGo+CsI1g8PDx4Zx7Enp+fg2OhX14ffVQlJMlg1mBwChwx35rTvIU2mLQM+aURQsfcCMxeCgkYEAscLniEJgfBh9eNhPY4IciJGxUj44jwmU0NGiHpjsfj/2SuRL84Ia7/mI4leWcAFjkkiugIsnj2BQ20DXmKBwolSOiEYGDKDAKQBveKCxjaOvOFahgugd8x3jc8VkSID6ZpV3oGRqUGDADRjrfnHsC4nLDdQWhdhQlJ76i9MDlEBjTaeNwLCEQysiYEozAhbElSvMPraWsgBTKa5kZWoxHis66tHS6Vgr3XGiC3QjKt2V5CmGVtkTpgsabUywHG5tKDAjLQ3yMP3t7eVs9y68/x+Pi4erYBhGoARw5Loj342WCR3a/3xGqls3rWCOFM41DtxGkBMigl8Hro4+Nj9Xx8fBxszAlpxL8SXkL8JKklM1w9nDK3BVFCR0dH3oah5Md3Yy9WwUYd7/cbSkN1hpcQl5AvkQGAkCO1Td7yEuKBgAcICR4IeID4TngJpRrK6yHBWAv39/c0GAzaZGU2Qr/WlLADwC6ZKu8U5M49M/mYtpfTNpy8npb0SEXHVFaYEM+9aR1yL2m5gRTwnbs8wieSChPisss5DyWmm9Ygz0OQmkxldc762P1U0YkV7XKOEvKIzU+s3GsJE6YT4nLCgLH8ACflUr9aG/xPnn8gW4mM/Fw/mvXhA5ZkfVwEhBFYlyjoMzdBz4NFcdYHkAeumI5RX2o/pWhkeICKZJ/ihAAuvdSIg0FD+TefB78sc+rgS56nLnwYi8Xtk6N2syCDRaesjw+SFAyEQdrtA4zi0ZK31X6I5R1UYnosj5CPFDfQ3Q+BQEhqsYzql94PxUhpJUYklORX0r71CAGhEO2TZEhaIAFphUJ4wd6w+y04bqyx3fcd8ty7CDLngENj6B0GtLm6umr7LUD5LTiHu81OudwiJXTDW102t1U8JIGZf3p6Wr1Joh3h8QYJytnZWa002KA6IQn3jg/k5fIQPB9RGT/ubazfyClsR3ajO+ZN08xA6C/+oN3G3JY/eGjcN1Z6WJW7KL0lPOP++AdqljW+tM7PvwAAAABJRU5ErkJggg==", "largeIconPath": "ms-appdata:///local/Pins/MSEdge._pin_mjalfbhoimpkfjlpajnjkpknoe/ContosoLogo.png" }}
       ]
     }
   ]]>
 </v5:StartPins>
+```
 
 ::: zone-end
 
@@ -334,10 +353,21 @@ The following example hides the taskbar:
 
 ::: zone pivot="windows-11"
 
-You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn how to customize and export the Taskbar configuration, see [Customize the Taskbar](../taskbar/configure.md).
+To show or hide the taskbar, use the `ShowTaskbar` boolean attribute.
 
-> [!NOTE]
-> In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.
+The following example exposes the taskbar:
+
+```xml
+<Taskbar ShowTaskbar="true"/>
+```
+
+The following example hides the taskbar:
+
+```xml
+<Taskbar ShowTaskbar="false"/>
+```
+
+To configure the applications pinned to the taskbar, create a custom layout and add it to your XML file. To learn how to customize and export the taskbar configuration, see [Configure the Windows taskbar](../taskbar/index.md).
 
 With the exported Taskbar configuration, use the `v5:TaskbarLayout` element and add the content of the XML file. For example:
 
@@ -376,8 +406,6 @@ Here's an example of a custom Taskbar with a few apps pinned:
 ```
 
 ::: zone-end
-
-<!--here-->
 
 ## Configs
 
@@ -418,7 +446,7 @@ The following example shows how to specify an account to sign in automatically, 
 ```
 
 >[!IMPORTANT]
->When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more information, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
 ### Global profile
 

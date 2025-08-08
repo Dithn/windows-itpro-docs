@@ -10,8 +10,8 @@ metadata:
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
-  manager: aaroncz
-  ms.date: 04/25/2024
+  manager: bpardi
+  ms.date: 12/05/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -38,20 +38,18 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Kiosk options in Windows
+            url: kiosk/index.md
           - text: What is Assigned Access?
-            url: assigned-access/overview.md
-          - text: What is Shell Launcher?
-            url: assigned-access/shell-launcher/index.md
-      - linkListType: how-to-guide
-        links:
-          - text: Configure kiosks and restricted user experiences
             url: assigned-access/index.md
+          - text: What is Shell Launcher?
+            url: shell-launcher/index.md
       - linkListType: quickstart
         links:
           - text: Configure a kiosk with Assigned Access
             url: assigned-access/quickstart-kiosk.md
           - text: Configure a kiosk with Shell Launcher
-            url: assigned-access/shell-launcher/quickstart-kiosk.md
+            url: shell-launcher/quickstart-kiosk.md
           - text: Configure a restricted user experience with Assigned Access
             url: assigned-access/quickstart-restricted-user-experience.md
       - linkListType: reference
@@ -59,7 +57,7 @@ landingContent:
           - text: Assigned Access XML Schema Definition (XSD)
             url: assigned-access/xsd.md
           - text: Shell Launcher XML Schema Definition (XSD)
-            url: assigned-access/shell-launcher/xsd.md
+            url: shell-launcher/xsd.md
 
   - title: Configure shared devices
     linkLists:

@@ -1,13 +1,15 @@
 ---
-title: Create policies to enable applications
+title: Create Policies To Enable Applications In Windows 11 SE
 description: Learn how to create policies to enable the installation and execution of apps on Windows SE.
-ms.date: 04/10/2024
+ms.date: 12/02/2024
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
 # Create policies to enable applications
+
+[!INCLUDE [winse-eos](../../includes/winse-eos.md)]
 
 :::row:::
    :::column span="":::
@@ -54,7 +56,7 @@ To create supplemental policies, download and install the [WDAC Policy Wizard][E
 
 The following video provides an overview and explains how to create supplemental policies for apps blocked by the Windows 11 SE base policy.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1eedb284-5592-43e7-9446-ce178953502d]
 
 ### Create a supplemental policy for Win32 apps
 

@@ -1,5 +1,5 @@
 ---
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 title: VPN routing decisions
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
 ms.topic: concept-article
@@ -43,14 +43,3 @@ When you configure a VPN profile in Microsoft Intune, you can enable split tunne
 ![split tunnel.](images/vpn-split.png)
 
 Once enabled, you can add the routes that should use the VPN connection.
-
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

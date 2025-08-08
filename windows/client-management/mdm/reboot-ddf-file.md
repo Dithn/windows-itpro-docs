@@ -1,7 +1,8 @@
 ---
 title: Reboot DDF file
 description: View the XML file containing the device description framework (DDF) for the Reboot configuration service provider.
-ms.date: 06/28/2024
+ms.date: 04/04/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -95,7 +96,7 @@ The following XML file contains the device description framework (DDF) for the R
             <Get />
             <Replace />
           </AccessType>
-          <Description>Value in ISO8601, both the date and time are required. A reboot will be scheduled at the configured date time. Setting a null (empty) date will delete the existing schedule.</Description>
+          <Description>Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required.  Both the date and time are required. A reboot will be scheduled to occur at the specified date and time. Setting a null (empty) date will delete the existing schedule.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -122,7 +123,7 @@ The following XML file contains the device description framework (DDF) for the R
             <Get />
             <Replace />
           </AccessType>
-          <Description>Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.</Description>
+          <Description>Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required.  While it is supported to set either DailyRecurrent or WeeklyRecurrent schedules, it is not supported to enable both settings simultaneously.  A reboot will be scheduled to occur every day at the configured time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -149,7 +150,7 @@ The following XML file contains the device description framework (DDF) for the R
             <Get />
             <Replace />
           </AccessType>
-          <Description>Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled every week at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.</Description>
+          <Description>Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required.  While it is supported to set either DailyRecurrent or WeeklyRecurrent schedules, it is not supported to enable both settings simultaneously.  A reboot will be scheduled to occur every week at the configured day and time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -164,8 +165,8 @@ The following XML file contains the device description framework (DDF) for the R
             <MIME />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+            <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="None">
           </MSFT:AllowedValues>

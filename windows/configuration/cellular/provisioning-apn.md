@@ -2,7 +2,7 @@
 title: Configure cellular settings
 description: Learn how to provision cellular settings for devices with built-in modems or plug-in USB modem dongles.
 ms.topic: concept-article
-ms.date: 04/23/2024
+ms.date: 12/05/2024
 ---
 
 # Configure cellular settings
@@ -20,18 +20,18 @@ For users who work in different locations, you can configure one APN to connect 
 ## How to configure cellular settings in a provisioning package
 
 1. In Windows Configuration Designer, [start a new project](../provisioning-packages/provisioning-create-package.md) using the **Advanced provisioning** option
-1. Enter a name for your project, and then select **Next**
-1. Select **All Windows desktop editions**, select **Next**, and then select **Finish**
-1. Go to **Runtime settings > Connections > EnterpriseAPN**
-1. Enter a name for the connection, and then select **Add**
+2. Enter a name for your project, and then select **Next**
+3. Select **All Windows desktop editions**, select **Next**, and then select **Finish**
+4. Go to **Runtime settings > Connections > EnterpriseAPN**
+5. Enter a name for the connection, and then select **Add**
 
-![Example of APN connection name.](images/apn-add.png)
+    ![Example of APN connection name.](images/apn-add.png)
 
-1. The connection appears in the **Available customizations** pane. Select it to view the settings that you can configure for the connection
+6. The connection appears in the **Available customizations** pane. Select it to view the settings that you can configure for the connection
 
-![settings for new connection.](images/apn-add-details.png)
+    ![settings for new connection.](images/apn-add-details.png)
 
-1. The following table describes the settings available for the connection
+7. The following table describes the settings available for the connection
 
     | Setting | Description |
     | --- | --- |
@@ -47,8 +47,8 @@ For users who work in different locations, you can configure one APN to connect 
     | Roaming | Select the behavior that you want when the device is roaming. The options are:</br></br>-Disallowed</br>-Allowed (default)</br>-DomesticRoaming</br>-Use OnlyForDomesticRoaming</br>-UseOnlyForNonDomesticRoaming</br>-UseOnlyForRoaming   |
     | UserName | If you select PAP, CHAP, or MSCHAPv2 authentication, enter a user name.  |
 
-1. After you configure the connection settings, [build the provisioning package](../provisioning-packages/provisioning-create-package.md#build-package).
-1. [Apply the package to devices.](../provisioning-packages/provisioning-apply-package.md)
+8. After you configure the connection settings, [build the provisioning package](../provisioning-packages/provisioning-create-package.md#build-package).
+9. Add the new profile to the [COSA database](/windows-hardware/customize/desktop/customize-cosa) of mobile operator profiles or [apply the package to devices.](../provisioning-packages/provisioning-apply-package.md).
 
 ## Confirm the settings
 

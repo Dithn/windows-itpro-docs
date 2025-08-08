@@ -1,7 +1,7 @@
 ---
 title: Settings changed when you uninstall a provisioning package
 description: This article lists the settings that are reverted when you uninstall a provisioning package on Windows desktop client devices.
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 07/09/2024
 ---
 

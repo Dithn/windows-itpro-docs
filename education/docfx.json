@@ -37,7 +37,7 @@
       "ms.service": "windows-client",
       "author": "paolomatarazzo",
       "ms.author": "paoloma",
-      "manager": "aaroncz",
+      "manager": "bpardi",
       "ms.localizationpriority": "medium",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
@@ -52,15 +52,18 @@
       "titleSuffix": "Windows Education",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
         "Stacyrch140",
         "garycentric",
-        "dstrome"
+        "dstrome",
+        "padmagit77",
+        "aditisrivastava07",
+        "Ruchika-mittal01"
       ]
     },
     "fileMetadata": {

@@ -7,10 +7,10 @@ ms.subservice: itpro-updates
 ms.topic: overview
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 11/15/2022
 ---
 
@@ -27,7 +27,6 @@ Windows Update for Business reports is a cloud-based solution that provides info
 
 Some of the benefits of Windows Update for Business reports are:
 
-- Integration with [Windows Update for Business deployment service](deployment-service-overview.md) to enable per deployment reporting, monitoring, and troubleshooting.
 - Compatibility with [feature updates](/mem/intune/protect/windows-10-feature-updates) and [Expedite Windows quality updates](/mem/intune/protect/windows-10-expedite-updates) policies in Intune.
 - A new **Alerts** data type to assist you with identifying devices that encounter issues during the update process. Error code information is provided to help troubleshoot update issues.
 
@@ -60,7 +59,7 @@ You'll set up Windows Update for Business reports by enrolling into the service 
 
 - Update deployment progress
 - Delivery Optimization usage data
-- Windows Update for Business configuration data
+- Windows Update client policy configuration data
 
 The Azure Log Analytics ingestion and retention charges aren't incurred on your Azure subscription for Windows Update for Business reports data. You also choose an [Azure Log Analytics workspaces](/azure/azure-monitor/logs/log-analytics-overview) that you own for your client diagnostic data. The collected diagnostic data populates the Windows Update for Business reports tables so you can easily query your data.
 

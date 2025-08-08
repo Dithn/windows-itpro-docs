@@ -1,7 +1,8 @@
 ---
 title: AccountManagement CSP
 description: Learn more about the AccountManagement CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -35,7 +36,7 @@ The following list shows the AccountManagement configuration service provider no
 <!-- Device-UserProfileManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-UserProfileManagement-Applicability-End -->
 
 <!-- Device-UserProfileManagement-OmaUri-Begin -->
@@ -73,7 +74,7 @@ The following list shows the AccountManagement configuration service provider no
 <!-- Device-UserProfileManagement-DeletionPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-UserProfileManagement-DeletionPolicy-Applicability-End -->
 
 <!-- Device-UserProfileManagement-DeletionPolicy-OmaUri-Begin -->
@@ -123,7 +124,7 @@ Configures when profiles will be deleted. Allowed values: 0 (delete immediately 
 <!-- Device-UserProfileManagement-EnableProfileManager-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-UserProfileManagement-EnableProfileManager-Applicability-End -->
 
 <!-- Device-UserProfileManagement-EnableProfileManager-OmaUri-Begin -->
@@ -134,7 +135,7 @@ Configures when profiles will be deleted. Allowed values: 0 (delete immediately 
 
 <!-- Device-UserProfileManagement-EnableProfileManager-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enable profile lifetime mangement for shared or communal device scenarios.
+Enable profile lifetime management for shared or communal device scenarios.
 <!-- Device-UserProfileManagement-EnableProfileManager-Description-End -->
 
 <!-- Device-UserProfileManagement-EnableProfileManager-Editable-Begin -->
@@ -172,7 +173,7 @@ Enable profile lifetime mangement for shared or communal device scenarios.
 <!-- Device-UserProfileManagement-ProfileInactivityThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-UserProfileManagement-ProfileInactivityThreshold-Applicability-End -->
 
 <!-- Device-UserProfileManagement-ProfileInactivityThreshold-OmaUri-Begin -->
@@ -212,7 +213,7 @@ Start deleting profiles when they haven't been logged-on during the specified pe
 <!-- Device-UserProfileManagement-StorageCapacityStartDeletion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-UserProfileManagement-StorageCapacityStartDeletion-Applicability-End -->
 
 <!-- Device-UserProfileManagement-StorageCapacityStartDeletion-OmaUri-Begin -->
@@ -252,7 +253,7 @@ Start deleting profiles when available storage capacity falls below this thresho
 <!-- Device-UserProfileManagement-StorageCapacityStopDeletion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-UserProfileManagement-StorageCapacityStopDeletion-Applicability-End -->
 
 <!-- Device-UserProfileManagement-StorageCapacityStopDeletion-OmaUri-Begin -->

@@ -6,8 +6,8 @@ author: kaushika-msft
 manager: cshepard
 ms.reviewer: nganguly
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
-ms.date: 03/29/2024
+ms.subservice: activation
+ms.date: 05/14/2025
 ms.topic: overview
 ---
 

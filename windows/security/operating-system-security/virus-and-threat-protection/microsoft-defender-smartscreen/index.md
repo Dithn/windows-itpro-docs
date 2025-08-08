@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender SmartScreen overview
 description: Learn how Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
-ms.date: 07/10/2024
-ms.topic: conceptual
+ms.date: 04/15/2025
+ms.topic: overview
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -35,7 +35,7 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 - **Blocking URLs associated with potentially unwanted applications:** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 > [!IMPORTANT]
-> SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
+> SmartScreen protects against malicious files from the internet. It doesn't protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
 
 [!INCLUDE [microsoft-defender-smartscreen](../../../../../includes/licensing/microsoft-defender-smartscreen.md)]
 

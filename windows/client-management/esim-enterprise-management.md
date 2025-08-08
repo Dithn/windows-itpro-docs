@@ -2,15 +2,15 @@
 title: eSIM Enterprise Management
 description: Learn how Mobile Device Management (MDM) Providers support the eSIM Profile Management Solution on Windows.
 ms.localizationpriority: medium
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: article
+ms.date: 08/04/2025
 ---
 
 # How Mobile Device Management Providers support eSIM Management on Windows
 
 The eSIM Profile Management Solution places the Mobile Device Management (MDM) Provider in the front and center. The whole idea is to use an already-existing solution that customers are familiar with and use to manage devices.
 
-The expectations from an MDM are that it uses the same sync mechanism that it uses for device policies to push any policy to the eSIM profile, and use Groups and Users the same way. This way, the eSIM profile download and the installation happen in the background without impacting the end user. Similarly, the IT admin would use the same method of managing the eSIM profiles (Assignment/un-assignment, etc.) the same way as they currently do device management.
+The expectations from an MDM are that it uses the same sync mechanism that it uses for device policies to push any policy to the eSIM profile, and use Groups and Users the same way. This way, the eSIM profile download, and the installation happen in the background without impacting the end user. Similarly, the IT admin would use the same method of managing the eSIM profiles (Assignment/un-assignment, etc.) the same way as they currently do device management.
 
 If you're a Mobile Device Management (MDM) Provider and want to support eSIM Management on Windows, perform the following steps:
 

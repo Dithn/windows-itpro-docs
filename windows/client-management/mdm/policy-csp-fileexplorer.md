@@ -1,7 +1,8 @@
 ---
 title: FileExplorer Policy CSP
 description: Learn more about the FileExplorer Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowOptionToShowNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowOptionToShowNetwork-Applicability-End -->
 
 <!-- AllowOptionToShowNetwork-OmaUri-Begin -->
@@ -74,7 +75,7 @@ When the Network folder is restricted, give the user the option to enumerate and
 <!-- AllowOptionToShowThisPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowOptionToShowThisPC-Applicability-End -->
 
 <!-- AllowOptionToShowThisPC-OmaUri-Begin -->
@@ -127,7 +128,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 <!-- DisableGraphRecentItems-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableGraphRecentItems-Applicability-End -->
 
 <!-- DisableGraphRecentItems-OmaUri-Begin -->
@@ -138,7 +139,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 
 <!-- DisableGraphRecentItems-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, etc.
+Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, Details pane, etc.
 <!-- DisableGraphRecentItems-Description-End -->
 
 <!-- DisableGraphRecentItems-Editable-Begin -->
@@ -190,7 +191,7 @@ Turning off this setting will prevent File Explorer from requesting cloud file m
 <!-- SetAllowedFolderLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetAllowedFolderLocations-Applicability-End -->
 
 <!-- SetAllowedFolderLocations-OmaUri-Begin -->
@@ -247,7 +248,7 @@ A value that can represent one or more folder locations in File Explorer. If not
 <!-- SetAllowedStorageLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetAllowedStorageLocations-Applicability-End -->
 
 <!-- SetAllowedStorageLocations-OmaUri-Begin -->
@@ -306,7 +307,7 @@ A value that can represent one or more storage locations in File Explorer. If no
 <!-- TurnOffDataExecutionPreventionForExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOffDataExecutionPreventionForExplorer-Applicability-End -->
 
 <!-- TurnOffDataExecutionPreventionForExplorer-OmaUri-Begin -->
@@ -361,7 +362,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 <!-- TurnOffHeapTerminationOnCorruption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOffHeapTerminationOnCorruption-Applicability-End -->
 
 <!-- TurnOffHeapTerminationOnCorruption-OmaUri-Begin -->

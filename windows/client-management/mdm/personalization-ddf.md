@@ -1,7 +1,8 @@
 ---
 title: Personalization DDF file
 description: View the XML file containing the device description framework (DDF) for the Personalization configuration service provider.
-ms.date: 06/28/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -162,7 +163,7 @@ The following XML file contains the device description framework (DDF) for the P
           <MIME />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.22621.3235</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>10.0.22621.3374</MSFT:OsBuildVersion>
           <MSFT:CspVersion>2.0</MSFT:CspVersion>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="None">
@@ -189,7 +190,7 @@ The following XML file contains the device description framework (DDF) for the P
           <MIME />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.22621.3235</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>10.0.22621.3374</MSFT:OsBuildVersion>
           <MSFT:CspVersion>2.0</MSFT:CspVersion>
         </MSFT:Applicability>
       </DFProperties>
@@ -217,7 +218,7 @@ The following XML file contains the device description framework (DDF) for the P
           <MIME />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.22621.3235</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>10.0.22621.3374</MSFT:OsBuildVersion>
           <MSFT:CspVersion>2.0</MSFT:CspVersion>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="RegEx">

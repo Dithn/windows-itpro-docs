@@ -3,10 +3,10 @@ title: Using a proxy with Delivery Optimization
 description: Settings to use with various proxy configurations to allow Delivery Optimization to work in your environment.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: cmknox
 ms.author: carmenf
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection: tier3
 ms.localizationpriority: medium
@@ -66,7 +66,7 @@ You can set a device-wide proxy that will apply to all users including an intera
 
 Or, if you use Group Policy, you can apply proxy settings to all users of the same device by enabling the **Computer Configuration\ Administrative Templates\ Windows Components\ Internet Explorer\ Make proxy settings per-machine (rather than per-user)** policy.
 
-This policy is meant to ensure that proxy settings apply uniformly to the same computer and do not vary from user to user, so if you enable this policy, users cannot set user-specific proxy settings. They must use the zones created for all users of the computer. If you disable this policy or do not configure it, users of the same computer can establish their own proxy settings.
+This policy is meant to ensure that proxy settings apply uniformly to the same computer and don't vary from user to user, so if you enable this policy, users can't set user-specific proxy settings. They must use the zones created for all users of the computer. If you disable this policy or don't configure it, users of the same computer can establish their own proxy settings.
 
 ## Using a proxy with Microsoft Connected Cache
 

@@ -1,7 +1,8 @@
 ---
 title: ApplicationDefaults Policy CSP
 description: Learn more about the ApplicationDefaults Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +20,7 @@ ms.date: 01/18/2024
 <!-- DefaultAssociationsConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DefaultAssociationsConfiguration-Applicability-End -->
 
 <!-- DefaultAssociationsConfiguration-OmaUri-Begin -->
@@ -35,6 +36,8 @@ This policy allows an administrator to set default file type and protocol associ
 
 <!-- DefaultAssociationsConfiguration-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> For this policy, MDM policy take precedence over group policies even when [MDMWinsOverGP](policy-csp-controlpolicyconflict.md#mdmwinsovergp) policy is not set.
 <!-- DefaultAssociationsConfiguration-Editable-End -->
 
 <!-- DefaultAssociationsConfiguration-DFProperties-Begin -->
@@ -138,7 +141,7 @@ To create the SyncML, follow these steps:
 <!-- EnableAppUriHandlers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableAppUriHandlers-Applicability-End -->
 
 <!-- EnableAppUriHandlers-OmaUri-Begin -->

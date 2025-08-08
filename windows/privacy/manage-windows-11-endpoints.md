@@ -6,9 +6,14 @@ ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.date: 10/06/2023
+manager: dansimp
+ms.date: 05/23/2025
 ms.topic: reference
+hideEdit: true 
+ms.collection: 
+- privacy-windows
+- must-keep
+- trust-pod
 ---
 
 # Manage connection endpoints for Windows 11 Enterprise
@@ -174,6 +179,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
 ||The following endpoint is used for compatibility database updates for Windows.|HTTPS|adl.windows.com|
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint, and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
+||The following endpoint is for a public web API used by Windows and other OS-agnostic products to check for new updates. If you disable this endpoint, these products won't be able to check for and apply software updates.|TLSv1.2/HTTPS/HTTP|*.api.cdp.microsoft.com|
 |Xbox Live|||[Learn how to turn off traffic to all of the following endpoint(s) for Xbox Live.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 ||The following endpoints are used for Xbox Live.|HTTPS|dlassets-ssl.xboxlive.com|
 |||TLSv1.2|da.xboxservices.com|
@@ -181,4 +187,4 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 ## Related links
 
 - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-- [Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
+- [Network endpoints for Microsoft Intune](/intune/intune-service/fundamentals/intune-endpoints)

@@ -1,18 +1,18 @@
 ---
 title: Delivery Optimization data in reports
 titleSuffix: Windows Update for Business reports
-description: This article provides information about Delivery Optimization data in Windows Update for Business reports. 
+description: This article provides information about Delivery Optimization data in Windows Update for Business reports.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 04/12/2023
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 08/04/2025
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
@@ -37,17 +37,17 @@ Windows Update for Business reports uses the following Delivery Optimization ter
   - LAN (1)
   - Group (2)
   - Internet (3)
-  
+
 - **Peering 'OFF'**: Devices where DO peer-to-peer is disabled, set to one of the following modes:
   - HTTP Only (0)
   - Simple Mode (99)
   - Bypass (100), deprecated in Windows 11
-- **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache (MCC) out of the total amount of data downloaded.
+- **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache) out of the total amount of data downloaded.
 - If bandwidth savings are <= 60%, a *Warning* icon is displayed
 - When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 - **P2P Device Count**: The device count is the number of devices configured to use peering.
-- **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
+- **Microsoft Connected Cache**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
 - **MCC Device Count**: The device count is the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
@@ -68,7 +68,7 @@ The calculated values used in the Delivery Optimization report are listed below.
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
 - % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers) / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
+- % Connected Cache Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 **Bytes Calculations**:
@@ -88,7 +88,7 @@ The calculated values used in the Delivery Optimization report are listed below.
 
 - Volume by P2P = BytesFromPeers + BytesFromGroupPeers
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- Volume by MCC = BytesFromCache
+- Volume by Connected Cache = BytesFromCache
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 - Volume by CDN = BytesFrom CDN
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
@@ -139,10 +139,10 @@ The following query is used to display the Top 10 GroupIDs:
 ```kusto
 UCDOStatus  | where TimeGenerated == _SnapshotTime
 | summarize sum(BytesFromCDN) ,  sum(BytesFromGroupPeers) , sum(BytesFromPeers) , sum(BytesFromCache) ,
-DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount desc 
+DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount desc
 | extend TotalBytes = (sum_BytesFromPeers + sum_BytesFromGroupPeers+sum_BytesFromCDN+sum_BytesFromCache)
-| extend P2PPercentage = ((0.0 + sum_BytesFromPeers + sum_BytesFromGroupPeers)/TotalBytes ) * 100.0  
-| extend  MCCPercentage = ((0.0 + sum_BytesFromCache)/ TotalBytes) * 100.0  , 
+| extend P2PPercentage = ((0.0 + sum_BytesFromPeers + sum_BytesFromGroupPeers)/TotalBytes ) * 100.0
+| extend  MCCPercentage = ((0.0 + sum_BytesFromCache)/ TotalBytes) * 100.0  ,
  VolumeBytesFromPeers = sum_BytesFromPeers + sum_BytesFromGroupPeers
 | extend VolumeBytesFromMCC = sum_BytesFromCache , VolumeByCDN = sum_BytesFromCDN
 | project  GroupID , P2PPercentage , MCCPercentage ,  VolumeBytesFromPeers , VolumeBytesFromMCC ,VolumeByCDN , DeviceCount
@@ -150,11 +150,14 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 
 ### Delivery Optimization Supported Content Types
 
-There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report. See the [complete table](waas-delivery-optimization.md#windows-client) for P2P/MCC support types.
+There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report. See the [complete table](waas-delivery-optimization.md#windows-client) for P2P/Connected Cache support types.
+
+  > [!NOTE]
+  > As of July 22, 2025 Software Updates which are non-Windows and non-Store updates will move from the 'Other' category to 'Feature Updates'. Examples include: Visual Studio, Exchange, SQL Server.
 
 | Content Category | Content Types Included |
 | --- | --- |
-| Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
+| Apps | Windows 10 Store apps, Windows 11 UWP Store apps |
 | Driver Updates | Windows Update [Driver updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Feature Updates | Windows Update [Feature updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Office | Microsoft 365 Apps and updates |
@@ -164,7 +167,7 @@ There are many Microsoft [content types](waas-delivery-optimization.md#types-of-
 ## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
-Data is generated/aggregated for the last 28 days for active devices. For Delivery Optimization data to register in the report, the device must have performed some Delivery Optimization action in the 28-day rolling window. This includes device configuration information. 
+Data is generated/aggregated for the last 28 days for active devices. For Delivery Optimization data to register in the report, the device must have performed some Delivery Optimization action in the 28-day rolling window. This includes device configuration information.
 
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.

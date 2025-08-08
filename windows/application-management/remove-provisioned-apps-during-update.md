@@ -1,9 +1,9 @@
 ---
 title: Keep removed apps from returning during an update
 description: When you remove provisioned apps from devices, this article explains how to keep those apps from returning during an update.
-author: aczechowski
-ms.author: aaroncz
-manager: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: bpardi
 ms.date: 05/25/2018
 ms.topic: how-to
 ms.service: windows-client
@@ -171,7 +171,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Messaging_8wekyb3d8bbwe]
-``` 
+```
 
 [Get-AppxPackage](/powershell/module/appx/get-appxpackage)
 [Get-AppxPackage -allusers](/powershell/module/appx/get-appxpackage)

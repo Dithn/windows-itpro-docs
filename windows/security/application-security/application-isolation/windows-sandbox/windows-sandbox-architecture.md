@@ -1,8 +1,8 @@
 ---
 title: Windows Sandbox architecture
 description: Windows Sandbox architecture
-ms.topic: conceptual
-ms.date: 03/26/2024
+ms.topic: article
+ms.date: 09/09/2024
 ---
 
 # Windows Sandbox architecture
@@ -27,17 +27,9 @@ Traditional VMs apportion statically sized allocations of host memory. When reso
 
 ## Memory sharing
 
-Because Windows Sandbox runs the same operating system image as the host, it's enhanced to use the same physical memory pages as the host for operating system binaries via a technology referred to as "direct map." For example, when *ntdll.dll* is loaded into memory in the sandbox, it uses the same physical pages as those pages of the binary when loaded on the host. Memory sharing between the host and the sandbox results in a smaller memory footprint when compared to traditional VMs, without compromising valuable host secrets.
+Because Windows Sandbox runs the same operating system image as the host, it's enhanced to use the same physical memory pages as the host for operating system binaries via a technology referred to as "direct map." For example, when `ntdll.dll` is loaded into memory in the sandbox, it uses the same physical pages as those pages of the binary when loaded on the host. Memory sharing between the host and the sandbox results in a smaller memory footprint when compared to traditional VMs, without compromising valuable host secrets.
 
 ![A chart compares the memory footprint in Windows Sandbox versus a traditional VM.](images/3-memory-sharing.png)
-
-## Integrated kernel scheduler
-
-With ordinary virtual machines, the Microsoft hypervisor controls the scheduling of the virtual processors running in the VMs. Windows Sandbox uses a new technology called "integrated scheduling," which allows the host scheduler to decide when the sandbox gets CPU cycles.
-
-![A chart compares the scheduling in Windows Sandbox versus a traditional VM.](images/4-integrated-kernal.png)
-
-Windows Sandbox employs a unique policy that allows the virtual processors of the Sandbox to be scheduled like host threads. Under this scheme, high-priority tasks on the host can preempt less important work in the Sandbox. This preemption means that the most important work is prioritized, whether it's on the host or in the container.
 
 ## WDDM GPU virtualization
 

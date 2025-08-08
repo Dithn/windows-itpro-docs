@@ -48,16 +48,25 @@ items:
                 href: enterprise-app-management.md
               - name: Manage updates
                 href: device-update-management.md
-              - name: Manage Copilot in Windows
-                href: manage-windows-copilot.md
-              - name: Manage Recall
-                href: manage-recall.md                
               - name: Secured-Core PC Configuration Lock
                 href: config-lock.md
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
               - name: eSIM management
                 href: esim-enterprise-management.md
+          - name: Manage Windows AI
+            expanded: true
+            items:
+              - name: Manage Click to Do
+                href: manage-click-to-do.md
+              - name: Manage Recall
+                href: manage-recall.md
+              - name: Reference for sensitive information filtering in Recall
+                href: recall-sensitive-information-filtering.md
+              - name: Manage Notepad
+                href: manage-notepad.md
+              - name: Updated Windows and Microsoft 365 Copilot Chat experience
+                href: manage-windows-copilot.md
           - name: Diagnose MDM failures
             expanded: false
             items:

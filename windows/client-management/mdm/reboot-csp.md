@@ -1,15 +1,14 @@
 ---
 title: Reboot CSP
 description: Learn more about the Reboot CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Reboot-Begin -->
 # Reboot CSP
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Reboot-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -33,7 +32,7 @@ The following list shows the Reboot configuration service provider nodes:
 <!-- Device-RebootNow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-RebootNow-Applicability-End -->
 
 <!-- Device-RebootNow-OmaUri-Begin -->
@@ -72,7 +71,7 @@ This node executes a reboot of the device. RebootNow triggers a reboot within 5 
 <!-- Device-Schedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Applicability-End -->
 
 <!-- Device-Schedule-OmaUri-Begin -->
@@ -111,7 +110,7 @@ The supported operation is Get.
 <!-- Device-Schedule-DailyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-DailyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-DailyRecurrent-OmaUri-Begin -->
@@ -122,7 +121,7 @@ The supported operation is Get.
 
 <!-- Device-Schedule-DailyRecurrent-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required. While it's supported to set either DailyRecurrent or WeeklyRecurrent schedules, it isn't supported to enable both settings simultaneously. A reboot will be scheduled to occur every day at the configured time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-DailyRecurrent-Description-End -->
 
 <!-- Device-Schedule-DailyRecurrent-Editable-Begin -->
@@ -150,7 +149,7 @@ Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecur
 <!-- Device-Schedule-Single-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Single-Applicability-End -->
 
 <!-- Device-Schedule-Single-OmaUri-Begin -->
@@ -161,7 +160,7 @@ Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecur
 
 <!-- Device-Schedule-Single-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601, both the date and time are required. A reboot will be scheduled at the configured date time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required. Both the date and time are required. A reboot will be scheduled to occur at the specified date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-Single-Description-End -->
 
 <!-- Device-Schedule-Single-Editable-Begin -->
@@ -189,7 +188,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-WeeklyRecurrent-OmaUri-Begin -->
@@ -200,7 +199,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 
 <!-- Device-Schedule-WeeklyRecurrent-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled every week at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required. While it's supported to set either DailyRecurrent or WeeklyRecurrent schedules, it isn't supported to enable both settings simultaneously. A reboot will be scheduled to occur every week at the configured day and time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-WeeklyRecurrent-Description-End -->
 
 <!-- Device-Schedule-WeeklyRecurrent-Editable-Begin -->

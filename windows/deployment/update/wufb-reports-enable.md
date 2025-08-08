@@ -4,13 +4,13 @@ titleSuffix: Windows Update for Business reports
 description: How to enable the Windows Update for Business reports service through the Azure portal or the Microsoft 365 admin center.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 07/09/2024
 ---
 
@@ -69,7 +69,7 @@ Enroll into Windows Update for Business reports by configuring its settings thro
    > [!Tip]
    > If a `403 Forbidden` error occurs, verify the account you're using has [permissions](wufb-reports-prerequisites.md#permissions) to enroll into Windows Update for Business reports.
 1. The initial setup can take up to 24 hours. During this time, the workbook will display that it's **Waiting for Windows Update for Business reports data**.
-   - Enrolling into Windows Update for Business reports doesn't influence the rate that required data is uploaded from devices. Device connectivity to the internet and how active the device is influences how long it takes before the device appears in reporting. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available. 
+   - Enrolling into Windows Update for Business reports doesn't influence the rate that required data is uploaded from devices. Device connectivity to the internet and how active the device is influences how long it takes before the device appears in reporting. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available.
 
 ##### <a name="bkmk_admin-center"></a> Enroll through the Microsoft 365 admin center
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->

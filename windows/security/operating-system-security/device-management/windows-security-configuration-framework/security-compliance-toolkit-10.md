@@ -1,8 +1,8 @@
 ---
 title: Microsoft Security Compliance Toolkit Guide
 description: This article describes how to use Security Compliance Toolkit in your organization.
-ms.topic: conceptual
-ms.date: 07/10/2024
+ms.topic: concept-article
+ms.date: 10/01/2024
 ---
 
 # Microsoft Security Compliance Toolkit - How to use
@@ -16,26 +16,25 @@ The SCT enables administrators to effectively manage their enterprise's Group Po
 The Security Compliance Toolkit consists of:
 
 - Windows 11 security baseline
+  - Windows 11, version 24H2
   - Windows 11, version 23H2
   - Windows 11, version 22H2
   - Windows 11, version 21H2
 - Windows 10 security baselines
   - Windows 10, version 22H2
   - Windows 10, version 21H2
-  - Windows 10, version 20H2
   - Windows 10, version 1809
   - Windows 10, version 1607
   - Windows 10, version 1507
 - Windows Server security baselines
+  - Windows Server 2025
   - Windows Server 2022
   - Windows Server 2019
   - Windows Server 2016
-  - Windows Server 2012 R2
 - Microsoft Office security baseline
-  - Office 2016
-  - Microsoft 365 Apps for Enterprise Version 2206
+  - Microsoft 365 Apps for Enterprise Version 2412
 - Microsoft Edge security baseline
-  - Microsoft Edge version 114
+  - Microsoft Edge version 128
 - Tools
   - Policy Analyzer
   - Local Group Policy Object (LGPO)

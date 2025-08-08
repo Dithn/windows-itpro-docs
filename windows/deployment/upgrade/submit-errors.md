@@ -1,14 +1,14 @@
 ---
 title: Submit Windows upgrade errors using Feedback Hub
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
-description: Download the Feedback Hub app, and then submit Windows upgrade errors for diagnosis using feedback hub.
+description: Download the Feedback Hub app, and then submit Windows upgrade errors for diagnosis using Feedback Hub.
 ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.subservice: itpro-deploy
-ms.date: 01/18/2024
+ms.date: 04/08/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -28,17 +28,17 @@ This article describes how to submit problems with a Windows upgrade to Microsof
 
 The Feedback Hub app allows reporting to Microsoft of any problems encountered while using Windows. It also allows sending suggestions to Microsoft on how to improve the Windows experience. Previously, the Feedback Hub could only be used through the Windows Insider Program. Now anyone can use this tool. The Feedback Hub app can be downloaded from the [Microsoft Store](https://www.microsoft.com/store/p/feedback-hub/9nblggh4r32n?SilentAuth=1&wa=wsignin1.0).
 
-The Feedback Hub requires a currently supported version of Windows. The Feedback Hub can be used to submit information to Microsoft if problems are encountered while upgrading Windows. If upgrading to a currently supported version of Windows from a previous version that's Windows 10 or newer, the Feedback Hub automatically collects log files. For operating systems prior to Windows 10 that don't support the Feedback Hub, the log files must be manually collected. The log files can then be attached to the feedback item using a device that is running a currently supported version of Windows that supports the Feedback Hub.
+The Feedback Hub requires a [currently supported version of Windows](/windows/release-health/supported-versions-windows-client). The Feedback Hub can be used to submit information to Microsoft if problems are encountered while upgrading Windows. If upgrading between [currently supported version of Windows](/windows/release-health/supported-versions-windows-client), the Feedback Hub automatically collects log files. For out of support operating systems before Windows 10 that don't support the Feedback Hub, the log files must be manually collected. The log files can then be attached to the feedback item using a device that is running a [currently supported version of Windows](/windows/release-health/supported-versions-windows-client) that supports the Feedback Hub.
 
 ## Submit feedback
 
 To submit feedback about a failed Windows upgrade, open the [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md).
 
-In the Feedback Hub, fill out all four sections with as much detail as possible:
+In the Feedback Hub, fill out all of the sections with as much detail as possible:
 
 1. **Enter your feedback**
 1. **Choose a category**
-1. **Find similar feedback**
+1. **Find similar feedback** - this section doesn't have anything to fill out, but it is important to check for similar feedback items. If a similar feedback item is found, select it and then select the **Next** button. This allows Microsoft to see how many people are affected by the same issue.
 1. **Add more details**
 
 Recommended information that can be included under the **Add more details** section include:
@@ -71,5 +71,3 @@ After the feedback is submitted, additional information and items can be added t
 1. Copy and then use the short link that is displayed.
 
 :::image type="content" alt-text="Share example." source="../images/share.jpg":::
-
-## Related articles

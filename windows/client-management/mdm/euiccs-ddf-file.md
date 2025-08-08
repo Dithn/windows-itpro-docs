@@ -1,7 +1,8 @@
 ---
 title: eUICCs DDF file
 description: View the XML file containing the device description framework (DDF) for the eUICCs configuration service provider.
-ms.date: 06/28/2024
+ms.date: 06/09/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -301,6 +302,59 @@ The following XML file contains the device description framework (DDF) for the e
                   <MSFT:ValueDescription>Is Discovery Server</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>MaximumAttempts</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>50</DefaultValue>
+              <Description>How many times profile download should be attempted before giving up. A value of 0 indicates unlimited retry attempts. When a value is not specified, it defaults to 50, which is equivalent to about a month of retry attempts.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>ICCID</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>The ICCID of the eSIM profile downloaded as a result of successfully running the eSIM bulk activation process policy.</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
             </DFProperties>
           </Node>
         </Node>

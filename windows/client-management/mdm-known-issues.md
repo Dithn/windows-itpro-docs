@@ -1,8 +1,8 @@
 ---
 title: Known issues in MDM
 description: Learn about known issues for Windows devices in MDM
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: troubleshooting-known-issue
+ms.date: 08/04/2025
 ---
 
 # Known issues
@@ -73,7 +73,7 @@ The following list describes the prerequisites for a certificate to be used with
   - Client Authentication.
   - As defined by RFC 5280, this property is a well-defined OID with Value 1.3.6.1.5.5.7.3.2.
   - Any Purpose.
-  - An EKU, defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
+  - An EKU, defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other noncritical or custom EKUs can still be added to the certificate for effective filtering.
   - All Purpose.
   - As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
 - The user or the computer certificate on the client chains to a trusted root CA.

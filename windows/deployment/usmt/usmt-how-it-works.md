@@ -2,13 +2,13 @@
 title: How USMT Works
 description: Learn how USMT works and how it includes two tools that migrate settings and data - ScanState and LoadState.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-deploy
-ms.date: 01/09/2024
+ms.date: 01/29/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -33,7 +33,7 @@ When the **ScanState** tool runs on the source computer, it goes through the fol
     There are three types of components:
 
     - Components that migrate the operating system settings.
-  
+
     - Components that migrate application settings.
 
     - Components that migrate users' files.

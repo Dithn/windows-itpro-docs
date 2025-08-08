@@ -6,9 +6,14 @@ ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.date: 10/06/2023
+manager: dansimp
+ms.date: 05/23/2025 
 ms.topic: reference
+hideEdit: true 
+ms.collection: 
+- privacy-windows
+- must-keep
+- trust-pod
 ---
 # Windows 11 connection endpoints for non-Enterprise editions
 

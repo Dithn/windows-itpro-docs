@@ -2,7 +2,7 @@
 title: Create mandatory user profiles
 description: A mandatory user profile is a special type of preconfigured roaming user profile that administrators can use to specify settings for users.
 ms.date: 07/01/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Create mandatory user profiles

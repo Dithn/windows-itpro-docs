@@ -1,7 +1,8 @@
 ---
 title: RemoteProcedureCall Policy CSP
 description: Learn more about the RemoteProcedureCall Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- RestrictUnauthenticatedRPCClients-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictUnauthenticatedRPCClients-Applicability-End -->
 
 <!-- RestrictUnauthenticatedRPCClients-OmaUri-Begin -->
@@ -92,7 +93,7 @@ This policy setting impacts all RPC applications. In a domain environment this p
 <!-- RPCEndpointMapperClientAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RPCEndpointMapperClientAuthentication-Applicability-End -->
 
 <!-- RPCEndpointMapperClientAuthentication-OmaUri-Begin -->
@@ -105,11 +106,11 @@ This policy setting impacts all RPC applications. In a domain environment this p
 <!-- Description-Source-ADMX -->
 This policy setting controls whether RPC clients authenticate with the Endpoint Mapper Service when the call they're making contains authentication information. The Endpoint Mapper Service on computers running Windows NT4 (all service packs) can't process authentication information supplied in this manner.
 
-- If you disable this policy setting, RPC clients won't authenticate to the Endpoint Mapper Service, but they will be able to communicate with the Endpoint Mapper Service on Windows NT4 Server.
+- If you disable this policy setting, RPC clients won't authenticate to the Endpoint Mapper Service, but they'll be able to communicate with the Endpoint Mapper Service on Windows NT4 Server.
 
 - If you enable this policy setting, RPC clients will authenticate to the Endpoint Mapper Service for calls that contain authentication information. Clients making such calls won't be able to communicate with the Windows NT4 Server Endpoint Mapper Service.
 
-- If you don't configure this policy setting, it remains disabled. RPC clients won't authenticate to the Endpoint Mapper Service, but they will be able to communicate with the Windows NT4 Server Endpoint Mapper Service.
+- If you don't configure this policy setting, it remains disabled. RPC clients won't authenticate to the Endpoint Mapper Service, but they'll be able to communicate with the Windows NT4 Server Endpoint Mapper Service.
 
 > [!NOTE]
 > This policy won't be applied until the system is rebooted.

@@ -3,7 +3,7 @@ title: System requirements for Microsoft Defender Application Guard
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 07/11/2024
+ms.date: 04/15/2025
 ---
 
 # System requirements for Microsoft Defender Application Guard
@@ -38,4 +38,4 @@ Your environment must have the following hardware to run Microsoft Defender Appl
 |--------|-----------|
 | Operating system | Windows 10 Enterprise or Education editions, version 1809 or later <br/> Windows 10 Professional edition, version 1809 or later (only [standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/install-md-app-guard#standalone-mode) is supported)  <br/> Windows 11 Education or Enterprise editions <br/> Windows 11 Professional edition (only [Standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/install-md-app-guard#standalone-mode) is supported) |
 | Browser | Microsoft Edge |
-| Management system <br> (only for managed devices)| [Microsoft Intune](/intune/) <br><br> **OR** <br><br> [Microsoft Configuration Manager](/configmgr/) <br><br> **OR** <br><br> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <br><br> **OR** <br><br>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Microsoft MDM solutions, see the documentation that came with your product. |
+| Management system <br> (only for managed devices)| [Microsoft Intune](/mem/intune/) <br><br> **OR** <br><br> [Microsoft Configuration Manager](/mem/configmgr/) <br><br> **OR** <br><br> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <br><br> **OR** <br><br>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Microsoft MDM solutions, see the documentation that came with your product. |

@@ -2,7 +2,7 @@
 title: Start policy settings
 description: Learn about the policy settings to configure the Windows Start menu.
 ms.topic: reference
-ms.date: 07/10/2024
+ms.date: 04/03/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
@@ -70,7 +70,6 @@ Select one of the tabs to see the list of available settings:
 |-|-|-|
 |[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
 |[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
-|[Configure Start layout](#configure-start-layout)|✅|✅|
 |[Disable context menus](#disable-context-menus)|✅|✅|
 |[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
@@ -82,12 +81,12 @@ Select one of the tabs to see the list of available settings:
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
 |[Remove common program groups](#remove-common-program-groups)|❌|✅|
 |[Show **Run as different user** command](#show-run-as-different-user-command)|❌|✅|
+|[Start layout](#start-layout)|✅|✅|
 ::: zone-end
 
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
 ::: zone pivot="windows-10"
 [!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on.md)]
-[!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
 ::: zone-end
 ::: zone pivot="windows-11"
 [!INCLUDE [configure-start-pins](includes/configure-start-pins.md)]
@@ -115,6 +114,9 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start](includes/prevent-users-from-uninstalling-applications-from-start.md)]
 [!INCLUDE [remove-common-program-groups](includes/remove-common-program-groups.md)]
 [!INCLUDE [show-run-as-different-user-command](includes/show-run-as-different-user-command.md)]
+::: zone pivot="windows-10"
+[!INCLUDE [start-layout](includes/start-layout.md)]
+::: zone-end
 
 #### [:::image type="icon" source="../images/icons/allapps.svg"::: **All apps**](#tab/allapps)
 
@@ -135,6 +137,7 @@ Select one of the tabs to see the list of available settings:
 ::: zone pivot="windows-11"
 |Policy name| CSP | GPO |
 |-|-|-|
+|[Disable account notifications](#disable-account-notifications)|✅|✅|
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
 |[Hide **Switch user**](#hide-switch-user)|✅|❌|
@@ -145,6 +148,7 @@ Select one of the tabs to see the list of available settings:
 ::: zone pivot="windows-10"
 |Policy name| CSP | GPO |
 |-|-|-|
+|[Disable account notifications](#disable-account-notifications)|❌|✅|
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
 |[Hide **Lock**](#hide-lock)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
@@ -153,12 +157,9 @@ Select one of the tabs to see the list of available settings:
 |[Hide user tile](#hide-user-tile)|✅|❌|
 ::: zone-end
 
+[!INCLUDE [disable-account-notifications](includes/disable-account-notifications.md)]
 [!INCLUDE [hide-change-account-settings](includes/hide-change-account-settings.md)]
-
-::: zone pivot="windows-10"
 [!INCLUDE [hide-lock](includes/hide-lock.md)]
-::: zone-end
-
 [!INCLUDE [hide-signout](includes/hide-signout.md)]
 [!INCLUDE [hide-switch-user](includes/hide-switch-user.md)]
 [!INCLUDE [hide-lock](includes/hide-entry-points-for-fast-user-switching.md)]
@@ -191,7 +192,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [allow-pinned-folder-videos](includes/allow-pinned-folder-videos.md)]
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
-
 
 ::: zone pivot="windows-11"
 |Policy name| CSP | GPO |

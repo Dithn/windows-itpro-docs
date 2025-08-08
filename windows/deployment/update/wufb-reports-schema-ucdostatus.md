@@ -1,18 +1,18 @@
 ---
 title: UCDOStatus data schema
 titleSuffix: Windows Update for Business reports
-description: UCDOStatus schema for Windows Update for Business reports. UCDOStatus provides information, for a single device, on its DO and MCC bandwidth utilization.
+description: UCDOStatus schema for Windows Update for Business reports. UCDOStatus provides information, for a single device, on its DO and Microsoft Connected Cache bandwidth utilization.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.reviewer: carmenf
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 12/06/2023
+ms.date: 08/04/2025
 ---
 
 # UCDOStatus
@@ -27,11 +27,11 @@ UCDOStatus provides information, for a single device, on its bandwidth utilizati
 | **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
 | **BWOptPercent28Days** |  [real](/azure/kusto/query/scalar-data-types/real) | `10.61` | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) for this device. A rolling 28-day basis.|
 | **BWOptPercent7Days** |  [real](/azure/kusto/query/scalar-data-types/real) | `10.61` | Bandwidth optimization (as a percentage of savings of total bandwidth otherwise incurred) for this device. A rolling 7-day basis.|
-| **BytesFromCache** |  [long](/azure/kusto/query/scalar-data-types/long) | `285212672` | Total number of bytes that were delivered from Microsoft Connected Cache (MCC). |
+| **BytesFromCache** |  [long](/azure/kusto/query/scalar-data-types/long) | `285212672` | Total number of bytes that were delivered from Microsoft Connected Cache. |
 | **BytesFromCDN** |  [long](/azure/kusto/query/scalar-data-types/long) | `11463008693388` | Total number of bytes that were delivered from a Content Delivery Network (CDN). |
 | **BytesFromGroupPeers** |  [long](/azure/kusto/query/scalar-data-types/long) | `30830657175` | Total number of bytes that were delivered from Group peers, sharing the same GroupId. |
 | **BytesFromIntPeers** |  [long](/azure/kusto/query/scalar-data-types/long) | `285212672` | Total number of bytes that were delivered from Internet peers. |
-| **BytesFromPeers** |  [long](/azure/kusto/query/scalar-data-types/long) | `285212672` | Total number of bytes delivered via all peers. |
+| **BytesFromPeers** |  [long](/azure/kusto/query/scalar-data-types/long) | `285212672` | Total number of bytes delivered via LAN peers. |
 | **City** |  [string](/azure/kusto/query/scalar-data-types/string) | `Redmond` | Approximate city where device was located while downloading content, based on IP address. |
 | **ContentDownloadMode** |  [int](/azure/kusto/query/scalar-data-types/int) | `1` | Device's Delivery Optimization Download Mode used to download content. |
 | **ContentType** |  [string](/azure/kusto/query/scalar-data-types/string) | `Driver Updates` | One of the supported types of content. |

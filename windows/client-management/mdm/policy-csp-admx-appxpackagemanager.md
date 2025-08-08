@@ -1,7 +1,8 @@
 ---
 title: ADMX_AppxPackageManager Policy CSP
 description: Learn more about the ADMX_AppxPackageManager Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowDeploymentInSpecialProfiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDeploymentInSpecialProfiles-Applicability-End -->
 
 <!-- AllowDeploymentInSpecialProfiles-OmaUri-Begin -->
@@ -32,7 +33,7 @@ ms.date: 01/18/2024
 
 <!-- AllowDeploymentInSpecialProfiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage the deployment of Windows Store apps when the user is signed in using a special profile. Special profiles are the following user profiles, where changes are discarded after the user signs off:
+This policy setting allows you to manage the deployment of packaged Microsoft Store apps when the user is signed in using a special profile. Special profiles are the following user profiles, where changes are discarded after the user signs off:
 
 Roaming user profiles to which the "Delete cached copies of roaming profiles" Group Policy setting applies.
 
@@ -42,9 +43,9 @@ Temporary user profiles, which are created when an error prevents the correct pr
 
 User profiles for the Guest account and members of the Guests group.
 
-- If you enable this policy setting, Group Policy allows deployment operations (adding, registering, staging, updating, or removing an app package) of Windows Store apps when using a special profile.
+- If you enable this policy setting, Group Policy allows deployment operations (adding, registering, staging, updating, or removing an app package) of packaged Microsoft Store apps when using a special profile.
 
-- If you disable or don't configure this policy setting, Group Policy blocks deployment operations of Windows Store apps when using a special profile.
+- If you disable or don't configure this policy setting, Group Policy blocks deployment operations of packaged Microsoft Store apps when using a special profile.
 <!-- AllowDeploymentInSpecialProfiles-Description-End -->
 
 <!-- AllowDeploymentInSpecialProfiles-Editable-Begin -->

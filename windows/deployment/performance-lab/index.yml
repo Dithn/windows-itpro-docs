@@ -1,0 +1,54 @@
+### YamlMime:Landing
+
+title: What's new in Windows
+summary: Find out about new features and capabilities in the latest release of Windows client for IT professionals.
+
+metadata:
+  title: What's new in Windows
+  description: Find out about new features and capabilities in the latest release of Windows client for IT professionals.
+  ms.service: windows-client
+  ms.subservice: itpro-fundamentals
+  ms.topic: landing-page
+  ms.collection:
+    - highpri
+    - tier1
+  author: mestew
+  ms.author: mstewart
+  manager: bpardi
+  ms.date: 07/01/2024
+  ms.localizationpriority: medium
+
+landingContent:
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+  - title: Windows Performance Lab
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Performance Lab overview
+            url: overview.md
+          - text: Claims and Disclosures
+            url: claims-disclosures.md       
+          - text: Testing Methodology
+            url: testing-methodology.md
+
+
+  - title: Detailed Test Results
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Acer® Detailed Test Results
+            url: acer-detailed-test-results.md
+          - text: ASUS® Detailed Test Results
+            url: asus-detailed-test-results.md
+          - text: Dell® Technologies Detailed Test Results
+            url: dell-detailed-test-results.md
+          - text: HP® Detailed Test Results
+            url: hp-detailed-test-results.md
+          - text: Lenovo® Detailed Test Results
+            url: lenovo-detailed-test-results.md
+          - text: Microsoft Surface detailed test results
+            url: microsoft-surface-detailed-test-results.md
+          - text: Samsung® Detailed Test Results
+            url: samsung-detailed-test-results.md

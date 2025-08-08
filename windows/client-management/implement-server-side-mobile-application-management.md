@@ -1,15 +1,15 @@
 ---
 title: Support for Windows Information Protection (WIP) on Windows
 description: Learn about implementing the Windows version of Windows Information Protection (WIP), which is a lightweight solution for managing company data access and security on personal devices.
-ms.topic: conceptual
-ms.date: 07/08/2024
+ms.topic: how-to
+ms.date: 08/04/2025
 ---
 
 # Support for Windows Information Protection (WIP) on Windows
 
 Windows Information Protection (WIP) is a lightweight solution for managing company data access and security on personal devices. WIP support is built into Windows.
 
-[!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
+[!INCLUDE [Deprecate Windows Information Protection](mdm/includes/wip-deprecation.md)]
 
 ## Integration with Microsoft Entra ID
 
@@ -23,7 +23,7 @@ Regular non administrator users can enroll to MAM.
 
 ## Understand Windows Information Protection
 
-WIP takes advantage of [built-in policies](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, WPJ limits enforcement of WIP policies to [enlightened apps](/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
+WIP takes advantage of [built-in policies](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, WPJ limits enforcement of WIP policies to [enlightened apps](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
 
 To make applications WIP-aware, app developers need to include the following data in the app resource file.
 
@@ -46,7 +46,7 @@ MAM enrollment requires integration with Microsoft Entra ID. The MAM service pro
 MAM and MDM services in an organization could be provided by different vendors. Depending on the company configuration, IT admin typically needs to add one or two Microsoft Entra Management apps to configure MAM and MDM policies. For example, if both MAM and MDM are provided by the same vendor, then an IT Admin needs to add one Management app from this vendor that contains both MAM and MDM policies for the organization. Alternatively, if the MAM and MDM services in an organization are provided by two different vendors, then two Management apps from the two vendors need to be configured for the company in Microsoft Entra ID: one for MAM and one for MDM.
 
 > [!NOTE]
-> If the MDM service in an organization isn't integrated with Microsoft Entra ID and uses auto-discovery, only one Management app for MAM needs to be configured.
+> If the MDM service in an organization isn't integrated with Microsoft Entra ID and uses autodiscovery, only one Management app for MAM needs to be configured.
 
 ## MAM enrollment
 

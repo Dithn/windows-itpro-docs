@@ -1,15 +1,15 @@
 ---
-title: "Quickstart: configure a restricted user experience with Assigned Access"
+title: "Quickstart: Configure a Restricted User Experience With Assigned Access"
 description: Learn how to configure a restricted user experience with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
-ms.date: 03/04/2024
+ms.date: 3/7/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
 # Quickstart: configure a restricted user experience with Assigned Access
 
-This quickstart provides practical examples of how to configure a *restricted user experience* on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a restricted user experience on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can add or remove applications from the list of allowed apps, or change the name of the user that automatically signs in to Windows.
 
@@ -80,12 +80,28 @@ After the settings are applied, reboot the device. A local user account is autom
 
 ::: zone-end
 
+## Remove Assigned Access
+
+Once you no longer need the restricted user experience, you can remove it. Deleting the Assigned Access configuration removes the policy settings associated with the users, but it can't revert all the changes. For example, the Start menu configuration is maintained.
+
+Here's a PowerShell example to remove the configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.Configuration = $null
+Set-CimInstance -CimInstance $obj
+```
+
+Reboot the device to apply the changes.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > Learn more about Assigned Access and how to configure it:
 >
-> [Assigned Access overview](overview.md)
+> [Assigned Access overview](index.md)
 
 <!--links-->
 

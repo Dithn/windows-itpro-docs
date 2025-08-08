@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -14,5 +14,5 @@ This policy controls the visibility of the Network shortcut on the *Pinned folde
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[AllowPinnedFolderNetword](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork) |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[AllowPinnedFolderNetword](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork) |
 | **GPO** | Not available. |

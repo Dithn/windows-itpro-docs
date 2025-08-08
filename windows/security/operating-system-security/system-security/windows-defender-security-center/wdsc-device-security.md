@@ -1,7 +1,7 @@
 ---
 title: Device security in Windows Security
 description: Use the Device security section to manage security built into your device, including Virtualization-based security.
-ms.date: 06/27/2024
+ms.date: 04/15/2025
 ms.topic: how-to
 ---
 
@@ -9,14 +9,14 @@ ms.topic: how-to
 
 The **Device security** section contains information and settings for built-in device security.
 
-You can choose to hide the section from users of the machine. This option can be useful if you don't want users in your organization to see or have access to user-configured options for the features shown in the section.
+You can choose to hide the section from users of the machine. This option can be useful if you don't want users in your organization to have access to user-configured options for the features shown in the section.
 
 ## Hide the Device security section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side. You can hide the device security section by using Group Policy only.
+You can choose to hide the entire section by using Group Policy. When hidden, this section doesn't appear on the home page of **Windows Security**, and its icon isn't shown on the navigation bar on the side.
 
 > [!IMPORTANT]
-> You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+> You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows don't include these Group Policy settings.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
@@ -25,7 +25,7 @@ You can choose to hide the entire section by using Group Policy. The section won
 1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
-> If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
+> If you hide all sections, then **Windows Security** shows a restricted interface, as in the following screenshot:
 >
 > ![Screenshot of the Windows Security with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 
@@ -34,7 +34,7 @@ You can choose to hide the entire section by using Group Policy. The section won
 If you don't want users to be able to select the **Clear TPM** button in **Windows Security**, you can disable it.
 
 > [!IMPORTANT]
-> You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+> You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows don't include these Group Policy settings.
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.

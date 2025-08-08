@@ -3,7 +3,7 @@ title: How System Guard helps protect Windows
 description: Learn how System Guard reorganizes the existing Windows system integrity features under one roof.
 ms.localizationpriority: medium
 ms.date: 07/10/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # System Guard: How a hardware-based root of trust helps protect Windows

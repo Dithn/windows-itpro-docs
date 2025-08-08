@@ -1,7 +1,7 @@
 ---
 title: VPN authentication options
 description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: concept-article
 ---
 
@@ -71,7 +71,7 @@ For a UWP VPN plug-in, the app vendor controls the authentication method to be u
 
 ## Configure authentication
 
-See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EAP XML configuration.
+See [EAP configuration](/windows/client-management/mdm/eap-configuration) and [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access) for EAP XML configuration.
 
 >[!NOTE]
 >To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](/windows/client-management/mdm/eap-configuration) to create a smart card certificate. [Learn more about Windows Hello for Business.](../../../identity-protection/hello-for-business/index.md).
@@ -79,15 +79,3 @@ See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EA
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
 :::image type="content" source="images/vpn-eap-xml.png" alt-text="Screenshot showing EAP XML configuration in Intune profile.":::
-
-## Related topics
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)
-- [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)

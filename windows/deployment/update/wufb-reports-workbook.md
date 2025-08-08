@@ -4,11 +4,11 @@ titleSuffix: Windows Update for Business reports
 description: How to use the Windows Update for Business reports workbook from the Azure portal.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 01/29/2024
@@ -62,7 +62,7 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 - **Overall security update status**: Gives you general insight into of the current update compliance state of your enrolled devices. For instance, if the chart shows a large number of devices are missing multiple security updates, it may indicate an issue in the software update process.
 
 - **Feature update status**: Gives you a general understanding of how many devices are eligible for feature updates based on the operating system lifecycle.
-  
+
 :::image type="content" source="media/33771278-overall-security-update-status.png" alt-text="Screenshot of the charts in the workbook's summary tab" lightbox="media/33771278-overall-security-update-status.png":::
 
 ## Quality updates tab
@@ -71,11 +71,11 @@ The **Quality updates** tab displays generalized data at the top by using tiles.
 
 | Tile name | Description | Drill-in description |
 |---|---|---|
-|**Latest security update**| Count of devices that have reported successful installation of the latest security update. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). | 
+|**Latest security update**| Count of devices that have reported successful installation of the latest security update. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
 | **Missing one security update** | Count of devices that haven't installed the latest security update.| - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).|
 | **Missing multiple security updates** | Count of devices that are missing two or more security updates. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
 | **Active alerts** | Count of active update and device alerts for quality updates. | |
-| **Expedite status** | Overview of the progress for the expedited deployments of the latest security update. | Select **View details** to display a flyout with two tabs: **Deployments** and **Readiness** </br> </br> - The **Deployments** tab contins a chart that displays the total progress of each deployment, number of alerts, and count of devices.  <ul><li> Select the count from the **Alerts** column to display the alerts, by name, for the deployment. Selecting the device count for the alert name displays a list of devices with the alert.</li><li> Select the count in the **TotalDevices** column to display a list of clients and their information for the deployment. <!--7626683--> </li></ul> </br> - The **Readiness** tab contains a chart that displays the number of devices that are **Eligible** and **Ineligible** to install expedited udpates. The **Readiness** tab also contains a table listing the deployments for expedited updates. <!--8682382--> <ul><li> Select the count from the **Alerts** column to display devices with a status of **RegistrationMissingUpdateClient**, which means the device is missing the Update Health Tools. The Update Health Tools are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057) or from a [stand-alone package from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=103324). Example PowerShell script to verify tools installation: `Get-CimInstance -ClassName Win32_Product \| Where-Object {$_.Name -match "Microsoft Update Health Tools"}` </li><li> Select the count of **TotalDevices** to display a list of devices in the deployment. <!--8682382-->|
+| **Expedite status** | Overview of the progress for the expedited deployments of the latest security update. | Select **View details** to display a flyout with two tabs: **Deployments** and **Readiness** </br> </br> - The **Deployments** tab contains a chart that displays the total progress of each deployment, number of alerts, and count of devices.  <ul><li> Select the count from the **Alerts** column to display the alerts, by name, for the deployment. Selecting the device count for the alert name displays a list of devices with the alert.</li><li> Select the count in the **TotalDevices** column to display a list of clients and their information for the deployment. <!--7626683--> </li></ul> </br> - The **Readiness** tab contains a chart that displays the number of devices that are **Eligible** and **Ineligible** to install expedited updates. The **Readiness** tab also contains a table listing the deployments for expedited updates. <!--8682382--> <ul><li> Select the count from the **Alerts** column to display devices with a status of **RegistrationMissingUpdateClient**, which means the device is missing the Update Health Tools. The Update Health Tools are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057) or from a [stand-alone package from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=103324). Example PowerShell script to verify tools installation: `Get-CimInstance -ClassName Win32_Product \| Where-Object {$_.Name -match "Microsoft Update Health Tools"}` </li><li> Select the count of **TotalDevices** to display a list of devices in the deployment. <!--8682382-->|
 
 Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end users are impacted.
 
@@ -91,7 +91,7 @@ The **Update deployment status** table displays the quality updates for each ope
 
 | Column name | Description | Drill-in description |
 |---|---|---|
-|**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  
+|**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.
 | **KB Number** | KB number for the update |  Selecting the KB number will open the support information webpage for the update.|
 | **Total devices** | Number of devices that have been offered the update, or are installing, have installed, or canceled the update. | Selecting the device count opens a device list table. This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).  |
 
@@ -142,11 +142,11 @@ The **Device status** group for feature updates contains the following items:
 
 ## Driver updates tab
 
-The **Driver update** tab provides information on driver and firmware update deployments from [Windows Update for Business deployment service](deployment-service-overview.md). Generalized data is at the top of the page in tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
+The **Driver update** tab provides information on driver and firmware update deployments from [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). Generalized data is at the top of the page in tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
 
 **Devices taking driver updates**: Count of devices that are installing driver and firmware updates.
 **Approved updates**: Count of approved driver updates
-**Total policies**: The total number of deployment polices for driver and firmware updates from [Windows Update for Business deployment service](deployment-service-overview.md)
+**Total policies**: The total number of deployment polices for driver and firmware updates from [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
 **Active alerts**: Count of active alerts for driver deployments
 
 Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 1000 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
@@ -159,7 +159,8 @@ Just like the [**Quality updates**](#quality-updates-tab) and [**Feature updates
 
 The **Update status** group for driver updates contains the following items:
 
-- **Update states for all driver updates**: Chart containing the number of devices in a specific state, such as installing, for driver updates.
+- **Update states for all driver updates**: Chart containing the number of driver updates in a specific state, such as installing.
+
 - **Distribution of Driver Classes**: Chart containing the number of drivers in a specific class.
 - **Update alerts for all driver updates**: Chart containing the count of active errors and warnings for driver updates.
 
@@ -180,8 +181,8 @@ The **Delivery Optimization** tab provides a summarized view of bandwidth effici
 At the top of the report, tiles display the following information:
 
 - Total bandwidth savings percentage
-- The percentage of the saved bandwidth broken down by peer-to-peer and MCC
-- Device counts showing percentages of bytes delivered between peer-to-peer and MCC
+- The percentage of the saved bandwidth broken down by peer-to-peer and Microsoft Connected Cache
+- Device counts showing percentages of bytes delivered between peer-to-peer and Connected Cache
 - The breakdown of total downloaded GBs.
 
 The Delivery Optimization tab is further divided into the following groups:
@@ -199,7 +200,7 @@ Updates can go though many phases from when they're initially deployed to being 
 - **Offering**: The update is being offered to the device for installation
 - **Installing**: The update is in the process of being installed on the device
 - **Installed**: The update has been installed on the device
-- **Cancelled**: The update was cancelled from the [deployment service](deployment-service-overview.md) before it was installed
+- **Canceled**: The update was canceled from the [deployment service](deployment-service-overview.md) before it was installed
 - **Uninstalled**: The update was uninstalled from the device by either an admin or a user
 - **OnHold**: The update was put on hold from the [deployment service](deployment-service-overview.md) before it was installed
 - **Unknown**: This state occurs when there's a record for the device in the [UCClient](wufb-reports-schema-ucclient.md) table, but there isn't a record for the specific update for the specific device in the [UCClientUpdateStatus](wufb-reports-schema-ucclientupdatestatus.md) table. This means that there is no record of the update for the device in question.

@@ -1,7 +1,7 @@
 ---
 title: VPN profile options
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 ---
 
@@ -316,13 +316,3 @@ After you configure the settings that you want using ProfileXML, you can create 
 - [VPNv2 configuration service provider (CSP) reference](/windows/client-management/mdm/vpnv2-csp)
 - [How to Create VPN Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/dn261200(v=technet.10))
 
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)

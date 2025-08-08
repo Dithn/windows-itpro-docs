@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -11,5 +11,5 @@ If you enable this policy and set it to Start menu or full screen Start, Start i
 
 |  | Path |
 |--|--|
-| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/`[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize)<br><br>`./Device/Vendor/MSFT/Policy/Config/Start/`[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Force Start to be either full screen size or menu size** |
+| **CSP** | - `./User/Vendor/MSFT/Policy/Config/Start/`[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize)<br>- `./Device/Vendor/MSFT/Policy/Config/Start/`[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize) |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Force Start to be either full screen size or menu size** |

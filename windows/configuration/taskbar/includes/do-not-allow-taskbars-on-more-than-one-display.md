@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -12,4 +12,4 @@ This policy setting allows you to prevent taskbars from being displayed on more 
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not allow taskbars on more than one display**|

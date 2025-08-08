@@ -7,14 +7,14 @@ ms.topic: reference
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
-manager: aaroncz
+manager: bpardi
 ms.collection: tier3
 ms.localizationpriority: medium
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 07/23/2024
+ms.date: 08/04/2025
 ---
 
 # Testing Delivery Optimization
@@ -87,9 +87,20 @@ Machine 1 will download zero bytes from peers and Machine 2 will download 50-99%
 
 The following set of instructions will be used for each machine:
 
-1. Open PowerShell console as 'Administrator'.
-   * Clear the DO cache: 'Delete-DeliveryOptimizationCache'.
-   * Run 'Get-DeliveryOptimizationStatus'.
+1. Open PowerShell console as 'Administrator'
+
+   * Clear the Delivery Optimization cache:
+
+      ```Delete-DeliveryOptimizationCache -Force -IncludePinnedFiles```
+
+   * Stop the Delivery Optimization service and clear old logs:
+
+      ```Stop-Service -Name DoSvc -Force```
+      ```Remove-Item -Force "$env:WINDIR\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\Logs\*.etl"```
+
+   * Run:
+  
+      ```Get-DeliveryOptimizationStatus```
 
 2. Open MS Store and search for 'Asphalt Legends 9'. Select *Get* to initiate the download of the content (content size: ~3.4 GB).
 

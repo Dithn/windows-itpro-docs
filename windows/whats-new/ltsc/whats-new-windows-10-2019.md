@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2019
-manager: aaroncz
+manager: bpardi
 ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
 ms.service: windows-client
@@ -158,9 +158,9 @@ Improvements have been added to Windows Information Protection and BitLocker.
 
 Windows Information Protection is now designed to work with Microsoft Office and Azure Information Protection.
 
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure).
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure).
 
-You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For more information, see [How to collect Windows Information Protection (WIP) audit event logs](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs).
+You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For more information, see [How to collect Windows Information Protection (WIP) audit event logs](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/collect-wip-audit-event-logs).
 
 This release enables support for WIP with Files on Demand, allows file encryption while the file is open in another app, and improves performance. For more information, see [OneDrive files on-demand for the enterprise](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/onedrive-files-on-demand-for-the-enterprise/ba-p/117234).
 
@@ -419,7 +419,7 @@ You can now register your Entra ID domains to the Windows Insider Program. For m
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10 Enterprise LTSC 2019, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Configuration Manager. It's also supported with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10 Enterprise LTSC 2019, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Configuration Manager. It's also supported with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current express support on Windows Update, Windows Update client policies, and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.

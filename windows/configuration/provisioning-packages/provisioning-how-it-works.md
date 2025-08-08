@@ -1,7 +1,7 @@
 ---
 title: How provisioning works in Windows
 description: Learn more about how provisioning package work on Windows client devices. A provisioning package (.ppkg) is a container for a collection of configuration settings.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/09/2024
 ---
 

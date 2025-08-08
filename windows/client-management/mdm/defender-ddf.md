@@ -1,7 +1,8 @@
 ---
 title: Defender DDF file
 description: View the XML file containing the device description framework (DDF) for the Defender configuration service provider.
-ms.date: 06/28/2024
+ms.date: 07/31/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1627,15 +1628,15 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Not configured (Default). Microsoft will either assign the device to Current Channel (Broad) or a beta channel early in the gradual release cycle. The channel selected by Microsoft might be one that receives updates early during the gradual release cycle, which may not be suitable for devices in a production or critical environment</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>4</MSFT:Value>
-              <MSFT:ValueDescription>Current Channel (Staged): Devices will be offered updates after the release cycle. Suggested to apply to a small, representative part of production population (~10%).</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Current Channel (Staged): Same as Current Channel (Broad).</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>5</MSFT:Value>
-              <MSFT:ValueDescription>Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in all populations, including production.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2373,8 +2374,8 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <DefaultValue>25</DefaultValue>
-          <Description>Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If not configured, aggressive quick scans will be disabled. By default, the value is set to 25 days when enabled.</Description>
+          <DefaultValue>30</DefaultValue>
+          <Description>Configure how many days can pass before an aggressive catchup quick scan is triggered. Valid values are 0 and [7-60]. Configuring this setting to 0 will disable aggressive catchup quick scans. By default, these scans will run every 30 days when enabled. These scans are only enabled if catchup scans (quick and full) are disabled, and Microsoft Defender Antivirus is not in Passive mode.</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -2392,7 +2393,7 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="Range">
-            <MSFT:Value>[7-60]</MSFT:Value>
+            <MSFT:Value>[0-60]</MSFT:Value>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2919,6 +2920,7 @@ The following XML file contains the device description framework (DDF) for the D
               <MSFT:ValueDescription>QUIC parsing is enabled</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
+          <MSFT:Deprecated OsBuildDeprecated="10.0.14393" />
         </DFProperties>
       </Node>
       <Node>
@@ -3725,6 +3727,70 @@ The following XML file contains the device description framework (DDF) for the D
               </MSFT:AllowedValues>
             </DFProperties>
           </Node>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Reporting</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName>
+            </DDFName>
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+        <Node>
+          <NodeName>EnableDynamicSignatureDroppedEventReporting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This setting controls whether to report a Dynamic Security Intelligence Update dropped event. By default, such events are not reported.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.3</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>0</MSFT:Value>
+                <MSFT:ValueDescription>Dynamic Security intelligence update dropped events will not be reported.</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>1</MSFT:Value>
+                <MSFT:ValueDescription>Dynamic Security intelligence update events will be reported.</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+          </DFProperties>
         </Node>
       </Node>
     </Node>

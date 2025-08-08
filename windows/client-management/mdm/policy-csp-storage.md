@@ -1,7 +1,8 @@
 ---
 title: Storage Policy CSP
 description: Learn more about the Storage Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowDiskHealthModelUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowDiskHealthModelUpdates-Applicability-End -->
 
 <!-- AllowDiskHealthModelUpdates-OmaUri-Begin -->
@@ -96,7 +97,7 @@ Same as Enabled.
 <!-- AllowStorageSenseGlobal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowStorageSenseGlobal-Applicability-End -->
 
 <!-- AllowStorageSenseGlobal-OmaUri-Begin -->
@@ -171,7 +172,7 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 <!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-End -->
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-OmaUri-Begin -->
@@ -248,7 +249,7 @@ By default, Storage Sense will delete the user's temporary files. Users can conf
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-OmaUri-Begin -->
@@ -314,7 +315,7 @@ By default, Storage Sense won't dehydrate any cloud-backed content. Users can co
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-OmaUri-Begin -->
@@ -380,7 +381,7 @@ By default, Storage Sense won't delete files in the user's Downloads folder. Use
 <!-- ConfigStorageSenseGlobalCadence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseGlobalCadence-Applicability-End -->
 
 <!-- ConfigStorageSenseGlobalCadence-OmaUri-Begin -->
@@ -451,7 +452,7 @@ Use the following integer values for the supported options:
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-OmaUri-Begin -->
@@ -517,7 +518,7 @@ By default, Storage Sense will delete files in the user's Recycle Bin that have 
 <!-- EnhancedStorageDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnhancedStorageDevices-Applicability-End -->
 
 <!-- EnhancedStorageDevices-OmaUri-Begin -->
@@ -576,7 +577,7 @@ This policy setting configures whether or not Windows will activate an Enhanced 
 <!-- RemovableDiskDenyWriteAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- RemovableDiskDenyWriteAccess-Applicability-End -->
 
 <!-- RemovableDiskDenyWriteAccess-OmaUri-Begin -->
@@ -645,7 +646,7 @@ This policy setting denies write access to removable disks.
 <!-- WPDDevicesDenyReadAccessPerDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyReadAccessPerDevice-Applicability-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-OmaUri-Begin -->
@@ -715,7 +716,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyReadAccessPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyReadAccessPerUser-Applicability-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-OmaUri-Begin -->
@@ -785,7 +786,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-Begin -->
@@ -855,7 +856,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyWriteAccessPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyWriteAccessPerUser-Applicability-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-OmaUri-Begin -->

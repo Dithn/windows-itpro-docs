@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2015
-manager: aaroncz
+manager: bpardi
 ms.author: mstewart
 description: New and updated IT pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
 ms.service: windows-client
@@ -248,7 +248,7 @@ Enterprises have the following identity and management choices.
 > [!NOTE]
 > With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](/lifecycle/).
 
- 
+
 ### Device lockdown
 
 
@@ -270,11 +270,11 @@ A standard Start layout can be useful on devices that are common to multiple use
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
-## Updates 
+## Updates
 
-Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft's Windows Update service.
+Windows Update client policies enable information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft's Windows Update service.
 
-By using group policy objects, Windows Update for Business is an easily established and implemented system that enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
+By using group policy objects, Windows Update client policies are an easily established and implemented system that enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
 
 -   **Deployment and validation groups**; where administrators can specify which devices go first in an update wave, and which devices will come later (to ensure any quality bars are met).
 
@@ -282,10 +282,10 @@ By using group policy objects, Windows Update for Business is an easily establis
 
 -   **Use with existing tools** such as Microsoft Intune and Configuration Manager.
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as Windows Server Update Services (WSUS) and [Microsoft Configuration Manager](/configmgr).
+Together, these Windows Update client policies features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update client policies are a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as Windows Server Update Services (WSUS) and [Microsoft Configuration Manager](/configmgr).
 
 
-Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
+Learn more about [Windows Update client policies](/windows/deployment/update/waas-manage-updates-wufb).
 
 For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](/windows/deployment/update/waas-servicing-strategy-windows-10-updates).
 

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -14,5 +14,5 @@ This policy controls the visibility of the Settings shortcut on the *Pinned fold
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings) |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings) |
 | **GPO** | Not available. |

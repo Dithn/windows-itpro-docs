@@ -2,7 +2,7 @@
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-manager: aaroncz
+manager: bpardi
 ms.service: windows-client
 ms.subservice: itpro-deploy
 ms.topic: include

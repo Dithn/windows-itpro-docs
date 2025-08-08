@@ -2,7 +2,7 @@
 title: Configure Windows spotlight
 description: Learn how to configure Windows spotlight using Group Policy and mobile device management (MDM) settings.
 ms.topic: how-to
-ms.date: 04/23/2024
+ms.date: 12/05/2024
 ms.author: paoloma
 author: paolomatarazzo
 appliesto:
@@ -21,6 +21,9 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 
 :::image type="content" source="images/lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows Spotlight enabled." border="false":::
 
+> [!NOTE]
+> After installing the [KB5046633 (October 22, 2024)](https://support.microsoft.com/topic/22631-4460-6ff7b117-cd80-471a-a9ac-48a794bda2d6), the default Windows wallpaper changes to Windows spotlight. To modify this behavior, use the [AllowSpotlightCollection policy setting](#policy-settings), or configure a custom lock screen and background image.
+
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -30,6 +33,9 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 - **Organizational messages**: messages from your organization, which can be displayed in the lock screen, taskbar, the notification area, or the Get Started app
 
 :::image type="content" source="images/lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows Spotlight enabled." border="false":::
+
+> [!NOTE]
+> After installing the [KB5048652 (December 10, 2024)](https://support.microsoft.com/topic/19045-5247-454fbd4c-0723-449e-915b-8515ab41f8e3), the default Windows wallpaper changes to Windows spotlight. To modify this behavior, configure a custom lock screen and background image.
 
 ::: zone-end
 
@@ -88,22 +94,9 @@ Here's a sorted list of the policy settings to configure Windows spotlight:
 
 ## Custom lock screen and background images
 
-You can replace the Windows spotlight lock screen and background images with a custom image. When you do so, users can still see suggestions, fun facts, tips, or organizational messages on the lock screen, but the background image is replaced with the custom image.
+You can replace the Windows spotlight lock screen and background images with a custom image. When you do so, users can still receive suggestions, fun facts, tips, or organizational messages, but the background image is replaced with the custom image.
 
-To configure the lock screen and background images, use the [Personalization CSP][CSP-2].
-
-|Policy name| CSP | GPO |
-|-|-|-|
-|[DesktopImageUrl](/windows/client-management/mdm/personalization-csp#desktopimageurl)|✅|✅|
-|[LockScreenImageUrl](/windows/client-management/mdm/personalization-csp#lockscreenimageurl)|✅|✅|
-
->[!NOTE]
-> A concern with custom images is how they'll appear on different screen sizes and resolutions. A custom image created in `16:9` aspect ratio (for example, `1600x900`) scales properly on devices using a `16:9` resolution, such as `1280x720` or `1920x1080`. On devices using other aspect ratios, such as `4:3` (`1024x768`) or `16:10` (`1280x800`), height scales correctly and width is cropped to a size equal to the aspect ratio. The image remains centered on the screen.
->
-> Lock screen images created at other aspect ratios might scale and center unpredictably on your device when changing aspect ratios. The recommendation for custom images that include text (such as a legal statement), is to create the lock screen image in `16:9` resolution with text contained in the `4:3` region, allowing the text to remain visible at any aspect ratio.
-
-> [!TIP]
-> You also have the option to configure a custom lock screen image using [organizational messages in the Microsoft 365 admin center][M365-1].
+To learn more, see [Configure the desktop and lock screen background](../background/index.md).
 
 ## User experience
 
@@ -131,6 +124,5 @@ To learn more about organizational messages, see:
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-experience
-[CSP-2]: /windows/client-management/mdm/personalization-csp
 [INT-1]: /mem/intune/remote-actions/organizational-messages-overview
 [M365-1]: /microsoft-365/admin/misc/organizational-messages-microsoft-365?view=o365-worldwide

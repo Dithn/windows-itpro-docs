@@ -1,7 +1,8 @@
 ---
 title: NetworkProxy CSP
 description: Learn more about the NetworkProxy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -40,7 +41,7 @@ The following list shows the NetworkProxy configuration service provider nodes:
 <!-- Device-AutoDetect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-AutoDetect-Applicability-End -->
 
 <!-- Device-AutoDetect-OmaUri-Begin -->
@@ -89,7 +90,7 @@ Automatically detect settings. If enabled, the system tries to find the path to 
 <!-- Device-ProxyServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-Applicability-End -->
 
 <!-- Device-ProxyServer-OmaUri-Begin -->
@@ -128,7 +129,7 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 <!-- Device-ProxyServer-Exceptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-Exceptions-Applicability-End -->
 
 <!-- Device-ProxyServer-Exceptions-OmaUri-Begin -->
@@ -168,7 +169,7 @@ Addresses that shouldn't use the proxy server. The system won't use the proxy se
 <!-- Device-ProxyServer-ProxyAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-ProxyAddress-Applicability-End -->
 
 <!-- Device-ProxyServer-ProxyAddress-OmaUri-Begin -->
@@ -207,7 +208,7 @@ Address to the proxy server. Specify an address in the format `<server>`[":"`<po
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-Applicability-End -->
 
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-OmaUri-Begin -->
@@ -256,7 +257,7 @@ Specifies whether the proxy server should be used for local (intranet) addresses
 <!-- Device-ProxySettingsPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-ProxySettingsPerUser-Applicability-End -->
 
 <!-- Device-ProxySettingsPerUser-OmaUri-Begin -->
@@ -307,7 +308,7 @@ When set to 0, it enables proxy configuration as global, machine wide.
 <!-- Device-SetupScriptUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SetupScriptUrl-Applicability-End -->
 
 <!-- Device-SetupScriptUrl-OmaUri-Begin -->

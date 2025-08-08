@@ -6,14 +6,14 @@ ms.subservice: itpro-updates
 ms.topic: reference
 author: nidos
 ms.author: nidos
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection: tier3
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
-ms.date: 05/23/2024
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
+ms.date: 01/14/2025
 ---
 
 # Support and troubleshooting
@@ -32,13 +32,13 @@ During sign-up, we verify the information you provide against what is present in
 
 #### Invalid verification code
 
-During sign-up, a verification code is sent to your NOC email address present in [Peering DB](https://www.peeringdb.com/). This code expires in 24 hours. If it's expired, you'll need to request a new verification code to complete the sign-up.  
+During sign-up, a verification code is sent to your NOC email address present in [Peering DB](https://www.peeringdb.com/). This code expires in 24 hours. If it's expired, you'll need to request a new verification code to complete the sign-up.
 
 #### Unable to re-sign up
 
-Delete any MCC resource that you're using before you resign up for the service. Deleting any existing MCC resource unlocks your ASN, which allows you to successfully sign up.
+Delete any Microsoft Connected Cache resource that you're using before you resign up for the service. Deleting any existing Connected Cache resource unlocks your ASN, which allows you to successfully sign up.
 
-### Cache Node Errors  
+### Cache Node Errors
 
 #### Network connectivity issues
 
@@ -97,18 +97,28 @@ Rerun the IoT Edge Check command to validate proper connectivity:
 ```bash
 iotedge check -verbose
 ```
+<br>
+
+## Updating from Ubuntu 20.04 to 22.04
+You can now provision Microsoft Connected Cache for ISP on Ubuntu 22.04.
+If you have a cache node provisioned on Ubuntu 20.04, you will need to uninstall it first before updating to Ubuntu 22.04.
+Once you have updated the system, download the provisioning package from Azure portal and run the provisioning script on the portal.
+For more information on provisioning cache node, visit, [Create, provision and deploy cache node](mcc-isp-create-provision-deploy.md#provision-your-server).
+
+<br>
 
 ## Diagnose and Solve Problems
 
-If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your MCC resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users might face as they onboard.
+If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your Connected Cache resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users might face as they onboard.
 
-You can find **Diagnose and solve problems** on the left pane within your MCC resource.
+You can find **Diagnose and solve problems** on the left pane within your Connected Cache resource.
 
 :::image type="content" source="images/mcc-isp-diagnose-solve.png" alt-text="A screenshot of Azure portal showing the Diagnose and Solve problems tab on the left hand pane of Azure portal." lightbox="images/mcc-isp-diagnose-solve.png":::
 
 Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you're facing and follow the prompts that narrow down the solution to the issue.
 
 :::image type="content" source="images/mcc-isp-diagnose-solve-troubleshoot.png" alt-text="A screenshot of Azure portal showing the option to select Troubleshoot to continue troubleshooting common issues related to the installation of Microsoft Connected Cache." lightbox="images/mcc-isp-diagnose-solve-troubleshoot.png":::
+
 
 ## Steps to obtain an Azure subscription ID
 

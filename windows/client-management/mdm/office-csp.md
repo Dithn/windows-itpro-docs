@@ -1,7 +1,8 @@
 ---
 title: Office CSP
 description: Learn more about the Office CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -11,7 +12,7 @@ ms.date: 01/18/2024
 
 <!-- Office-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](/deployoffice/office-deployment-tool-configuration-options) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](/intune/apps-add-office365).
+The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](/deployoffice/office-deployment-tool-configuration-options) and [Add Microsoft 365 Apps to Windows devices with Microsoft Intune](/mem/intune/apps/apps-add-office365).
 <!-- Office-Editable-End -->
 
 <!-- Office-Tree-Begin -->
@@ -39,7 +40,7 @@ The following list shows the Office configuration service provider nodes:
 <!-- Device-Installation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Installation-Applicability-End -->
 
 <!-- Device-Installation-OmaUri-Begin -->
@@ -78,7 +79,7 @@ Installation options for the office CSP.
 <!-- Device-Installation-{id}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Installation-{id}-Applicability-End -->
 
 <!-- Device-Installation-{id}-OmaUri-Begin -->
@@ -118,7 +119,7 @@ A unique identifier which represents the installation instance id.
 <!-- Device-Installation-{id}-FinalStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Installation-{id}-FinalStatus-Applicability-End -->
 
 <!-- Device-Installation-{id}-FinalStatus-OmaUri-Begin -->
@@ -161,7 +162,7 @@ Final Office 365 installation status.
 <!-- Device-Installation-{id}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Installation-{id}-Install-Applicability-End -->
 
 <!-- Device-Installation-{id}-Install-OmaUri-Begin -->
@@ -200,7 +201,7 @@ The install action will install office given the configuration in the data. The 
 <!-- Device-Installation-{id}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Installation-{id}-Status-Applicability-End -->
 
 <!-- Device-Installation-{id}-Status-OmaUri-Begin -->
@@ -239,7 +240,7 @@ The installation status of the CSP.
 <!-- Device-Installation-CurrentStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Installation-CurrentStatus-Applicability-End -->
 
 <!-- Device-Installation-CurrentStatus-OmaUri-Begin -->
@@ -278,7 +279,7 @@ The current Office 365 installation status on the machine.
 <!-- User-Installation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-Installation-Applicability-End -->
 
 <!-- User-Installation-OmaUri-Begin -->
@@ -317,7 +318,7 @@ Installation options for the office CSP.
 <!-- User-Installation-{id}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-Installation-{id}-Applicability-End -->
 
 <!-- User-Installation-{id}-OmaUri-Begin -->
@@ -357,7 +358,7 @@ A unique identifier which represents the installation instance id.
 <!-- User-Installation-{id}-FinalStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- User-Installation-{id}-FinalStatus-Applicability-End -->
 
 <!-- User-Installation-{id}-FinalStatus-OmaUri-Begin -->
@@ -396,7 +397,7 @@ Final Office 365 installation status.
 <!-- User-Installation-{id}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-Installation-{id}-Install-Applicability-End -->
 
 <!-- User-Installation-{id}-Install-OmaUri-Begin -->
@@ -435,7 +436,7 @@ The install action will install office given the configuration in the data. The 
 <!-- User-Installation-{id}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-Installation-{id}-Status-Applicability-End -->
 
 <!-- User-Installation-{id}-Status-OmaUri-Begin -->
@@ -474,7 +475,7 @@ The installation status of the CSP.
 <!-- User-Installation-CurrentStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Installation-CurrentStatus-Applicability-End -->
 
 <!-- User-Installation-CurrentStatus-OmaUri-Begin -->
@@ -587,7 +588,7 @@ To get the current status of Office 365 on the device.
 | 17001      | ERROR_QUEUE_SCENARIO <br/>Failed to queue installation scenario in C2RClient                                                                                                                                                                                                                                                      | Failure |
 | 17002      | ERROR_COMPLETING_SCENARIO <br>Failed to complete the process. Possible reasons:<li>Installation canceled by user<li>Installation canceled by another installation<li>Out of disk space during installation <li>Unknown language ID                                                                                                | Failure |
 | 17003      | ERROR_ANOTHER_RUNNING_SCENARIO <br>Another scenario is running                                                                                                                                                                                                                                                                    | Failure |
-| 17004      | ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP<br>Possible reasons:<li>Unknown SKUs<li>Content does't exist on CDN<ul><li>Such as trying to install an unsupported LAP, like zh-sg<li>CDN issue that content is not available</li></ul><li>Signature check issue, such as failed the signature check for Office content<li>User canceled | Failure |
+| 17004      | ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP<br>Possible reasons:<li>Unknown SKUs<li>Content doesn't exist on CDN<ul><li>Such as trying to install an unsupported LAP, like zh-sg<li>CDN issue that content is not available</li></ul><li>Signature check issue, such as failed the signature check for Office content<li>User canceled | Failure |
 | 17005      | ERROR_SCENARIO_CANCELLED_AS_PLANNED                                                                                                                                                                                                                                                                                               | Failure |
 | 17006      | ERROR_SCENARIO_CANCELLED<br>Blocked update by running apps                                                                                                                                                                                                                                                                        | Failure |
 | 17007      | ERROR_REMOVE_INSTALLATION_NEEDED<br>The client is requesting client clean-up in a "Remove Installation" scenario                                                                                                                                                                                                                  | Failure |

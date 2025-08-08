@@ -1,12 +1,8 @@
 ---
 title: Common Criteria certifications for previous Windows Server releases
 description: Learn about the completed Common Criteria certifications for previous Windows Server releases.
-ms.date: 2/1/2024
+ms.date: 2/24/2025
 ms.topic: reference
-ms.author: v-rodurff
-author: msrobertd
-ms.reviewer: paoloma
-ms.collection: tier3
 ---
 
 # Common Criteria certifications for previous Windows Server releases
@@ -32,16 +28,16 @@ The following tables list the completed Common Criteria certifications for Windo
 
 |Product details  |Date  |Scope  |Documents  |
 |---------|---------|---------|---------|
-|Validated editions: Standard, Enterprise, Datacenter, Itanium. |March 24, 2011 |(OS certification.) Certified against the Protection Profile for General Purpose Operating Systems. |[Security Target][security-target-march-2011]; [Administrative Guide][admin-guide-march-2011]; [Certification Report][certification-report-march-2011] |
+|Validated editions: Standard, Enterprise, Datacenter, Itanium. |March 24, 2011 |(OS certification.) Certified against the Protection Profile for General Purpose Operating Systems. |[Security Target][security-target-march-2011]; [Certification Report][certification-report-march-2011] |
 |Server Core 2008 R2: Hyper-V Server Role|July 24, 2009 |(Hyper-V certification.) Common Criteria for Information Technology Security Evaluation Version 3.1 Revision 3. It is CC Part 2 extended and Part 3 conformant, with a claimed Evaluation Assurance Level of EAL4, augmented by ALC_FLR.3. |[Security Target][security-target-july-2009]; [Administrative Guide][admin-guide-july-2009]; [Certification Report][certification-report-july-2009] |
 
 ## Windows Server 2008
 
 |Product details  |Date  |Scope  |Documents  |
 |---------|---------|---------|---------|
-|Validated edition: Standard, Enterprise, Datacenter. |August 15, 2009 |Controlled Access Protection Profile. CC Part 2: security functional requirements. CC Part 3: security assurance requirements, at EAL 4. |[Security Target][security-target-august-2009]; [Administrative Guide][admin-guide-august-2009]; [Certification Report][certification-report-august-2009] |
+|Validated edition: Standard, Enterprise, Datacenter. |August 15, 2009 |Controlled Access Protection Profile. CC Part 2: security functional requirements. CC Part 3: security assurance requirements, at EAL 4. |[Security Target][security-target-august-2009]; [Certification Report][certification-report-august-2009] |
 |Microsoft Windows Server Core 2008: Hyper-V Server Role. |July 24, 2009 |CC Part 2: security functional requirements. CC Part 3: security assurance requirements, at EAL 4. |[Security Target][security-target-july-2009-hyperv]; [Administrative Guide][admin-guide-july-2009-hyperv]; [Certification Report][certification-report-july-2009-hyperv] |
-|Validated edition: Standard, Enterprise, Datacenter. |September 17, 2008 |CC Part 2: security functional requirements. CC Part 3: security assurance requirements, at EAL 1. |[Security Target][security-target-september-2008]; [Administrative Guide][admin-guide-september-2008]; [Certification Report][certification-report-september-2008] |
+|Validated edition: Standard, Enterprise, Datacenter. |September 17, 2008 |CC Part 2: security functional requirements. CC Part 3: security assurance requirements, at EAL 1. |[Security Target][security-target-september-2008]; [Certification Report][certification-report-september-2008] |
 
 ## Windows Server 2003 Certificate Server
 
@@ -67,7 +63,7 @@ The following tables list the completed Common Criteria certifications for Windo
 [security-target-april-2014]: https://www.commoncriteriaportal.org/files/epfiles/st_vid10540-st.pdf
 [security-target-january-2014]: https://www.commoncriteriaportal.org/files/epfiles/st_vid10529-st.pdf
 [security-target-march-2011]: https://www.commoncriteriaportal.org/files/epfiles/st_vid10390-st.pdf
-[security-target-july-2009]: https://www.microsoft.com/download/en/details.aspx?id=29305
+[security-target-july-2009]: https://www.microsoft.com/download/details.aspx?id=29305
 [security-target-july-2009-hyperv]: https://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf
 [security-target-august-2009]: https://www.commoncriteriaportal.org/files/epfiles/st_vid10291-st.pdf
 [security-target-september-2008]: https://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_st_v1.0.pdf
@@ -81,11 +77,8 @@ The following tables list the completed Common Criteria certifications for Windo
 [admin-guide-january-2015-pro]: https://download.microsoft.com/download/6/0/b/60b27ded-705a-4751-8e9f-642e635c3cf3/microsoft%20windows%208%20windows%20server%202012%20common%20criteria%20supplemental%20admin%20guidance.docx
 [admin-guide-april-2014]: https://download.microsoft.com/download/0/8/4/08468080-540b-4326-91bf-f2a33b7e1764/administrative%20guidance%20for%20software%20full%20disk%20encryption%20clients.pdf
 [admin-guide-january-2014]: https://download.microsoft.com/download/a/9/f/a9fd7e2d-023b-4925-a62f-58a7f1a6bd47/microsoft%20windows%208%20windows%20server%202012%20supplemental%20admin%20guidance%20ipsec%20vpn%20client.docx
-[admin-guide-march-2011]: https://www.microsoft.com/downloads/en/details.aspx?familyid=ee05b6d0-9939-4765-9217-63083bb94a00
-[admin-guide-july-2009]: https://www.microsoft.com/download/en/details.aspx?id=29308
+[admin-guide-july-2009]: https://www.microsoft.com/download/details.aspx?id=29308
 [admin-guide-july-2009-hyperv]: https://www.microsoft.com/en-us/download/details.aspx?id=14252
-[admin-guide-august-2009]: https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567
-[admin-guide-september-2008]: https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567
 
 <!-- Assurance Activity Reports -->
 

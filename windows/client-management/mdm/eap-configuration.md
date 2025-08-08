@@ -1,12 +1,12 @@
 ---
 title: EAP configuration
-description: Learn how to create an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including details about EAP certificate filtering in Windows 10.
+description: Learn how to create an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including details about EAP certificate filtering in Windows.
 ms.date: 06/26/2017
 ---
 
 # EAP configuration
 
-This article provides a step-by-step guide for creating an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including information about EAP certificate filtering in Windows 10.
+This article provides a step-by-step guide for creating an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including information about EAP certificate filtering in Windows. While the screenshots are specifically for VPN, the EAP portions are applicable to Wi-Fi and Wired EAP profiles as well. For more information, see [Configure EAP profiles and settings in Windows](/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles).
 
 ## Create an EAP configuration XML for a VPN profile
 
@@ -292,6 +292,8 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 > [!NOTE]
 > You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access) article.
 
-## Related topics
+## Related articles
 
-[Configuration service provider reference](index.yml)
+* [Configuration service provider reference](index.yml)
+* [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
+* [Configure EAP profiles and settings in Windows](/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles)

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/10/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -11,5 +11,5 @@ With this policy setting you can prevent users from opening the context menus in
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Disable context menus in the Start Menu** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)<br> - `./User/Vendor/MSFT/Policy/Config/Start/`[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)|
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Disable context menus in the Start Menu** |

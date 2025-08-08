@@ -1,7 +1,7 @@
 ---
 title: Configure federated sign-in for Windows devices
 description: Learn how federated sign-in in Windows works and how to configure it.
-ms.date: 06/03/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -12,6 +12,8 @@ ms.collection:
 ---
 
 # Configure federated sign-in for Windows devices
+
+[!INCLUDE [winse-eos](../includes/winse-eos.md)]
 
 Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via a web sign-in experience.
 Signing in with a federated identity can be a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Microsoft Entra ID, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.

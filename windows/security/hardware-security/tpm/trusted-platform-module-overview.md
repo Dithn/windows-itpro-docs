@@ -1,7 +1,7 @@
 ---
 title: Trusted Platform Module Technology Overview
 description: Learn about the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/10/2024
 ms.collection:
 - tier1

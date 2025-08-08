@@ -1,0 +1,29 @@
+items:
+- name: Windows Performance Lab
+  href: index.yml
+- name: Windows Performance Lab
+  expanded: true
+  items:
+    - name: Overview
+      href: overview.md
+    - name: Claims and Disclosures
+      href: claims-disclosures.md
+    - name: Detailed Test Results
+      expanded: true
+      items:
+        - name: Acer® Detailed Test Results
+          href: acer-detailed-test-results.md
+        - name: ASUS® Detailed Test Results
+          href: asus-detailed-test-results.md
+        - name: Dell® Technologies Detailed Test Results
+          href: dell-detailed-test-results.md
+        - name: HP® Detailed Test Results
+          href: hp-detailed-test-results.md
+        - name: Lenovo® Detailed Test Results
+          href: lenovo-detailed-test-results.md
+        - name: Microsoft Surface detailed test results
+          href: microsoft-surface-detailed-test-results.md
+        - name: Samsung® Detailed Test Results
+          href: samsung-detailed-test-results.md
+    - name: Testing Methodology
+      href: testing-methodology.md

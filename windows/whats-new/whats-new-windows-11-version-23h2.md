@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows 11, version 23H2 for IT pros
 description: Learn more about what's new in Windows 11 version 23H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
-manager: aaroncz
+manager: bpardi
 ms.service: windows-client
 ms.author: mstewart
 author: mestew
@@ -27,25 +27,25 @@ Windows 11, version 23H2 follows the [Windows 11 servicing timeline](/lifecycle/
 
 Devices updating from Windows 11, version 22H2 use an enablement package. Most the files for the 23H2 update already exist on Windows 11, version 22H2 devices that have installed a recent monthly security update. Many of the new features have already been enabled on Windows 11, version 22H2 clients. However, some features are just in an inactive and dormant state because they are under [temporary enterprise feature control](temporary-enterprise-feature-control.md). These new features remain dormant until they're turned on through the enablement package, a small, quick-to-install switch that activates all of the Windows 11, version 23H2 features.
 
-Windows 11, version 23H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 23H2 update](https://blogs.windows.com/windowsexperience/?p=178531). Review the [Windows 11, version 23H2 Windows IT Pro blog post](https://aka.ms/new-in-23H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
+Windows 11, version 23H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update client policies, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 23H2 update](https://blogs.windows.com/windowsexperience/?p=178531). Review the [Windows 11, version 23H2 Windows IT Pro blog post](https://aka.ms/new-in-23H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 
 To learn more about the status of the update rollout, known issues, and new information, see [Windows release health](/windows/release-health/).
 
 ## Features no longer under temporary enterprise control
 
-[Temporary enterprise feature control](temporary-enterprise-feature-control.md) temporarily turns off certain features that were introduced during monthly cumulative updates for managed Windows 11, version 22H2 devices. For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
+[Temporary enterprise feature control](temporary-enterprise-feature-control.md) temporarily turns off certain features that were introduced during monthly cumulative updates for managed Windows 11, version 22H2 devices. For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update client policies or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
 When a managed Windows 11, version 22H2 device installs [version 23H2](https://support.microsoft.com/kb/5027397), the following features will no longer be under temporary enterprise feature control:
 
-| Feature | KB article where the feature was introduced | 
+| Feature | KB article where the feature was introduced |
 |---|---|
-| Touch-optimized taskbar for 2-in-1 devices <!--8092554, WIP.25197--> | [February 28, 2023 - KB5022913](https://support.microsoft.com/kb/5022913)  | 
-| Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554, WIP.25300-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  | 
+| Touch-optimized taskbar for 2-in-1 devices <!--8092554, WIP.25197--> | [February 28, 2023 - KB5022913](https://support.microsoft.com/kb/5022913)  |
+| Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554, WIP.25300-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
 | Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511 & WIP.25281, AllowWindowsSpotlight-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
 | Copilot in Windows <!--8092554, WIP.23493 -->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
 | [Dev Home](/windows/dev-home/) <!--8092554, WIP.23506-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
-| [Dev Drive](/windows/dev-drive/) <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  | 
+| [Dev Drive](/windows/dev-drive/) <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
 
 ## Features added to Windows 11 since version 22H2
 
@@ -66,7 +66,7 @@ When the policy is enabled, certain Windows authentication scenarios don't offer
 You can enable a web-based sign-in experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities. For more information, see [Web sign-in for Windows](/windows/security/identity-protection/web-sign-in).
 
 ### Declared configuration protocol
-<!--7771694 --> 
+<!--7771694 -->
 **Declared configuration protocol** is a new protocol for device configuration management that's based on a desired state model and uses OMA-DM SyncML protocol. It allows the server to provide the device with a collection of settings for a specific scenario, and the device to handle the configuration request and maintain its state. For more information, see [What is the declared configuration protocol](/windows/client-management/declared-configuration).
 
 ### Education themes
@@ -113,11 +113,11 @@ Dev Drive is a new form of storage volume available to improve performance for k
 ### Additional features
 <!--kb5019509 items and notable items for IT pros from other updates-->
 
-- **Tabs for File Explorer**: File Explorer includes tabs to help you organize your File Explorer sessions. 
+- **Tabs for File Explorer**: File Explorer includes tabs to help you organize your File Explorer sessions.
 - **Taskbar overflow menu**: The taskbar offers an entry point to a menu that shows all of your overflowed apps in one spot.
 - **Suggested actions**: Copied text in certain formats, such as phone numbers or dates, offer suggested actions such as calling the number or adding the event to your calendar.
 - **Task Manager enhancements**: Process filtering, theme settings, and the ability to opt out of efficiency mode notification were added to Task Manager.
-- **Narrator improvements**: Scripting functionality was added to Narrator. Narrator includes more natural voices. <!--8138352, 8138357--> 
+- **Narrator improvements**: Scripting functionality was added to Narrator. Narrator includes more natural voices. <!--8138352, 8138357-->
 
 ### In-box apps
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows 11, version 22H2 for IT pros
 description: Learn more about what's new in Windows 11 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
-manager: aaroncz
+manager: bpardi
 ms.service: windows-client
 ms.author: mstewart
 author: mestew
@@ -25,7 +25,7 @@ Windows 11, version 22H2 follows the [Windows 11 servicing timeline](/lifecycle/
 - **Windows 11 Pro**: Serviced for 24 months from the release date.
 - **Windows 11 Enterprise**: Serviced for 36 months from the release date.
 
-Windows 11, version 22H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 22H2 update](https://aka.ms/W11/how-to-get-22H2). Review the [Windows 11, version 22H2 Windows IT Pro blog post](https://aka.ms/new-in-22H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
+Windows 11, version 22H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update client policies, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 22H2 update](https://aka.ms/W11/how-to-get-22H2). Review the [Windows 11, version 22H2 Windows IT Pro blog post](https://aka.ms/new-in-22H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 
 To learn more about the status of the update rollout, known issues, and new information, see [Windows release health](/windows/release-health/).
@@ -70,9 +70,9 @@ For more information, see [Configuring Additional LSA Protection](/windows-serve
 
 ## Personal Data Encryption
 <!--5963468 -->
-Personal data encryption (PDE) is a security feature introduced in Windows 11, version 22H2 that provides additional encryption features to Windows. PDE differs from BitLocker in that it encrypts individual files instead of whole volumes and disks. PDE occurs in addition to other encryption methods such as BitLocker.
+Personal Data Encryption is a security feature introduced in Windows 11, version 22H2 that provides additional encryption features to Windows. Personal Data Encryption differs from BitLocker in that it encrypts individual files instead of whole volumes and disks. Personal Data Encryption occurs in addition to other encryption methods such as BitLocker.
 
-PDE utilizes Windows Hello for Business to link data encryption keys with user credentials. This feature can minimize the number of credentials the user has to remember to gain access to files. For example, when using BitLocker with PIN, a user would need to authenticate twice - once with the BitLocker PIN and a second time with Windows credentials. This requirement requires users to remember two different credentials. With PDE, users only need to enter one set of credentials via Windows Hello for Business.
+Personal Data Encryption utilizes Windows Hello for Business to link data encryption keys with user credentials. This feature can minimize the number of credentials the user has to remember to gain access to files. For example, when using BitLocker with PIN, a user would need to authenticate twice - once with the BitLocker PIN and a second time with Windows credentials. This requirement requires users to remember two different credentials. With Personal Data Encryption, users only need to enter one set of credentials via Windows Hello for Business.
 
 For more information, see [Personal Data Encryption](/windows/security/information-protection/personal-data-encryption/overview-pde).
 

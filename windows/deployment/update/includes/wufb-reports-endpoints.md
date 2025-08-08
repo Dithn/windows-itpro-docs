@@ -1,7 +1,7 @@
 ---
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.subservice: itpro-updates
 ms.service: windows-client
 ms.topic: include
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 <!-- This file is shared by update/wufb-reports-prerequisites.md and update/wufb-reports-configuration-manual.md articles. Headings are driven by article context. -->
 
-Devices must be able to contact the following endpoints in order to authenticate and send diagnostic data: 
+Devices must be able to contact the following endpoints in order to authenticate and send diagnostic data:
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|

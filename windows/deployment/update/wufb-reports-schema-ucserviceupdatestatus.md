@@ -7,10 +7,10 @@ ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
-manager: aaroncz
-appliesto: 
+manager: bpardi
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/06/2023
 ---
 
@@ -19,12 +19,12 @@ ms.date: 12/06/2023
 Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. This event has certain fields removed from it in favor of being able to show data in near real time.
 
 ## Schema for UCServiceUpdateStatus
-<!--8506381--> 
+<!--8506381-->
 | Field |Type | Enumerated type |Example |Description |
 |---|---|---|---|---|
 | **AzureADDeviceId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
 | **AzureADTenantId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
-| **CatalogId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | This field applies to drivers only. The Catalog ID of the update from Windows Update for Business deployment service. |
+| **CatalogId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | This field applies to drivers only. The Catalog ID of the update from Windows Autopatch. |
 | **DeploymentApprovedTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | No |  `2020-05-14 09:26:03.478039` | This field applies to drivers only. Date and time of the update approval |
 | **DeploymentId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `cf1b12a3-3d84-4ce3-bc8e-de48459e252d` | If this DeviceUpdateEvent is from content deployed by a deployment scheduler service policy, this GUID maps to that policy, otherwise it's empty. |
 | **DeploymentIsExpedited** | [bool](/azure/data-explorer/kusto/query/scalar-data-types/bool) | No | `1` | Currently, data isn't gathered to populate this field. It indicated whether the content is being expedited |

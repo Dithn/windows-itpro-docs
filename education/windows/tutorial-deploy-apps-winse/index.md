@@ -1,13 +1,15 @@
 ---
-title: Deploy applications to Windows 11 SE with Intune
+title: Deploy Applications To Windows 11 SE With Intune
 description: Learn how to deploy applications to Windows 11 SE with Intune and how to validate the apps.
-ms.date: 04/10/2024
+ms.date: 12/02/2024
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
 ---
 
 # Tutorial: deploy applications to Windows 11 SE with Intune
+
+[!INCLUDE [winse-eos](../../includes/winse-eos.md)]
 
 This guide describes how to deploy applications to Windows 11 SE devices that are managed by Microsoft Intune in an education environment. The guide also describes how to validate the apps and how to create policies to allow apps that aren't installable or don't behave as intended.
 

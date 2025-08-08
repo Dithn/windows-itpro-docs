@@ -8,12 +8,26 @@ items:
   - name: Device description framework (DDF) files
     href: configuration-service-provider-ddf.md
   - name: Support scenarios
-    href: configuration-service-provider-support.md
+    items:
+    - name: Configuration service provider support
+      href: configuration-service-provider-support.md
+    - name: Policies supported by Windows Insider Preview
+      href: policies-in-preview.md
+    - name: Policies supported by HoloLens 2
+      href: policies-in-policy-csp-supported-by-hololens2.md
+    - name: Policies supported by HoloLens (1st gen) Commercial Suite
+      href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
+    - name: Policies supported by HoloLens (1st gen) Development Edition
+      href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
+    - name: Policies supported by Windows 10 Team
+      href: policies-in-policy-csp-supported-by-surface-hub.md
+    - name: Policies that can be set using Exchange Active Sync
+      href: policies-in-policy-csp-that-can-be-set-using-eas.md
   - name: WMI Bridge provider
     items:
     - name: Using PowerShell scripting with the WMI Bridge Provider
       href: ../using-powershell-scripting-with-the-wmi-bridge-provider.md
-    - name: WMI providers supported in Windows 10
+    - name: WMI providers supported in Windows
       href: ../wmi-providers-supported-in-windows.md
   - name: Understanding ADMX policies
     href: ../understanding-admx-backed-policies.md
@@ -29,11 +43,21 @@ items:
       href: ../structure-of-oma-dm-provisioning-files.md
     - name: Server requirements for OMA DM
       href: ../server-requirements-windows-mdm.md
-  - name: Declared Configuration protocol
-    href: ../declared-configuration.md
+  - name: Declared Configuration
     items:
-    - name: Declared Configuration extensibility
+    - name: Protocol
+      expanded: true
+      items:
+      - name: Overview
+        href: ../declared-configuration.md
+      - name: Discovery
+        href: ../declared-configuration-discovery.md
+      - name: Enrollment
+        href: ../declared-configuration-enrollment.md
+    - name: Extensibility
       href: ../declared-configuration-extensibility.md
+    - name: Resource access
+      href: ../declared-configuration-resource-access.md
     - name: DeclaredConfiguration CSP
       href: declaredconfiguration-csp.md
     - name: DMClient CSP
@@ -46,24 +70,6 @@ items:
       items:
       - name: Policy CSP DDF file
         href: configuration-service-provider-ddf.md
-      - name: Policy CSP support scenarios
-        items:
-        - name: Policies that are ADMX-backed
-          href: policies-in-policy-csp-admx-backed.md
-        - name: Policies supported by Group Policy
-          href: policies-in-policy-csp-supported-by-group-policy.md
-        - name: Policies supported by HoloLens 2
-          href: policies-in-policy-csp-supported-by-hololens2.md
-        - name: Policies supported by HoloLens (1st gen) Commercial Suite
-          href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
-        - name: Policies supported by HoloLens (1st gen) Development Edition
-          href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
-        - name: Policies supported by Windows 10 IoT Core
-          href: policies-in-policy-csp-supported-by-iot-core.md
-        - name: Policies supported by Windows 10 Team
-          href: policies-in-policy-csp-supported-by-surface-hub.md
-        - name: Policies that can be set using Exchange Active Sync (EAS)
-          href: policies-in-policy-csp-that-can-be-set-using-eas.md
       - name: Policy CSP areas
         expanded: true
         items:
@@ -363,6 +369,8 @@ items:
           href: policy-csp-admx-workfoldersclient.md
         - name: ADMX_WPN
           href: policy-csp-admx-wpn.md
+        - name: AppDeviceInventory
+          href: policy-csp-appdeviceinventory.md
         - name: ApplicationDefaults
           href: policy-csp-applicationdefaults.md
         - name: ApplicationManagement
@@ -463,6 +471,8 @@ items:
           href: policy-csp-kerberos.md
         - name: KioskBrowser
           href: policy-csp-kioskbrowser.md
+        - name: LanmanServer
+          href: policy-csp-lanmanserver.md
         - name: LanmanWorkstation
           href: policy-csp-lanmanworkstation.md
         - name: Licensing
@@ -529,6 +539,8 @@ items:
           href: policy-csp-settingssync.md
         - name: SmartScreen
           href: policy-csp-smartscreen.md
+        - name: SpeakForMe
+          href: policy-csp-speakforme.md
         - name: Speech
           href: policy-csp-speech.md
         - name: Start
@@ -827,10 +839,10 @@ items:
       items:
       - name: PassportForWork DDF file
         href: passportforwork-ddf.md
-    - name: PDE
+    - name: Personal Data Encryption
       href: personaldataencryption-csp.md
       items:
-      - name: PDE DDF file
+      - name: Personal Data Encryption DDF file
         href: personaldataencryption-ddf-file.md
     - name: Personalization
       href: personalization-csp.md
@@ -856,6 +868,11 @@ items:
       items:
       - name: RemoteFind DDF file
         href: remotefind-ddf-file.md
+    - name: RemoteRemediation
+      href: remoteremediation-csp.md
+      items:
+      - name: RemoteRemediation DDF file
+        href: remoteremediation-ddf-file.md
     - name: RemoteWipe
       href: remotewipe-csp.md
       items:
@@ -969,6 +986,11 @@ items:
       items:
       - name: WindowsAutopilot DDF file
         href: windowsautopilot-ddf-file.md
+    - name: WindowsBackupAndRestore
+      href: windowsbackupandrestore-csp.md
+      items:
+      - name: WindowsBackupAndRestore DDF file
+        href: windowsbackupandrestore-ddf-file.md
     - name: WindowsDefenderApplicationGuard
       href: windowsdefenderapplicationguard-csp.md
       items:
@@ -984,3 +1006,8 @@ items:
       items:
       - name: WiredNetwork DDF file
         href: wirednetwork-ddf-file.md
+    - name: WirelessNetworkPreference
+      href: wirelessnetworkpreference-csp.md
+      items:
+      - name: WirelessNetworkPreference DDF file
+        href: wirelessnetworkpreference-ddf-file.md

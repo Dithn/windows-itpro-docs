@@ -1,7 +1,7 @@
 ---
 title: Understand PCR banks on TPM 2.0 devices
 description: Learn about what happens when you switch PCR banks on TPM 2.0 devices.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/10/2024
 ---
 

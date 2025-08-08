@@ -3,12 +3,12 @@ title: Define update strategy
 description: Example of using a calendar-based approach to achieve consistent update installation in your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
@@ -30,7 +30,7 @@ Here's a calendar showing an example schedule that applies one Windows feature u
 
 [ ![Calendar showing an annual update cadence.](images/annual-calendar.png) ](images/annual-calendar.png#lightbox)
 
-This approach provides approximately 12 months of use from each feature update before the next update is due to be installed by aligning to the Windows H2 feature update. 
+This approach provides approximately 12 months of use from each feature update before the next update is due to be installed by aligning to the Windows H2 feature update.
 
 This cadence might be most suitable for you if any of these conditions apply:
 
@@ -38,6 +38,6 @@ This cadence might be most suitable for you if any of these conditions apply:
 
 - You want to wait and see how successful other companies are at adopting a Windows feature update.
 
-- You want to go quickly with feature updates, and want the ability to skip a feature update while keeping Windows serviced in case business priorities change. 
+- You want to go quickly with feature updates, and want the ability to skip a feature update while keeping Windows serviced in case business priorities change.
 
 

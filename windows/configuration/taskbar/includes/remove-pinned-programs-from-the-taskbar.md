@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
@@ -15,4 +15,4 @@ This policy setting allows you to remove pinned programs from the taskbar.
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br>- **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove pinned programs from the Taskbar**<br> - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove pinned programs from the Taskbar** |

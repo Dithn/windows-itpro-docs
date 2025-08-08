@@ -1,7 +1,8 @@
 ---
 title: PassportForWork DDF file
 description: View the XML file containing the device description framework (DDF) for the PassportForWork configuration service provider.
-ms.date: 06/28/2024
+ms.date: 04/30/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -831,7 +832,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.6</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
@@ -1578,11 +1579,11 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of peripheral Windows Hello capable devices will be allowed, subject to current feature limitations. In addition, with this setting, ESS will be enabled on devices with a mixture of biometric devices, such as an ESS capable FPR and a non-ESS capable camera. (not recommended)</MSFT:ValueDescription>
+              <MSFT:ValueDescription>ESS will be disabled on systems with capable software and hardware. Authentication operations of peripheral Windows Hello capable devices will be allowed, subject to current feature limitations.</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any peripheral biometric device will be blocked and not available for Windows Hello. (default and recommended for highest security)</MSFT:ValueDescription>
+              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any peripheral biometric device will be blocked and not available for Windows Hello.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
           <MSFT:GpMapping GpEnglishName="Enable ESS with Supported Peripherals" GpAreaPath="Passport~AT~WindowsComponents~MSPassportForWorkCategory" />

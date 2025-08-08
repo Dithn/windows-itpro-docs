@@ -1,13 +1,18 @@
 ---
 title: ApplicationManagement Policy CSP
 description: Learn more about the ApplicationManagement Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 04/04/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- ApplicationManagement-Begin -->
 # Policy CSP - ApplicationManagement
+
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- ApplicationManagement-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -19,7 +24,7 @@ ms.date: 04/10/2024
 <!-- AllowAllTrustedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAllTrustedApps-Applicability-End -->
 
 <!-- AllowAllTrustedApps-OmaUri-Begin -->
@@ -30,11 +35,11 @@ ms.date: 04/10/2024
 
 <!-- AllowAllTrustedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
+This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed packaged Microsoft Store apps.
 
-- If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
+- If you enable this policy setting, you can install any LOB or developer-signed packaged Microsoft Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
 
-- If you disable or don't configure this policy setting, you can't install LOB or developer-signed Windows Store apps.
+- If you disable or don't configure this policy setting, you can't install LOB or developer-signed packaged Microsoft Store apps.
 <!-- AllowAllTrustedApps-Description-End -->
 
 <!-- AllowAllTrustedApps-Editable-Begin -->
@@ -87,7 +92,7 @@ This policy setting allows you to manage the installation of trusted line-of-bus
 <!-- AllowAppStoreAutoUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAppStoreAutoUpdate-Applicability-End -->
 
 <!-- AllowAppStoreAutoUpdate-OmaUri-Begin -->
@@ -151,7 +156,7 @@ Specifies whether automatic update of apps from Microsoft Store are allowed. Mos
 <!-- AllowAutomaticAppArchiving-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowAutomaticAppArchiving-Applicability-End -->
 
 <!-- AllowAutomaticAppArchiving-OmaUri-Begin -->
@@ -221,7 +226,7 @@ This policy setting controls whether the system can archive infrequently used ap
 <!-- AllowDeveloperUnlock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDeveloperUnlock-Applicability-End -->
 
 <!-- AllowDeveloperUnlock-OmaUri-Begin -->
@@ -269,7 +274,7 @@ Allows or denies development of Microsoft Store applications and installing them
 | Name | Value |
 |:--|:--|
 | Name | AllowDevelopmentWithoutDevLicense |
-| Friendly Name | Allows development of Windows Store apps and installing them from an integrated development environment (IDE) |
+| Friendly Name | Allows development of packaged Microsoft Store apps and installing them from an integrated development environment (IDE) |
 | Location | Computer Configuration |
 | Path | Windows Components > App Package Deployment |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Appx |
@@ -283,13 +288,63 @@ Allows or denies development of Microsoft Store applications and installing them
 
 <!-- AllowDeveloperUnlock-End -->
 
+<!-- AllowedNonAdminPackageFamilyNameRules-Begin -->
+## AllowedNonAdminPackageFamilyNameRules
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowedNonAdminPackageFamilyNameRules-Applicability-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/AllowedNonAdminPackageFamilyNameRules
+```
+<!-- AllowedNonAdminPackageFamilyNameRules-OmaUri-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowedNonAdminPackageFamilyNameRules-Description-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowedNonAdminPackageFamilyNameRules-Editable-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowedNonAdminPackageFamilyNameRules-DFProperties-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowedNonAdminPackageFamilyNameRules |
+| ADMX File Name | AppxPackageManager.admx |
+<!-- AllowedNonAdminPackageFamilyNameRules-AdmxBacked-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowedNonAdminPackageFamilyNameRules-Examples-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-End -->
+
 <!-- AllowGameDVR-Begin -->
 ## AllowGameDVR
 
 <!-- AllowGameDVR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowGameDVR-Applicability-End -->
 
 <!-- AllowGameDVR-OmaUri-Begin -->
@@ -358,7 +413,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- AllowSharedUserAppData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSharedUserAppData-Applicability-End -->
 
 <!-- AllowSharedUserAppData-OmaUri-Begin -->
@@ -371,7 +426,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- Description-Source-ADMX -->
 Manages a Windows app's ability to share data between users who have installed the app.
 
-- If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the Windows. Storage API.
+- If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the `Windows.Storage` API.
 
 - If you disable this policy, a Windows app can't share app data with other instances of that app. If this policy was previously enabled, any previously shared app data will remain in the SharedLocal folder.
 <!-- AllowSharedUserAppData-Description-End -->
@@ -519,7 +574,7 @@ This policy is deprecated.
 <!-- BlockNonAdminUserInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BlockNonAdminUserInstall-Applicability-End -->
 
 <!-- BlockNonAdminUserInstall-OmaUri-Begin -->
@@ -580,13 +635,61 @@ Manages non-Administrator users' ability to install Windows app packages.
 
 <!-- BlockNonAdminUserInstall-End -->
 
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Begin -->
+## ConfigureMSIXAuthenticationAuthorizedDomains
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Applicability-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/ConfigureMSIXAuthenticationAuthorizedDomains
+```
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-OmaUri-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines a regular expression in ECMA Script. When performing a streaming MSIX install, if this regular expression matches the domain name (uppercased) then the user's EntraID OAuth token will be attached to the request.
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Description-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Editable-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-DFProperties-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureMSIXAuthenticationAuthorizedDomains |
+| Path | AppxPackageManager > AT > WindowsComponents > AppxDeployment |
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-GpMapping-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-Examples-End -->
+
+<!-- ConfigureMSIXAuthenticationAuthorizedDomains-End -->
+
 <!-- DisableStoreOriginatedApps-Begin -->
 ## DisableStoreOriginatedApps
 
 <!-- DisableStoreOriginatedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableStoreOriginatedApps-Applicability-End -->
 
 <!-- DisableStoreOriginatedApps-OmaUri-Begin -->
@@ -629,7 +732,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 | Name | Value |
 |:--|:--|
 | Name | DisableStoreApps |
-| Friendly Name | Disable all apps from Microsoft Store  |
+| Friendly Name | Disable all apps from Microsoft Store |
 | Location | Computer Configuration |
 | Path | Windows Components > Store |
 | Registry Key Name | Software\Policies\Microsoft\WindowsStore |
@@ -649,7 +752,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 <!-- LaunchAppAfterLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- LaunchAppAfterLogOn-Applicability-End -->
 
 <!-- LaunchAppAfterLogOn-OmaUri-Begin -->
@@ -702,7 +805,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <!-- MSIAllowUserControlOverInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MSIAllowUserControlOverInstall-Applicability-End -->
 
 <!-- MSIAllowUserControlOverInstall-OmaUri-Begin -->
@@ -773,7 +876,7 @@ This policy setting is designed for less restrictive environments. It can be use
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Applicability-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-OmaUri-Begin -->
@@ -850,7 +953,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 <!-- RequirePrivateStoreOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- RequirePrivateStoreOnly-Applicability-End -->
 
 <!-- RequirePrivateStoreOnly-OmaUri-Begin -->
@@ -867,7 +970,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 <!-- Description-Source-ADMX -->
 Denies access to the retail catalog in the Microsoft Store, but displays the private store.
 
-- If you enable this setting, users won't be able to view the retail catalog in the Microsoft Store, but they will be able to view apps in the private store.
+- If you enable this setting, users won't be able to view the retail catalog in the Microsoft Store, but they'll be able to view apps in the private store.
 
 - If you disable or don't configure this setting, users can access the retail catalog in the Microsoft Store.
 <!-- RequirePrivateStoreOnly-Description-End -->
@@ -921,7 +1024,7 @@ Denies access to the retail catalog in the Microsoft Store, but displays the pri
 <!-- RestrictAppDataToSystemVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RestrictAppDataToSystemVolume-Applicability-End -->
 
 <!-- RestrictAppDataToSystemVolume-OmaUri-Begin -->
@@ -988,7 +1091,7 @@ Prevent users' app data from moving to another location when an app is moved or 
 <!-- RestrictAppToSystemVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RestrictAppToSystemVolume-Applicability-End -->
 
 <!-- RestrictAppToSystemVolume-OmaUri-Begin -->
@@ -1055,7 +1158,7 @@ This policy setting allows you to manage installing Windows apps on additional v
 <!-- ScheduleForceRestartForUpdateFailures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ScheduleForceRestartForUpdateFailures-Applicability-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-OmaUri-Begin -->

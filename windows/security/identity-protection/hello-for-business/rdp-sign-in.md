@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop sign-in with Windows Hello for Business
 description: Learn how to configure Remote Desktop (RDP) sign-in with Windows Hello for Business.
-ms.date: 06/11/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 ---
 
@@ -13,6 +13,10 @@ This article describes two certificate deployment approaches, where authenticati
 
 - Using Microsoft Intune with SCEP or PKCS connectors
 - Using an Active Directory Certificate Services (AD CS) enrollment policy
+
+>[!IMPORTANT]
+> If you deploy the certificate using Microsoft Intune, and you have [User Account Control](../../application-security/application-control/user-account-control/index.md) configured to *Prompt for credentials on the secure desktop*, you won't be able to use the *run as* feature.
+> In such scenario, when you try to execute an application with elevated privileges and choose the Windows Hello for Business credential, you'll receive the error message: **The username or password is incorrect**.
 
 > [!TIP]
 > Consider using Remote Credential Guard instead of Windows Hello for Business for RDP sign-in. Remote Credential Guard provides single sign-on (SSO) to RDP sessions using Kerberos authentication, and doesn't require the deployment of certificates. For more information, see [Remote Credential Guard](../remote-credential-guard.md).
@@ -34,7 +38,7 @@ Windows Hello for Business emulates a smart card for application compatibility, 
 > [!NOTE]
 > Remote Desktop with biometric doesn't work with [Dual Enrollment](hello-feature-dual-enrollment.md) or scenarios where the user provides alternative credentials.
 
-## Requirements
+## System requirements
 
 Here's a list of requirements to enable RDP sign-in with Windows Hello for Business:
 

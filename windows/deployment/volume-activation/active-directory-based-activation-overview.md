@@ -5,15 +5,23 @@ ms.author: kaushika
 author: kaushika-msft
 manager: cshepard
 ms.reviewer: nganguly
-ms.date: 11/07/2022
+ms.date: 05/14/2025
 ms.topic: concept-article
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ---
 
 # Active Directory-Based Activation overview
 
-Active Directory-Based Activation (ADBA) enables enterprises to activate computers through a connection to their domain. Many companies have computers at offsite locations that use products that are registered to the company. Previously these computers needed to either use a retail key or a Multiple Activation Key (MAK), or physically connect to the network in order to activate their products by using Key Management Services (KMS). ADBA provides a way to activate these products if the computers can join the company's domain. When the user joins their computer to the domain, the ADBA object automatically activates Windows installed on their computer, as long as the computer has a Generic Volume License Key (GVLK) installed. No single physical computer is required to act as the activation object, because it's distributed throughout the domain.
+Active Directory-Based Activation (ADBA) enables enterprises to activate computers through a connection to their domain. Many companies have computers at offsite locations that use products that are registered to the company. Previously these computers needed to either use a retail key or a Multiple Activation Key (MAK), or physically connect to the network in order to activate their products by using Key Management Services (KMS). ADBA provides a way to activate these products if the computers can join the company's domain. When the user joins their computer to the domain, the ADBA object automatically activates Windows installed on their computer, as long as the computer has a Generic Volume License Key (GVLK) installed. No single physical computer is required to act as the activation object, because it's distributed throughout the domain. ADBA has the following benefits
+
+- No additional devices required to maintain (KMS host)
+
+- No RPC requirement, uses LDAP
+
+- Works with RODC
+
+Note:  ADBA activation only works in single forest, even if you have trust relationship setup.  Each forest requires it's own ADBA object.  KMS can work cross forest if the DNS SRV record is manually created under the DNS of each forest, provided 2-way trust relationship is created
 
 ## ADBA scenarios
 

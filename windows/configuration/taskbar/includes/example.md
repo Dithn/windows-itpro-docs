@@ -17,6 +17,7 @@ ms.topic: include
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
         <!-- your pins list goes here -->
+      </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>

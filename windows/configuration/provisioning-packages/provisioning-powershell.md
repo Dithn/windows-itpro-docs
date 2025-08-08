@@ -1,7 +1,7 @@
 ---
 title: PowerShell cmdlets for provisioning packages in Windows
 description: Learn more about the Windows PowerShell cmdlets that you can use with Provisioning packages on Windows devices.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/09/2024
 ---
 

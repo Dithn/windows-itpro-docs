@@ -1,7 +1,7 @@
 ---
 title: Secure the Windows boot process
 description: This article describes how Windows security features help protect your PC from malware, including rootkits and other applications.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/10/2024
 ms.collection:
   - tier1
